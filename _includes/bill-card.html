@@ -3,10 +3,26 @@
   Usage: {% include bill-card.html bill=bill featured=true %}
 {% endcomment %}
 
-<article class="bill-card {% if include.featured %}bill-card-featured{% endif %}">
+<article class="bill-card {% if include.featured %}bill-card-featured{% endif %} threat-{{ include.bill.threat_level | default: 'unknown' }}">
   <header class="bill-card-header">
     <span class="bill-number">{{ include.bill.bill_number }}</span>
     <span class="status-badge status-{{ include.bill.status | slugify }}">{{ include.bill.status }}</span>
+    <div class="threat-badge threat-{{ include.bill.threat_level | default: 'unknown' }}">
+      {% case include.bill.threat_level %}
+        {% when 'critical' %}
+          Critical
+        {% when 'high' %}
+          High
+        {% when 'moderate' %}
+          Moderate
+        {% when 'low' %}
+          Low
+        {% when 'beneficial' %}
+          Good
+        {% else %}
+          ?
+      {% endcase %}
+    </div>
   </header>
 
   <h3 class="bill-card-title">
