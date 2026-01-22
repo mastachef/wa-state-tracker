@@ -32,6 +32,19 @@ permalink: /analytics/
 {% assign vetoed = site.data.bills | where: "status", "Vetoed" | size %}
 {% assign failed = site.data.bills | where: "status", "Failed" | size %}
 
+{% assign house_bills = site.data.bills | where: "chamber", "House" %}
+{% assign senate_bills = site.data.bills | where: "chamber", "Senate" %}
+{% assign house_critical = house_bills | where: "threat_level", "critical" | size %}
+{% assign house_high = house_bills | where: "threat_level", "high" | size %}
+{% assign house_moderate = house_bills | where: "threat_level", "moderate" | size %}
+{% assign house_low = house_bills | where: "threat_level", "low" | size %}
+{% assign house_beneficial = house_bills | where: "threat_level", "beneficial" | size %}
+{% assign senate_critical = senate_bills | where: "threat_level", "critical" | size %}
+{% assign senate_high = senate_bills | where: "threat_level", "high" | size %}
+{% assign senate_moderate = senate_bills | where: "threat_level", "moderate" | size %}
+{% assign senate_low = senate_bills | where: "threat_level", "low" | size %}
+{% assign senate_beneficial = senate_bills | where: "threat_level", "beneficial" | size %}
+
 <!-- Summary Stats Row -->
 <section class="summary-stats">
   <div class="summary-stat summary-total">
@@ -52,253 +65,38 @@ permalink: /analytics/
   </div>
 </section>
 
-<!-- Legislative Pipeline -->
-<section class="analytics-section">
-  <h2>Legislative Pipeline</h2>
-  <p class="section-desc">How bills move through the legislative process.</p>
-
-  <div class="pipeline">
-    <div class="pipeline-stage">
-      <div class="pipeline-bar" style="--stage-color: #64748b;">
-        <span class="pipeline-count">{{ introduced | plus: prefiled }}</span>
-      </div>
-      <span class="pipeline-label">Introduced</span>
-    </div>
-    <div class="pipeline-arrow">→</div>
-    <div class="pipeline-stage">
-      <div class="pipeline-bar" style="--stage-color: #3b82f6;">
-        <span class="pipeline-count">{{ in_committee }}</span>
-      </div>
-      <span class="pipeline-label">In Committee</span>
-    </div>
-    <div class="pipeline-arrow">→</div>
-    <div class="pipeline-stage">
-      <div class="pipeline-bar" style="--stage-color: #8b5cf6;">
-        <span class="pipeline-count">{{ passed_house | plus: passed_senate }}</span>
-      </div>
-      <span class="pipeline-label">Passed Chamber</span>
-    </div>
-    <div class="pipeline-arrow">→</div>
-    <div class="pipeline-stage">
-      <div class="pipeline-bar" style="--stage-color: #f59e0b;">
-        <span class="pipeline-count">{{ passed | plus: enrolled }}</span>
-      </div>
-      <span class="pipeline-label">Passed Both</span>
-    </div>
-    <div class="pipeline-arrow">→</div>
-    <div class="pipeline-stage">
-      <div class="pipeline-bar" style="--stage-color: #22c55e;">
-        <span class="pipeline-count">{{ signed }}</span>
-      </div>
-      <span class="pipeline-label">Signed into Law</span>
-    </div>
-  </div>
-
-  {% if vetoed > 0 or failed > 0 %}
-  <div class="pipeline-footnote">
-    {% if vetoed > 0 %}<span class="footnote-item footnote-vetoed">{{ vetoed }} Vetoed</span>{% endif %}
-    {% if failed > 0 %}<span class="footnote-item footnote-failed">{{ failed }} Failed</span>{% endif %}
-  </div>
-  {% endif %}
-</section>
-
-<section class="analytics-grid">
-  <!-- Threat Level Distribution -->
-  <div class="analytics-card analytics-card-wide">
-    <h2>Threat Level Distribution</h2>
-    <div class="chart-container">
-      <div class="bar-chart">
-        <div class="bar-row">
-          <span class="bar-label">Critical</span>
-          <div class="bar-container">
-            <div class="bar bar-critical" style="width: {% if total > 0 %}{{ critical | times: 100.0 | divided_by: total }}%{% else %}0{% endif %}"></div>
-          </div>
-          <span class="bar-value">{{ critical }}</span>
-        </div>
-        <div class="bar-row">
-          <span class="bar-label">High</span>
-          <div class="bar-container">
-            <div class="bar bar-high" style="width: {% if total > 0 %}{{ high | times: 100.0 | divided_by: total }}%{% else %}0{% endif %}"></div>
-          </div>
-          <span class="bar-value">{{ high }}</span>
-        </div>
-        <div class="bar-row">
-          <span class="bar-label">Moderate</span>
-          <div class="bar-container">
-            <div class="bar bar-moderate" style="width: {% if total > 0 %}{{ moderate | times: 100.0 | divided_by: total }}%{% else %}0{% endif %}"></div>
-          </div>
-          <span class="bar-value">{{ moderate }}</span>
-        </div>
-        <div class="bar-row">
-          <span class="bar-label">Low</span>
-          <div class="bar-container">
-            <div class="bar bar-low" style="width: {% if total > 0 %}{{ low | times: 100.0 | divided_by: total }}%{% else %}0{% endif %}"></div>
-          </div>
-          <span class="bar-value">{{ low }}</span>
-        </div>
-        <div class="bar-row">
-          <span class="bar-label">Beneficial</span>
-          <div class="bar-container">
-            <div class="bar bar-beneficial" style="width: {% if total > 0 %}{{ beneficial | times: 100.0 | divided_by: total }}%{% else %}0{% endif %}"></div>
-          </div>
-          <span class="bar-value">{{ beneficial }}</span>
-        </div>
+<!-- Charts Section -->
+<section class="charts-section">
+  <div class="charts-grid">
+    <!-- Threat Level Pie Chart -->
+    <div class="chart-card">
+      <h2>Threat Level Distribution</h2>
+      <div class="chart-wrapper">
+        <canvas id="threatChart"></canvas>
       </div>
     </div>
-  </div>
 
-  <!-- Chamber Breakdown -->
-  <div class="analytics-card">
-    <h2>By Chamber</h2>
-    <div class="chart-container">
-      <div class="donut-stats">
-        <div class="donut-stat">
-          <span class="donut-number house-color">{{ house }}</span>
-          <span class="donut-label">House Bills</span>
-        </div>
-        <div class="donut-stat">
-          <span class="donut-number senate-color">{{ senate }}</span>
-          <span class="donut-label">Senate Bills</span>
-        </div>
-      </div>
-      <div class="chamber-bar">
-        <div class="chamber-house" style="width: {% if total > 0 %}{{ house | times: 100.0 | divided_by: total }}%{% else %}50%{% endif %}"></div>
-        <div class="chamber-senate" style="width: {% if total > 0 %}{{ senate | times: 100.0 | divided_by: total }}%{% else %}50%{% endif %}"></div>
+    <!-- Chamber Doughnut Chart -->
+    <div class="chart-card">
+      <h2>Bills by Chamber</h2>
+      <div class="chart-wrapper">
+        <canvas id="chamberChart"></canvas>
       </div>
     </div>
-  </div>
 
-  <!-- Status Breakdown -->
-  <div class="analytics-card">
-    <h2>All Statuses</h2>
-    <div class="status-list">
-      <div class="status-row">
-        <span class="status-dot" style="background: #64748b;"></span>
-        <span class="status-name">Introduced/Prefiled</span>
-        <span class="status-count">{{ introduced | plus: prefiled }}</span>
-      </div>
-      <div class="status-row">
-        <span class="status-dot" style="background: #3b82f6;"></span>
-        <span class="status-name">In Committee</span>
-        <span class="status-count">{{ in_committee }}</span>
-      </div>
-      <div class="status-row">
-        <span class="status-dot" style="background: #8b5cf6;"></span>
-        <span class="status-name">Passed House</span>
-        <span class="status-count">{{ passed_house }}</span>
-      </div>
-      <div class="status-row">
-        <span class="status-dot" style="background: #a855f7;"></span>
-        <span class="status-name">Passed Senate</span>
-        <span class="status-count">{{ passed_senate }}</span>
-      </div>
-      <div class="status-row">
-        <span class="status-dot" style="background: #f59e0b;"></span>
-        <span class="status-name">Passed Both/Enrolled</span>
-        <span class="status-count">{{ passed | plus: enrolled }}</span>
-      </div>
-      <div class="status-row">
-        <span class="status-dot" style="background: #22c55e;"></span>
-        <span class="status-name">Signed</span>
-        <span class="status-count">{{ signed }}</span>
-      </div>
-      {% if vetoed > 0 %}
-      <div class="status-row">
-        <span class="status-dot" style="background: #ef4444;"></span>
-        <span class="status-name">Vetoed</span>
-        <span class="status-count">{{ vetoed }}</span>
-      </div>
-      {% endif %}
-      {% if failed > 0 %}
-      <div class="status-row">
-        <span class="status-dot" style="background: #6b7280;"></span>
-        <span class="status-name">Failed</span>
-        <span class="status-count">{{ failed }}</span>
-      </div>
-      {% endif %}
-    </div>
-  </div>
-</section>
-
-<!-- Threat by Chamber -->
-<section class="analytics-section">
-  <h2>Threat Levels by Chamber</h2>
-  <p class="section-desc">Comparing House and Senate bill threat distributions.</p>
-
-  {% assign house_bills = site.data.bills | where: "chamber", "House" %}
-  {% assign senate_bills = site.data.bills | where: "chamber", "Senate" %}
-
-  {% assign house_critical = house_bills | where: "threat_level", "critical" | size %}
-  {% assign house_high = house_bills | where: "threat_level", "high" | size %}
-  {% assign house_moderate = house_bills | where: "threat_level", "moderate" | size %}
-  {% assign house_low = house_bills | where: "threat_level", "low" | size %}
-  {% assign house_beneficial = house_bills | where: "threat_level", "beneficial" | size %}
-
-  {% assign senate_critical = senate_bills | where: "threat_level", "critical" | size %}
-  {% assign senate_high = senate_bills | where: "threat_level", "high" | size %}
-  {% assign senate_moderate = senate_bills | where: "threat_level", "moderate" | size %}
-  {% assign senate_low = senate_bills | where: "threat_level", "low" | size %}
-  {% assign senate_beneficial = senate_bills | where: "threat_level", "beneficial" | size %}
-
-  <div class="chamber-comparison">
-    <div class="chamber-col">
-      <h3 class="house-color">House ({{ house }} bills)</h3>
-      <div class="mini-bar-chart">
-        <div class="mini-bar-row">
-          <span class="mini-label">Critical</span>
-          <div class="mini-bar-bg"><div class="mini-bar bar-critical" style="width: {% if house > 0 %}{{ house_critical | times: 100.0 | divided_by: house }}%{% else %}0{% endif %}"></div></div>
-          <span class="mini-value">{{ house_critical }}</span>
-        </div>
-        <div class="mini-bar-row">
-          <span class="mini-label">High</span>
-          <div class="mini-bar-bg"><div class="mini-bar bar-high" style="width: {% if house > 0 %}{{ house_high | times: 100.0 | divided_by: house }}%{% else %}0{% endif %}"></div></div>
-          <span class="mini-value">{{ house_high }}</span>
-        </div>
-        <div class="mini-bar-row">
-          <span class="mini-label">Moderate</span>
-          <div class="mini-bar-bg"><div class="mini-bar bar-moderate" style="width: {% if house > 0 %}{{ house_moderate | times: 100.0 | divided_by: house }}%{% else %}0{% endif %}"></div></div>
-          <span class="mini-value">{{ house_moderate }}</span>
-        </div>
-        <div class="mini-bar-row">
-          <span class="mini-label">Low</span>
-          <div class="mini-bar-bg"><div class="mini-bar bar-low" style="width: {% if house > 0 %}{{ house_low | times: 100.0 | divided_by: house }}%{% else %}0{% endif %}"></div></div>
-          <span class="mini-value">{{ house_low }}</span>
-        </div>
-        <div class="mini-bar-row">
-          <span class="mini-label">Beneficial</span>
-          <div class="mini-bar-bg"><div class="mini-bar bar-beneficial" style="width: {% if house > 0 %}{{ house_beneficial | times: 100.0 | divided_by: house }}%{% else %}0{% endif %}"></div></div>
-          <span class="mini-value">{{ house_beneficial }}</span>
-        </div>
+    <!-- Status Bar Chart -->
+    <div class="chart-card chart-card-wide">
+      <h2>Legislative Pipeline</h2>
+      <div class="chart-wrapper chart-wrapper-bar">
+        <canvas id="statusChart"></canvas>
       </div>
     </div>
-    <div class="chamber-col">
-      <h3 class="senate-color">Senate ({{ senate }} bills)</h3>
-      <div class="mini-bar-chart">
-        <div class="mini-bar-row">
-          <span class="mini-label">Critical</span>
-          <div class="mini-bar-bg"><div class="mini-bar bar-critical" style="width: {% if senate > 0 %}{{ senate_critical | times: 100.0 | divided_by: senate }}%{% else %}0{% endif %}"></div></div>
-          <span class="mini-value">{{ senate_critical }}</span>
-        </div>
-        <div class="mini-bar-row">
-          <span class="mini-label">High</span>
-          <div class="mini-bar-bg"><div class="mini-bar bar-high" style="width: {% if senate > 0 %}{{ senate_high | times: 100.0 | divided_by: senate }}%{% else %}0{% endif %}"></div></div>
-          <span class="mini-value">{{ senate_high }}</span>
-        </div>
-        <div class="mini-bar-row">
-          <span class="mini-label">Moderate</span>
-          <div class="mini-bar-bg"><div class="mini-bar bar-moderate" style="width: {% if senate > 0 %}{{ senate_moderate | times: 100.0 | divided_by: senate }}%{% else %}0{% endif %}"></div></div>
-          <span class="mini-value">{{ senate_moderate }}</span>
-        </div>
-        <div class="mini-bar-row">
-          <span class="mini-label">Low</span>
-          <div class="mini-bar-bg"><div class="mini-bar bar-low" style="width: {% if senate > 0 %}{{ senate_low | times: 100.0 | divided_by: senate }}%{% else %}0{% endif %}"></div></div>
-          <span class="mini-value">{{ senate_low }}</span>
-        </div>
-        <div class="mini-bar-row">
-          <span class="mini-label">Beneficial</span>
-          <div class="mini-bar-bg"><div class="mini-bar bar-beneficial" style="width: {% if senate > 0 %}{{ senate_beneficial | times: 100.0 | divided_by: senate }}%{% else %}0{% endif %}"></div></div>
-          <span class="mini-value">{{ senate_beneficial }}</span>
-        </div>
+
+    <!-- Threat by Chamber Stacked Bar -->
+    <div class="chart-card chart-card-wide">
+      <h2>Threat Levels by Chamber</h2>
+      <div class="chart-wrapper chart-wrapper-bar">
+        <canvas id="chamberThreatChart"></canvas>
       </div>
     </div>
   </div>
@@ -312,7 +110,7 @@ permalink: /analytics/
   {% assign recent_bills = site.data.bills | sort: "last_action_date" | reverse %}
   <div class="recent-activity">
     {% for bill in recent_bills limit: 10 %}
-    <div class="activity-row threat-{{ bill.threat_level | default: 'unknown' }}">
+    <div class="activity-row">
       <span class="activity-date">{{ bill.last_action_date }}</span>
       <span class="activity-bill">{{ bill.bill_number }}</span>
       <span class="activity-title">{{ bill.title | truncate: 60 }}</span>
@@ -381,6 +179,238 @@ permalink: /analytics/
   {% endif %}
 </section>
 
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+<script>
+// Chart data from Jekyll
+const chartData = {
+  threat: {
+    critical: {{ critical }},
+    high: {{ high }},
+    moderate: {{ moderate }},
+    low: {{ low }},
+    beneficial: {{ beneficial }}
+  },
+  chamber: {
+    house: {{ house }},
+    senate: {{ senate }}
+  },
+  status: {
+    introduced: {{ introduced | plus: prefiled }},
+    inCommittee: {{ in_committee }},
+    passedChamber: {{ passed_house | plus: passed_senate }},
+    passedBoth: {{ passed | plus: enrolled }},
+    signed: {{ signed }},
+    vetoed: {{ vetoed }},
+    failed: {{ failed }}
+  },
+  chamberThreat: {
+    house: {
+      critical: {{ house_critical }},
+      high: {{ house_high }},
+      moderate: {{ house_moderate }},
+      low: {{ house_low }},
+      beneficial: {{ house_beneficial }}
+    },
+    senate: {
+      critical: {{ senate_critical }},
+      high: {{ senate_high }},
+      moderate: {{ senate_moderate }},
+      low: {{ senate_low }},
+      beneficial: {{ senate_beneficial }}
+    }
+  }
+};
+
+// Color schemes
+const threatColors = {
+  critical: '#dc2626',
+  high: '#ea580c',
+  moderate: '#ca8a04',
+  low: '#16a34a',
+  beneficial: '#059669'
+};
+
+const chamberColors = {
+  house: '#3b82f6',
+  senate: '#8b5cf6'
+};
+
+const statusColors = ['#64748b', '#3b82f6', '#8b5cf6', '#f59e0b', '#22c55e', '#ef4444', '#6b7280'];
+
+// Chart defaults for dark theme
+Chart.defaults.color = '#94a3b8';
+Chart.defaults.borderColor = '#1e4470';
+
+// Threat Level Pie Chart
+new Chart(document.getElementById('threatChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Critical', 'High', 'Moderate', 'Low', 'Beneficial'],
+    datasets: [{
+      data: [
+        chartData.threat.critical,
+        chartData.threat.high,
+        chartData.threat.moderate,
+        chartData.threat.low,
+        chartData.threat.beneficial
+      ],
+      backgroundColor: [
+        threatColors.critical,
+        threatColors.high,
+        threatColors.moderate,
+        threatColors.low,
+        threatColors.beneficial
+      ],
+      borderWidth: 0
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          padding: 20,
+          usePointStyle: true
+        }
+      }
+    }
+  }
+});
+
+// Chamber Doughnut Chart
+new Chart(document.getElementById('chamberChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ['House', 'Senate'],
+    datasets: [{
+      data: [chartData.chamber.house, chartData.chamber.senate],
+      backgroundColor: [chamberColors.house, chamberColors.senate],
+      borderWidth: 0
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          padding: 20,
+          usePointStyle: true
+        }
+      }
+    }
+  }
+});
+
+// Status Bar Chart (Legislative Pipeline)
+new Chart(document.getElementById('statusChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Introduced', 'In Committee', 'Passed Chamber', 'Passed Both', 'Signed', 'Vetoed', 'Failed'],
+    datasets: [{
+      label: 'Bills',
+      data: [
+        chartData.status.introduced,
+        chartData.status.inCommittee,
+        chartData.status.passedChamber,
+        chartData.status.passedBoth,
+        chartData.status.signed,
+        chartData.status.vetoed,
+        chartData.status.failed
+      ],
+      backgroundColor: statusColors,
+      borderRadius: 4
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    indexAxis: 'y',
+    plugins: {
+      legend: {
+        display: false
+      }
+    },
+    scales: {
+      x: {
+        grid: {
+          color: '#1e4470'
+        }
+      },
+      y: {
+        grid: {
+          display: false
+        }
+      }
+    }
+  }
+});
+
+// Chamber Threat Comparison (Grouped Bar)
+new Chart(document.getElementById('chamberThreatChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Critical', 'High', 'Moderate', 'Low', 'Beneficial'],
+    datasets: [
+      {
+        label: 'House',
+        data: [
+          chartData.chamberThreat.house.critical,
+          chartData.chamberThreat.house.high,
+          chartData.chamberThreat.house.moderate,
+          chartData.chamberThreat.house.low,
+          chartData.chamberThreat.house.beneficial
+        ],
+        backgroundColor: chamberColors.house,
+        borderRadius: 4
+      },
+      {
+        label: 'Senate',
+        data: [
+          chartData.chamberThreat.senate.critical,
+          chartData.chamberThreat.senate.high,
+          chartData.chamberThreat.senate.moderate,
+          chartData.chamberThreat.senate.low,
+          chartData.chamberThreat.senate.beneficial
+        ],
+        backgroundColor: chamberColors.senate,
+        borderRadius: 4
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          padding: 20,
+          usePointStyle: true
+        }
+      }
+    },
+    scales: {
+      x: {
+        grid: {
+          display: false
+        }
+      },
+      y: {
+        grid: {
+          color: '#1e4470'
+        }
+      }
+    }
+  }
+});
+</script>
+
 <style>
 /* Summary Stats */
 .summary-stats {
@@ -418,274 +448,42 @@ permalink: /analytics/
 .summary-warning .summary-number { color: #f59e0b; }
 .summary-success .summary-number { color: #22c55e; }
 
-/* Pipeline */
-.pipeline {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-2);
-  padding: var(--space-6);
-  background: var(--color-bg-medium);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--color-border);
-  overflow-x: auto;
-}
-
-.pipeline-stage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-2);
-  min-width: 80px;
-}
-
-.pipeline-bar {
-  width: 80px;
-  height: 60px;
-  background: var(--stage-color);
-  border-radius: var(--radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.pipeline-count {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: white;
-}
-
-.pipeline-label {
-  font-size: 0.75rem;
-  color: var(--color-text-muted);
-  text-align: center;
-}
-
-.pipeline-arrow {
-  color: var(--color-text-dim);
-  font-size: 1.5rem;
-}
-
-.pipeline-footnote {
-  display: flex;
-  gap: var(--space-4);
-  justify-content: center;
-  margin-top: var(--space-4);
-}
-
-.footnote-item {
-  font-size: 0.875rem;
-  padding: var(--space-1) var(--space-3);
-  border-radius: var(--radius-sm);
-}
-
-.footnote-vetoed { background: rgba(239, 68, 68, 0.2); color: #ef4444; }
-.footnote-failed { background: rgba(107, 114, 128, 0.2); color: #9ca3af; }
-
-/* Analytics Page Styles */
-.analytics-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--space-6);
+/* Charts Section */
+.charts-section {
   margin-bottom: var(--space-12);
 }
 
-.analytics-card {
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+
+.chart-card {
   background: var(--color-bg-medium);
   border-radius: var(--radius-lg);
   padding: var(--space-6);
   border: 1px solid var(--color-border);
 }
 
-.analytics-card-wide {
-  grid-column: 1 / -1;
-}
-
-@media (min-width: 900px) {
-  .analytics-card-wide {
-    grid-column: span 1;
-  }
-}
-
-.analytics-card h2 {
+.chart-card h2 {
   font-size: 1.125rem;
   margin-bottom: var(--space-4);
   padding-bottom: var(--space-2);
   border-bottom: 1px solid var(--color-border);
 }
 
-/* Bar Chart */
-.bar-chart {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-3);
+.chart-card-wide {
+  grid-column: span 2;
 }
 
-.bar-row {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
+.chart-wrapper {
+  height: 300px;
+  position: relative;
 }
 
-.bar-label {
-  width: 80px;
-  font-size: 0.875rem;
-  color: var(--color-text-secondary);
-}
-
-.bar-container {
-  flex: 1;
-  height: 24px;
-  background: var(--color-bg-dark);
-  border-radius: var(--radius-sm);
-  overflow: hidden;
-}
-
-.bar {
-  height: 100%;
-  border-radius: var(--radius-sm);
-  min-width: 2px;
-  transition: width 0.3s ease;
-}
-
-.bar-critical { background: #dc2626; }
-.bar-high { background: #ea580c; }
-.bar-moderate { background: #ca8a04; }
-.bar-low { background: #16a34a; }
-.bar-beneficial { background: #059669; }
-
-.bar-value {
-  width: 50px;
-  text-align: right;
-  font-weight: 600;
-  font-size: 0.875rem;
-}
-
-/* Donut Stats */
-.donut-stats {
-  display: flex;
-  justify-content: space-around;
-  padding: var(--space-4) 0;
-}
-
-.donut-stat {
-  text-align: center;
-}
-
-.donut-number {
-  display: block;
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-.donut-label {
-  font-size: 0.875rem;
-  color: var(--color-text-muted);
-}
-
-.house-color { color: #3b82f6; }
-.senate-color { color: #8b5cf6; }
-
-/* Chamber Bar */
-.chamber-bar {
-  display: flex;
-  height: 12px;
-  border-radius: var(--radius-sm);
-  overflow: hidden;
-  margin-top: var(--space-4);
-}
-
-.chamber-house { background: #3b82f6; }
-.chamber-senate { background: #8b5cf6; }
-
-/* Status List */
-.status-list {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
-}
-
-.status-row {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-  padding: var(--space-2) 0;
-}
-
-.status-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-.status-name {
-  flex: 1;
-  font-size: 0.875rem;
-  color: var(--color-text-secondary);
-}
-
-.status-count {
-  font-weight: 600;
-  font-size: 0.875rem;
-}
-
-/* Chamber Comparison */
-.chamber-comparison {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--space-6);
-}
-
-.chamber-col {
-  background: var(--color-bg-medium);
-  border-radius: var(--radius-lg);
-  padding: var(--space-5);
-  border: 1px solid var(--color-border);
-}
-
-.chamber-col h3 {
-  font-size: 1rem;
-  margin-bottom: var(--space-4);
-}
-
-.mini-bar-chart {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
-}
-
-.mini-bar-row {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-}
-
-.mini-label {
-  width: 70px;
-  font-size: 0.75rem;
-  color: var(--color-text-muted);
-}
-
-.mini-bar-bg {
-  flex: 1;
-  height: 16px;
-  background: var(--color-bg-dark);
-  border-radius: var(--radius-sm);
-  overflow: hidden;
-}
-
-.mini-bar {
-  height: 100%;
-  border-radius: var(--radius-sm);
-  min-width: 1px;
-}
-
-.mini-value {
-  width: 35px;
-  text-align: right;
-  font-size: 0.75rem;
-  font-weight: 600;
+.chart-wrapper-bar {
+  height: 250px;
 }
 
 /* Recent Activity */
@@ -759,13 +557,12 @@ permalink: /analytics/
 
 /* Responsive */
 @media (max-width: 768px) {
-  .pipeline {
-    flex-wrap: wrap;
-    justify-content: center;
+  .charts-grid {
+    grid-template-columns: 1fr;
   }
 
-  .pipeline-arrow {
-    display: none;
+  .chart-card-wide {
+    grid-column: span 1;
   }
 
   .activity-row {
