@@ -1477,7 +1477,8 @@ main {
     top: 64px;
     left: 0;
     right: 0;
-    background: var(--color-bg-darkest);
+    background: #0a1628 !important;
+    background-color: #0a1628 !important;
     border-bottom: 1px solid var(--color-border);
     padding: var(--space-4);
     box-shadow: var(--shadow-md);
@@ -1486,15 +1487,18 @@ main {
 
   .main-nav.active {
     display: block !important;
+    background: #0a1628 !important;
   }
 
   .main-nav ul {
     flex-direction: column;
     gap: 0;
+    background: #0a1628 !important;
   }
 
   .main-nav li {
     border-bottom: 1px solid var(--color-border);
+    background: #0a1628 !important;
   }
 
   .main-nav li:last-child {
@@ -1504,6 +1508,13 @@ main {
   .main-nav a {
     display: block;
     padding: var(--space-3) 0;
+    color: #e2e8f0 !important;
+    background: #0a1628 !important;
+  }
+
+  .main-nav a:hover,
+  .main-nav a.active {
+    color: #60a5fa !important;
   }
 
   .mobile-menu-toggle.active span:nth-child(1) {

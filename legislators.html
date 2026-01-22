@@ -117,8 +117,13 @@ permalink: /legislators/
        data-bills="{{ leg.bills_count }}">
 
       <div class="leg-header">
-        <span class="leg-name">{{ leg.name }}</span>
-        <span class="party-pill party-{{ leg.party | downcase }}">{{ leg.party }}</span>
+        <img src="{{ leg.photo_url | default: 'https://ui-avatars.com/api/?name=' | append: leg.first_name | append: '+' | append: leg.last_name | append: '&background=1e4470&color=fff&size=80' }}"
+             alt="{{ leg.name }}"
+             class="leg-photo">
+        <div class="leg-header-info">
+          <span class="leg-name">{{ leg.name }}</span>
+          <span class="party-pill party-{{ leg.party | downcase }}">{{ leg.party }}</span>
+        </div>
       </div>
 
       <div class="leg-meta">
@@ -386,14 +391,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .leg-header {
   display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+.leg-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.leg-header-info {
+  flex: 1;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--space-2);
 }
 
 .leg-name {
   font-weight: 600;
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: var(--color-text-primary);
 }
 

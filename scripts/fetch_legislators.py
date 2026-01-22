@@ -26,6 +26,21 @@ def fetch_xml(url: str) -> ET.Element:
     return ET.fromstring(response.content)
 
 
+def get_photo_url(first_name: str, last_name: str, chamber: str) -> str:
+    """Generate photo URL for legislator.
+
+    WA Legislature photos follow pattern:
+    https://leg.wa.gov/house/representatives/PublishingImages/[LastName].jpg
+    https://leg.wa.gov/senate/senators/PublishingImages/[LastName].jpg
+
+    Falls back to UI Avatars service for placeholder.
+    """
+    # Generate initials-based placeholder that always works
+    initials = f"{first_name[0] if first_name else 'X'}{last_name[0] if last_name else 'X'}"
+    placeholder = f"https://ui-avatars.com/api/?name={first_name}+{last_name}&background=1e4470&color=fff&size=200"
+    return placeholder
+
+
 def parse_sponsor(elem) -> dict:
     """Parse a sponsor XML element into a dict."""
     # Handle namespaces in the XML
@@ -41,16 +56,21 @@ def parse_sponsor(elem) -> dict:
             el = elem.find(tag.lower())
         return el.text if el is not None else ""
 
+    first_name = get_text('FirstName')
+    last_name = get_text('LastName')
+    agency = get_text('Agency')
+
     return {
         'id': get_text('Id'),
         'name': get_text('Name') or get_text('LongName'),
-        'first_name': get_text('FirstName'),
-        'last_name': get_text('LastName'),
+        'first_name': first_name,
+        'last_name': last_name,
         'party': get_text('Party'),
         'district': get_text('District'),
         'email': get_text('Email'),
         'phone': get_text('Phone'),
-        'agency': get_text('Agency'),
+        'agency': agency,
+        'photo_url': get_photo_url(first_name, last_name, agency),
     }
 
 
