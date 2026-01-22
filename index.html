@@ -1,94 +1,269 @@
 ---
 layout: default
 title: Home
-description: Track Washington State legislation and make your voice heard. Find bills, submit comments, and engage with the legislative process.
+description: Track Washington State legislation, follow the money, expose legislative abuse, and take action. Your watchdog for WA State government.
 ---
 
 <section class="hero">
   <div class="hero-content">
-    <h1>Track WA State Bills.<br>Make Your Voice Heard.</h1>
-    <p class="hero-subtitle">Follow legislation that matters to you and take action with direct links to official comment and testimony pages.</p>
+    <h1>Expose WA Legislative Abuse.<br>Follow the Money. Take Action.</h1>
+    <p class="hero-subtitle">{{ site.data.bills.size }} bills tracked. {{ site.data.legislators.size }} legislators exposed. Real-time campaign finance data. Your watchdog for Washington State government.</p>
     <div class="hero-actions">
-      <a href="#featured-bills" class="btn btn-primary btn-large">See Featured Bills</a>
-      <a href="{{ '/all-bills' | relative_url }}" class="btn btn-outline btn-large">Browse All Bills</a>
+      <a href="#abuse-alert" class="btn btn-danger btn-large">See the Abuse</a>
+      <a href="{{ '/legislators/' | relative_url }}" class="btn btn-outline btn-large">Follow the Money</a>
     </div>
   </div>
 </section>
 
-<section class="quick-stats">
-  <div class="stats-grid">
-    <div class="stat-card">
-      <span class="stat-number" id="total-bills">{{ site.data.bills.size | default: '--' }}</span>
+<!-- ABUSE ALERT - Bill Flooding -->
+{% if site.data.flooding %}
+<section id="abuse-alert" class="home-section abuse-highlight">
+  <div class="section-header">
+    <span class="section-badge badge-danger">Legislative Abuse</span>
+    <h2>{{ site.data.flooding.summary.worst_day_count }} Bills in One Day</h2>
+    <p>On {{ site.data.flooding.summary.worst_single_day }}, legislators dumped {{ site.data.flooding.summary.flood_percentage }}% of all bills at once. This makes public review impossible.</p>
+  </div>
+
+  <div class="abuse-quick-stats">
+    <div class="abuse-stat">
+      <span class="abuse-num">{{ site.data.flooding.summary.flood_percentage }}%</span>
+      <span class="abuse-label">Bills on Flood Days</span>
+    </div>
+    <div class="abuse-stat">
+      <span class="abuse-num">{{ site.data.flooding.summary.flood_days_count }}</span>
+      <span class="abuse-label">Flood Days (50+ bills)</span>
+    </div>
+    <div class="abuse-stat">
+      <span class="abuse-num">{{ site.data.flooding.total_bills }}</span>
+      <span class="abuse-label">Total Bills</span>
+    </div>
+  </div>
+
+  <div class="section-cta">
+    <a href="{{ '/analytics/' | relative_url }}" class="btn btn-danger">See Full Analysis</a>
+    <a href="{{ '/how-to-act/' | relative_url }}#citizen-initiative" class="btn btn-outline">Fight Back</a>
+  </div>
+</section>
+{% endif %}
+
+<!-- KEY STATS ROW -->
+<section class="home-stats">
+  {% assign critical_count = site.data.bills | where: "threat_level", "critical" | size %}
+  {% assign high_count = site.data.bills | where: "threat_level", "high" | size %}
+  {% assign harmful_total = critical_count | plus: high_count %}
+
+  <div class="stats-row">
+    <a href="{{ '/all-bills/' | relative_url }}" class="stat-box">
+      <span class="stat-icon">📜</span>
+      <span class="stat-number">{{ site.data.bills.size }}</span>
       <span class="stat-label">Bills Tracked</span>
-    </div>
-    <div class="stat-card">
-      <span class="stat-number" id="featured-count">{{ site.data.featured.size | default: '--' }}</span>
-      <span class="stat-label">Featured Bills</span>
-    </div>
-    <div class="stat-card">
-      <span class="stat-number">{{ site.current_session }}</span>
-      <span class="stat-label">Legislative Session</span>
-    </div>
+    </a>
+    <a href="{{ '/all-bills/' | relative_url }}?threat=critical" class="stat-box stat-danger">
+      <span class="stat-icon">⚠️</span>
+      <span class="stat-number">{{ harmful_total }}</span>
+      <span class="stat-label">Harmful Bills</span>
+    </a>
+    <a href="{{ '/legislators/' | relative_url }}" class="stat-box stat-money">
+      <span class="stat-icon">💰</span>
+      <span class="stat-number">{{ site.data.legislators.size }}</span>
+      <span class="stat-label">Legislators</span>
+    </a>
+    <a href="{{ '/analytics/' | relative_url }}" class="stat-box">
+      <span class="stat-icon">📊</span>
+      <span class="stat-number">Live</span>
+      <span class="stat-label">Analytics</span>
+    </a>
   </div>
 </section>
 
-<section id="featured-bills" class="featured-section">
-  <header class="section-header">
-    <h2>Featured Bills to Watch</h2>
-    <p>Bills we're tracking closely. Click any bill to learn more and take action.</p>
-  </header>
+<!-- FOLLOW THE MONEY - Legislators Preview -->
+<section class="home-section">
+  <div class="section-header">
+    <span class="section-badge badge-money">Follow the Money</span>
+    <h2>Top Fundraising Legislators</h2>
+    <p>See who's collecting the most campaign cash and from whom.</p>
+  </div>
 
-  {% if site.data.featured and site.data.featured.size > 0 %}
+  {% if site.data.campaign_finance.top_fundraisers %}
+  <div class="top-legislators-grid">
+    {% for leg in site.data.campaign_finance.top_fundraisers limit: 6 %}
+    {% assign slug = leg.name | slugify %}
+    <a href="{{ '/legislators/' | relative_url }}{{ slug }}/" class="legislator-preview">
+      <div class="leg-rank">#{{ forloop.index }}</div>
+      <img src="https://ui-avatars.com/api/?name={{ leg.name | url_encode }}&background=1e4470&color=fff&size=60"
+           alt="{{ leg.name }}" class="leg-thumb">
+      <div class="leg-info">
+        <span class="leg-name">{{ leg.name }}</span>
+        <span class="leg-detail">{{ leg.party }} - {{ leg.chamber }}</span>
+      </div>
+      <div class="leg-money">${{ leg.total_raised | divided_by: 1000 | round }}K</div>
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <div class="section-cta">
+    <a href="{{ '/legislators/' | relative_url }}" class="btn btn-primary">View All Legislators</a>
+  </div>
+</section>
+
+<!-- CRITICAL BILLS -->
+<section class="home-section" id="featured-bills">
+  <div class="section-header">
+    <span class="section-badge badge-critical">High Priority</span>
+    <h2>Critical Threat Bills</h2>
+    <p>Bills that pose the highest threat and need immediate attention.</p>
+  </div>
+
+  {% assign critical_bills = site.data.bills | where: "threat_level", "critical" %}
+  {% if critical_bills.size > 0 %}
   <div class="bills-grid">
-    {% for featured in site.data.featured %}
-      {% assign bill = site.data.bills | where: "bill_number", featured.bill_number | first %}
-      {% if bill %}
-        {% assign merged_bill = bill | merge: featured %}
-        {% include bill-card.html bill=merged_bill featured=true %}
-      {% else %}
-        {% include bill-card.html bill=featured featured=true %}
-      {% endif %}
+    {% for bill in critical_bills limit: 4 %}
+      {% include bill-card.html bill=bill %}
     {% endfor %}
   </div>
   {% else %}
   <div class="empty-state">
-    <p>No featured bills yet. Check back soon or <a href="{{ '/all-bills' | relative_url }}">browse all bills</a>.</p>
+    <p>No critical threat bills at this time.</p>
   </div>
   {% endif %}
 
-  <div class="section-footer">
-    <a href="{{ '/all-bills' | relative_url }}" class="btn btn-secondary">View All Bills &rarr;</a>
+  <div class="section-cta">
+    <a href="{{ '/all-bills/' | relative_url }}?threat=critical" class="btn btn-danger">View All Critical Bills</a>
+    <a href="{{ '/all-bills/' | relative_url }}" class="btn btn-secondary">Browse All {{ site.data.bills.size }} Bills</a>
   </div>
 </section>
 
-<section class="action-callout">
-  <div class="callout-content">
-    <h2>Ready to Take Action?</h2>
-    <p>Every voice matters in the legislative process. Learn how to submit comments, testify at hearings, and contact your representatives.</p>
-    <a href="{{ '/how-to-act' | relative_url }}" class="btn btn-primary btn-large">Learn How to Participate</a>
+<!-- ANALYTICS PREVIEW -->
+<section class="home-section analytics-preview">
+  <div class="section-header">
+    <span class="section-badge">Data & Charts</span>
+    <h2>Bill Analytics</h2>
+    <p>Visual breakdown of legislation by threat level, chamber, and timeline.</p>
+  </div>
+
+  <div class="analytics-preview-grid">
+    <div class="preview-card">
+      <h3>Threat Distribution</h3>
+      <div class="threat-bars">
+        {% assign total = site.data.bills.size | times: 1.0 %}
+        {% assign critical = site.data.bills | where: "threat_level", "critical" | size %}
+        {% assign high = site.data.bills | where: "threat_level", "high" | size %}
+        {% assign moderate = site.data.bills | where: "threat_level", "moderate" | size %}
+        {% assign low = site.data.bills | where: "threat_level", "low" | size %}
+        {% assign beneficial = site.data.bills | where: "threat_level", "beneficial" | size %}
+
+        <div class="threat-bar-row">
+          <span class="bar-label">Critical</span>
+          <div class="bar-track"><div class="bar-fill bar-critical" style="width: {% if total > 0 %}{{ critical | times: 100 | divided_by: total }}%{% else %}0{% endif %}"></div></div>
+          <span class="bar-count">{{ critical }}</span>
+        </div>
+        <div class="threat-bar-row">
+          <span class="bar-label">High</span>
+          <div class="bar-track"><div class="bar-fill bar-high" style="width: {% if total > 0 %}{{ high | times: 100 | divided_by: total }}%{% else %}0{% endif %}"></div></div>
+          <span class="bar-count">{{ high }}</span>
+        </div>
+        <div class="threat-bar-row">
+          <span class="bar-label">Moderate</span>
+          <div class="bar-track"><div class="bar-fill bar-moderate" style="width: {% if total > 0 %}{{ moderate | times: 100 | divided_by: total }}%{% else %}0{% endif %}"></div></div>
+          <span class="bar-count">{{ moderate }}</span>
+        </div>
+        <div class="threat-bar-row">
+          <span class="bar-label">Low</span>
+          <div class="bar-track"><div class="bar-fill bar-low" style="width: {% if total > 0 %}{{ low | times: 100 | divided_by: total }}%{% else %}0{% endif %}"></div></div>
+          <span class="bar-count">{{ low }}</span>
+        </div>
+        <div class="threat-bar-row">
+          <span class="bar-label">Beneficial</span>
+          <div class="bar-track"><div class="bar-fill bar-beneficial" style="width: {% if total > 0 %}{{ beneficial | times: 100 | divided_by: total }}%{% else %}0{% endif %}"></div></div>
+          <span class="bar-count">{{ beneficial }}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="preview-card">
+      <h3>By Chamber</h3>
+      {% assign house = site.data.bills | where: "chamber", "House" | size %}
+      {% assign senate = site.data.bills | where: "chamber", "Senate" | size %}
+      <div class="chamber-split">
+        <div class="chamber-box chamber-house">
+          <span class="chamber-num">{{ house }}</span>
+          <span class="chamber-label">House</span>
+        </div>
+        <div class="chamber-box chamber-senate">
+          <span class="chamber-num">{{ senate }}</span>
+          <span class="chamber-label">Senate</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-cta">
+    <a href="{{ '/analytics/' | relative_url }}" class="btn btn-primary">View Full Analytics</a>
   </div>
 </section>
 
-<section class="quick-links">
-  <h2>Quick Access</h2>
+<!-- TAKE ACTION -->
+<section class="home-section action-section">
+  <div class="section-header">
+    <span class="section-badge badge-action">Take Action</span>
+    <h2>Fight Back Against Legislative Abuse</h2>
+    <p>Washington gives citizens the power to bypass the legislature entirely.</p>
+  </div>
+
+  <div class="action-options">
+    <div class="action-card">
+      <span class="action-icon">📜</span>
+      <h3>Citizen Initiative</h3>
+      <p>Propose your own law. ~324,000 signatures needed to get on the ballot.</p>
+      <a href="{{ '/how-to-act/' | relative_url }}#citizen-initiative" class="btn btn-small">Learn How</a>
+    </div>
+    <div class="action-card">
+      <span class="action-icon">📝</span>
+      <h3>Comment on Bills</h3>
+      <p>Submit written comments before hearings. Your voice is part of the record.</p>
+      <a href="{{ '/how-to-act/' | relative_url }}#submit-comments" class="btn btn-small">Learn How</a>
+    </div>
+    <div class="action-card">
+      <span class="action-icon">🎤</span>
+      <h3>Testify</h3>
+      <p>Speak directly to committees. Remote testimony available via Zoom.</p>
+      <a href="{{ '/how-to-act/' | relative_url }}#testify" class="btn btn-small">Learn How</a>
+    </div>
+    <div class="action-card">
+      <span class="action-icon">📞</span>
+      <h3>Contact Legislators</h3>
+      <p>Call, email, or meet with your representatives. They work for you.</p>
+      <a href="{{ '/how-to-act/' | relative_url }}#contact-legislators" class="btn btn-small">Learn How</a>
+    </div>
+  </div>
+
+  <div class="section-cta">
+    <a href="{{ '/how-to-act/' | relative_url }}" class="btn btn-primary btn-large">Full Action Guide</a>
+  </div>
+</section>
+
+<!-- QUICK LINKS -->
+<section class="home-section">
+  <h2>Quick Links</h2>
   <div class="links-grid">
     <a href="https://app.leg.wa.gov/districtfinder/" class="quick-link" target="_blank" rel="noopener">
-      <span class="quick-link-icon">&#128205;</span>
+      <span class="quick-link-icon">📍</span>
       <span class="quick-link-title">Find Your District</span>
       <span class="quick-link-desc">Look up your legislators</span>
     </a>
     <a href="https://leg.wa.gov/legislature/pages/calendar.aspx" class="quick-link" target="_blank" rel="noopener">
-      <span class="quick-link-icon">&#128197;</span>
+      <span class="quick-link-icon">📅</span>
       <span class="quick-link-title">Legislative Calendar</span>
       <span class="quick-link-desc">Upcoming hearings & sessions</span>
     </a>
     <a href="https://tvw.org" class="quick-link" target="_blank" rel="noopener">
-      <span class="quick-link-icon">&#128250;</span>
+      <span class="quick-link-icon">📺</span>
       <span class="quick-link-title">Watch TVW</span>
       <span class="quick-link-desc">Live & recorded hearings</span>
     </a>
     <a href="tel:1-800-562-6000" class="quick-link">
-      <span class="quick-link-icon">&#128222;</span>
+      <span class="quick-link-icon">📞</span>
       <span class="quick-link-title">Legislative Hotline</span>
       <span class="quick-link-desc">1-800-562-6000</span>
     </a>
@@ -97,6 +272,489 @@ description: Track Washington State legislation and make your voice heard. Find 
 
 {% if site.data.bills %}
 <section class="data-freshness">
-  <p>Data last updated: <time id="last-updated">{{ site.time | date: "%B %d, %Y at %I:%M %p" }}</time></p>
+  <p>Data updated daily from official sources. Last build: <time>{{ site.time | date: "%B %d, %Y" }}</time></p>
 </section>
 {% endif %}
+
+<style>
+/* HOME PAGE STYLES */
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #0a1628 0%, #1e3a5f 50%, #0f2744 100%);
+  padding: var(--space-12) var(--space-4);
+  text-align: center;
+  border-bottom: 3px solid #dc2626;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-4);
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  max-width: 700px;
+  margin: 0 auto var(--space-6);
+}
+
+.hero-actions {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-danger {
+  background: #dc2626;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #b91c1c;
+}
+
+/* Home Stats */
+.home-stats {
+  margin: calc(-1 * var(--space-8)) auto var(--space-8);
+  max-width: 900px;
+  padding: 0 var(--space-4);
+}
+
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-3);
+}
+
+.stat-box {
+  background: var(--color-bg-medium);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--color-border);
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.stat-box:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-primary);
+}
+
+.stat-icon {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: var(--space-2);
+}
+
+.stat-box .stat-number {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-primary-light);
+}
+
+.stat-box.stat-danger .stat-number {
+  color: #fca5a5;
+}
+
+.stat-box.stat-money .stat-number {
+  color: #86efac;
+}
+
+.stat-box .stat-label {
+  font-size: 0.75rem;
+  color: var(--color-text-dim);
+  text-transform: uppercase;
+}
+
+/* Home Sections */
+.home-section {
+  padding: var(--space-10) var(--space-4);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.section-badge {
+  display: inline-block;
+  padding: var(--space-1) var(--space-3);
+  background: var(--color-bg-darkest);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-3);
+  color: var(--color-text-muted);
+}
+
+.badge-danger {
+  background: rgba(220, 38, 38, 0.2);
+  color: #fca5a5;
+}
+
+.badge-money {
+  background: rgba(22, 163, 74, 0.2);
+  color: #86efac;
+}
+
+.badge-critical {
+  background: rgba(220, 38, 38, 0.2);
+  color: #fca5a5;
+}
+
+.badge-action {
+  background: rgba(59, 130, 246, 0.2);
+  color: #93c5fd;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  margin-bottom: var(--space-2);
+}
+
+.section-header p {
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section-cta {
+  text-align: center;
+  margin-top: var(--space-6);
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Abuse Highlight */
+.abuse-highlight {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.15) 0%, var(--color-bg-dark) 100%);
+  border-top: 3px solid #dc2626;
+  border-bottom: 3px solid #dc2626;
+  max-width: none;
+  padding: var(--space-10) var(--space-4);
+}
+
+.abuse-quick-stats {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-8);
+  flex-wrap: wrap;
+  margin: var(--space-6) 0;
+}
+
+.abuse-stat {
+  text-align: center;
+}
+
+.abuse-num {
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fca5a5;
+}
+
+.abuse-label {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+/* Top Legislators Grid */
+.top-legislators-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-3);
+}
+
+.legislator-preview {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  background: var(--color-bg-medium);
+  padding: var(--space-3);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--color-border);
+  transition: border-color 0.2s;
+}
+
+.legislator-preview:hover {
+  border-color: var(--color-primary);
+}
+
+.leg-rank {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-dim);
+  min-width: 35px;
+}
+
+.leg-thumb {
+  width: 45px;
+  height: 45px;
+  border-radius: var(--radius-md);
+}
+
+.leg-info {
+  flex: 1;
+}
+
+.legislator-preview .leg-name {
+  display: block;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.leg-detail {
+  font-size: 0.75rem;
+  color: var(--color-text-dim);
+}
+
+.leg-money {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #86efac;
+  font-family: var(--font-mono);
+}
+
+/* Analytics Preview */
+.analytics-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-4);
+}
+
+.preview-card {
+  background: var(--color-bg-medium);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  border: 1px solid var(--color-border);
+}
+
+.preview-card h3 {
+  font-size: 1rem;
+  margin-bottom: var(--space-4);
+  color: var(--color-text-secondary);
+}
+
+/* Threat Bars */
+.threat-bars {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.threat-bar-row {
+  display: grid;
+  grid-template-columns: 70px 1fr 40px;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+.bar-label {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.bar-track {
+  height: 12px;
+  background: var(--color-bg-darkest);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  min-width: 4px;
+}
+
+.bar-critical { background: #dc2626; }
+.bar-high { background: #ea580c; }
+.bar-moderate { background: #ca8a04; }
+.bar-low { background: #16a34a; }
+.bar-beneficial { background: #059669; }
+
+.bar-count {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-align: right;
+  font-family: var(--font-mono);
+}
+
+/* Chamber Split */
+.chamber-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.chamber-box {
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.chamber-house {
+  background: rgba(59, 130, 246, 0.15);
+  border: 1px solid #3b82f6;
+}
+
+.chamber-senate {
+  background: rgba(139, 92, 246, 0.15);
+  border: 1px solid #8b5cf6;
+}
+
+.chamber-num {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.chamber-house .chamber-num { color: #93c5fd; }
+.chamber-senate .chamber-num { color: #c4b5fd; }
+
+.chamber-label {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+/* Action Section */
+.action-section {
+  background: var(--color-bg-medium);
+  border-radius: var(--radius-lg);
+  max-width: 1000px;
+}
+
+.action-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-4);
+}
+
+.action-card {
+  background: var(--color-bg-darkest);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  text-align: center;
+}
+
+.action-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: var(--space-2);
+}
+
+.action-card h3 {
+  font-size: 1rem;
+  margin-bottom: var(--space-2);
+}
+
+.action-card p {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3);
+}
+
+.btn-small {
+  padding: var(--space-2) var(--space-3);
+  font-size: 0.75rem;
+}
+
+/* Quick Links */
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-3);
+}
+
+.quick-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-4);
+  background: var(--color-bg-medium);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--color-border);
+  transition: border-color 0.2s;
+  text-align: center;
+}
+
+.quick-link:hover {
+  border-color: var(--color-primary);
+}
+
+.quick-link-icon {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-2);
+}
+
+.quick-link-title {
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.quick-link-desc {
+  font-size: 0.75rem;
+  color: var(--color-text-dim);
+}
+
+/* Data Freshness */
+.data-freshness {
+  text-align: center;
+  padding: var(--space-6);
+  color: var(--color-text-dim);
+  font-size: 0.875rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .stats-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .abuse-num {
+    font-size: 2rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .top-legislators-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stat-box .stat-number {
+    font-size: 1.25rem;
+  }
+
+  .abuse-quick-stats {
+    gap: var(--space-4);
+  }
+}
+</style>
