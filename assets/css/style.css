@@ -9,12 +9,12 @@
   --color-primary-dark: #2563eb;
   --color-primary-light: #60a5fa;
 
-  /* Dark navy backgrounds */
-  --color-bg-darkest: #0a0f1a;
-  --color-bg-dark: #0f172a;
-  --color-bg-medium: #1e293b;
-  --color-bg-light: #334155;
-  --color-bg-lighter: #475569;
+  /* Navy blue backgrounds */
+  --color-bg-darkest: #0a1628;
+  --color-bg-dark: #0f2744;
+  --color-bg-medium: #163354;
+  --color-bg-light: #1e4470;
+  --color-bg-lighter: #2a5a8f;
 
   /* Text colors */
   --color-text-primary: #f1f5f9;
@@ -23,8 +23,8 @@
   --color-text-dim: #64748b;
 
   /* Borders */
-  --color-border: #334155;
-  --color-border-light: #475569;
+  --color-border: #1e4470;
+  --color-border-light: #2a5a8f;
 
   /* Semantic colors */
   --color-success: #22c55e;
