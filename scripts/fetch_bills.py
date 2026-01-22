@@ -389,8 +389,8 @@ def save_bills(bills: list[dict]) -> None:
 
     output_file = DATA_DIR / "bills.json"
 
-    # Sort by last action date (most recent first)
-    bills.sort(key=lambda b: b.get("last_action_date", ""), reverse=True)
+    # Sort by last action date (most recent first), handling None values
+    bills.sort(key=lambda b: b.get("last_action_date") or "", reverse=True)
 
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(bills, f, indent=2, ensure_ascii=False)
