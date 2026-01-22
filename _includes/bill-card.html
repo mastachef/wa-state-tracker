@@ -10,7 +10,8 @@
   </header>
 
   <h3 class="bill-card-title">
-    <a href="{{ '/bill/' | append: include.bill.bill_number | slugify | relative_url }}">
+    {% assign bill_slug = include.bill.bill_number | slugify %}
+    <a href="{{ '/bill/' | append: bill_slug | append: '/' | relative_url }}">
       {{ include.bill.title | truncate: 100 }}
     </a>
   </h3>
@@ -46,7 +47,7 @@
       {% endif %}
     </div>
     <div class="bill-card-actions">
-      <a href="{{ '/bill/' | append: include.bill.bill_number | slugify | relative_url }}" class="btn btn-small">View Details</a>
+      <a href="{{ '/bill/' | append: bill_slug | append: '/' | relative_url }}" class="btn btn-small">View Details</a>
       <a href="https://app.leg.wa.gov/pbc/bill/{{ include.bill.bill_number | remove: 'HB ' | remove: 'SB ' | remove: 'HJR ' | remove: 'SJR ' }}"
          class="btn btn-small btn-primary"
          target="_blank"

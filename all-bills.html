@@ -73,8 +73,9 @@ description: Browse and search all Washington State bills in the current legisla
             <span class="bill-number">{{ bill.bill_number }}</span>
             <span class="status-badge status-{{ bill.status | slugify }}">{{ bill.status }}</span>
           </header>
+          {% assign bill_slug = bill.bill_number | slugify %}
           <h3 class="bill-card-title">
-            <a href="{{ '/bill/' | append: bill.bill_number | slugify | relative_url }}">
+            <a href="{{ '/bill/' | append: bill_slug | append: '/' | relative_url }}">
               {{ bill.title | truncate: 100 }}
             </a>
           </h3>
@@ -91,7 +92,7 @@ description: Browse and search all Washington State bills in the current legisla
               {% endif %}
             </div>
             <div class="bill-card-actions">
-              <a href="{{ '/bill/' | append: bill.bill_number | slugify | relative_url }}" class="btn btn-small">View Details</a>
+              <a href="{{ '/bill/' | append: bill_slug | append: '/' | relative_url }}" class="btn btn-small">View Details</a>
               <a href="https://app.leg.wa.gov/pbc/bill/{{ bill.bill_number | remove: 'HB ' | remove: 'SB ' | remove: 'HJR ' | remove: 'SJR ' }}"
                  class="btn btn-small btn-primary"
                  target="_blank"
