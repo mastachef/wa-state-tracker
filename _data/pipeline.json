@@ -4,7 +4,7 @@
       "id": "introduced",
       "name": "Introduced",
       "total": 2522,
-      "harmful": 441
+      "harmful": 451
     },
     {
       "id": "passed_origin",
@@ -180,7 +180,7 @@
   ],
   "summary": {
     "total_active": 3133,
-    "total_harmful_active": 486,
+    "total_harmful_active": 496,
     "total_dead": 1
   }
 }

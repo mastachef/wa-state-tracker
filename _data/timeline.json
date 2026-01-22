@@ -4390,11 +4390,11 @@
   },
   {
     "date": "2026-01-22",
-    "activity": 125,
-    "cumulative": 2670,
+    "activity": 127,
+    "cumulative": 2672,
     "critical": 2,
     "high": 44,
-    "moderate": 79,
+    "moderate": 81,
     "low": 0,
     "beneficial": 0,
     "cumulative_threats": 343
@@ -4402,7 +4402,7 @@
   {
     "date": "2026-01-23",
     "activity": 94,
-    "cumulative": 2764,
+    "cumulative": 2766,
     "critical": 0,
     "high": 34,
     "moderate": 60,
@@ -4413,7 +4413,7 @@
   {
     "date": "2026-01-24",
     "activity": 0,
-    "cumulative": 2764,
+    "cumulative": 2766,
     "critical": 0,
     "high": 0,
     "moderate": 0,
@@ -4424,7 +4424,7 @@
   {
     "date": "2026-01-25",
     "activity": 0,
-    "cumulative": 2764,
+    "cumulative": 2766,
     "critical": 0,
     "high": 0,
     "moderate": 0,
@@ -4435,7 +4435,7 @@
   {
     "date": "2026-01-26",
     "activity": 47,
-    "cumulative": 2811,
+    "cumulative": 2813,
     "critical": 1,
     "high": 16,
     "moderate": 30,
@@ -4446,7 +4446,7 @@
   {
     "date": "2026-01-27",
     "activity": 102,
-    "cumulative": 2913,
+    "cumulative": 2915,
     "critical": 0,
     "high": 39,
     "moderate": 63,
@@ -4457,7 +4457,7 @@
   {
     "date": "2026-01-28",
     "activity": 72,
-    "cumulative": 2985,
+    "cumulative": 2987,
     "critical": 0,
     "high": 28,
     "moderate": 44,
@@ -4468,7 +4468,7 @@
   {
     "date": "2026-01-29",
     "activity": 68,
-    "cumulative": 3053,
+    "cumulative": 3055,
     "critical": 0,
     "high": 15,
     "moderate": 53,
@@ -4479,7 +4479,7 @@
   {
     "date": "2026-01-30",
     "activity": 64,
-    "cumulative": 3117,
+    "cumulative": 3119,
     "critical": 1,
     "high": 20,
     "moderate": 43,
