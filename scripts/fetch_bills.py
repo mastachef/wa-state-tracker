@@ -111,8 +111,30 @@ def get_bill_details(bill_id: int, api_key: str) -> dict | None:
         return None
 
 
-def normalize_status(status_text: str) -> str:
-    """Normalize bill status to consistent values for display."""
+def normalize_status(status_input) -> str:
+    """Normalize bill status to consistent values for display.
+
+    LegiScan returns status as an integer code. Map it to human-readable text.
+    """
+    # LegiScan status codes
+    # https://legiscan.com/misc/LegiScan_API_User_Manual.pdf
+    status_codes = {
+        0: "N/A",
+        1: "Introduced",
+        2: "Engrossed",
+        3: "Enrolled",
+        4: "Passed",
+        5: "Vetoed",
+        6: "Failed",
+        # Additional common statuses we may see as text
+    }
+
+    # Handle integer status codes
+    if isinstance(status_input, int):
+        return status_codes.get(status_input, f"Status {status_input}")
+
+    # Handle string status
+    status_text = str(status_input) if status_input else "Unknown"
     status_lower = status_text.lower()
 
     status_map = {
@@ -128,6 +150,8 @@ def normalize_status(status_text: str) -> str:
         "vetoed": "Vetoed",
         "dead": "Dead",
         "failed": "Failed",
+        "engrossed": "Engrossed",
+        "enrolled": "Enrolled",
     }
 
     for key, value in status_map.items():
@@ -205,8 +229,12 @@ def transform_bill_data(master_bill: dict, detail_bill: dict | None) -> dict:
     return bill
 
 
-def fetch_all_bills(api_key: str, limit: int | None = None) -> list[dict]:
-    """Fetch all bills from the current WA session."""
+def fetch_all_bills(api_key: str, limit: int | None = None, fetch_details: bool = False) -> list[dict]:
+    """Fetch all bills from the current WA session.
+
+    By default, uses master list data only (fast, no extra API calls).
+    Set fetch_details=True to get full bill details (slow, many API calls).
+    """
     print("Fetching Washington State session info...")
     session = get_wa_session(api_key)
 
@@ -223,22 +251,31 @@ def fetch_all_bills(api_key: str, limit: int | None = None) -> list[dict]:
 
     if limit:
         master_bills = master_bills[:limit]
-        print(f"Limiting to {limit} bills for testing")
+        print(f"Limiting to {limit} bills")
 
     bills = []
     total = len(master_bills)
 
-    for i, master_bill in enumerate(master_bills, 1):
-        bill_id = master_bill.get("bill_id")
-        bill_number = master_bill.get("number", "Unknown")
+    if fetch_details:
+        # Fetch full details for each bill (slow - use with limit)
+        for i, master_bill in enumerate(master_bills, 1):
+            bill_id = master_bill.get("bill_id")
+            bill_number = master_bill.get("number", "Unknown")
 
-        print(f"  [{i}/{total}] Fetching {bill_number}...", end="", flush=True)
+            print(f"  [{i}/{total}] Fetching {bill_number}...", end="", flush=True)
 
-        detail_bill = get_bill_details(bill_id, api_key)
-        bill_data = transform_bill_data(master_bill, detail_bill)
-        bills.append(bill_data)
+            detail_bill = get_bill_details(bill_id, api_key)
+            bill_data = transform_bill_data(master_bill, detail_bill)
+            bills.append(bill_data)
 
-        print(" done")
+            print(" done")
+    else:
+        # Use master list data only (fast)
+        print("Using master list data (no detail fetch)...")
+        for master_bill in master_bills:
+            bill_data = transform_bill_data(master_bill, None)
+            bills.append(bill_data)
+        print(f"Processed {len(bills)} bills from master list")
 
     return bills
 
@@ -365,7 +402,8 @@ def main():
     """Main entry point."""
     parser = argparse.ArgumentParser(description="Fetch WA State bill data from LegiScan")
     parser.add_argument("--test", action="store_true", help="Use sample data instead of API")
-    parser.add_argument("--limit", type=int, help="Limit number of bills to fetch (for testing)")
+    parser.add_argument("--limit", type=int, help="Limit number of bills to fetch")
+    parser.add_argument("--details", action="store_true", help="Fetch full details for each bill (slow)")
     args = parser.parse_args()
 
     print("=" * 60)
@@ -378,7 +416,7 @@ def main():
             bills = generate_sample_data()
         else:
             api_key = get_api_key()
-            bills = fetch_all_bills(api_key, limit=args.limit)
+            bills = fetch_all_bills(api_key, limit=args.limit, fetch_details=args.details)
 
         save_bills(bills)
 
