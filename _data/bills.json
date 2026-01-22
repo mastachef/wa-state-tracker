@@ -1,77 +1,39 @@
 [
   {
-    "bill_id": 1001,
-    "bill_number": "HB 1234",
-    "title": "Concerning digital privacy protections for consumers",
-    "description": "An act relating to establishing comprehensive digital privacy rights for Washington residents, including data collection transparency requirements and consumer opt-out provisions.",
-    "status": "In Committee",
-    "chamber": "House",
-    "sponsors": ["Rep. Smith", "Rep. Johnson"],
-    "introduced_date": "2025-01-13",
-    "last_action": "Referred to Innovation, Community & Economic Development, & Veterans.",
-    "last_action_date": "2025-01-15",
-    "committee": "Innovation, Community & Economic Development, & Veterans",
-    "history": [
-      {"date": "2025-01-13", "action": "First reading, referred to Innovation, Community & Economic Development, & Veterans."},
-      {"date": "2025-01-15", "action": "Scheduled for public hearing in committee."}
-    ],
-    "official_url": "https://app.leg.wa.gov/billsummary?BillNumber=1234&Year=2025"
-  },
-  {
     "bill_id": 1002,
     "bill_number": "SB 5678",
     "title": "Establishing a statewide housing affordability program",
     "description": "An act relating to creating a comprehensive housing affordability initiative, including incentives for affordable housing development and tenant protection measures.",
     "status": "Passed Senate",
     "chamber": "Senate",
-    "sponsors": ["Sen. Williams", "Sen. Davis", "Sen. Martinez"],
+    "sponsors": [
+      "Sen. Williams",
+      "Sen. Davis",
+      "Sen. Martinez"
+    ],
     "introduced_date": "2025-01-10",
     "last_action": "Third reading, passed; yeas, 35; nays, 14.",
     "last_action_date": "2025-02-01",
     "committee": "Housing",
     "history": [
-      {"date": "2025-01-10", "action": "First reading, referred to Housing."},
-      {"date": "2025-01-18", "action": "Public hearing in the Senate Committee on Housing."},
-      {"date": "2025-01-25", "action": "Executive action taken in the Senate Committee on Housing."},
-      {"date": "2025-02-01", "action": "Third reading, passed; yeas, 35; nays, 14."}
+      {
+        "date": "2025-01-10",
+        "action": "First reading, referred to Housing."
+      },
+      {
+        "date": "2025-01-18",
+        "action": "Public hearing in the Senate Committee on Housing."
+      },
+      {
+        "date": "2025-01-25",
+        "action": "Executive action taken in the Senate Committee on Housing."
+      },
+      {
+        "date": "2025-02-01",
+        "action": "Third reading, passed; yeas, 35; nays, 14."
+      }
     ],
     "official_url": "https://app.leg.wa.gov/billsummary?BillNumber=5678&Year=2025"
-  },
-  {
-    "bill_id": 1003,
-    "bill_number": "HB 2001",
-    "title": "Concerning environmental protection standards",
-    "description": "An act relating to strengthening environmental protection standards for industrial facilities, including emission reporting requirements and compliance enforcement.",
-    "status": "Introduced",
-    "chamber": "House",
-    "sponsors": ["Rep. Chen"],
-    "introduced_date": "2025-01-20",
-    "last_action": "First reading, referred to Environment & Energy.",
-    "last_action_date": "2025-01-20",
-    "committee": "Environment & Energy",
-    "history": [
-      {"date": "2025-01-20", "action": "First reading, referred to Environment & Energy."}
-    ],
-    "official_url": "https://app.leg.wa.gov/billsummary?BillNumber=2001&Year=2025"
-  },
-  {
-    "bill_id": 1004,
-    "bill_number": "SB 5100",
-    "title": "Relating to public education funding",
-    "description": "An act relating to increasing state funding for K-12 public education, including provisions for teacher compensation and classroom resources.",
-    "status": "In Committee",
-    "chamber": "Senate",
-    "sponsors": ["Sen. Thompson", "Sen. Anderson"],
-    "introduced_date": "2025-01-12",
-    "last_action": "Public hearing scheduled for February 5.",
-    "last_action_date": "2025-01-28",
-    "committee": "Early Learning & K-12 Education",
-    "history": [
-      {"date": "2025-01-12", "action": "First reading, referred to Early Learning & K-12 Education."},
-      {"date": "2025-01-20", "action": "Scheduled for public hearing."},
-      {"date": "2025-01-28", "action": "Public hearing scheduled for February 5."}
-    ],
-    "official_url": "https://app.leg.wa.gov/billsummary?BillNumber=5100&Year=2025"
   },
   {
     "bill_id": 1005,
@@ -80,16 +42,109 @@
     "description": "An act relating to requiring healthcare providers and insurers to publish pricing information for common procedures and services.",
     "status": "Passed Committee",
     "chamber": "House",
-    "sponsors": ["Rep. Garcia", "Rep. Lee", "Rep. Patel"],
+    "sponsors": [
+      "Rep. Garcia",
+      "Rep. Lee",
+      "Rep. Patel"
+    ],
     "introduced_date": "2025-01-11",
     "last_action": "Executive action taken; reported out of committee as substitute.",
     "last_action_date": "2025-01-30",
     "committee": "Health Care & Wellness",
     "history": [
-      {"date": "2025-01-11", "action": "First reading, referred to Health Care & Wellness."},
-      {"date": "2025-01-22", "action": "Public hearing in committee."},
-      {"date": "2025-01-30", "action": "Executive action taken; reported out of committee as substitute."}
+      {
+        "date": "2025-01-11",
+        "action": "First reading, referred to Health Care & Wellness."
+      },
+      {
+        "date": "2025-01-22",
+        "action": "Public hearing in committee."
+      },
+      {
+        "date": "2025-01-30",
+        "action": "Executive action taken; reported out of committee as substitute."
+      }
     ],
     "official_url": "https://app.leg.wa.gov/billsummary?BillNumber=1500&Year=2025"
+  },
+  {
+    "bill_id": 1004,
+    "bill_number": "SB 5100",
+    "title": "Relating to public education funding",
+    "description": "An act relating to increasing state funding for K-12 public education, including provisions for teacher compensation and classroom resources.",
+    "status": "In Committee",
+    "chamber": "Senate",
+    "sponsors": [
+      "Sen. Thompson",
+      "Sen. Anderson"
+    ],
+    "introduced_date": "2025-01-12",
+    "last_action": "Public hearing scheduled for February 5.",
+    "last_action_date": "2025-01-28",
+    "committee": "Early Learning & K-12 Education",
+    "history": [
+      {
+        "date": "2025-01-12",
+        "action": "First reading, referred to Early Learning & K-12 Education."
+      },
+      {
+        "date": "2025-01-20",
+        "action": "Scheduled for public hearing."
+      },
+      {
+        "date": "2025-01-28",
+        "action": "Public hearing scheduled for February 5."
+      }
+    ],
+    "official_url": "https://app.leg.wa.gov/billsummary?BillNumber=5100&Year=2025"
+  },
+  {
+    "bill_id": 1003,
+    "bill_number": "HB 2001",
+    "title": "Concerning environmental protection standards",
+    "description": "An act relating to strengthening environmental protection standards for industrial facilities, including emission reporting requirements and compliance enforcement.",
+    "status": "Introduced",
+    "chamber": "House",
+    "sponsors": [
+      "Rep. Chen"
+    ],
+    "introduced_date": "2025-01-20",
+    "last_action": "First reading, referred to Environment & Energy.",
+    "last_action_date": "2025-01-20",
+    "committee": "Environment & Energy",
+    "history": [
+      {
+        "date": "2025-01-20",
+        "action": "First reading, referred to Environment & Energy."
+      }
+    ],
+    "official_url": "https://app.leg.wa.gov/billsummary?BillNumber=2001&Year=2025"
+  },
+  {
+    "bill_id": 1001,
+    "bill_number": "HB 1234",
+    "title": "Concerning digital privacy protections for consumers",
+    "description": "An act relating to establishing comprehensive digital privacy rights for Washington residents, including data collection transparency requirements and consumer opt-out provisions.",
+    "status": "In Committee",
+    "chamber": "House",
+    "sponsors": [
+      "Rep. Smith",
+      "Rep. Johnson"
+    ],
+    "introduced_date": "2025-01-13",
+    "last_action": "Referred to Innovation, Community & Economic Development, & Veterans.",
+    "last_action_date": "2025-01-15",
+    "committee": "Innovation, Community & Economic Development, & Veterans",
+    "history": [
+      {
+        "date": "2025-01-13",
+        "action": "First reading, referred to Innovation, Community & Economic Development, & Veterans."
+      },
+      {
+        "date": "2025-01-15",
+        "action": "Scheduled for public hearing in committee."
+      }
+    ],
+    "official_url": "https://app.leg.wa.gov/billsummary?BillNumber=1234&Year=2025"
   }
 ]
