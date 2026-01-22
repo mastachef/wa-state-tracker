@@ -48,6 +48,9 @@ jobs:
       - name: Generate bill pages
         run: python scripts/generate_pages.py
 
+      - name: Score bills by threat level
+        run: python scripts/score_bills.py
+
       - name: Check for changes
         id: check_changes
         run: |
