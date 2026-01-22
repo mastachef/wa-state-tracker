@@ -1481,10 +1481,11 @@ main {
     border-bottom: 1px solid var(--color-border);
     padding: var(--space-4);
     box-shadow: var(--shadow-md);
+    z-index: 1000;
   }
 
   .main-nav.active {
-    display: block;
+    display: block !important;
   }
 
   .main-nav ul {
