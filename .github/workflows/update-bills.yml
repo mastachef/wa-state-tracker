@@ -51,6 +51,9 @@ jobs:
       - name: Score bills by threat level
         run: python scripts/score_bills.py
 
+      - name: Generate timeline data
+        run: python scripts/generate_timeline.py
+
       - name: Check for changes
         id: check_changes
         run: |

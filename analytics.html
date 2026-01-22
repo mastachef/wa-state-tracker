@@ -99,6 +99,22 @@ permalink: /analytics/
         <canvas id="chamberThreatChart"></canvas>
       </div>
     </div>
+
+    <!-- Activity Timeline -->
+    <div class="chart-card chart-card-wide">
+      <h2>Bill Activity Over Time</h2>
+      <div class="chart-wrapper chart-wrapper-timeline">
+        <canvas id="timelineChart"></canvas>
+      </div>
+    </div>
+
+    <!-- Cumulative Bills Timeline -->
+    <div class="chart-card chart-card-wide">
+      <h2>Cumulative Bills Introduced</h2>
+      <div class="chart-wrapper chart-wrapper-timeline">
+        <canvas id="cumulativeChart"></canvas>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -409,6 +425,132 @@ new Chart(document.getElementById('chamberThreatChart'), {
     }
   }
 });
+
+// Timeline Charts - using Jekyll data
+{% if site.data.timeline %}
+const timelineData = {{ site.data.timeline | jsonify }};
+
+// Get last 90 days of data for cleaner display
+const recentTimeline = timelineData.slice(-90);
+const timelineLabels = recentTimeline.map(d => {
+  const date = new Date(d.date);
+  return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+});
+
+// Daily Activity Line Chart
+new Chart(document.getElementById('timelineChart'), {
+  type: 'line',
+  data: {
+    labels: timelineLabels,
+    datasets: [{
+      label: 'Daily Bill Activity',
+      data: recentTimeline.map(d => d.activity),
+      borderColor: '#3b82f6',
+      backgroundColor: 'rgba(59, 130, 246, 0.1)',
+      fill: true,
+      tension: 0.3,
+      pointRadius: 2,
+      pointHoverRadius: 5
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        display: false
+      },
+      tooltip: {
+        mode: 'index',
+        intersect: false
+      }
+    },
+    scales: {
+      x: {
+        grid: { display: false },
+        ticks: {
+          maxTicksLimit: 10,
+          maxRotation: 0
+        }
+      },
+      y: {
+        grid: { color: '#1e4470' },
+        beginAtZero: true
+      }
+    },
+    interaction: {
+      mode: 'nearest',
+      axis: 'x',
+      intersect: false
+    }
+  }
+});
+
+// Cumulative Bills Line Chart
+new Chart(document.getElementById('cumulativeChart'), {
+  type: 'line',
+  data: {
+    labels: timelineLabels,
+    datasets: [
+      {
+        label: 'Total Bills',
+        data: recentTimeline.map(d => d.cumulative),
+        borderColor: '#3b82f6',
+        backgroundColor: 'rgba(59, 130, 246, 0.1)',
+        fill: true,
+        tension: 0.3,
+        pointRadius: 0,
+        pointHoverRadius: 5
+      },
+      {
+        label: 'High Priority Threats',
+        data: recentTimeline.map(d => d.cumulative_threats),
+        borderColor: '#ef4444',
+        backgroundColor: 'rgba(239, 68, 68, 0.1)',
+        fill: true,
+        tension: 0.3,
+        pointRadius: 0,
+        pointHoverRadius: 5
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          padding: 20,
+          usePointStyle: true
+        }
+      },
+      tooltip: {
+        mode: 'index',
+        intersect: false
+      }
+    },
+    scales: {
+      x: {
+        grid: { display: false },
+        ticks: {
+          maxTicksLimit: 10,
+          maxRotation: 0
+        }
+      },
+      y: {
+        grid: { color: '#1e4470' },
+        beginAtZero: true
+      }
+    },
+    interaction: {
+      mode: 'nearest',
+      axis: 'x',
+      intersect: false
+    }
+  }
+});
+{% endif %}
 </script>
 
 <style>
@@ -489,6 +631,10 @@ new Chart(document.getElementById('chamberThreatChart'), {
 
 .chart-wrapper-bar {
   height: 220px;
+}
+
+.chart-wrapper-timeline {
+  height: 280px;
 }
 
 .chart-wrapper canvas {
@@ -582,6 +728,10 @@ new Chart(document.getElementById('chamberThreatChart'), {
   .chart-wrapper-bar {
     height: 200px;
   }
+
+  .chart-wrapper-timeline {
+    height: 250px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -608,6 +758,10 @@ new Chart(document.getElementById('chamberThreatChart'), {
 
   .chart-wrapper-bar {
     height: 180px;
+  }
+
+  .chart-wrapper-timeline {
+    height: 220px;
   }
 }
 
