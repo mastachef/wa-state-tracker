@@ -54,6 +54,21 @@ jobs:
       - name: Generate timeline data
         run: python scripts/generate_timeline.py
 
+      - name: Detect amendments
+        run: python scripts/detect_amendments.py
+
+      - name: Find related bills
+        run: python scripts/find_related_bills.py
+
+      - name: Extract fiscal impact
+        run: python scripts/extract_fiscal_impact.py
+
+      - name: Generate pipeline data
+        run: python scripts/generate_pipeline.py
+
+      - name: Analyze bill flooding
+        run: python scripts/analyze_flooding.py
+
       - name: Check for changes
         id: check_changes
         run: |

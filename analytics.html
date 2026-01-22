@@ -170,6 +170,175 @@ permalink: /analytics/
   {% endif %}
 </section>
 
+<!-- LEGISLATIVE ABUSE: Bill Flooding Analysis -->
+{% if site.data.flooding %}
+<section class="analytics-section abuse-section">
+  <h2>⚠️ LEGISLATIVE ABUSE: Bill Flooding</h2>
+  <p class="section-desc abuse-warning">
+    <strong>{{ site.data.flooding.summary.flood_percentage }}% of all bills</strong> were introduced on just
+    <strong>{{ site.data.flooding.summary.flood_days_count }} days</strong>.
+    This is a deliberate tactic to overwhelm public scrutiny.
+  </p>
+
+  <div class="abuse-stats">
+    <div class="abuse-stat abuse-stat-critical">
+      <span class="abuse-number">{{ site.data.flooding.summary.worst_day_count }}</span>
+      <span class="abuse-label">Bills on Single Day</span>
+      <span class="abuse-detail">{{ site.data.flooding.summary.worst_single_day }}</span>
+    </div>
+    <div class="abuse-stat abuse-stat-danger">
+      <span class="abuse-number">{{ site.data.flooding.summary.bills_on_flood_days }}</span>
+      <span class="abuse-label">Bills on Flood Days</span>
+      <span class="abuse-detail">out of {{ site.data.flooding.total_bills }} total</span>
+    </div>
+    <div class="abuse-stat abuse-stat-warning">
+      <span class="abuse-number">{{ site.data.flooding.summary.flood_percentage }}%</span>
+      <span class="abuse-label">Flood Percentage</span>
+      <span class="abuse-detail">Bills dumped at once</span>
+    </div>
+    <div class="abuse-stat">
+      <span class="abuse-number">{{ site.data.flooding.summary.flood_days_count }}</span>
+      <span class="abuse-label">Flood Days</span>
+      <span class="abuse-detail">50+ bills each</span>
+    </div>
+  </div>
+
+  <div class="chart-card chart-card-wide abuse-chart">
+    <h3>Daily Bill Introduction Spike</h3>
+    <p class="chart-desc">Notice the massive spike - legislators dump bills all at once to prevent public review.</p>
+    <div class="chart-wrapper chart-wrapper-timeline">
+      <canvas id="floodingChart"></canvas>
+    </div>
+  </div>
+
+  <div class="abuse-table-container">
+    <h3>Worst Flooding Days</h3>
+    <table class="abuse-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Bills Introduced</th>
+          <th>Harmful Bills</th>
+          <th>% of Session</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for day in site.data.flooding.flood_days limit: 10 %}
+        <tr class="{% if day.total > 500 %}row-critical{% elsif day.total > 100 %}row-danger{% endif %}">
+          <td>{{ day.date }}</td>
+          <td class="number-cell">{{ day.total }}</td>
+          <td class="number-cell harmful-cell">{{ day.harmful }}</td>
+          <td class="number-cell">{% assign pct = day.total | times: 100.0 | divided_by: site.data.flooding.total_bills %}{{ pct | round: 1 }}%</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="abuse-explanation">
+    <h3>Why This Matters</h3>
+    <div class="explanation-grid">
+      <div class="explanation-card">
+        <h4>🔍 Impossible to Review</h4>
+        <p>No citizen, journalist, or advocacy group can meaningfully review 1,500+ bills introduced in a single day. This is intentional.</p>
+      </div>
+      <div class="explanation-card">
+        <h4>🎭 Hidden Agendas</h4>
+        <p>Controversial provisions get buried in the flood. By the time anyone notices, bills have already advanced through committees.</p>
+      </div>
+      <div class="explanation-card">
+        <h4>⏰ Manufactured Urgency</h4>
+        <p>Tight deadlines force rushed votes. Legislators vote on bills they haven't read because there isn't time to review everything.</p>
+      </div>
+      <div class="explanation-card">
+        <h4>🏛️ Accountability Dodge</h4>
+        <p>When everything happens at once, no single bill gets scrutiny. Legislators can claim they didn't know what was in bills they voted for.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- TAKE ACTION Section -->
+<section class="analytics-section action-section">
+  <h2>🗳️ TAKE ACTION: Fight Back</h2>
+  <p class="section-desc">Washington State gives citizens the power to bypass the legislature. Here's how to fight back against legislative abuse.</p>
+
+  <div class="action-grid">
+    <div class="action-card action-primary">
+      <h3>📜 Citizen Initiative (I-___)</h3>
+      <p class="action-desc">Bypass the legislature entirely. Propose your own law directly to voters.</p>
+      <div class="action-details">
+        <div class="detail-row">
+          <span class="detail-label">Signatures Required:</span>
+          <span class="detail-value">~324,000 (8% of votes in last gubernatorial election)</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Timeline:</span>
+          <span class="detail-value">Must gather signatures within 6 months</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">What Happens:</span>
+          <span class="detail-value">Goes directly to ballot OR legislature must act</span>
+        </div>
+      </div>
+      <p class="action-idea"><strong>Idea:</strong> Initiative to limit bill introductions to 50 per legislator per session, require 30-day public review period before votes.</p>
+      <a href="https://www.sos.wa.gov/elections/initiatives/" target="_blank" class="btn btn-action">WA Secretary of State - Initiatives</a>
+    </div>
+
+    <div class="action-card">
+      <h3>📝 Referendum</h3>
+      <p class="action-desc">Challenge a law the legislature just passed. Put it to a public vote.</p>
+      <div class="action-details">
+        <div class="detail-row">
+          <span class="detail-label">Signatures:</span>
+          <span class="detail-value">~162,000 (4% of votes)</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Deadline:</span>
+          <span class="detail-value">90 days after session ends</span>
+        </div>
+      </div>
+      <a href="https://www.sos.wa.gov/elections/initiatives/referendum.aspx" target="_blank" class="btn btn-secondary">Learn More</a>
+    </div>
+
+    <div class="action-card">
+      <h3>📞 Contact Your Legislators</h3>
+      <p class="action-desc">Demand they support bill flooding limits. They work for you.</p>
+      <div class="action-details">
+        <div class="detail-row">
+          <span class="detail-label">Find Your Reps:</span>
+          <span class="detail-value">Enter your address to find them</span>
+        </div>
+      </div>
+      <a href="https://app.leg.wa.gov/DistrictFinder/" target="_blank" class="btn btn-secondary">Find Your District</a>
+    </div>
+
+    <div class="action-card">
+      <h3>🤝 Join Organizations</h3>
+      <p class="action-desc">Connect with groups already fighting for government accountability.</p>
+      <ul class="org-list">
+        <li><a href="https://washingtonpolicy.org/" target="_blank">Washington Policy Center</a></li>
+        <li><a href="https://www.prior-lake.org/" target="_blank">Citizens Against Government Waste</a></li>
+        <li><a href="https://ballotpedia.org/Washington" target="_blank">Ballotpedia - WA</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="action-callout">
+    <h3>Proposed: Bill Flooding Prevention Initiative</h3>
+    <p>We need a citizen initiative that would:</p>
+    <ul>
+      <li><strong>Limit bill introductions</strong> to 25 bills per legislator per session</li>
+      <li><strong>Require 14-day public comment period</strong> before committee votes</li>
+      <li><strong>Mandate plain-language summaries</strong> for every bill</li>
+      <li><strong>Ban "emergency" clauses</strong> that skip public review (except real emergencies)</li>
+      <li><strong>Prohibit last-minute amendments</strong> that change bill substance</li>
+    </ul>
+    <p class="callout-cta">Interested in organizing this initiative? <a href="mailto:takeaction@example.com">Get in touch</a> or share this page.</p>
+  </div>
+</section>
+
 <!-- Beneficial Bills Section -->
 <section class="analytics-section">
   <h2>Beneficial Bills</h2>
@@ -551,6 +720,87 @@ new Chart(document.getElementById('cumulativeChart'), {
   }
 });
 {% endif %}
+
+// Flooding Analysis Chart
+{% if site.data.flooding %}
+const floodingData = {{ site.data.flooding.daily_data | jsonify }};
+
+// Filter to recent data only (last 60 days with data)
+const recentFloodData = floodingData.slice(-60);
+const floodLabels = recentFloodData.map(d => {
+  const date = new Date(d.date);
+  return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+});
+
+const floodColors = recentFloodData.map(d => d.is_flood ? '#dc2626' : '#3b82f6');
+
+new Chart(document.getElementById('floodingChart'), {
+  type: 'bar',
+  data: {
+    labels: floodLabels,
+    datasets: [{
+      label: 'Bills Introduced',
+      data: recentFloodData.map(d => d.total),
+      backgroundColor: floodColors,
+      borderRadius: 2
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        display: false
+      },
+      tooltip: {
+        callbacks: {
+          label: function(context) {
+            const d = recentFloodData[context.dataIndex];
+            let label = `${d.total} bills introduced`;
+            if (d.is_flood) {
+              label += ' (FLOOD DAY!)';
+            }
+            if (d.harmful > 0) {
+              label += ` - ${d.harmful} harmful`;
+            }
+            return label;
+          }
+        }
+      },
+      annotation: {
+        annotations: {
+          line1: {
+            type: 'line',
+            yMin: 50,
+            yMax: 50,
+            borderColor: '#ef4444',
+            borderWidth: 2,
+            borderDash: [5, 5],
+            label: {
+              content: 'Flood Threshold (50)',
+              enabled: true,
+              position: 'end'
+            }
+          }
+        }
+      }
+    },
+    scales: {
+      x: {
+        grid: { display: false },
+        ticks: {
+          maxTicksLimit: 15,
+          maxRotation: 45
+        }
+      },
+      y: {
+        grid: { color: '#1e4470' },
+        beginAtZero: true
+      }
+    }
+  }
+});
+{% endif %}
 </script>
 
 <style>
@@ -772,6 +1022,359 @@ new Chart(document.getElementById('cumulativeChart'), {
 
   .summary-number {
     font-size: 1.75rem;
+  }
+}
+
+/* ABUSE SECTION STYLES */
+.abuse-section {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.1) 0%, rgba(15, 35, 57, 0.9) 100%);
+  border: 2px solid #dc2626;
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  margin-bottom: var(--space-12);
+}
+
+.abuse-section h2 {
+  color: #fca5a5;
+  font-size: 1.75rem;
+}
+
+.abuse-warning {
+  font-size: 1.125rem;
+  color: #fef2f2;
+  background: rgba(220, 38, 38, 0.2);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  border-left: 4px solid #dc2626;
+}
+
+.abuse-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-4);
+  margin: var(--space-6) 0;
+}
+
+.abuse-stat {
+  background: var(--color-bg-medium);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  text-align: center;
+  border: 1px solid var(--color-border);
+}
+
+.abuse-stat-critical {
+  border-color: #dc2626;
+  background: rgba(220, 38, 38, 0.15);
+}
+
+.abuse-stat-danger {
+  border-color: #ea580c;
+  background: rgba(234, 88, 12, 0.15);
+}
+
+.abuse-stat-warning {
+  border-color: #ca8a04;
+  background: rgba(202, 138, 4, 0.15);
+}
+
+.abuse-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: var(--space-2);
+  color: #fca5a5;
+}
+
+.abuse-stat-critical .abuse-number { color: #fca5a5; }
+.abuse-stat-danger .abuse-number { color: #fdba74; }
+.abuse-stat-warning .abuse-number { color: #fde047; }
+
+.abuse-label {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  display: block;
+  margin-bottom: var(--space-1);
+}
+
+.abuse-detail {
+  font-size: 0.75rem;
+  color: var(--color-text-dim);
+}
+
+.abuse-chart {
+  margin: var(--space-6) 0;
+}
+
+.abuse-chart h3 {
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.chart-desc {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-4);
+}
+
+.abuse-table-container {
+  margin: var(--space-6) 0;
+}
+
+.abuse-table-container h3 {
+  margin-bottom: var(--space-4);
+}
+
+.abuse-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-bg-medium);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.abuse-table th,
+.abuse-table td {
+  padding: var(--space-3) var(--space-4);
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.abuse-table th {
+  background: var(--color-bg-darkest);
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+.abuse-table .number-cell {
+  text-align: right;
+  font-family: var(--font-mono);
+}
+
+.abuse-table .harmful-cell {
+  color: #fca5a5;
+}
+
+.abuse-table .row-critical {
+  background: rgba(220, 38, 38, 0.2);
+}
+
+.abuse-table .row-danger {
+  background: rgba(234, 88, 12, 0.1);
+}
+
+.abuse-explanation {
+  margin-top: var(--space-8);
+}
+
+.abuse-explanation h3 {
+  margin-bottom: var(--space-4);
+}
+
+.explanation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-4);
+}
+
+.explanation-card {
+  background: var(--color-bg-medium);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  border: 1px solid var(--color-border);
+}
+
+.explanation-card h4 {
+  font-size: 1rem;
+  margin-bottom: var(--space-2);
+  color: var(--color-text-primary);
+}
+
+.explanation-card p {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+/* ACTION SECTION STYLES */
+.action-section {
+  background: linear-gradient(135deg, rgba(22, 163, 74, 0.1) 0%, rgba(15, 35, 57, 0.9) 100%);
+  border: 2px solid #16a34a;
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  margin-bottom: var(--space-12);
+}
+
+.action-section h2 {
+  color: #86efac;
+  font-size: 1.75rem;
+}
+
+.action-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-5);
+  margin: var(--space-6) 0;
+}
+
+.action-card {
+  background: var(--color-bg-medium);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  border: 1px solid var(--color-border);
+}
+
+.action-primary {
+  grid-column: span 2;
+  border-color: #16a34a;
+  background: rgba(22, 163, 74, 0.1);
+}
+
+.action-card h3 {
+  font-size: 1.125rem;
+  margin-bottom: var(--space-2);
+  color: var(--color-text-primary);
+}
+
+.action-desc {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-4);
+}
+
+.action-details {
+  background: var(--color-bg-darkest);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.875rem;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  color: var(--color-text-dim);
+}
+
+.detail-value {
+  color: var(--color-text-secondary);
+  text-align: right;
+}
+
+.action-idea {
+  font-size: 0.875rem;
+  background: rgba(22, 163, 74, 0.15);
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  border-left: 3px solid #16a34a;
+  margin-bottom: var(--space-4);
+}
+
+.btn-action {
+  background: #16a34a;
+  color: white;
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-action:hover {
+  background: #15803d;
+}
+
+.org-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.org-list li {
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.org-list li:last-child {
+  border-bottom: none;
+}
+
+.org-list a {
+  color: var(--color-primary-light);
+  text-decoration: none;
+}
+
+.org-list a:hover {
+  text-decoration: underline;
+}
+
+.action-callout {
+  background: var(--color-bg-medium);
+  border: 2px dashed #16a34a;
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  margin-top: var(--space-6);
+}
+
+.action-callout h3 {
+  color: #86efac;
+  margin-bottom: var(--space-3);
+}
+
+.action-callout ul {
+  margin: var(--space-4) 0;
+  padding-left: var(--space-5);
+}
+
+.action-callout li {
+  margin-bottom: var(--space-2);
+  color: var(--color-text-secondary);
+}
+
+.callout-cta {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-top: var(--space-4);
+  margin-bottom: 0;
+}
+
+.callout-cta a {
+  color: #86efac;
+}
+
+@media (max-width: 768px) {
+  .action-primary {
+    grid-column: span 1;
+  }
+
+  .abuse-section,
+  .action-section {
+    padding: var(--space-5);
+  }
+
+  .abuse-number {
+    font-size: 2rem;
+  }
+
+  .detail-row {
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .detail-value {
+    text-align: left;
   }
 }
 </style>

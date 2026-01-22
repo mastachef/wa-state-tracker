@@ -13,6 +13,8 @@ permalink: /how-to-act/
 <nav class="page-toc">
   <h2>On This Page</h2>
   <ul>
+    <li><a href="#legislative-abuse">The Problem: Legislative Abuse</a></li>
+    <li><a href="#citizen-initiative">Citizen Initiative: Bypass the Legislature</a></li>
     <li><a href="#submit-comments">Submit Written Comments</a></li>
     <li><a href="#testify">Testify at Hearings</a></li>
     <li><a href="#contact-legislators">Contact Your Legislators</a></li>
@@ -23,6 +25,168 @@ permalink: /how-to-act/
 </nav>
 
 <article class="guide-content">
+
+  <!-- THE PROBLEM: LEGISLATIVE ABUSE -->
+  <section id="legislative-abuse" class="guide-section abuse-alert-section">
+    <h2>⚠️ The Problem: Legislative Abuse</h2>
+
+    <div class="abuse-alert">
+      <p class="alert-headline">Washington legislators introduced <strong>1,572 bills in a single day</strong> (January 12, 2026).</p>
+      <p>That's <strong>50% of the entire session's bills</strong> dumped at once.</p>
+    </div>
+
+    <p>This isn't incompetence—it's strategy. When legislators flood the system with thousands of bills simultaneously, they make meaningful public review impossible. By the time citizens understand what's in these bills, many have already passed through committees.</p>
+
+    {% if site.data.flooding %}
+    <div class="abuse-stats-compact">
+      <div class="stat-item">
+        <span class="stat-number">{{ site.data.flooding.summary.flood_percentage }}%</span>
+        <span class="stat-label">Bills on Flood Days</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">{{ site.data.flooding.summary.worst_day_count }}</span>
+        <span class="stat-label">Single Day Record</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">{{ site.data.flooding.summary.flood_days_count }}</span>
+        <span class="stat-label">Flood Days (50+ bills)</span>
+      </div>
+    </div>
+    {% endif %}
+
+    <h3>Why They Do This</h3>
+    <ul class="abuse-reasons">
+      <li><strong>Hide Controversial Bills:</strong> Bad legislation gets buried in the pile. Media can't cover 1,500 bills.</li>
+      <li><strong>Overwhelm Opposition:</strong> Advocacy groups can't monitor everything. Most bills slip through unnoticed.</li>
+      <li><strong>Create Urgency:</strong> Tight deadlines force rushed votes. "We don't have time to debate" becomes the excuse.</li>
+      <li><strong>Avoid Accountability:</strong> Legislators can claim ignorance. "I didn't know that provision was in there."</li>
+    </ul>
+
+    <div class="info-box info-box-danger">
+      <h4>This Is Not Normal</h4>
+      <p>A functioning democracy requires citizens to understand legislation before it becomes law. When 50% of bills are introduced in one day, that's impossible. This is a feature of the system, not a bug—and we need to fix it.</p>
+      <p><a href="{{ '/analytics/' | relative_url }}#legislative-abuse">See the full analysis →</a></p>
+    </div>
+  </section>
+
+  <!-- CITIZEN INITIATIVE SECTION -->
+  <section id="citizen-initiative" class="guide-section initiative-section">
+    <h2>🗳️ Citizen Initiative: Bypass the Legislature</h2>
+
+    <p>Washington State gives citizens the power to <strong>create laws directly</strong>, bypassing the legislature entirely. This is how we fight back against legislative abuse.</p>
+
+    <div class="initiative-explainer">
+      <h3>What Is a Citizen Initiative?</h3>
+      <p>An initiative (I-___) is a proposed law that citizens draft and collect signatures for. If enough signatures are gathered, it either:</p>
+      <ol>
+        <li><strong>Goes directly to voters</strong> on the next general election ballot, OR</li>
+        <li><strong>Goes to the legislature</strong>, which must either pass it, reject it (sending it to voters), or propose an alternative (both go to voters)</li>
+      </ol>
+    </div>
+
+    <div class="step-guide initiative-steps">
+      <div class="step">
+        <span class="step-number">1</span>
+        <div class="step-content">
+          <h3>Draft Your Initiative</h3>
+          <p>Write the proposed law in proper legal format. The Secretary of State's office provides templates and guidance.</p>
+          <p><strong>Tip:</strong> Work with a lawyer familiar with initiative law. Poorly drafted initiatives can be challenged in court.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <span class="step-number">2</span>
+        <div class="step-content">
+          <h3>File with Secretary of State</h3>
+          <p>Submit your initiative with a $5 filing fee. The Attorney General will write an official ballot title and summary.</p>
+          <p><a href="https://www.sos.wa.gov/elections/initiatives/initiativesmeasures.aspx" target="_blank" rel="noopener">File an Initiative →</a></p>
+        </div>
+      </div>
+
+      <div class="step">
+        <span class="step-number">3</span>
+        <div class="step-content">
+          <h3>Gather Signatures</h3>
+          <p><strong>Signatures Required:</strong> 8% of votes cast in the last gubernatorial election</p>
+          <p><strong>Current Requirement (2024 election):</strong> Approximately <strong>324,000 valid signatures</strong></p>
+          <p><strong>Deadline:</strong> Must submit signatures by July 1st for initiatives to appear on November ballot</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <span class="step-number">4</span>
+        <div class="step-content">
+          <h3>Submit & Verify</h3>
+          <p>Submit signatures to the Secretary of State. They'll verify a random sample. If valid, your initiative qualifies!</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <span class="step-number">5</span>
+        <div class="step-content">
+          <h3>Campaign for Passage</h3>
+          <p>If it goes to voters, campaign for a YES vote. If the legislature rejects it, it automatically goes to voters.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="initiative-idea-box">
+      <h3>💡 Proposed: Bill Flooding Prevention Initiative</h3>
+      <p>We need a citizen initiative to stop legislative abuse. Here's what it could include:</p>
+
+      <ul class="proposal-list">
+        <li>
+          <strong>Bill Introduction Limits</strong>
+          <p>Cap each legislator at 25 bills per session. Forces prioritization of actually important legislation.</p>
+        </li>
+        <li>
+          <strong>Mandatory Public Review Period</strong>
+          <p>Bills must be publicly available for 14 days before committee hearings. No last-minute introductions.</p>
+        </li>
+        <li>
+          <strong>Plain Language Requirement</strong>
+          <p>Every bill must include a plain-English summary understandable by average citizens.</p>
+        </li>
+        <li>
+          <strong>Amendment Transparency</strong>
+          <p>No amendments that substantially change a bill's purpose. "Gut and amend" tricks would be prohibited.</p>
+        </li>
+        <li>
+          <strong>Emergency Clause Restrictions</strong>
+          <p>"Emergency" clauses (which skip public review) limited to actual emergencies—natural disasters, public health crises.</p>
+        </li>
+      </ul>
+
+      <div class="cta-box">
+        <h4>Want to Make This Happen?</h4>
+        <p>Organizing a statewide initiative takes resources, but it's been done before. Key steps:</p>
+        <ol>
+          <li>Form an organizing committee</li>
+          <li>Draft the initiative with legal help</li>
+          <li>Build a coalition of supporters</li>
+          <li>Launch signature collection campaign</li>
+          <li>Run a voter education campaign</li>
+        </ol>
+        <p>Organizations that might help:</p>
+        <ul>
+          <li><a href="https://washingtonpolicy.org/" target="_blank" rel="noopener">Washington Policy Center</a></li>
+          <li><a href="https://www.prior-lake.org/" target="_blank" rel="noopener">Citizens for Government Accountability</a></li>
+          <li><a href="https://freedomfoundation.com/" target="_blank" rel="noopener">Freedom Foundation</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <h4>Referendum: Challenge Bad Laws</h4>
+      <p>If the legislature passes a bad law, you can challenge it with a referendum:</p>
+      <ul>
+        <li><strong>Signatures Required:</strong> 4% of votes (≈162,000)</li>
+        <li><strong>Deadline:</strong> 90 days after session ends</li>
+        <li><strong>Effect:</strong> Suspends the law until voters decide</li>
+      </ul>
+      <p><a href="https://www.sos.wa.gov/elections/initiatives/referendum.aspx" target="_blank" rel="noopener">Learn about referendums →</a></p>
+    </div>
+  </section>
 
   <section id="submit-comments" class="guide-section">
     <h2>Submit Written Comments on Bills</h2>
