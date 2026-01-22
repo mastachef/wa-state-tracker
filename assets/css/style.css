@@ -447,6 +447,27 @@ main {
   margin-bottom: var(--space-4);
 }
 
+.bill-card-ai-summary {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(249, 115, 22, 0.1) 100%);
+  border-left: 3px solid var(--color-danger);
+  padding: var(--space-3) var(--space-4);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin-bottom: var(--space-4);
+  line-height: 1.5;
+}
+
+.bill-card-ai-summary .ai-label {
+  font-weight: 700;
+  color: var(--color-danger);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: var(--space-1);
+}
+
 .bill-card-featured-reason {
   font-size: 0.875rem;
   color: var(--color-text-secondary);
@@ -817,6 +838,34 @@ main {
 .summary-content {
   color: var(--color-text-secondary);
   line-height: 1.7;
+}
+
+/* AI Analysis section */
+.ai-analysis {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(249, 115, 22, 0.08) 100%);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.ai-analysis h2 {
+  color: var(--color-danger) !important;
+  border-bottom-color: rgba(239, 68, 68, 0.3) !important;
+}
+
+.ai-summary-box {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--color-text-primary);
+}
+
+.ai-disclaimer {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-top: var(--space-4);
+  margin-bottom: 0;
 }
 
 /* Details grid */

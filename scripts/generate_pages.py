@@ -97,6 +97,10 @@ def generate_bill_page(bill: dict, featured_data: dict | None = None) -> str:
         "urgency",
         "hearing_date",
         "hearing_info",
+        "ai_summary",
+        "threat_level",
+        "threat_label",
+        "threat_score",
     ]
 
     for field in optional_fields:

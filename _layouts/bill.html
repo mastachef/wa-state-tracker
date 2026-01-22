@@ -32,12 +32,22 @@ layout: default
          rel="noopener">
         Comment on This Bill
       </a>
-      <a href="{{ page.official_url | default: 'https://app.leg.wa.gov/billsummary?BillNumber=' | append: page.bill_number | remove: 'HB ' | remove: 'SB ' | append: '&Year=' | append: site.legislature_year }}"
+      {% if page.official_url %}
+      <a href="{{ page.official_url }}"
          class="btn btn-secondary"
          target="_blank"
          rel="noopener">
         View Official Page
       </a>
+      {% else %}
+      {% assign bill_num = page.bill_number | remove: 'HB ' | remove: 'SB ' | remove: 'HJR ' | remove: 'SJR ' | remove: 'HCR ' | remove: 'SCR ' %}
+      <a href="https://app.leg.wa.gov/BillSummary/?BillNumber={{ bill_num }}&Year=2025&Initiative=false"
+         class="btn btn-secondary"
+         target="_blank"
+         rel="noopener">
+        View Official Page
+      </a>
+      {% endif %}
       <a href="https://app.leg.wa.gov/districtfinder/"
          class="btn btn-outline"
          target="_blank"
@@ -54,6 +64,16 @@ layout: default
     </div>
     {% endif %}
   </section>
+
+  {% if page.ai_summary %}
+  <section class="ai-analysis">
+    <h2>Watchdog Analysis</h2>
+    <div class="ai-summary-box">
+      <p>{{ page.ai_summary }}</p>
+    </div>
+    <p class="ai-disclaimer">AI-generated analysis from a government accountability perspective.</p>
+  </section>
+  {% endif %}
 
   {% if page.plain_summary %}
   <section class="plain-english">

@@ -39,7 +39,11 @@
     </a>
   </h3>
 
-  {% if include.bill.plain_summary %}
+  {% if include.bill.ai_summary %}
+  <p class="bill-card-ai-summary">
+    <span class="ai-label">Analysis:</span> {{ include.bill.ai_summary }}
+  </p>
+  {% elsif include.bill.plain_summary %}
   <p class="bill-card-summary">{{ include.bill.plain_summary | strip_html | truncate: 150 }}</p>
   {% elsif include.bill.description %}
   <p class="bill-card-summary">{{ include.bill.description | strip_html | truncate: 150 }}</p>
