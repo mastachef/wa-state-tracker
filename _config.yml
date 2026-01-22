@@ -1,0 +1,45 @@
+# WA Bill Tracker - Jekyll Configuration
+title: WA Bill Tracker
+description: Track Washington State legislation and take action
+baseurl: "" # subpath of your site, e.g. /blog
+url: "" # GitHub Pages will set this automatically
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Collections - bills get their own pages
+collections:
+  bills:
+    output: true
+    permalink: /bill/:name/
+
+# Default front matter for collections
+defaults:
+  - scope:
+      path: ""
+      type: "bills"
+    values:
+      layout: "bill"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Exclude from build
+exclude:
+  - scripts/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .github/
+  - "*.py"
+  - requirements.txt
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+
+# Site settings
+current_session: "2025-26"
+legislature_year: 2025

@@ -1,0 +1,29 @@
+[
+  {
+    "bill_number": "HB 1234",
+    "why_featured": "Major digital privacy legislation affecting how companies collect your data",
+    "plain_summary": "This bill would give Washington residents new rights over their personal data. Companies would have to tell you what data they collect, let you see it, and let you delete it. You could also opt out of having your data sold to third parties.",
+    "why_it_matters": "If you've ever wondered what data companies have about you, this bill would give you the right to find out. It's similar to privacy laws in California and Europe.",
+    "stance": "watch",
+    "urgency": "high",
+    "hearing_date": "2025-02-10"
+  },
+  {
+    "bill_number": "SB 5678",
+    "why_featured": "Significant housing affordability initiative now moving to the House",
+    "plain_summary": "This bill creates new programs to increase affordable housing across Washington. It offers tax incentives for developers who build affordable units and strengthens tenant protections against unfair evictions.",
+    "why_it_matters": "Housing costs have skyrocketed across Washington. This bill aims to address the shortage of affordable homes and protect renters from sudden rent increases.",
+    "stance": "watch",
+    "urgency": "medium"
+  },
+  {
+    "bill_number": "SB 5100",
+    "why_featured": "Major education funding proposal with upcoming public hearing",
+    "plain_summary": "This bill would increase state funding for public schools, including higher teacher salaries, more classroom supplies, and reduced class sizes. Funding would come from adjusting the state's education levy formula.",
+    "why_it_matters": "Washington schools have faced funding challenges for years. This bill attempts to address teacher shortages by making compensation more competitive with neighboring states.",
+    "stance": "watch",
+    "urgency": "high",
+    "hearing_date": "2025-02-05",
+    "hearing_info": "Public hearing in the Senate Early Learning & K-12 Education Committee. Sign up to testify at leg.wa.gov."
+  }
+]

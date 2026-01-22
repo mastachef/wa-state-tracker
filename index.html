@@ -1,0 +1,102 @@
+---
+layout: default
+title: Home
+description: Track Washington State legislation and make your voice heard. Find bills, submit comments, and engage with the legislative process.
+---
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Track WA State Bills.<br>Make Your Voice Heard.</h1>
+    <p class="hero-subtitle">Follow legislation that matters to you and take action with direct links to official comment and testimony pages.</p>
+    <div class="hero-actions">
+      <a href="#featured-bills" class="btn btn-primary btn-large">See Featured Bills</a>
+      <a href="{{ '/all-bills' | relative_url }}" class="btn btn-outline btn-large">Browse All Bills</a>
+    </div>
+  </div>
+</section>
+
+<section class="quick-stats">
+  <div class="stats-grid">
+    <div class="stat-card">
+      <span class="stat-number" id="total-bills">{{ site.data.bills.size | default: '--' }}</span>
+      <span class="stat-label">Bills Tracked</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number" id="featured-count">{{ site.data.featured.size | default: '--' }}</span>
+      <span class="stat-label">Featured Bills</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number">{{ site.current_session }}</span>
+      <span class="stat-label">Legislative Session</span>
+    </div>
+  </div>
+</section>
+
+<section id="featured-bills" class="featured-section">
+  <header class="section-header">
+    <h2>Featured Bills to Watch</h2>
+    <p>Bills we're tracking closely. Click any bill to learn more and take action.</p>
+  </header>
+
+  {% if site.data.featured and site.data.featured.size > 0 %}
+  <div class="bills-grid">
+    {% for featured in site.data.featured %}
+      {% assign bill = site.data.bills | where: "bill_number", featured.bill_number | first %}
+      {% if bill %}
+        {% assign merged_bill = bill | merge: featured %}
+        {% include bill-card.html bill=merged_bill featured=true %}
+      {% else %}
+        {% include bill-card.html bill=featured featured=true %}
+      {% endif %}
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="empty-state">
+    <p>No featured bills yet. Check back soon or <a href="{{ '/all-bills' | relative_url }}">browse all bills</a>.</p>
+  </div>
+  {% endif %}
+
+  <div class="section-footer">
+    <a href="{{ '/all-bills' | relative_url }}" class="btn btn-secondary">View All Bills &rarr;</a>
+  </div>
+</section>
+
+<section class="action-callout">
+  <div class="callout-content">
+    <h2>Ready to Take Action?</h2>
+    <p>Every voice matters in the legislative process. Learn how to submit comments, testify at hearings, and contact your representatives.</p>
+    <a href="{{ '/how-to-act' | relative_url }}" class="btn btn-primary btn-large">Learn How to Participate</a>
+  </div>
+</section>
+
+<section class="quick-links">
+  <h2>Quick Access</h2>
+  <div class="links-grid">
+    <a href="https://app.leg.wa.gov/districtfinder/" class="quick-link" target="_blank" rel="noopener">
+      <span class="quick-link-icon">&#128205;</span>
+      <span class="quick-link-title">Find Your District</span>
+      <span class="quick-link-desc">Look up your legislators</span>
+    </a>
+    <a href="https://leg.wa.gov/legislature/pages/calendar.aspx" class="quick-link" target="_blank" rel="noopener">
+      <span class="quick-link-icon">&#128197;</span>
+      <span class="quick-link-title">Legislative Calendar</span>
+      <span class="quick-link-desc">Upcoming hearings & sessions</span>
+    </a>
+    <a href="https://tvw.org" class="quick-link" target="_blank" rel="noopener">
+      <span class="quick-link-icon">&#128250;</span>
+      <span class="quick-link-title">Watch TVW</span>
+      <span class="quick-link-desc">Live & recorded hearings</span>
+    </a>
+    <a href="tel:1-800-562-6000" class="quick-link">
+      <span class="quick-link-icon">&#128222;</span>
+      <span class="quick-link-title">Legislative Hotline</span>
+      <span class="quick-link-desc">1-800-562-6000</span>
+    </a>
+  </div>
+</section>
+
+{% if site.data.bills %}
+<section class="data-freshness">
+  <p>Data last updated: <time id="last-updated">{{ site.time | date: "%B %d, %Y at %I:%M %p" }}</time></p>
+</section>
+{% endif %}

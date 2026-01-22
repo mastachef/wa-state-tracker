@@ -1,0 +1,147 @@
+---
+layout: default
+---
+
+<article class="bill-page">
+  <nav class="breadcrumb">
+    <a href="{{ '/' | relative_url }}">Home</a> &rsaquo;
+    <a href="{{ '/all-bills' | relative_url }}">All Bills</a> &rsaquo;
+    <span>{{ page.bill_number }}</span>
+  </nav>
+
+  <header class="bill-header">
+    <div class="bill-meta">
+      <span class="bill-number">{{ page.bill_number }}</span>
+      <span class="status-badge status-{{ page.status | slugify }}">{{ page.status }}</span>
+      {% if page.urgency == "high" %}
+      <span class="urgency-badge urgency-high">Action Needed</span>
+      {% endif %}
+    </div>
+    <h1>{{ page.title }}</h1>
+    {% if page.last_action_date %}
+    <p class="last-updated">Last action: {{ page.last_action_date }} &mdash; {{ page.last_action }}</p>
+    {% endif %}
+  </header>
+
+  <section class="actions-panel">
+    <h2>Take Action</h2>
+    <div class="action-buttons">
+      <a href="https://app.leg.wa.gov/pbc/bill/{{ page.bill_number | remove: 'HB ' | remove: 'SB ' | remove: 'HJR ' | remove: 'SJR ' | remove: 'HCR ' | remove: 'SCR ' }}"
+         class="btn btn-primary"
+         target="_blank"
+         rel="noopener">
+        Comment on This Bill
+      </a>
+      <a href="{{ page.official_url | default: 'https://app.leg.wa.gov/billsummary?BillNumber=' | append: page.bill_number | remove: 'HB ' | remove: 'SB ' | append: '&Year=' | append: site.legislature_year }}"
+         class="btn btn-secondary"
+         target="_blank"
+         rel="noopener">
+        View Official Page
+      </a>
+      <a href="https://app.leg.wa.gov/districtfinder/"
+         class="btn btn-outline"
+         target="_blank"
+         rel="noopener">
+        Find Your Legislator
+      </a>
+    </div>
+    {% if page.hearing_date %}
+    <div class="hearing-alert">
+      <strong>Upcoming Hearing:</strong> {{ page.hearing_date }}
+      {% if page.hearing_info %}
+      <p>{{ page.hearing_info }}</p>
+      {% endif %}
+    </div>
+    {% endif %}
+  </section>
+
+  {% if page.plain_summary %}
+  <section class="plain-english">
+    <h2>What This Bill Does (Plain English)</h2>
+    <div class="summary-content">
+      {{ page.plain_summary | markdownify }}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if page.why_it_matters %}
+  <section class="why-matters">
+    <h2>Why It Matters</h2>
+    <div class="summary-content">
+      {{ page.why_it_matters | markdownify }}
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="official-summary">
+    <h2>Official Description</h2>
+    <p>{{ page.description | default: "No official description available." }}</p>
+  </section>
+
+  <section class="bill-details">
+    <h2>Bill Details</h2>
+    <dl class="details-grid">
+      <dt>Bill Number</dt>
+      <dd>{{ page.bill_number }}</dd>
+
+      <dt>Current Status</dt>
+      <dd>{{ page.status }}</dd>
+
+      {% if page.sponsors and page.sponsors.size > 0 %}
+      <dt>Sponsor{{ page.sponsors.size | minus: 1 | at_least: 0 | plus: 1 | pluralize: '', 's' }}</dt>
+      <dd>{{ page.sponsors | join: ", " }}</dd>
+      {% endif %}
+
+      {% if page.introduced_date %}
+      <dt>Introduced</dt>
+      <dd>{{ page.introduced_date }}</dd>
+      {% endif %}
+
+      {% if page.chamber %}
+      <dt>Chamber</dt>
+      <dd>{{ page.chamber }}</dd>
+      {% endif %}
+
+      {% if page.committee %}
+      <dt>Current Committee</dt>
+      <dd>{{ page.committee }}</dd>
+      {% endif %}
+    </dl>
+  </section>
+
+  {% if page.history and page.history.size > 0 %}
+  <section class="bill-history">
+    <h2>Bill History</h2>
+    <ul class="history-timeline">
+      {% for event in page.history %}
+      <li>
+        <span class="history-date">{{ event.date }}</span>
+        <span class="history-action">{{ event.action }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <section class="how-to-act">
+    <h2>How to Make Your Voice Heard</h2>
+    <div class="action-guide">
+      <div class="action-step">
+        <h3>1. Submit Written Comment</h3>
+        <p>Click "Comment on This Bill" above. You have up to 5,000 characters. Comments are typically open for 24 hours before hearings.</p>
+      </div>
+      <div class="action-step">
+        <h3>2. Testify at Hearing</h3>
+        <p>Sign up to testify remotely via TVW. Check the <a href="https://leg.wa.gov/legislature/pages/calendar.aspx" target="_blank" rel="noopener">legislative calendar</a> for hearing times.</p>
+      </div>
+      <div class="action-step">
+        <h3>3. Contact Your Legislator</h3>
+        <p>Use the <a href="https://app.leg.wa.gov/districtfinder/" target="_blank" rel="noopener">district finder</a> to find your representatives and reach out directly.</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="bill-nav">
+    <a href="{{ '/all-bills' | relative_url }}" class="btn btn-outline">&larr; Back to All Bills</a>
+  </nav>
+</article>

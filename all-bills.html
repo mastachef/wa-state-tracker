@@ -1,0 +1,122 @@
+---
+layout: default
+title: All Bills
+description: Browse and search all Washington State bills in the current legislative session.
+---
+
+<section class="page-header">
+  <h1>All Bills</h1>
+  <p>Browse all bills in the {{ site.current_session }} Washington State Legislative Session.</p>
+</section>
+
+<section class="search-filters">
+  <div class="search-box">
+    <input type="text"
+           id="bill-search"
+           placeholder="Search bills by number, title, or keyword..."
+           aria-label="Search bills">
+    <button type="button" id="clear-search" class="btn-clear" aria-label="Clear search">×</button>
+  </div>
+
+  <div class="filter-controls">
+    <div class="filter-group">
+      <label for="filter-chamber">Chamber</label>
+      <select id="filter-chamber">
+        <option value="">All Chambers</option>
+        <option value="house">House</option>
+        <option value="senate">Senate</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="filter-status">Status</label>
+      <select id="filter-status">
+        <option value="">All Statuses</option>
+        <option value="introduced">Introduced</option>
+        <option value="in-committee">In Committee</option>
+        <option value="passed-house">Passed House</option>
+        <option value="passed-senate">Passed Senate</option>
+        <option value="passed">Passed</option>
+        <option value="signed">Signed by Governor</option>
+        <option value="vetoed">Vetoed</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="sort-by">Sort By</label>
+      <select id="sort-by">
+        <option value="recent">Most Recent</option>
+        <option value="number">Bill Number</option>
+        <option value="title">Title</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="filter-summary">
+    <span id="results-count">Loading bills...</span>
+    <button type="button" id="reset-filters" class="btn-text">Reset Filters</button>
+  </div>
+</section>
+
+<section class="bills-list">
+  <div id="bills-container" class="bills-grid">
+    {% if site.data.bills and site.data.bills.size > 0 %}
+      {% for bill in site.data.bills %}
+        <article class="bill-card"
+                 data-bill-number="{{ bill.bill_number | downcase }}"
+                 data-title="{{ bill.title | downcase }}"
+                 data-description="{{ bill.description | downcase }}"
+                 data-chamber="{{ bill.chamber | downcase }}"
+                 data-status="{{ bill.status | slugify }}"
+                 data-date="{{ bill.last_action_date }}">
+          <header class="bill-card-header">
+            <span class="bill-number">{{ bill.bill_number }}</span>
+            <span class="status-badge status-{{ bill.status | slugify }}">{{ bill.status }}</span>
+          </header>
+          <h3 class="bill-card-title">
+            <a href="{{ '/bill/' | append: bill.bill_number | slugify | relative_url }}">
+              {{ bill.title | truncate: 100 }}
+            </a>
+          </h3>
+          {% if bill.description %}
+          <p class="bill-card-summary">{{ bill.description | strip_html | truncate: 150 }}</p>
+          {% endif %}
+          <footer class="bill-card-footer">
+            <div class="bill-card-meta">
+              {% if bill.sponsors and bill.sponsors.size > 0 %}
+              <span class="sponsor">{{ bill.sponsors | first }}</span>
+              {% endif %}
+              {% if bill.last_action_date %}
+              <span class="last-action">{{ bill.last_action_date }}</span>
+              {% endif %}
+            </div>
+            <div class="bill-card-actions">
+              <a href="{{ '/bill/' | append: bill.bill_number | slugify | relative_url }}" class="btn btn-small">View Details</a>
+              <a href="https://app.leg.wa.gov/pbc/bill/{{ bill.bill_number | remove: 'HB ' | remove: 'SB ' | remove: 'HJR ' | remove: 'SJR ' }}"
+                 class="btn btn-small btn-primary"
+                 target="_blank"
+                 rel="noopener">Comment</a>
+            </div>
+          </footer>
+        </article>
+      {% endfor %}
+    {% else %}
+      <div class="empty-state">
+        <p>No bills loaded yet. Data will be available once the automated update runs.</p>
+      </div>
+    {% endif %}
+  </div>
+
+  <div id="no-results" class="empty-state" style="display: none;">
+    <p>No bills match your search criteria. Try adjusting your filters.</p>
+  </div>
+</section>
+
+<section class="pagination" id="pagination">
+  <!-- Pagination will be handled by JavaScript if needed -->
+</section>
+
+<script>
+  // Bill data for JavaScript filtering
+  window.billsData = {{ site.data.bills | jsonify | default: '[]' }};
+</script>
