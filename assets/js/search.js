@@ -16,6 +16,7 @@
   const clearButton = document.getElementById('clear-search');
   const chamberFilter = document.getElementById('filter-chamber');
   const statusFilter = document.getElementById('filter-status');
+  const threatFilter = document.getElementById('filter-threat');
   const sortBy = document.getElementById('sort-by');
   const resultsCount = document.getElementById('results-count');
   const noResults = document.getElementById('no-results');
@@ -31,6 +32,7 @@
     const searchTerm = searchInput.value.toLowerCase().trim();
     const chamber = chamberFilter ? chamberFilter.value.toLowerCase() : '';
     const status = statusFilter ? statusFilter.value.toLowerCase() : '';
+    const threat = threatFilter ? threatFilter.value.toLowerCase() : '';
 
     let visibleCount = 0;
 
@@ -40,6 +42,7 @@
       const description = card.dataset.description || '';
       const cardChamber = card.dataset.chamber || '';
       const cardStatus = card.dataset.status || '';
+      const cardThreat = card.dataset.threat || '';
 
       // Search matching
       const matchesSearch = !searchTerm ||
@@ -53,8 +56,11 @@
       // Status matching
       const matchesStatus = !status || cardStatus.includes(status);
 
+      // Threat level matching
+      const matchesThreat = !threat || cardThreat === threat;
+
       // Show/hide card
-      if (matchesSearch && matchesChamber && matchesStatus) {
+      if (matchesSearch && matchesChamber && matchesStatus && matchesThreat) {
         card.style.display = '';
         visibleCount++;
       } else {
@@ -111,6 +117,7 @@
     searchInput.value = '';
     if (chamberFilter) chamberFilter.value = '';
     if (statusFilter) statusFilter.value = '';
+    if (threatFilter) threatFilter.value = '';
     if (sortBy) sortBy.value = 'recent';
 
     sortBills();
@@ -152,6 +159,10 @@
     statusFilter.addEventListener('change', filterBills);
   }
 
+  if (threatFilter) {
+    threatFilter.addEventListener('change', filterBills);
+  }
+
   if (sortBy) {
     sortBy.addEventListener('change', sortBills);
   }
@@ -172,6 +183,9 @@
     }
     if (params.has('status') && statusFilter) {
       statusFilter.value = params.get('status');
+    }
+    if (params.has('threat') && threatFilter) {
+      threatFilter.value = params.get('threat');
     }
 
     filterBills();

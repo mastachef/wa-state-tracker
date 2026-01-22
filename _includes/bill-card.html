@@ -3,7 +3,14 @@
   Usage: {% include bill-card.html bill=bill featured=true %}
 {% endcomment %}
 
-<article class="bill-card {% if include.featured %}bill-card-featured{% endif %} threat-{{ include.bill.threat_level | default: 'unknown' }}">
+<article class="bill-card {% if include.featured %}bill-card-featured{% endif %} threat-{{ include.bill.threat_level | default: 'unknown' }}"
+         data-bill-number="{{ include.bill.bill_number | downcase }}"
+         data-title="{{ include.bill.title | downcase }}"
+         data-description="{{ include.bill.description | downcase }}"
+         data-chamber="{{ include.bill.chamber | downcase }}"
+         data-status="{{ include.bill.status | slugify }}"
+         data-date="{{ include.bill.last_action_date }}"
+         data-threat="{{ include.bill.threat_level | default: 'unknown' }}">
   <header class="bill-card-header">
     <span class="bill-number">{{ include.bill.bill_number }}</span>
     <span class="status-badge status-{{ include.bill.status | slugify }}">{{ include.bill.status }}</span>
