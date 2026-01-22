@@ -1,8 +1,8 @@
 # WA Bill Tracker - Jekyll Configuration
 title: WA Bill Tracker
 description: Track Washington State legislation and take action
-baseurl: "/wa-state-tracker" # subpath for GitHub Pages project site
-url: "https://mastachef.github.io" # GitHub Pages URL
+baseurl: "" # empty for custom domain
+url: "https://billtracker.website" # custom domain
 
 # Build settings
 markdown: kramdown
