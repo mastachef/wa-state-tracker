@@ -1,0 +1,455 @@
+---
+layout: default
+---
+
+<article class="legislator-page">
+  <header class="legislator-header">
+    <div class="legislator-title">
+      <h1>{{ page.name }}</h1>
+      <div class="legislator-meta">
+        <span class="party-badge party-{{ page.party | downcase }}">{{ page.party_full }}</span>
+        <span class="chamber-badge">{{ page.title }}</span>
+        <span class="district-badge">District {{ page.district }}</span>
+      </div>
+    </div>
+    <div class="legislator-contact">
+      {% if page.email %}
+      <a href="mailto:{{ page.email }}" class="contact-link">
+        <span class="contact-icon">✉️</span>
+        {{ page.email }}
+      </a>
+      {% endif %}
+      {% if page.phone %}
+      <a href="tel:{{ page.phone }}" class="contact-link">
+        <span class="contact-icon">📞</span>
+        {{ page.phone }}
+      </a>
+      {% endif %}
+    </div>
+  </header>
+
+  <!-- Key Stats -->
+  <section class="legislator-stats">
+    <div class="stat-card stat-money">
+      <span class="stat-number">${{ page.total_raised | round }}</span>
+      <span class="stat-label">Total Raised (2020-2024)</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number">{{ page.bills_count }}</span>
+      <span class="stat-label">Bills Sponsored</span>
+    </div>
+    <div class="stat-card stat-danger">
+      <span class="stat-number">{{ page.harmful_bills_count }}</span>
+      <span class="stat-label">Harmful Bills</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number">{{ page.avg_threat_score }}</span>
+      <span class="stat-label">Avg Threat Score</span>
+    </div>
+  </section>
+
+  <!-- Campaign Finance -->
+  {% assign legislator = site.data.legislators | where: "name", page.name | first %}
+  {% if legislator.top_donors and legislator.top_donors.size > 0 %}
+  <section class="legislator-section">
+    <h2>💰 Top Campaign Donors</h2>
+    <p class="section-desc">Who's funding this legislator? Data from WA Public Disclosure Commission (2020-2024).</p>
+
+    <div class="donors-table-container">
+      <table class="donors-table">
+        <thead>
+          <tr>
+            <th>Donor</th>
+            <th>Total Given</th>
+            <th>Contributions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for donor in legislator.top_donors limit: 15 %}
+          <tr>
+            <td class="donor-name">
+              {{ donor.name }}
+              {% if donor.employer and donor.employer != "" %}
+              <span class="donor-employer">{{ donor.employer }}</span>
+              {% endif %}
+            </td>
+            <td class="donor-amount">${{ donor.total | round }}</td>
+            <td class="donor-count">{{ donor.count }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    {% if legislator.donor_categories and legislator.donor_categories.size > 0 %}
+    <h3>Donor Categories</h3>
+    <div class="category-bars">
+      {% assign max_category = legislator.donor_categories[0].total %}
+      {% for cat in legislator.donor_categories limit: 8 %}
+      {% assign width = cat.total | times: 100.0 | divided_by: max_category %}
+      <div class="category-row">
+        <span class="category-name">{{ cat.category }}</span>
+        <div class="category-bar-wrapper">
+          <div class="category-bar" style="width: {{ width }}%"></div>
+        </div>
+        <span class="category-total">${{ cat.total | round }}</span>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="pdc-link">
+      <a href="https://www.pdc.wa.gov/browse/campaign-explorer/candidate?filer_id={{ page.legislator_id }}&election_year=2024" target="_blank" rel="noopener" class="btn btn-secondary">
+        View Full PDC Filings →
+      </a>
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- Bills Sponsored -->
+  {% if page.bills_count > 0 %}
+  <section class="legislator-section">
+    <h2>📜 Bills Sponsored</h2>
+    <p class="section-desc">{{ page.name }} has sponsored {{ page.bills_count }} bills this session, including {{ page.harmful_bills_count }} rated as harmful.</p>
+
+    {% if page.critical_bills > 0 or page.high_bills > 0 %}
+    <div class="threat-summary">
+      {% if page.critical_bills > 0 %}
+      <span class="threat-badge threat-critical">{{ page.critical_bills }} Critical</span>
+      {% endif %}
+      {% if page.high_bills > 0 %}
+      <span class="threat-badge threat-high">{{ page.high_bills }} High</span>
+      {% endif %}
+    </div>
+    {% endif %}
+
+    <!-- Show bills sponsored by this legislator -->
+    {% assign sponsored_bills = site.data.bills | where_exp: "bill", "bill.sponsors contains page.name" %}
+    {% if sponsored_bills.size > 0 %}
+    <div class="bills-grid">
+      {% for bill in sponsored_bills limit: 12 %}
+        {% include bill-card.html bill=bill %}
+      {% endfor %}
+    </div>
+    {% if sponsored_bills.size > 12 %}
+    <div class="section-footer">
+      <a href="{{ '/all-bills/' | relative_url }}?sponsor={{ page.name | url_encode }}" class="btn btn-secondary">View All {{ sponsored_bills.size }} Bills</a>
+    </div>
+    {% endif %}
+    {% else %}
+    <p class="note">Bill sponsorship data is being updated. Check back soon.</p>
+    {% endif %}
+  </section>
+  {% endif %}
+
+  <!-- Voting Record Placeholder -->
+  <section class="legislator-section">
+    <h2>🗳️ Voting Record</h2>
+    <p class="section-desc coming-soon">Voting record data coming soon. We're working on tracking how legislators vote on key bills.</p>
+  </section>
+
+  <!-- Take Action -->
+  <section class="legislator-section action-cta">
+    <h2>📞 Make Your Voice Heard</h2>
+    <p>Contact {{ page.name }} directly to share your thoughts on pending legislation.</p>
+    <div class="action-buttons">
+      {% if page.email %}
+      <a href="mailto:{{ page.email }}?subject=Constituent%20Feedback" class="btn btn-primary">Send Email</a>
+      {% endif %}
+      {% if page.phone %}
+      <a href="tel:{{ page.phone }}" class="btn btn-secondary">Call Office</a>
+      {% endif %}
+      <a href="https://app.leg.wa.gov/districtfinder/" target="_blank" class="btn btn-secondary">Verify My District</a>
+    </div>
+  </section>
+
+  <nav class="legislator-nav">
+    <a href="{{ '/legislators/' | relative_url }}" class="back-link">← Back to All Legislators</a>
+  </nav>
+</article>
+
+<style>
+.legislator-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.legislator-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+  padding-bottom: var(--space-6);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.legislator-title h1 {
+  margin-bottom: var(--space-3);
+}
+
+.legislator-meta {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.party-badge, .chamber-badge, .district-badge {
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.party-badge.party-d {
+  background: #3b82f6;
+  color: white;
+}
+
+.party-badge.party-r {
+  background: #dc2626;
+  color: white;
+}
+
+.chamber-badge {
+  background: var(--color-bg-darkest);
+  color: var(--color-text-secondary);
+}
+
+.district-badge {
+  background: var(--color-primary-darker);
+  color: var(--color-primary-light);
+}
+
+.legislator-contact {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.contact-link {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.contact-link:hover {
+  color: var(--color-primary-light);
+}
+
+.contact-icon {
+  margin-right: var(--space-2);
+}
+
+/* Stats */
+.legislator-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+.stat-card {
+  background: var(--color-bg-medium);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  text-align: center;
+  border: 1px solid var(--color-border);
+}
+
+.stat-card.stat-money {
+  border-color: #16a34a;
+  background: rgba(22, 163, 74, 0.1);
+}
+
+.stat-card.stat-danger {
+  border-color: #dc2626;
+  background: rgba(220, 38, 38, 0.1);
+}
+
+.stat-number {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.stat-card.stat-money .stat-number {
+  color: #86efac;
+}
+
+.stat-card.stat-danger .stat-number {
+  color: #fca5a5;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--color-text-dim);
+  text-transform: uppercase;
+}
+
+/* Sections */
+.legislator-section {
+  background: var(--color-bg-medium);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  margin-bottom: var(--space-6);
+  border: 1px solid var(--color-border);
+}
+
+.legislator-section h2 {
+  margin-bottom: var(--space-2);
+}
+
+.section-desc {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-5);
+}
+
+/* Donors Table */
+.donors-table-container {
+  overflow-x: auto;
+  margin-bottom: var(--space-6);
+}
+
+.donors-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.donors-table th,
+.donors-table td {
+  padding: var(--space-3);
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.donors-table th {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--color-text-dim);
+  background: var(--color-bg-darkest);
+}
+
+.donor-name {
+  font-weight: 500;
+}
+
+.donor-employer {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-text-dim);
+  font-weight: normal;
+}
+
+.donor-amount {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: #86efac;
+}
+
+.donor-count {
+  color: var(--color-text-muted);
+}
+
+/* Category Bars */
+.category-bars {
+  margin: var(--space-4) 0;
+}
+
+.category-row {
+  display: grid;
+  grid-template-columns: 140px 1fr 80px;
+  gap: var(--space-3);
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
+
+.category-name {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+.category-bar-wrapper {
+  background: var(--color-bg-darkest);
+  border-radius: var(--radius-full);
+  height: 8px;
+  overflow: hidden;
+}
+
+.category-bar {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  height: 100%;
+  border-radius: var(--radius-full);
+  min-width: 4px;
+}
+
+.category-total {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--color-text-muted);
+  text-align: right;
+}
+
+.pdc-link {
+  margin-top: var(--space-4);
+}
+
+/* Threat Summary */
+.threat-summary {
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+/* Action CTA */
+.action-cta {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, var(--color-bg-medium) 100%);
+  border-color: #3b82f6;
+}
+
+.action-buttons {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+/* Navigation */
+.legislator-nav {
+  margin-top: var(--space-8);
+}
+
+.back-link {
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: var(--color-primary-light);
+}
+
+.coming-soon {
+  font-style: italic;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .legislator-header {
+    flex-direction: column;
+  }
+
+  .legislator-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .category-row {
+    grid-template-columns: 100px 1fr 60px;
+  }
+}
+</style>

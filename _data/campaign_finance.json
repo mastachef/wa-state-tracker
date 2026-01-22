@@ -1,0 +1,1962 @@
+{
+  "updated": "2026-01-22T10:47:43.436949",
+  "election_years": [
+    2024,
+    2022,
+    2020
+  ],
+  "total_contributions": 150000,
+  "matched_contributions": 90668,
+  "top_fundraisers": [
+    {
+      "name": "Ron Muzzall",
+      "chamber": "Senate",
+      "party": "R",
+      "district": "10",
+      "total_raised": 1436015.16,
+      "top_donors": [
+        {
+          "name": "House Republican Organizational Committee",
+          "total": 133000.0,
+          "employer": "",
+          "count": 2
+        },
+        {
+          "name": "Washington State Republican Party",
+          "total": 130000.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "Senate Republican Campaign Committee",
+          "total": 125471.32,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "SENATE REPUBLICAN CAMPAIGN COMMITTEE",
+          "total": 103150.0,
+          "employer": "",
+          "count": 3
+        },
+        {
+          "name": "WASHINGTON STATE REPUBLICAN PARTY",
+          "total": 100276.04,
+          "employer": "",
+          "count": 15
+        }
+      ]
+    },
+    {
+      "name": "Alicia Rule",
+      "chamber": "House",
+      "party": "D",
+      "district": "42",
+      "total_raised": 1343617.6,
+      "top_donors": [
+        {
+          "name": "WA State Democrats",
+          "total": 127048.98,
+          "employer": "",
+          "count": 9
+        },
+        {
+          "name": "House Democratic Campaign Committee",
+          "total": 117077.99,
+          "employer": "",
+          "count": 15
+        },
+        {
+          "name": "House Democratic Campaign Committee / HDCC",
+          "total": 111915.22,
+          "employer": "",
+          "count": 7
+        },
+        {
+          "name": "WA State Democratic Central Committee",
+          "total": 98067.11,
+          "employer": "",
+          "count": 11
+        },
+        {
+          "name": "WA Senate Demo Camp",
+          "total": 93365.54,
+          "employer": "",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "name": "Paul Harris",
+      "chamber": "Senate",
+      "party": "R",
+      "district": "17",
+      "total_raised": 1269790.62,
+      "top_donors": [
+        {
+          "name": "SENATE REPUBLICAN CAMPAIGN COMMITTEE",
+          "total": 124091.05,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "HOUSE REPUBLICAN ORGANIZATIONAL COMMITTEE",
+          "total": 80000.0,
+          "employer": "",
+          "count": 1
+        },
+        {
+          "name": "HOUSE DEM CAMPAIGN COMM",
+          "total": 74597.26,
+          "employer": "",
+          "count": 8
+        },
+        {
+          "name": "WA STATE DEMOCRATS",
+          "total": 68753.84,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "WASHINGTON STATE REPUBLICAN PARTY",
+          "total": 13222.36,
+          "employer": "",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "Dave Paul",
+      "chamber": "House",
+      "party": "D",
+      "district": "10",
+      "total_raised": 1126477.88,
+      "top_donors": [
+        {
+          "name": "House Democratic Campaign Committee",
+          "total": 134095.67,
+          "employer": "",
+          "count": 10
+        },
+        {
+          "name": "HOUSE DEMOCRATIC CAMPAIGN COMMITTEE",
+          "total": 112692.82,
+          "employer": "",
+          "count": 12
+        },
+        {
+          "name": "WASHINGTON STATE DEMOCRATIC CENTRAL COMMITTEE",
+          "total": 74228.94,
+          "employer": "",
+          "count": 16
+        },
+        {
+          "name": "Washington State Democratic Central Committee",
+          "total": 35130.64,
+          "employer": "",
+          "count": 11
+        },
+        {
+          "name": "10TH DISTRICT DEMOCRATS",
+          "total": 25150.0,
+          "employer": "",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "name": "T'wina Nobles",
+      "chamber": "Senate",
+      "party": "D",
+      "district": "28",
+      "total_raised": 1108883.49,
+      "top_donors": [
+        {
+          "name": "WA STATE DEMOCRATS",
+          "total": 72307.67,
+          "employer": "",
+          "count": 7
+        },
+        {
+          "name": "WA SENATE DEMO CAMP / WSDC",
+          "total": 53958.33,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "SMALL CONTRIBUTIONS",
+          "total": 48908.61,
+          "employer": "",
+          "count": 133
+        },
+        {
+          "name": "WA SENATE DEMO CAMP",
+          "total": 30000.0,
+          "employer": "",
+          "count": 1
+        },
+        {
+          "name": "WA Senate Demo Camp / WSDC",
+          "total": 16603.39,
+          "employer": "",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "name": "Curtis King",
+      "chamber": "Senate",
+      "party": "R",
+      "district": "14",
+      "total_raised": 1028851.55,
+      "top_donors": [
+        {
+          "name": "MISCELLANEOUS RECEIPTS",
+          "total": 105772.57,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "House Republicans Organization Committee",
+          "total": 72500.0,
+          "employer": "",
+          "count": 2
+        },
+        {
+          "name": "Senate Republican Campaign Committee",
+          "total": 40500.0,
+          "employer": "",
+          "count": 2
+        },
+        {
+          "name": "SMALL CONTRIBUTIONS",
+          "total": 7021.0,
+          "employer": "",
+          "count": 37
+        },
+        {
+          "name": "WA CHARTERS PAC",
+          "total": 5000.0,
+          "employer": "",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "name": "Laurie Jinkins",
+      "chamber": "House",
+      "party": "D",
+      "district": "27",
+      "total_raised": 1015731.64,
+      "top_donors": [
+        {
+          "name": "SMALL CONTRIBUTIONS",
+          "total": 10024.29,
+          "employer": "",
+          "count": 32
+        },
+        {
+          "name": "Cohen Loren",
+          "total": 6000.0,
+          "employer": "MC Construction",
+          "count": 3
+        },
+        {
+          "name": "Laurie Jinkins",
+          "total": 5885.45,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "Puyallup Tribe of Indians",
+          "total": 5400.0,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "Anheuser Busch Companies, LLC",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "name": "Sharon Shewmake",
+      "chamber": "Senate",
+      "party": "D",
+      "district": "42",
+      "total_raised": 999180.08,
+      "top_donors": [
+        {
+          "name": "WA STATE DEMOCRATS",
+          "total": 170357.17,
+          "employer": "",
+          "count": 10
+        },
+        {
+          "name": "WA SENATE DEMOCRATIC CAMPAIGN",
+          "total": 126875.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "HOUSE DEMOCRATIC CAMPAIGN COMMITTEE",
+          "total": 91810.83,
+          "employer": "",
+          "count": 11
+        },
+        {
+          "name": "WA HOUSE DEMOCRATIC CAMPAIGN COMMITTEE",
+          "total": 90000.0,
+          "employer": "",
+          "count": 3
+        },
+        {
+          "name": "WASHINGTON STATE DEMOCRATS",
+          "total": 24010.0,
+          "employer": "",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "name": "April Berg",
+      "chamber": "House",
+      "party": "D",
+      "district": "44",
+      "total_raised": 983588.27,
+      "top_donors": [
+        {
+          "name": "HOUSE DEMOCRATIC CAMPAIGN COMMITTEE",
+          "total": 93618.32,
+          "employer": "",
+          "count": 7
+        },
+        {
+          "name": "WA STATE DEMOCRATS",
+          "total": 71319.89,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "House Democratic Campaign Committee",
+          "total": 70063.46,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "44TH LD DEMOCRATS",
+          "total": 18900.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "SMALL CONTRIBUTIONS",
+          "total": 11292.08,
+          "employer": "",
+          "count": 53
+        }
+      ]
+    },
+    {
+      "name": "Drew Stokesbary",
+      "chamber": "House",
+      "party": "R",
+      "district": "31",
+      "total_raised": 958708.17,
+      "top_donors": [
+        {
+          "name": "MISCELLANEOUS RECEIPTS",
+          "total": 75057.55,
+          "employer": "",
+          "count": 13
+        },
+        {
+          "name": "WASHINGTON STATE REPUBLICAN PARTY",
+          "total": 20179.0,
+          "employer": "",
+          "count": 8
+        },
+        {
+          "name": "AVISTA CORP.",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "WASHINGTON MEDICAL POLITICAL ACTION CMTE",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "WASHINGTON STATE TROOPERS POLITICAL ACTION COMMITTEE",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "name": "Adison Richards",
+      "chamber": "House",
+      "party": "D",
+      "district": "26",
+      "total_raised": 953707.31,
+      "top_donors": [
+        {
+          "name": "House Democratic Campaign Committee",
+          "total": 225485.57,
+          "employer": "",
+          "count": 8
+        },
+        {
+          "name": "Washington State Democrats",
+          "total": 185734.46,
+          "employer": "",
+          "count": 45
+        },
+        {
+          "name": "Washington Senate Democratic Campaign",
+          "total": 131428.04,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "26th Legislative District Democrats",
+          "total": 47050.0,
+          "employer": "",
+          "count": 14
+        },
+        {
+          "name": "SMALL CONTRIBUTIONS",
+          "total": 33069.7,
+          "employer": "",
+          "count": 99
+        }
+      ]
+    },
+    {
+      "name": "Claire Wilson",
+      "chamber": "Senate",
+      "party": "D",
+      "district": "30",
+      "total_raised": 930646.08,
+      "top_donors": [
+        {
+          "name": "SENATE REPUBLICAN CAMPAIGN COMMITTEE",
+          "total": 112020.99,
+          "employer": "",
+          "count": 10
+        },
+        {
+          "name": "Washington State Democrats",
+          "total": 47698.41,
+          "employer": "",
+          "count": 14
+        },
+        {
+          "name": "Washington Senate Democratic Campaign",
+          "total": 45346.13,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "WASHINGTON STATE REPUBLICAN PARTY",
+          "total": 36790.62,
+          "employer": "",
+          "count": 3
+        },
+        {
+          "name": "HOUSE REPUBLICAN ORGANIZATIONAL COMMITTEE",
+          "total": 6000.0,
+          "employer": "",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "Clyde Shavers",
+      "chamber": "House",
+      "party": "D",
+      "district": "10",
+      "total_raised": 904893.75,
+      "top_donors": [
+        {
+          "name": "House Democratic Campaign Committee",
+          "total": 237937.5,
+          "employer": "",
+          "count": 11
+        },
+        {
+          "name": "WA State Democratic Central Committee",
+          "total": 180564.82,
+          "employer": "",
+          "count": 15
+        },
+        {
+          "name": "WA Senate Demo Camp",
+          "total": 50000.0,
+          "employer": "",
+          "count": 1
+        },
+        {
+          "name": "10th LD Democrats",
+          "total": 20500.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "SMALL CONTRIBUTIONS",
+          "total": 19571.13,
+          "employer": "",
+          "count": 72
+        }
+      ]
+    },
+    {
+      "name": "Jamila Taylor",
+      "chamber": "House",
+      "party": "D",
+      "district": "30",
+      "total_raised": 878595.5,
+      "top_donors": [
+        {
+          "name": "HOUSE DEMOCRATIC CAMPAIGN COMMITTEE",
+          "total": 80302.39,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "HDCC",
+          "total": 38583.56,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "Melissa Taylor",
+          "total": 18000.0,
+          "employer": "Health Rosetta",
+          "count": 1
+        },
+        {
+          "name": "SMALL CONTRIBUTIONS",
+          "total": 16451.08,
+          "employer": "",
+          "count": 83
+        },
+        {
+          "name": "WA STATE DEMOCRATS",
+          "total": 12506.22,
+          "employer": "",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "name": "Joe Timmons",
+      "chamber": "House",
+      "party": "D",
+      "district": "42",
+      "total_raised": 857796.38,
+      "top_donors": [
+        {
+          "name": "WA State Democratic Central Committee",
+          "total": 189985.35,
+          "employer": "",
+          "count": 19
+        },
+        {
+          "name": "House Democratic Campaign Committee (HDCC)",
+          "total": 117590.38,
+          "employer": "",
+          "count": 8
+        },
+        {
+          "name": "House Demo Camp Comm",
+          "total": 102277.53,
+          "employer": "",
+          "count": 9
+        },
+        {
+          "name": "WA Senate Demo Camp",
+          "total": 93365.54,
+          "employer": "",
+          "count": 3
+        },
+        {
+          "name": "SMALL CONTRIBUTIONS",
+          "total": 12342.77,
+          "employer": "",
+          "count": 55
+        }
+      ]
+    },
+    {
+      "name": "Larry Springer",
+      "chamber": "House",
+      "party": "D",
+      "district": "45",
+      "total_raised": 833143.71,
+      "top_donors": [
+        {
+          "name": "Friends of Larry Springer Surplus Fund",
+          "total": 49995.0,
+          "employer": "",
+          "count": 1
+        },
+        {
+          "name": "House Democratic Campaign Committee",
+          "total": 24822.25,
+          "employer": "",
+          "count": 2
+        },
+        {
+          "name": "WA Affordable Housing Council",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "Doordash Inc",
+          "total": 4400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "WA Beverage Assn PAC",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "name": "Mari Leavitt",
+      "chamber": "House",
+      "party": "D",
+      "district": "28",
+      "total_raised": 794220.89,
+      "top_donors": [
+        {
+          "name": "SMALL CONTRIBUTIONS",
+          "total": 13180.0,
+          "employer": "",
+          "count": 57
+        },
+        {
+          "name": "MISCELLANEOUS RECEIPTS",
+          "total": 7750.0,
+          "employer": "",
+          "count": 3
+        },
+        {
+          "name": "Washington Association of Realtors Political Affairs Council",
+          "total": 6600.0,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "SEIU 1199 NW",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "USAA",
+          "total": 5400.0,
+          "employer": "",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "name": "Annette Cleveland",
+      "chamber": "Senate",
+      "party": "D",
+      "district": "49",
+      "total_raised": 790893.43,
+      "top_donors": [
+        {
+          "name": "MISCELLANEOUS RECEIPTS",
+          "total": 58071.12,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "Washington State Democratic Campaign",
+          "total": 25061.12,
+          "employer": "",
+          "count": 2
+        },
+        {
+          "name": "WASHINGTON BEVERAGE ASSOCIATION",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "IRON WORKERS DISTRICT COUNCIL OF THE PNW",
+          "total": 4400.0,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "NOVARTIS",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "name": "Amy Walen",
+      "chamber": "House",
+      "party": "D",
+      "district": "48",
+      "total_raised": 776209.76,
+      "top_donors": [
+        {
+          "name": "WASHINGTON BEVERAGE ASSOCIATION PAC",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "WASHINGTON STATE AUTO DEALERS PAC",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "USAA",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "THE BOEING COMPANY PAC",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "BIG I PAC",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "name": "Derek Stanford",
+      "chamber": "Senate",
+      "party": "D",
+      "district": "1",
+      "total_raised": 768575.3,
+      "top_donors": [
+        {
+          "name": "MISCELLANEOUS RECEIPTS",
+          "total": 131064.42,
+          "employer": "",
+          "count": 3
+        },
+        {
+          "name": "HOUSE DEMOCRATIC CAMPAIGN COMMITTEE",
+          "total": 83562.51,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "WASHINGTON STATE DEMOCRATS",
+          "total": 27917.16,
+          "employer": "",
+          "count": 12
+        },
+        {
+          "name": "26TH LEGISLATIVE DISTRICT DEMOCRATS",
+          "total": 20250.0,
+          "employer": "",
+          "count": 9
+        },
+        {
+          "name": "THE TULALIP TRIBES OF WASHINGTON",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "name": "Dan Bronoske",
+      "chamber": "House",
+      "party": "D",
+      "district": "28",
+      "total_raised": 764465.47,
+      "top_donors": [
+        {
+          "name": "WA STATE DEMOCRATS",
+          "total": 123835.28,
+          "employer": "",
+          "count": 38
+        },
+        {
+          "name": "HOUSE DEMOCRATIC CAMPAIGN COMMITTEE",
+          "total": 116589.4,
+          "employer": "",
+          "count": 10
+        },
+        {
+          "name": "28TH DISTRICT DEMOCRATS",
+          "total": 9500.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "ACTIVE IN DEMOCRACY",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "WEST PIERCE FIRE FIGHTERS LOCAL 1488 PAC",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "name": "Jake Fey",
+      "chamber": "House",
+      "party": "D",
+      "district": "27",
+      "total_raised": 718254.21,
+      "top_donors": [
+        {
+          "name": "MISCELLANEOUS RECEIPTS",
+          "total": 18228.55,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "DoorDash, Inc.",
+          "total": 5400.0,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "Tulalip Tribes of Washington",
+          "total": 5150.0,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "SMALL CONTRIBUTIONS",
+          "total": 4486.8,
+          "employer": "",
+          "count": 15
+        },
+        {
+          "name": "HNTB Holdings LTD PAC",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "name": "Joe Fitzgibbon",
+      "chamber": "House",
+      "party": "D",
+      "district": "34",
+      "total_raised": 717998.43,
+      "top_donors": [
+        {
+          "name": "SAMISH TYEE",
+          "total": 5000.0,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "WEYERHAEUSER",
+          "total": 5000.0,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "PUYALLUP TRIBE OF INDIANS",
+          "total": 5000.0,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "Washington Association of Realtors PAC",
+          "total": 4800.0,
+          "employer": "",
+          "count": 3
+        },
+        {
+          "name": "MACPAC",
+          "total": 4200.0,
+          "employer": "",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "name": "Marcus Riccelli",
+      "chamber": "Senate",
+      "party": "D",
+      "district": "3",
+      "total_raised": 715049.99,
+      "top_donors": [
+        {
+          "name": "MARCUS M RICCELLI  SURPLUS FUND ACCOUNT",
+          "total": 25000.0,
+          "employer": "",
+          "count": 1
+        },
+        {
+          "name": "WASHINGTON BEER & WINE DISTRIBUTORS ASSOCIATION",
+          "total": 6400.0,
+          "employer": "",
+          "count": 7
+        },
+        {
+          "name": "SEIU 775 QUALITY CARE COMMITTEE",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "DELTA DENTAL OF WASHINGTON",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "DAVITA",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "name": "John Braun",
+      "chamber": "Senate",
+      "party": "R",
+      "district": "20",
+      "total_raised": 707328.3,
+      "top_donors": [
+        {
+          "name": "ALTRIA CLIENT SERVICES LLC",
+          "total": 4400.0,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "PREMERA BLUE CROSS",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "USAA",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "WASHINGTON MEDICAL PAC",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "ASSOC  BUILDERS & CONTRACTORS  OF WESTERN WA PAC",
+          "total": 4400.0,
+          "employer": "",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "name": "Drew Hansen",
+      "chamber": "Senate",
+      "party": "D",
+      "district": "23",
+      "total_raised": 682116.78,
+      "top_donors": [
+        {
+          "name": "SMALL CONTRIBUTIONS",
+          "total": 8502.0,
+          "employer": "",
+          "count": 29
+        },
+        {
+          "name": "Suquamish Indian Tribe",
+          "total": 5100.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "Muckleshoot Indian Tribe",
+          "total": 4600.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "Delta Dental of WA",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "Amazon.com Services, LLC",
+          "total": 3400.0,
+          "employer": "",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "name": "Liz Berry",
+      "chamber": "House",
+      "party": "D",
+      "district": "36",
+      "total_raised": 656562.72,
+      "top_donors": [
+        {
+          "name": "SMALL CONTRIBUTIONS",
+          "total": 5498.02,
+          "employer": "",
+          "count": 25
+        },
+        {
+          "name": "Puget Sound Pilots PAC",
+          "total": 4900.0,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "Iron Workers District Council of the PNW SSF",
+          "total": 4900.0,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "Credit Union Leg Action Fund/NW Credit Union",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "Muckleshoot Indian Tribe",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "name": "Andrew Barkis",
+      "chamber": "House",
+      "party": "R",
+      "district": "2",
+      "total_raised": 656038.46,
+      "top_donors": [
+        {
+          "name": "GOODMAN REAL ESTATE INC",
+          "total": 6400.0,
+          "employer": "",
+          "count": 7
+        },
+        {
+          "name": "PUGET SOUND PILOTS PAC",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "WASHINGTON HOSPITALITY ASSOCIATION POLITICAL ACTION COMMITTEE",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "PUYALLUP TRIBE OF INDIANS",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "MANUFACTURED HOUSING COMMUNITIES OF WASHINGTON, INC PAC",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "name": "Mike Chapman",
+      "chamber": "Senate",
+      "party": "D",
+      "district": "24",
+      "total_raised": 649224.18,
+      "top_donors": [
+        {
+          "name": "WASHINGTON FOREST PROTECTION ASSOCIATION",
+          "total": 4000.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "PUYALLUP TRIBE OF INDIANS",
+          "total": 4000.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "JAMESTOWN S'KLALLAM TRIBE",
+          "total": 4000.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "MICROSOFT",
+          "total": 4000.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "SNOQUALMIE TRIBE",
+          "total": 4000.0,
+          "employer": "",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "name": "Skyler Rude",
+      "chamber": "House",
+      "party": "R",
+      "district": "16",
+      "total_raised": 646269.51,
+      "top_donors": [
+        {
+          "name": "PUYALLUP TRIBE OF INDIANS",
+          "total": 7400.0,
+          "employer": "",
+          "count": 7
+        },
+        {
+          "name": "SMALL CONTRIBUTIONS",
+          "total": 6854.84,
+          "employer": "",
+          "count": 25
+        },
+        {
+          "name": "MISCELLANEOUS RECEIPTS",
+          "total": 6500.0,
+          "employer": "",
+          "count": 3
+        },
+        {
+          "name": "DELTA DENTAL OF WASHINGTON",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "WA CHARTERS PAC",
+          "total": 6400.0,
+          "employer": "",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "name": "Kristine Reeves",
+      "chamber": "House",
+      "party": "D",
+      "district": "30",
+      "total_raised": 629719.62,
+      "top_donors": [
+        {
+          "name": "House Democratic Campaign Committee",
+          "total": 50000.0,
+          "employer": "",
+          "count": 1
+        },
+        {
+          "name": "Kristine Reeves Surplus Funds Account",
+          "total": 37967.96,
+          "employer": "",
+          "count": 1
+        },
+        {
+          "name": "Friends to Elect Kristine Reeves",
+          "total": 24000.0,
+          "employer": "",
+          "count": 1
+        },
+        {
+          "name": "Boeing Employees Credit Union (BECU)",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "WA Forest Protection Assn State PAC",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "name": "Sam Low",
+      "chamber": "House",
+      "party": "R",
+      "district": "39",
+      "total_raised": 627897.06,
+      "top_donors": [
+        {
+          "name": "TRANSFER FROM SURPLUS FUNDS WITH WRITTEN PERMISSION",
+          "total": 44286.21,
+          "employer": "",
+          "count": 12
+        },
+        {
+          "name": "MISCELLANEOUS RECEIPTS",
+          "total": 21939.57,
+          "employer": "",
+          "count": 7
+        },
+        {
+          "name": "Shukri Olow",
+          "total": 11080.0,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "SMALL CONTRIBUTIONS",
+          "total": 8955.0,
+          "employer": "",
+          "count": 44
+        },
+        {
+          "name": "Washington State Republican Party",
+          "total": 6825.29,
+          "employer": "",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "Bill Ramos",
+      "chamber": "Senate",
+      "party": "D",
+      "district": "5",
+      "total_raised": 623876.32,
+      "top_donors": [
+        {
+          "name": "SMALL CONTRIBUTIONS",
+          "total": 28374.0,
+          "employer": "",
+          "count": 83
+        },
+        {
+          "name": "WA Health Care Association",
+          "total": 4900.0,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "Firefighters PAC Local 1747 FPAC",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "Kennedy Fund",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "USAA",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "name": "Jeremie Dufault",
+      "chamber": "House",
+      "party": "R",
+      "district": "15",
+      "total_raised": 605520.35,
+      "top_donors": [
+        {
+          "name": "MCGREE CHRIS",
+          "total": 6400.0,
+          "employer": "MCGREE INSURANCE",
+          "count": 6
+        },
+        {
+          "name": "WYCKOFF DAVID",
+          "total": 6400.0,
+          "employer": "WYCKOFF FARMS INC.",
+          "count": 7
+        },
+        {
+          "name": "WYCKOFF KATIE",
+          "total": 6400.0,
+          "employer": "SELF-EMPLOYED",
+          "count": 6
+        },
+        {
+          "name": "MERCY FORBES",
+          "total": 6400.0,
+          "employer": "WASHINGTON BROADBAND, INC",
+          "count": 6
+        },
+        {
+          "name": "WYCKOFF COURT",
+          "total": 6400.0,
+          "employer": "WYCKOFF FARMS, INC.",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "name": "Joe Schmick",
+      "chamber": "House",
+      "party": "R",
+      "district": "9",
+      "total_raised": 602699.86,
+      "top_donors": [
+        {
+          "name": "PEOPLE FOR JOE SCHMICK SURPLUS FUND",
+          "total": 48000.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "SMALL CONTRIBUTIONS",
+          "total": 10598.08,
+          "employer": "",
+          "count": 32
+        },
+        {
+          "name": "CENTENE MANAGEMENT CO. LLC",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "DELTA DENTAL OF WASHINGTON",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "WASHINGTON AFFORDABLE HOUSING COUNCIL",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "name": "Chris Corry",
+      "chamber": "House",
+      "party": "R",
+      "district": "15",
+      "total_raised": 595045.31,
+      "top_donors": [
+        {
+          "name": "PUGET SOUND CHAPTER NECA PAC",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "BIG I PAC",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "WASHINGTON AFFORDABLE HOUSING COUNCIL",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "ALTRIA CLIENT SERVICES LLC",
+          "total": 6000.0,
+          "employer": "",
+          "count": 7
+        },
+        {
+          "name": "COMCAST FINANCIAL AGENCY CORP",
+          "total": 5900.0,
+          "employer": "",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "name": "Tarra Simmons",
+      "chamber": "House",
+      "party": "D",
+      "district": "23",
+      "total_raised": 593230.92,
+      "top_donors": [
+        {
+          "name": "SMALL CONTRIBUTIONS",
+          "total": 15800.3,
+          "employer": "",
+          "count": 74
+        },
+        {
+          "name": "23RD DISTRICT DEMOCRATS",
+          "total": 5750.0,
+          "employer": "",
+          "count": 2
+        },
+        {
+          "name": "WA State Auto Dealers PAC",
+          "total": 5400.0,
+          "employer": "",
+          "count": 8
+        },
+        {
+          "name": "Muckleshoot Indian Tribe",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "Puyallup Tribe of Indians",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "name": "Mark Schoesler",
+      "chamber": "Senate",
+      "party": "R",
+      "district": "9",
+      "total_raised": 590900.0,
+      "top_donors": [
+        {
+          "name": "MUCKLESHOOT INDIAN TRIBE",
+          "total": 5400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "WASHINGTON STATE AUTO DEALERS PAC",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "KAISER ALUMINUM",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "THE BOEING COMPANY PAC",
+          "total": 4400.0,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "WHCA-PAC",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "name": "Monica Jurado Stonier",
+      "chamber": "House",
+      "party": "D",
+      "district": "49",
+      "total_raised": 549975.17,
+      "top_donors": [
+        {
+          "name": "USAA",
+          "total": 4900.0,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "PSE SEIU 1948",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "WA STATE AUTO DEALERS PAC",
+          "total": 4000.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "PFIZER INC",
+          "total": 4000.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "STAND FOR CHILDREN WA PAC",
+          "total": 4000.0,
+          "employer": "",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "name": "Chris Gildon",
+      "chamber": "Senate",
+      "party": "R",
+      "district": "25",
+      "total_raised": 540658.39,
+      "top_donors": [
+        {
+          "name": "WASHINGTON STATE REPUBLICAN PARTY",
+          "total": 84941.81,
+          "employer": "",
+          "count": 13
+        },
+        {
+          "name": "SENATE REPUBLICAN CAMPAIGN COMMITTEE",
+          "total": 20615.0,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "PIERCE COUNTY REPUBLICAN PARTY",
+          "total": 7000.0,
+          "employer": "",
+          "count": 2
+        },
+        {
+          "name": "USAA",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "BNSF RAILWAY COMPANY",
+          "total": 4000.0,
+          "employer": "",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "name": "Steve Bergquist",
+      "chamber": "House",
+      "party": "D",
+      "district": "11",
+      "total_raised": 512866.47,
+      "top_donors": [
+        {
+          "name": "MISCELLANEOUS RECEIPTS",
+          "total": 176921.09,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "DELTA DENTAL OF WASHINGTON",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "WASHINGTON MEDICAL PAC",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "PUYALLUP TRIBE OF INDIANS",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "PUBLIC SCHOOL EMPLOYEES OF WASHINGTON POLITICAL FUND",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "name": "Adrian Cortes",
+      "chamber": "Senate",
+      "party": "D",
+      "district": "18",
+      "total_raised": 491694.72,
+      "top_donors": [
+        {
+          "name": "Washington Senate Democratic Campaign (WSDC)",
+          "total": 124560.0,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "Washington State Democrats",
+          "total": 123697.71,
+          "employer": "",
+          "count": 27
+        },
+        {
+          "name": "House Democratic Campaign Committee",
+          "total": 33000.0,
+          "employer": "",
+          "count": 2
+        },
+        {
+          "name": "SMALL CONTRIBUTIONS",
+          "total": 30920.02,
+          "employer": "",
+          "count": 55
+        },
+        {
+          "name": "Clark County Democratic Central Committee",
+          "total": 12000.0,
+          "employer": "",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "Steve Tharinger",
+      "chamber": "House",
+      "party": "D",
+      "district": "24",
+      "total_raised": 485112.03,
+      "top_donors": [
+        {
+          "name": "SEIU 775 Quality Care Committee",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "Delta Dental of WA",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "Regence",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "Port Gamble S'Klallam Tribe",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "Nisqually Indian Tribe",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "name": "John Lovick",
+      "chamber": "Senate",
+      "party": "D",
+      "district": "44",
+      "total_raised": 481622.75,
+      "top_donors": [
+        {
+          "name": "House Democratic Campaign Committee / HDCC",
+          "total": 8125.0,
+          "employer": "",
+          "count": 3
+        },
+        {
+          "name": "HOUSE DEMOCRATIC CAMPAIGN COMMITTEE / HDCC",
+          "total": 5180.32,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "MISCELLANEOUS RECEIPTS",
+          "total": 4975.25,
+          "employer": "",
+          "count": 3
+        },
+        {
+          "name": "USAA",
+          "total": 3500.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "WA Business Properties Assn WBPA PAC",
+          "total": 3000.0,
+          "employer": "",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "name": "Mary Dye",
+      "chamber": "House",
+      "party": "R",
+      "district": "9",
+      "total_raised": 437510.5,
+      "top_donors": [
+        {
+          "name": "HOUSE REPUBLICAN ORGANIZATIONAL COMMITTEE",
+          "total": 54000.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "MISCELLANEOUS RECEIPTS",
+          "total": 37933.38,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "WA BEVERAGE ASSOCIATION PAC",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "AVISTA CORP",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "MUCKLESHOOT INDIAN TRIBE",
+          "total": 5900.0,
+          "employer": "",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "name": "Manka Dhingra",
+      "chamber": "Senate",
+      "party": "D",
+      "district": "45",
+      "total_raised": 431356.62,
+      "top_donors": [
+        {
+          "name": "MISCELLANEOUS RECEIPTS",
+          "total": 88594.24,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "PERAZZOLI CHERYL",
+          "total": 3350.0,
+          "employer": "RETIRED",
+          "count": 4
+        },
+        {
+          "name": "PNW REGIONAL COUNCIL OF CARPENTERS",
+          "total": 3000.0,
+          "employer": "",
+          "count": 2
+        },
+        {
+          "name": "LOSCHEN GRETCHEN",
+          "total": 2750.0,
+          "employer": "NOT EMPLOYED",
+          "count": 3
+        },
+        {
+          "name": "WA OPTOMETRIC PAC",
+          "total": 2300.0,
+          "employer": "",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "name": "Claudia Kauffman",
+      "chamber": "Senate",
+      "party": "D",
+      "district": "47",
+      "total_raised": 421391.28,
+      "top_donors": [
+        {
+          "name": "WA SENATE DEMOCRATIC CAMPAIGN",
+          "total": 90625.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "HOUSE DEMOCRATIC CAMPAIGN COMMITTEE",
+          "total": 85000.0,
+          "employer": "",
+          "count": 1
+        },
+        {
+          "name": "WA STATE DEMOCRATS",
+          "total": 84134.32,
+          "employer": "",
+          "count": 18
+        },
+        {
+          "name": "47TH DISTRICT DEMOCRATS",
+          "total": 8000.0,
+          "employer": "",
+          "count": 3
+        },
+        {
+          "name": "KING COUNTY DEMOCRATS",
+          "total": 4050.0,
+          "employer": "",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "Lisa Callan",
+      "chamber": "House",
+      "party": "D",
+      "district": "5",
+      "total_raised": 420658.66,
+      "top_donors": [
+        {
+          "name": "House Democratic Campaign Committee",
+          "total": 50000.0,
+          "employer": "",
+          "count": 2
+        },
+        {
+          "name": "5th District Democrats",
+          "total": 6580.46,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "PSE SEIU 1948 Political Fund",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "Harry Truman Fund",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "Muckleshoot Indian Tribe",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "name": "Timm Ormsby",
+      "chamber": "House",
+      "party": "D",
+      "district": "3",
+      "total_raised": 414221.49,
+      "top_donors": [
+        {
+          "name": "PSE SEIU 1948",
+          "total": 4700.0,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "SEIU 775 QUALITY CARE COMMITTEE",
+          "total": 4000.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "SEIU HEALTHCARE 1199NW",
+          "total": 4000.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "KALISPEL TRIBE OF INDIANS",
+          "total": 4000.0,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "BALLMER CONNIE",
+          "total": 4000.0,
+          "employer": "SELF EMPLOYED",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "name": "Peter Abbarno",
+      "chamber": "House",
+      "party": "R",
+      "district": "20",
+      "total_raised": 407794.46,
+      "top_donors": [
+        {
+          "name": "WA AFFORDABLE HOUSING COUNCIL",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "PUYALLUP TRIBE OF INDIANS",
+          "total": 6400.0,
+          "employer": "",
+          "count": 6
+        },
+        {
+          "name": "JUSTICE FOR ALL PAC",
+          "total": 6150.0,
+          "employer": "",
+          "count": 9
+        },
+        {
+          "name": "WA COLLECTORS ASSOC PAC",
+          "total": 5800.0,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "WEYERHAEUSER",
+          "total": 5400.0,
+          "employer": "",
+          "count": 5
+        }
+      ]
+    }
+  ]
+}

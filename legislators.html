@@ -1,0 +1,494 @@
+---
+layout: default
+title: Legislators
+description: Washington State legislators - see who's introducing bills, their voting records, and who funds them.
+permalink: /legislators/
+---
+
+<section class="page-header">
+  <h1>Washington State Legislators</h1>
+  <p>Follow the money. See who's introducing harmful bills and who's funding them.</p>
+</section>
+
+<!-- Summary Stats -->
+<section class="summary-stats">
+  {% assign house_count = site.data.legislators | where: "chamber", "House" | size %}
+  {% assign senate_count = site.data.legislators | where: "chamber", "Senate" | size %}
+  {% assign dem_count = site.data.legislators | where: "party", "D" | size %}
+  {% assign rep_count = site.data.legislators | where: "party", "R" | size %}
+
+  <div class="summary-stat">
+    <span class="summary-number">{{ site.data.legislators.size }}</span>
+    <span class="summary-label">Total Legislators</span>
+  </div>
+  <div class="summary-stat summary-house">
+    <span class="summary-number">{{ house_count }}</span>
+    <span class="summary-label">House Members</span>
+  </div>
+  <div class="summary-stat summary-senate">
+    <span class="summary-number">{{ senate_count }}</span>
+    <span class="summary-label">Senators</span>
+  </div>
+  <div class="summary-stat summary-dem">
+    <span class="summary-number">{{ dem_count }}</span>
+    <span class="summary-label">Democrats</span>
+  </div>
+  <div class="summary-stat summary-rep">
+    <span class="summary-number">{{ rep_count }}</span>
+    <span class="summary-label">Republicans</span>
+  </div>
+</section>
+
+<!-- Filters -->
+<section class="filters-section">
+  <div class="filter-row">
+    <div class="filter-group">
+      <label for="chamber-filter">Chamber</label>
+      <select id="chamber-filter">
+        <option value="">All</option>
+        <option value="House">House</option>
+        <option value="Senate">Senate</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="party-filter">Party</label>
+      <select id="party-filter">
+        <option value="">All</option>
+        <option value="D">Democrat</option>
+        <option value="R">Republican</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="sort-filter">Sort By</label>
+      <select id="sort-filter">
+        <option value="money">Most Money Raised</option>
+        <option value="harmful">Most Harmful Bills</option>
+        <option value="bills">Most Bills Sponsored</option>
+        <option value="name">Name (A-Z)</option>
+        <option value="district">District</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="search-filter">Search</label>
+      <input type="text" id="search-filter" placeholder="Search by name...">
+    </div>
+  </div>
+</section>
+
+<!-- Top Fundraisers Highlight -->
+{% if site.data.campaign_finance.top_fundraisers %}
+<section class="highlight-section">
+  <h2>💰 Top Fundraisers (2020-2024)</h2>
+  <p class="section-desc">Who's collecting the most campaign cash?</p>
+
+  <div class="top-fundraisers">
+    {% for leg in site.data.campaign_finance.top_fundraisers limit: 10 %}
+    {% assign slug = leg.name | slugify %}
+    <a href="{{ '/legislators/' | relative_url }}{{ slug }}/" class="fundraiser-card">
+      <span class="rank">#{{ forloop.index }}</span>
+      <div class="fundraiser-info">
+        <span class="fundraiser-name">{{ leg.name }}</span>
+        <span class="fundraiser-meta">{{ leg.party }} - {{ leg.chamber }} D{{ leg.district }}</span>
+      </div>
+      <span class="fundraiser-amount">${{ leg.total_raised | divided_by: 1000 | round }}K</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<!-- Legislators Grid -->
+<section class="legislators-section">
+  <h2>All Legislators</h2>
+  <div id="legislators-count" class="results-count"></div>
+
+  <div class="legislators-grid" id="legislators-grid">
+    {% assign sorted_legislators = site.data.legislators | sort: "total_raised" | reverse %}
+    {% for leg in sorted_legislators %}
+    {% assign slug = leg.name | slugify %}
+    <a href="{{ '/legislators/' | relative_url }}{{ slug }}/"
+       class="legislator-card"
+       data-name="{{ leg.name | downcase }}"
+       data-chamber="{{ leg.chamber }}"
+       data-party="{{ leg.party }}"
+       data-district="{{ leg.district }}"
+       data-money="{{ leg.total_raised }}"
+       data-harmful="{{ leg.harmful_bills_count }}"
+       data-bills="{{ leg.bills_count }}">
+
+      <div class="leg-header">
+        <span class="leg-name">{{ leg.name }}</span>
+        <span class="party-pill party-{{ leg.party | downcase }}">{{ leg.party }}</span>
+      </div>
+
+      <div class="leg-meta">
+        <span class="leg-position">{{ leg.title }} - District {{ leg.district }}</span>
+      </div>
+
+      <div class="leg-stats">
+        <div class="leg-stat">
+          <span class="leg-stat-number money">${{ leg.total_raised | divided_by: 1000 | round }}K</span>
+          <span class="leg-stat-label">Raised</span>
+        </div>
+        <div class="leg-stat">
+          <span class="leg-stat-number">{{ leg.bills_count }}</span>
+          <span class="leg-stat-label">Bills</span>
+        </div>
+        <div class="leg-stat {% if leg.harmful_bills_count > 0 %}has-harmful{% endif %}">
+          <span class="leg-stat-number">{{ leg.harmful_bills_count }}</span>
+          <span class="leg-stat-label">Harmful</span>
+        </div>
+      </div>
+
+      {% if leg.top_donors and leg.top_donors.size > 0 %}
+      <div class="leg-donors">
+        <span class="donors-label">Top Donors:</span>
+        {% for donor in leg.top_donors limit: 2 %}
+        <span class="donor-tag">{{ donor.name | truncate: 25 }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const grid = document.getElementById('legislators-grid');
+  const cards = Array.from(grid.querySelectorAll('.legislator-card'));
+  const countEl = document.getElementById('legislators-count');
+
+  const chamberFilter = document.getElementById('chamber-filter');
+  const partyFilter = document.getElementById('party-filter');
+  const sortFilter = document.getElementById('sort-filter');
+  const searchFilter = document.getElementById('search-filter');
+
+  function filterAndSort() {
+    const chamber = chamberFilter.value;
+    const party = partyFilter.value;
+    const sortBy = sortFilter.value;
+    const search = searchFilter.value.toLowerCase();
+
+    let visible = 0;
+
+    // Filter
+    cards.forEach(card => {
+      const matchChamber = !chamber || card.dataset.chamber === chamber;
+      const matchParty = !party || card.dataset.party === party;
+      const matchSearch = !search || card.dataset.name.includes(search);
+
+      if (matchChamber && matchParty && matchSearch) {
+        card.style.display = '';
+        visible++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    // Sort visible cards
+    const visibleCards = cards.filter(c => c.style.display !== 'none');
+    visibleCards.sort((a, b) => {
+      switch(sortBy) {
+        case 'money':
+          return parseFloat(b.dataset.money) - parseFloat(a.dataset.money);
+        case 'harmful':
+          return parseInt(b.dataset.harmful) - parseInt(a.dataset.harmful);
+        case 'bills':
+          return parseInt(b.dataset.bills) - parseInt(a.dataset.bills);
+        case 'name':
+          return a.dataset.name.localeCompare(b.dataset.name);
+        case 'district':
+          return parseInt(a.dataset.district) - parseInt(b.dataset.district);
+        default:
+          return 0;
+      }
+    });
+
+    // Reorder DOM
+    visibleCards.forEach(card => grid.appendChild(card));
+
+    // Update count
+    countEl.textContent = `Showing ${visible} of ${cards.length} legislators`;
+  }
+
+  chamberFilter.addEventListener('change', filterAndSort);
+  partyFilter.addEventListener('change', filterAndSort);
+  sortFilter.addEventListener('change', filterAndSort);
+  searchFilter.addEventListener('input', filterAndSort);
+
+  filterAndSort();
+});
+</script>
+
+<style>
+/* Summary Stats */
+.summary-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--space-3);
+  margin-bottom: var(--space-8);
+}
+
+.summary-stat {
+  background: var(--color-bg-medium);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  text-align: center;
+  border: 1px solid var(--color-border);
+}
+
+.summary-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary-light);
+}
+
+.summary-house .summary-number { color: #3b82f6; }
+.summary-senate .summary-number { color: #8b5cf6; }
+.summary-dem .summary-number { color: #3b82f6; }
+.summary-rep .summary-number { color: #ef4444; }
+
+.summary-label {
+  font-size: 0.75rem;
+  color: var(--color-text-dim);
+  text-transform: uppercase;
+}
+
+/* Filters */
+.filters-section {
+  background: var(--color-bg-medium);
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-6);
+}
+
+.filter-row {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  flex: 1;
+  min-width: 150px;
+}
+
+.filter-group label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-text-dim);
+  margin-bottom: var(--space-1);
+  text-transform: uppercase;
+}
+
+.filter-group select,
+.filter-group input {
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-bg-darkest);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text-primary);
+  font-size: 0.875rem;
+}
+
+/* Top Fundraisers */
+.highlight-section {
+  margin-bottom: var(--space-8);
+}
+
+.highlight-section h2 {
+  margin-bottom: var(--space-2);
+}
+
+.top-fundraisers {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.fundraiser-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  background: var(--color-bg-medium);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--color-border);
+  transition: border-color 0.2s;
+}
+
+.fundraiser-card:hover {
+  border-color: var(--color-primary);
+}
+
+.rank {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-dim);
+  min-width: 40px;
+}
+
+.fundraiser-info {
+  flex: 1;
+}
+
+.fundraiser-name {
+  display: block;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.fundraiser-meta {
+  font-size: 0.75rem;
+  color: var(--color-text-dim);
+}
+
+.fundraiser-amount {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #86efac;
+  font-family: var(--font-mono);
+}
+
+/* Results Count */
+.results-count {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-4);
+  font-size: 0.875rem;
+}
+
+/* Legislators Grid */
+.legislators-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-4);
+}
+
+.legislator-card {
+  background: var(--color-bg-medium);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--color-border);
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.legislator-card:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.leg-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
+
+.leg-name {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: var(--color-text-primary);
+}
+
+.party-pill {
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.party-pill.party-d {
+  background: #3b82f6;
+  color: white;
+}
+
+.party-pill.party-r {
+  background: #dc2626;
+  color: white;
+}
+
+.leg-meta {
+  margin-bottom: var(--space-3);
+}
+
+.leg-position {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.leg-stats {
+  display: flex;
+  gap: var(--space-4);
+  padding: var(--space-3) 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--space-3);
+}
+
+.leg-stat {
+  text-align: center;
+  flex: 1;
+}
+
+.leg-stat-number {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.leg-stat-number.money {
+  color: #86efac;
+}
+
+.leg-stat.has-harmful .leg-stat-number {
+  color: #fca5a5;
+}
+
+.leg-stat-label {
+  font-size: 0.625rem;
+  color: var(--color-text-dim);
+  text-transform: uppercase;
+}
+
+.leg-donors {
+  font-size: 0.75rem;
+}
+
+.donors-label {
+  color: var(--color-text-dim);
+  display: block;
+  margin-bottom: var(--space-1);
+}
+
+.donor-tag {
+  display: inline-block;
+  background: var(--color-bg-darkest);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  margin-right: var(--space-1);
+  margin-bottom: var(--space-1);
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 768px) {
+  .summary-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .legislators-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-group {
+    min-width: 100%;
+  }
+}
+</style>

@@ -8,11 +8,14 @@ url: "https://mastachef.github.io" # GitHub Pages URL
 markdown: kramdown
 highlighter: rouge
 
-# Collections - bills get their own pages
+# Collections - bills and legislators get their own pages
 collections:
   bills:
     output: true
     permalink: /bill/:name/
+  legislators:
+    output: true
+    permalink: /legislators/:name/
 
 # Default front matter for collections
 defaults:
@@ -21,6 +24,11 @@ defaults:
       type: "bills"
     values:
       layout: "bill"
+  - scope:
+      path: ""
+      type: "legislators"
+    values:
+      layout: "legislator"
   - scope:
       path: ""
     values:

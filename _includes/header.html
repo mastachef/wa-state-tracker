@@ -8,6 +8,7 @@
       <ul>
         <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
         <li><a href="{{ '/all-bills/' | relative_url }}" {% if page.url == '/all-bills.html' or page.url == '/all-bills/' %}class="active"{% endif %}>All Bills</a></li>
+        <li><a href="{{ '/legislators/' | relative_url }}" {% if page.url contains '/legislators' %}class="active"{% endif %}>Legislators</a></li>
         <li><a href="{{ '/analytics/' | relative_url }}" {% if page.url == '/analytics.html' or page.url == '/analytics/' %}class="active"{% endif %}>Analytics</a></li>
         <li><a href="{{ '/how-to-act/' | relative_url }}" {% if page.url == '/how-to-act.html' or page.url == '/how-to-act/' %}class="active"{% endif %}>How to Act</a></li>
       </ul>

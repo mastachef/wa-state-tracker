@@ -69,6 +69,15 @@ jobs:
       - name: Analyze bill flooding
         run: python scripts/analyze_flooding.py
 
+      - name: Fetch legislator data
+        run: python scripts/fetch_legislators.py
+
+      - name: Fetch campaign finance data
+        run: python scripts/fetch_campaign_finance.py
+
+      - name: Generate legislator pages
+        run: python scripts/generate_legislator_pages.py
+
       - name: Check for changes
         id: check_changes
         run: |
