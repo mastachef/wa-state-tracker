@@ -1,11 +1,11 @@
 {
-  "analysis_date": "2026-01-22T19:25:05.548305",
+  "analysis_date": "2026-01-22T19:44:11.307313",
   "total_bills": 3134,
   "flood_threshold": 50,
   "summary": {
     "flood_days_count": 12,
-    "bills_on_flood_days": 2477,
-    "flood_percentage": 79.0,
+    "bills_on_flood_days": 2479,
+    "flood_percentage": 79.1,
     "worst_single_day": "2026-01-12",
     "worst_day_count": 1559,
     "average_per_day": 33.7
@@ -30,7 +30,7 @@
     },
     {
       "date": "2026-01-22",
-      "total": 127,
+      "total": 129,
       "harmful": 46,
       "sample_bills": [
         "HB 1228",
@@ -735,7 +735,7 @@
     },
     {
       "date": "2026-01-22",
-      "total": 127,
+      "total": 129,
       "harmful": 46,
       "is_flood": true
     },
@@ -809,13 +809,13 @@
     },
     {
       "month": "2026-01",
-      "total": 2561,
+      "total": 2563,
       "harmful": 459
     }
   ],
   "by_year": {
     "2026": {
-      "total": 2561,
+      "total": 2563,
       "harmful": 459
     },
     "2025": {

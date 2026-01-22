@@ -1,20 +1,20 @@
 {
   "summary": {
     "total_bills": 3134,
-    "fiscal_bills": 569,
+    "fiscal_bills": 570,
     "percentage": 18.2
   },
   "by_category": {
     "New Tax/Fee": 169,
     "New Spending": 345,
     "New Debt": 0,
-    "Tax Relief": 52,
+    "Tax Relief": 53,
     "Cost Savings": 3
   },
   "by_magnitude": {
     "High": 7,
     "Medium": 1,
-    "Low": 561
+    "Low": 562
   },
   "categories": [
     {
@@ -1244,6 +1244,15 @@
       "ai_summary": ""
     },
     {
+      "bill_id": 2073418,
+      "bill_number": "HB 2482",
+      "title": "Permitting retired members of the law enforcement officers' and firefighters' retirement system plan 2 to serve as chiefs of police in small police departments.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
       "bill_id": 2073520,
       "bill_number": "HB 2484",
       "title": "Creating the youth development fund account to increase access to positive youth development programs.",
@@ -2087,15 +2096,6 @@
       "category": "New Spending",
       "magnitude": "Low",
       "threat_level": "low",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 1960738,
-      "bill_number": "HB 1896",
-      "title": "Increasing local law enforcement officers by authorizing a local sales and use tax credited against the state portion to hire additional officers and increasing the number of basic law enforcement courses offered by the criminal justice training commission.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "moderate",
       "ai_summary": ""
     },
     {
@@ -4973,6 +4973,15 @@
       "bill_id": 1947312,
       "bill_number": "HB 1751",
       "title": "Establishing a sales and use tax exemption for required course materials at public institutions of higher education.",
+      "category": "Tax Relief",
+      "magnitude": "Low",
+      "threat_level": "moderate",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 1960738,
+      "bill_number": "HB 1896",
+      "title": "Increasing local law enforcement officers by authorizing a local sales and use tax credited against the state portion to hire additional officers and increasing the number of basic law enforcement courses offered by the criminal justice training commission.",
       "category": "Tax Relief",
       "magnitude": "Low",
       "threat_level": "moderate",

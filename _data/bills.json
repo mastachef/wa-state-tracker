@@ -87,9 +87,9 @@
     "threat_level": "critical",
     "threat_label": "Critical Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(fund|financ|appropriat)",
-      "(tax increase|raise.{0,10}tax|new tax|additional tax|impose.{0,10}tax)",
-      "(study|task force|commission|committee|working group)"
+      "(tax increase|raise.{0,10}tax|new tax|additional tax|impose.{0,10}tax)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -114,8 +114,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(study|task force|commission|committee|working group)",
-      "(surveillance|monitor|track|database|registry|registration)"
+      "(surveillance|monitor|track|database|registry|registration)",
+      "(study|task force|commission|committee|working group)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -161,8 +161,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -279,8 +279,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -303,8 +303,8 @@
     "threat_level": "moderate",
     "threat_label": "Moderate Concern",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(license|permit|certificate|credential)"
     ],
     "positives": [
       "(public record|freedom of information|open meeting)"
@@ -399,8 +399,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -423,8 +423,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -447,8 +447,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(insurance.{0,10}(mandate|require|coverage))",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(insurance.{0,10}(mandate|require|coverage))"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -568,8 +568,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -594,9 +594,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(creat|establish|implement).{0,20}(program|initiative|system|framework)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -619,8 +619,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -668,8 +668,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -717,8 +717,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -789,8 +789,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -838,8 +838,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -862,8 +862,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -934,8 +934,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -1077,8 +1077,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -1124,9 +1124,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
+      "(study|task force|commission|committee|working group)",
       "(regulat|licensing|permit|certification).{0,10}(requirement|mandate|new)",
-      "(study|task force|commission|committee|working group)"
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -1149,8 +1149,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -1313,8 +1313,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(state employ|public employ|government employ)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(state employ|public employ|government employ)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -1640,9 +1640,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(fund|financ|appropriat)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -1690,8 +1690,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -1783,8 +1783,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -2037,8 +2037,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -2063,8 +2063,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -2113,9 +2113,9 @@
     "threat_level": "moderate",
     "threat_label": "Moderate Concern",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(grant|subsid|incentive|credit|rebate)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "positives": [
       "(tax (cut|reduction|relief|credit|deduction)|reduce.{0,10}tax|lower.{0,10}tax)"
@@ -2164,8 +2164,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -2257,8 +2257,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -2396,8 +2396,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -2520,8 +2520,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -2590,8 +2590,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -2637,8 +2637,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -2686,8 +2686,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -2802,9 +2802,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(creat|establish|implement).{0,20}(program|initiative|system|framework)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -2873,8 +2873,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -3060,8 +3060,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -3178,8 +3178,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -3202,8 +3202,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": true,
     "amendment_count": 1,
@@ -3394,8 +3394,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -3441,9 +3441,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(creat|establish|implement).{0,20}(program|initiative|system|framework)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -3466,9 +3466,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(fund|financ|appropriat)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -3491,8 +3491,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -3568,8 +3568,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -3592,9 +3592,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(fund|financ|appropriat)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -3689,8 +3689,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -3736,8 +3736,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -3764,8 +3764,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(grant|subsid|incentive|credit|rebate)",
-      "(license|permit|certificate|credential)",
       "(agency|department|bureau|office|program)"
     ],
     "amended": false,
@@ -3814,8 +3814,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -3884,8 +3884,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -3910,8 +3910,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -3980,8 +3980,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(study|task force|commission|committee|working group)",
-      "(surveillance|monitor|track|database|registry|registration)"
+      "(surveillance|monitor|track|database|registry|registration)",
+      "(study|task force|commission|committee|working group)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -4027,8 +4027,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -4051,8 +4051,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -4098,8 +4098,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -4168,8 +4168,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -4215,9 +4215,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(grant|subsid|incentive|credit|rebate)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -4313,8 +4313,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -4452,8 +4452,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -4524,9 +4524,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(fund|financ|appropriat)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -4574,9 +4574,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(grant|subsid|incentive|credit|rebate)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -4625,8 +4625,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -4651,9 +4651,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(grant|subsid|incentive|credit|rebate)",
+      "(study|task force|commission|committee|working group)",
       "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(grant|subsid|incentive|credit|rebate)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -4724,8 +4724,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -4748,8 +4748,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(grant|subsid|incentive|credit|rebate)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(grant|subsid|incentive|credit|rebate)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -4983,8 +4983,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -5030,8 +5030,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -5077,8 +5077,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -5101,8 +5101,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -5221,9 +5221,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(fund|financ|appropriat)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -5296,8 +5296,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -5368,8 +5368,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -5417,8 +5417,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -5512,8 +5512,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -5536,8 +5536,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -5583,8 +5583,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -5722,8 +5722,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -5815,8 +5815,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -5910,8 +5910,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -5934,9 +5934,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
+      "(study|task force|commission|committee|working group)",
       "(report|disclosure|transparency).{0,10}(require|mandate)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -6028,8 +6028,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -6052,8 +6052,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -6099,8 +6099,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -6123,8 +6123,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -6200,8 +6200,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -6339,9 +6339,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(grant|subsid|incentive|credit|rebate)",
+      "(study|task force|commission|committee|working group)",
       "(fund|financ|appropriat)",
-      "(agency|department|bureau|office|program)"
+      "(grant|subsid|incentive|credit|rebate)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -6366,8 +6366,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -6390,9 +6390,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
+      "(study|task force|commission|committee|working group)",
       "(report|disclosure|transparency).{0,10}(require|mandate)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -6486,8 +6486,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(grant|subsid|incentive|credit|rebate)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(grant|subsid|incentive|credit|rebate)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -6558,9 +6558,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(grant|subsid|incentive|credit|rebate)",
-      "(regulat|oversight|compliance|enforce)",
-      "(agency|department|bureau|office|program)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -6583,8 +6583,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -6607,8 +6607,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -6700,8 +6700,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -6793,8 +6793,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -6863,8 +6863,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -6887,8 +6887,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -7007,8 +7007,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -7033,8 +7033,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(study|task force|commission|committee|working group)",
-      "(surveillance|monitor|track|database|registry|registration)"
+      "(surveillance|monitor|track|database|registry|registration)",
+      "(study|task force|commission|committee|working group)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -7126,8 +7126,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -7150,8 +7150,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -7201,8 +7201,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -7225,8 +7225,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -7249,8 +7249,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -7296,8 +7296,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -7320,8 +7320,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -7344,9 +7344,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(fund|financ|appropriat)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -7371,9 +7371,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(grant|subsid|incentive|credit|rebate)",
+      "(study|task force|commission|committee|working group)",
       "(fund|financ|appropriat)",
-      "(agency|department|bureau|office|program)"
+      "(grant|subsid|incentive|credit|rebate)"
     ],
     "amended": true,
     "amendment_count": 1,
@@ -7396,8 +7396,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -7489,8 +7489,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -7674,8 +7674,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -7698,8 +7698,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -7745,8 +7745,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(report|disclosure|transparency).{0,10}(require|mandate)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(report|disclosure|transparency).{0,10}(require|mandate)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -7792,8 +7792,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(study|task force|commission|committee|working group)",
-      "(surveillance|monitor|track|database|registry|registration)"
+      "(surveillance|monitor|track|database|registry|registration)",
+      "(study|task force|commission|committee|working group)"
     ],
     "amended": true,
     "amendment_count": 1,
@@ -7841,8 +7841,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(insurance.{0,10}(mandate|require|coverage))",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(insurance.{0,10}(mandate|require|coverage))"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -8034,9 +8034,9 @@
     "threat_level": "critical",
     "threat_label": "Critical Threat",
     "concerns": [
+      "(surveillance|monitor|track|database|registry|registration)",
       "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)",
-      "(surveillance|monitor|track|database|registry|registration)"
+      "(study|task force|commission|committee|working group)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -8128,8 +8128,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -8177,8 +8177,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -8201,8 +8201,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(grant|subsid|incentive|credit|rebate)",
-      "(license|permit|certificate|credential)",
       "(agency|department|bureau|office|program)"
     ],
     "amended": false,
@@ -8322,8 +8322,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -8346,8 +8346,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -8393,8 +8393,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(grant|subsid|incentive|credit|rebate)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(grant|subsid|incentive|credit|rebate)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -8509,8 +8509,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -8560,8 +8560,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -8584,8 +8584,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(state employ|public employ|government employ)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(state employ|public employ|government employ)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -8631,8 +8631,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -8657,8 +8657,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -8729,8 +8729,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -8780,8 +8780,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -8873,8 +8873,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -8899,8 +8899,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -8971,9 +8971,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(fund|financ|appropriat)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -8996,9 +8996,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
+      "(study|task force|commission|committee|working group)",
       "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -9021,8 +9021,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -9166,8 +9166,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -9190,8 +9190,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -9331,8 +9331,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -9355,8 +9355,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -9450,8 +9450,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|licensing|permit|certification).{0,10}(requirement|mandate|new)",
       "(study|task force|commission|committee|working group)",
+      "(regulat|licensing|permit|certification).{0,10}(requirement|mandate|new)",
       "(agency|department|bureau|office|program)"
     ],
     "amended": false,
@@ -9544,8 +9544,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -9568,8 +9568,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -9596,8 +9596,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -9620,8 +9620,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -9761,8 +9761,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -9808,8 +9808,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -9857,8 +9857,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -9881,8 +9881,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -9976,8 +9976,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(study|task force|commission|committee|working group)",
-      "(surveillance|monitor|track|database|registry|registration)"
+      "(surveillance|monitor|track|database|registry|registration)",
+      "(study|task force|commission|committee|working group)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -10000,8 +10000,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -10095,9 +10095,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
+      "(study|task force|commission|committee|working group)",
       "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -10120,9 +10120,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(regulat|oversight|compliance|enforce)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -10285,8 +10285,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -10332,8 +10332,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -10381,8 +10381,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -10503,8 +10503,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -10648,9 +10648,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(regulat|oversight|compliance|enforce)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -10746,8 +10746,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -10762,7 +10762,7 @@
     "chamber": "House",
     "sponsors": [],
     "introduced_date": "",
-    "last_action": "Scheduled for executive session in the House Committee on Education at 8:00 AM",
+    "last_action": "Executive session scheduled, but no action was taken in the House Committee on Education at 8:00 AM.",
     "last_action_date": "2026-01-22",
     "history": [],
     "official_url": "https://app.leg.wa.gov/billsummary?BillNumber=1683&Year=2025",
@@ -10793,9 +10793,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
       "(study|task force|commission|committee|working group)",
-      "(fund|financ|appropriat)"
+      "(fund|financ|appropriat)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -10818,8 +10818,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -10890,9 +10890,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
       "(study|task force|commission|committee|working group)",
-      "(minimum wage|wage.{0,10}increase)"
+      "(minimum wage|wage.{0,10}increase)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -10935,7 +10935,7 @@
     "chamber": "House",
     "sponsors": [],
     "introduced_date": "",
-    "last_action": "Scheduled for executive session in the House Committee on Housing at 8:30 AM",
+    "last_action": "Executive session scheduled, but no action was taken in the House Committee on Housing at 8:30 AM.",
     "last_action_date": "2026-01-22",
     "history": [],
     "official_url": "https://app.leg.wa.gov/billsummary?BillNumber=2118&Year=2025",
@@ -10966,8 +10966,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -10990,8 +10990,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -11014,8 +11014,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(study|task force|commission|committee|working group)",
-      "(surveillance|monitor|track|database|registry|registration)"
+      "(surveillance|monitor|track|database|registry|registration)",
+      "(study|task force|commission|committee|working group)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -11038,9 +11038,9 @@
     "threat_level": "critical",
     "threat_label": "Critical Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(fund|financ|appropriat)",
-      "(tax increase|raise.{0,10}tax|new tax|additional tax|impose.{0,10}tax)",
-      "(study|task force|commission|committee|working group)"
+      "(tax increase|raise.{0,10}tax|new tax|additional tax|impose.{0,10}tax)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -11065,8 +11065,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -11089,8 +11089,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -11113,9 +11113,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(regulat|oversight|compliance|enforce)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -11138,9 +11138,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
+      "(study|task force|commission|committee|working group)",
       "(state employ|public employ|government employ)",
-      "(study|task force|commission|committee|working group)"
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -11213,8 +11213,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -11237,8 +11237,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -11332,8 +11332,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -11356,8 +11356,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -11380,8 +11380,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -11467,7 +11467,7 @@
     "chamber": "House",
     "sponsors": [],
     "introduced_date": "",
-    "last_action": "Scheduled for executive session in the House Committee on Community Safety at 8:00 AM",
+    "last_action": "Executive action taken in the House Committee on Community Safety at 8:00 AM.",
     "last_action_date": "2026-01-22",
     "history": [],
     "official_url": "https://app.leg.wa.gov/billsummary?BillNumber=2403&Year=2025",
@@ -11498,9 +11498,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
+      "(study|task force|commission|committee|working group)",
       "(report|disclosure|transparency).{0,10}(require|mandate)",
-      "(study|task force|commission|committee|working group)"
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -11676,9 +11676,9 @@
     "threat_level": "critical",
     "threat_label": "Critical Threat",
     "concerns": [
-      "(creat|establish|implement).{0,20}(program|initiative|system|framework)",
+      "(agency|department|bureau|office|program)",
       "(fund|financ|appropriat)",
-      "(agency|department|bureau|office|program)"
+      "(creat|establish|implement).{0,20}(program|initiative|system|framework)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -11934,8 +11934,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(bond|borrow|debt|deficit spending)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(bond|borrow|debt|deficit spending)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -12054,9 +12054,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(grant|subsid|incentive|credit|rebate)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -12173,8 +12173,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -12289,8 +12289,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -12338,8 +12338,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -12362,8 +12362,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -12434,8 +12434,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(study|task force|commission|committee|working group)",
-      "(surveillance|monitor|track|database|registry|registration)"
+      "(surveillance|monitor|track|database|registry|registration)",
+      "(study|task force|commission|committee|working group)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -12458,9 +12458,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(grant|subsid|incentive|credit|rebate)",
+      "(study|task force|commission|committee|working group)",
       "(fund|financ|appropriat)",
-      "(agency|department|bureau|office|program)"
+      "(grant|subsid|incentive|credit|rebate)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -12485,9 +12485,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(grant|subsid|incentive|credit|rebate)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -12510,9 +12510,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(regulat|oversight|compliance|enforce)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -12535,8 +12535,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(tax increase|raise.{0,10}tax|new tax|additional tax|impose.{0,10}tax)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(tax increase|raise.{0,10}tax|new tax|additional tax|impose.{0,10}tax)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -12584,8 +12584,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(bond|borrow|debt|deficit spending)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(bond|borrow|debt|deficit spending)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -12677,8 +12677,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -12770,8 +12770,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -12867,8 +12867,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -12937,9 +12937,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(regulat|oversight|compliance|enforce)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -12985,8 +12985,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -13009,8 +13009,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -13056,8 +13056,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -13103,9 +13103,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
       "(study|task force|commission|committee|working group)",
-      "(fund|financ|appropriat)"
+      "(fund|financ|appropriat)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -13128,8 +13128,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -13154,8 +13154,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -13203,8 +13203,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -13252,8 +13252,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -13276,8 +13276,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -13300,8 +13300,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -13563,6 +13563,26 @@
     "related_bills": []
   },
   {
+    "bill_id": 2088946,
+    "bill_number": "SB 6281",
+    "title": "Requiring an economic assessment before the purchase of any third-party, commercial cloud computing service.",
+    "description": "",
+    "status": "Introduced",
+    "chamber": "Senate",
+    "sponsors": [],
+    "introduced_date": "",
+    "last_action": "First reading, referred to Environment, Energy & Technology",
+    "last_action_date": "2026-01-22",
+    "history": [],
+    "official_url": "https://app.leg.wa.gov/billsummary?BillNumber=6281&Year=2025",
+    "threat_score": 1,
+    "threat_level": "moderate",
+    "threat_label": "Moderate Concern",
+    "amended": false,
+    "amendment_count": 0,
+    "related_bills": []
+  },
+  {
     "bill_id": 2089067,
     "bill_number": "SB 6283",
     "title": "Providing a sales and use tax exemption for qualifying farm machinery and equipment.",
@@ -13585,6 +13605,26 @@
       "SB 5092",
       "SB 5289"
     ]
+  },
+  {
+    "bill_id": 2088980,
+    "bill_number": "SB 6284",
+    "title": "Providing consumer protections for artificial intelligence systems.",
+    "description": "",
+    "status": "Introduced",
+    "chamber": "Senate",
+    "sponsors": [],
+    "introduced_date": "",
+    "last_action": "First reading, referred to Environment, Energy & Technology",
+    "last_action_date": "2026-01-22",
+    "history": [],
+    "official_url": "https://app.leg.wa.gov/billsummary?BillNumber=6284&Year=2025",
+    "threat_score": 1,
+    "threat_level": "moderate",
+    "threat_label": "Moderate Concern",
+    "amended": false,
+    "amendment_count": 0,
+    "related_bills": []
   },
   {
     "bill_id": 2088990,
@@ -13686,8 +13726,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -13756,8 +13796,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(bond|borrow|debt|deficit spending)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(bond|borrow|debt|deficit spending)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -13849,8 +13889,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -13898,8 +13938,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(study|task force|commission|committee|working group)",
-      "(surveillance|monitor|track|database|registry|registration)"
+      "(surveillance|monitor|track|database|registry|registration)",
+      "(study|task force|commission|committee|working group)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -13945,8 +13985,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -14015,8 +14055,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -14112,8 +14152,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -14136,8 +14176,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -14229,8 +14269,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -14276,8 +14316,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -14300,9 +14340,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
       "(study|task force|commission|committee|working group)",
-      "(fund|financ|appropriat)"
+      "(fund|financ|appropriat)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -14325,8 +14365,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -15075,7 +15115,7 @@
     "chamber": "Senate",
     "sponsors": [],
     "introduced_date": "",
-    "last_action": "Passed final passage; yeas, 29; nays, 20; absent, 0; excused, 0.",
+    "last_action": "Third reading, passed; yeas, 29; nays, 20; absent, 0; excused, 0.",
     "last_action_date": "2026-01-21",
     "history": [],
     "official_url": "https://app.leg.wa.gov/billsummary?BillNumber=5331&Year=2025",
@@ -15097,7 +15137,7 @@
     "chamber": "Senate",
     "sponsors": [],
     "introduced_date": "",
-    "last_action": "Passed final passage; yeas, 48; nays, 1; absent, 0; excused, 0.",
+    "last_action": "Third reading, passed; yeas, 48; nays, 1; absent, 0; excused, 0.",
     "last_action_date": "2026-01-21",
     "history": [],
     "official_url": "https://app.leg.wa.gov/billsummary?BillNumber=5420&Year=2025",
@@ -15211,8 +15251,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -15368,8 +15408,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": true,
     "amendment_count": 1,
@@ -15415,9 +15455,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(regulat|oversight|compliance|enforce)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -15486,8 +15526,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -15556,8 +15596,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -15747,8 +15787,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -15841,9 +15881,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(fund|financ|appropriat)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -15866,8 +15906,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -15890,8 +15930,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -15914,8 +15954,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -16082,8 +16122,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -16472,9 +16512,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
+      "(study|task force|commission|committee|working group)",
       "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(license|permit|certificate|credential)"
     ],
     "amended": true,
     "amendment_count": 1,
@@ -16542,8 +16582,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -16632,8 +16672,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -16656,8 +16696,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -16682,8 +16722,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -16729,8 +16769,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -16976,9 +17016,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
+      "(study|task force|commission|committee|working group)",
       "(state employ|public employ|government employ)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -17070,8 +17110,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(state employ|public employ|government employ)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(state employ|public employ|government employ)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -17192,8 +17232,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -17239,8 +17279,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -17263,8 +17303,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(study|task force|commission|committee|working group)",
-      "(surveillance|monitor|track|database|registry|registration)"
+      "(surveillance|monitor|track|database|registry|registration)",
+      "(study|task force|commission|committee|working group)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -17287,9 +17327,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(fund|financ|appropriat)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -17434,9 +17474,9 @@
     "threat_level": "critical",
     "threat_label": "Critical Threat",
     "concerns": [
-      "(creat|establish|implement).{0,20}(program|initiative|system|framework)",
+      "(agency|department|bureau|office|program)",
       "(fund|financ|appropriat)",
-      "(agency|department|bureau|office|program)"
+      "(creat|establish|implement).{0,20}(program|initiative|system|framework)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -17677,8 +17717,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -17817,8 +17857,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -17886,9 +17926,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
+      "(study|task force|commission|committee|working group)",
       "(state employ|public employ|government employ)",
-      "(study|task force|commission|committee|working group)"
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -17936,8 +17976,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -18011,8 +18051,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -18055,8 +18095,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -18099,8 +18139,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(state employ|public employ|government employ)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(state employ|public employ|government employ)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -18269,8 +18309,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -18364,8 +18404,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -18430,8 +18470,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(bond|borrow|debt|deficit spending)",
-      "(fund|financ|appropriat)"
+      "(fund|financ|appropriat)",
+      "(bond|borrow|debt|deficit spending)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -18519,9 +18559,9 @@
     "threat_level": "critical",
     "threat_label": "Critical Threat",
     "concerns": [
-      "(creat|establish|implement).{0,20}(program|initiative|system|framework)",
+      "(agency|department|bureau|office|program)",
       "(fund|financ|appropriat)",
-      "(agency|department|bureau|office|program)"
+      "(creat|establish|implement).{0,20}(program|initiative|system|framework)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -18544,9 +18584,9 @@
     "threat_level": "critical",
     "threat_label": "Critical Threat",
     "concerns": [
+      "(surveillance|monitor|track|database|registry|registration)",
       "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)",
-      "(surveillance|monitor|track|database|registry|registration)"
+      "(study|task force|commission|committee|working group)"
     ],
     "amended": true,
     "amendment_count": 1,
@@ -18770,8 +18810,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": true,
     "amendment_count": 1,
@@ -18886,8 +18926,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -18980,8 +19020,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -19254,9 +19294,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(fund|financ|appropriat)",
       "(regulat|oversight|compliance|enforce)",
-      "(agency|department|bureau|office|program)",
-      "(fund|financ|appropriat)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -19302,8 +19342,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -19348,9 +19388,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(fund|financ|appropriat)",
       "(regulat|oversight|compliance|enforce)",
-      "(agency|department|bureau|office|program)",
-      "(fund|financ|appropriat)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -19521,9 +19561,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(fund|financ|appropriat)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": true,
     "amendment_count": 1,
@@ -19615,8 +19655,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(grant|subsid|incentive|credit|rebate)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(grant|subsid|incentive|credit|rebate)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -19685,8 +19725,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -19899,8 +19939,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -19971,8 +20011,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -20020,8 +20060,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(bond|borrow|debt|deficit spending)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(bond|borrow|debt|deficit spending)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -20304,9 +20344,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(regulat|oversight|compliance|enforce)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -20461,8 +20501,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(ban|prohibit|restrict|forbid|criminalize|penalize|mandate|require|compel|force)"
+      "(ban|prohibit|restrict|forbid|criminalize|penalize|mandate|require|compel|force)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -20665,8 +20705,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -20691,8 +20731,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -20930,8 +20970,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -20979,9 +21019,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
+      "(study|task force|commission|committee|working group)",
       "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -21004,9 +21044,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(fund|financ|appropriat)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -21242,8 +21282,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(surveillance|monitor|track|database|registry|registration)"
+      "(surveillance|monitor|track|database|registry|registration)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -21392,8 +21432,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -21441,8 +21481,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -21636,8 +21676,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -21825,8 +21865,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -21849,8 +21889,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -21873,8 +21913,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -22019,7 +22059,7 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
+      "(fund|financ|appropriat)",
       "(regulat|oversight|compliance|enforce)",
       "(agency|department|bureau|office|program)"
     ],
@@ -22160,8 +22200,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -22673,8 +22713,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -22812,8 +22852,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -22859,9 +22899,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(fund|financ|appropriat)",
       "(regulat|oversight|compliance|enforce)",
-      "(agency|department|bureau|office|program)",
-      "(fund|financ|appropriat)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -23017,8 +23057,8 @@
     "threat_level": "low",
     "threat_label": "Low Concern",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "positives": [
       "(tax (cut|reduction|relief|credit|deduction)|reduce.{0,10}tax|lower.{0,10}tax)"
@@ -23199,8 +23239,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -23223,8 +23263,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -23358,8 +23398,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(minimum wage|wage.{0,10}increase)"
+      "(minimum wage|wage.{0,10}increase)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -23639,8 +23679,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -24301,8 +24341,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(agency|department|bureau|office|program)"
+      "(agency|department|bureau|office|program)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -24845,9 +24885,9 @@
     "threat_level": "critical",
     "threat_label": "Critical Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
       "(study|task force|commission|committee|working group)",
-      "(ban|prohibit|restrict|forbid|criminalize|penalize|mandate|require|compel|force)"
+      "(ban|prohibit|restrict|forbid|criminalize|penalize|mandate|require|compel|force)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -24980,9 +25020,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(regulat|oversight|compliance|enforce)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -25810,8 +25850,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -26165,8 +26205,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(grant|subsid|incentive|credit|rebate)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(grant|subsid|incentive|credit|rebate)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -26292,8 +26332,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(regulat|oversight|compliance|enforce)"
+      "(regulat|oversight|compliance|enforce)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -26318,8 +26358,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(regulat|oversight|compliance|enforce)"
+      "(regulat|oversight|compliance|enforce)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -26542,8 +26582,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(agency|department|bureau|office|program)"
+      "(agency|department|bureau|office|program)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -27775,8 +27815,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(agency|department|bureau|office|program)"
+      "(agency|department|bureau|office|program)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -28213,8 +28253,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(bond|borrow|debt|deficit spending)",
-      "(fund|financ|appropriat)"
+      "(fund|financ|appropriat)",
+      "(bond|borrow|debt|deficit spending)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -28725,8 +28765,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(state employ|public employ|government employ)"
+      "(state employ|public employ|government employ)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -29010,8 +29050,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -29185,8 +29225,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(creat|establish|implement).{0,20}(program|initiative|system|framework)",
       "(agency|department|bureau|office|program)",
+      "(creat|establish|implement).{0,20}(program|initiative|system|framework)",
       "(grant|subsid|incentive|credit|rebate)"
     ],
     "amended": false,
@@ -29414,8 +29454,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -29763,8 +29803,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(agency|department|bureau|office|program)"
+      "(agency|department|bureau|office|program)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -30002,8 +30042,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
       "(agency|department|bureau|office|program)",
+      "(regulat|oversight|compliance|enforce)",
       "(grant|subsid|incentive|credit|rebate)"
     ],
     "amended": false,
@@ -30027,9 +30067,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(regulat|oversight|compliance|enforce)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -30376,8 +30416,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -30681,8 +30721,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(state employ|public employ|government employ)"
+      "(state employ|public employ|government employ)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -31203,9 +31243,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
+      "(study|task force|commission|committee|working group)",
       "(state employ|public employ|government employ)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -32808,8 +32848,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -32832,8 +32872,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -34047,9 +34087,9 @@
     "threat_level": "moderate",
     "threat_label": "Moderate Concern",
     "concerns": [
-      "(grant|subsid|incentive|credit|rebate)",
+      "(study|task force|commission|committee|working group)",
       "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(grant|subsid|incentive|credit|rebate)"
     ],
     "positives": [
       "(tax (cut|reduction|relief|credit|deduction)|reduce.{0,10}tax|lower.{0,10}tax)"
@@ -34746,8 +34786,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(grant|subsid|incentive|credit|rebate)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(grant|subsid|incentive|credit|rebate)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -35373,8 +35413,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -35686,8 +35726,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -36170,9 +36210,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
+      "(grant|subsid|incentive|credit|rebate)",
       "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -36700,9 +36740,9 @@
     "threat_level": "critical",
     "threat_label": "Critical Threat",
     "concerns": [
-      "(creat|establish|implement).{0,20}(program|initiative|system|framework)",
+      "(agency|department|bureau|office|program)",
       "(fund|financ|appropriat)",
-      "(agency|department|bureau|office|program)"
+      "(creat|establish|implement).{0,20}(program|initiative|system|framework)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -37281,9 +37321,9 @@
     "threat_level": "moderate",
     "threat_label": "Moderate Concern",
     "concerns": [
-      "(grant|subsid|incentive|credit|rebate)",
-      "(regulat|oversight|compliance|enforce)",
-      "(agency|department|bureau|office|program)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "positives": [
       "(tax (cut|reduction|relief|credit|deduction)|reduce.{0,10}tax|lower.{0,10}tax)"
@@ -37956,8 +37996,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(fund|financ|appropriat)"
+      "(fund|financ|appropriat)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -38026,8 +38066,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(regulat|oversight|compliance|enforce)"
+      "(regulat|oversight|compliance|enforce)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -38582,9 +38622,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
       "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(fund|financ|appropriat)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": true,
     "amendment_count": 1,
@@ -38841,8 +38881,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(state employ|public employ|government employ)"
+      "(state employ|public employ|government employ)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -39241,8 +39281,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -39438,8 +39478,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(bond|borrow|debt|deficit spending)",
-      "(fund|financ|appropriat)"
+      "(fund|financ|appropriat)",
+      "(bond|borrow|debt|deficit spending)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -39638,9 +39678,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
       "(study|task force|commission|committee|working group)",
-      "(fund|financ|appropriat)"
+      "(fund|financ|appropriat)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -39728,9 +39768,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(fund|financ|appropriat)",
       "(regulat|oversight|compliance|enforce)",
-      "(agency|department|bureau|office|program)",
-      "(fund|financ|appropriat)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -40083,8 +40123,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(new (agency|department|bureau|commission|board|authority|office|program))"
+      "(new (agency|department|bureau|commission|board|authority|office|program))",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -41073,8 +41113,8 @@
     "threat_level": "low",
     "threat_label": "Low Concern",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "positives": [
       "(tax (cut|reduction|relief|credit|deduction)|reduce.{0,10}tax|lower.{0,10}tax)"
@@ -42787,8 +42827,8 @@
     "threat_level": "critical",
     "threat_label": "Critical Threat",
     "concerns": [
-      "(tax increase|raise.{0,10}tax|new tax|additional tax|impose.{0,10}tax)",
-      "(ban|prohibit|restrict|forbid|criminalize|penalize|mandate|require|compel|force)"
+      "(ban|prohibit|restrict|forbid|criminalize|penalize|mandate|require|compel|force)",
+      "(tax increase|raise.{0,10}tax|new tax|additional tax|impose.{0,10}tax)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -43063,8 +43103,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -43147,8 +43187,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -44686,8 +44726,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -45272,8 +45312,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(agency|department|bureau|office|program)"
+      "(agency|department|bureau|office|program)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -45775,8 +45815,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -45953,8 +45993,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -46104,8 +46144,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fee increase|new fee|additional fee|surcharge)",
-      "(regulat|oversight|compliance|enforce)"
+      "(regulat|oversight|compliance|enforce)",
+      "(fee increase|new fee|additional fee|surcharge)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -47027,9 +47067,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(regulat|oversight|compliance|enforce)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -47186,8 +47226,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": true,
     "amendment_count": 1,
@@ -47496,8 +47536,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(agency|department|bureau|office|program)"
+      "(agency|department|bureau|office|program)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -48177,8 +48217,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -48243,8 +48283,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
       "(agency|department|bureau|office|program)",
+      "(regulat|oversight|compliance|enforce)",
       "(grant|subsid|incentive|credit|rebate)"
     ],
     "amended": false,
@@ -48441,8 +48481,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -49365,8 +49405,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -49479,8 +49519,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -49638,8 +49678,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(agency|department|bureau|office|program)"
+      "(agency|department|bureau|office|program)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -50252,8 +50292,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(regulat|oversight|compliance|enforce)"
+      "(regulat|oversight|compliance|enforce)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -50455,8 +50495,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(study|task force|commission|committee|working group)",
-      "(surveillance|monitor|track|database|registry|registration)"
+      "(surveillance|monitor|track|database|registry|registration)",
+      "(study|task force|commission|committee|working group)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -51352,8 +51392,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -51532,9 +51572,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
+      "(study|task force|commission|committee|working group)",
       "(fund|financ|appropriat)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(agency|department|bureau|office|program)"
     ],
     "amended": true,
     "amendment_count": 1,
@@ -51711,8 +51751,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(grant|subsid|incentive|credit|rebate)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(grant|subsid|incentive|credit|rebate)"
     ],
     "amended": true,
     "amendment_count": 1,
@@ -52106,8 +52146,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": true,
     "amendment_count": 1,
@@ -52472,8 +52512,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -52626,8 +52666,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(regulat|licensing|permit|certification).{0,10}(requirement|mandate|new)"
+      "(regulat|licensing|permit|certification).{0,10}(requirement|mandate|new)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -53010,8 +53050,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -53074,8 +53114,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -53098,8 +53138,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -53208,9 +53248,9 @@
     "threat_level": "critical",
     "threat_label": "Critical Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
       "(study|task force|commission|committee|working group)",
-      "(ban|prohibit|restrict|forbid|criminalize|penalize|mandate|require|compel|force)"
+      "(ban|prohibit|restrict|forbid|criminalize|penalize|mandate|require|compel|force)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -53732,8 +53772,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(regulat|oversight|compliance|enforce)"
+      "(regulat|oversight|compliance|enforce)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -53859,8 +53899,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(creat|establish|implement).{0,20}(program|initiative|system|framework)",
       "(agency|department|bureau|office|program)",
+      "(creat|establish|implement).{0,20}(program|initiative|system|framework)",
       "(grant|subsid|incentive|credit|rebate)"
     ],
     "amended": false,
@@ -53904,8 +53944,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -54166,8 +54206,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(state employ|public employ|government employ)"
+      "(state employ|public employ|government employ)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": true,
     "amendment_count": 1,
@@ -54767,9 +54807,9 @@
     "threat_level": "critical",
     "threat_label": "Critical Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(expand|increase|enhance).{0,20}(authority|power|jurisdiction|enforcement)",
+      "(fund|financ|appropriat)"
     ],
     "amended": true,
     "amendment_count": 1,
@@ -55141,9 +55181,9 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(bond|borrow|debt|deficit spending)",
       "(study|task force|commission|committee|working group)",
-      "(fund|financ|appropriat)"
+      "(fund|financ|appropriat)",
+      "(bond|borrow|debt|deficit spending)"
     ],
     "amended": true,
     "amendment_count": 1,
@@ -55219,8 +55259,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(bond|borrow|debt|deficit spending)",
-      "(fund|financ|appropriat)"
+      "(fund|financ|appropriat)",
+      "(bond|borrow|debt|deficit spending)"
     ],
     "amended": true,
     "amendment_count": 1,
@@ -55268,8 +55308,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(bond|borrow|debt|deficit spending)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(bond|borrow|debt|deficit spending)"
     ],
     "amended": true,
     "amendment_count": 1,
@@ -58936,8 +58976,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(fund|financ|appropriat)"
+      "(fund|financ|appropriat)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -59192,8 +59232,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -59946,8 +59986,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(regulat|oversight|compliance|enforce)"
+      "(regulat|oversight|compliance|enforce)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -61625,8 +61665,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(agency|department|bureau|office|program)"
+      "(agency|department|bureau|office|program)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -61970,8 +62010,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(fund|financ|appropriat)"
+      "(fund|financ|appropriat)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -62106,8 +62146,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(bond|borrow|debt|deficit spending)",
-      "(regulat|oversight|compliance|enforce)"
+      "(regulat|oversight|compliance|enforce)",
+      "(bond|borrow|debt|deficit spending)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -62217,8 +62257,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fee increase|new fee|additional fee|surcharge)",
-      "(regulat|oversight|compliance|enforce)"
+      "(regulat|oversight|compliance|enforce)",
+      "(fee increase|new fee|additional fee|surcharge)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -62263,8 +62303,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(insurance.{0,10}(mandate|require|coverage))",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(insurance.{0,10}(mandate|require|coverage))"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -62639,8 +62679,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": true,
     "amendment_count": 1,
@@ -62766,8 +62806,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(grant|subsid|incentive|credit|rebate)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(grant|subsid|incentive|credit|rebate)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -64389,8 +64429,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -64815,8 +64855,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(fund|financ|appropriat)",
-      "(study|task force|commission|committee|working group)"
+      "(study|task force|commission|committee|working group)",
+      "(fund|financ|appropriat)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -64859,8 +64899,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -64991,8 +65031,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
-      "(expand|increase|enhance).{0,20}(authority|power|jurisdiction|enforcement)"
+      "(expand|increase|enhance).{0,20}(authority|power|jurisdiction|enforcement)",
+      "(regulat|oversight|compliance|enforce)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -66769,8 +66809,8 @@
     "threat_level": "moderate",
     "threat_label": "Moderate Concern",
     "concerns": [
-      "(regulat|oversight|compliance|enforce)",
       "(agency|department|bureau|office|program)",
+      "(regulat|oversight|compliance|enforce)",
       "(grant|subsid|incentive|credit|rebate)"
     ],
     "positives": [
@@ -67017,8 +67057,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(agency|department|bureau|office|program)",
-      "(grant|subsid|incentive|credit|rebate)"
+      "(grant|subsid|incentive|credit|rebate)",
+      "(agency|department|bureau|office|program)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -67041,8 +67081,8 @@
     "threat_level": "high",
     "threat_label": "High Threat",
     "concerns": [
-      "(license|permit|certificate|credential)",
-      "(agency|department|bureau|office|program)"
+      "(agency|department|bureau|office|program)",
+      "(license|permit|certificate|credential)"
     ],
     "amended": false,
     "amendment_count": 0,
@@ -69588,26 +69628,6 @@
     "related_bills": []
   },
   {
-    "bill_id": 2088946,
-    "bill_number": "SB 6281",
-    "title": "Requiring an economic assessment before the purchase of any third-party, commercial cloud computing service.",
-    "description": "",
-    "status": "N/A",
-    "chamber": "Senate",
-    "sponsors": [],
-    "introduced_date": "",
-    "last_action": null,
-    "last_action_date": null,
-    "history": [],
-    "official_url": "https://app.leg.wa.gov/billsummary?BillNumber=6281&Year=2025",
-    "threat_score": 1,
-    "threat_level": "moderate",
-    "threat_label": "Moderate Concern",
-    "amended": false,
-    "amendment_count": 0,
-    "related_bills": []
-  },
-  {
     "bill_id": 2089114,
     "bill_number": "SB 6282",
     "title": "Requiring state registered apprenticeships in the building and construction trades to provide behavioral health and wellness training.",
@@ -69628,26 +69648,6 @@
     "related_bills": [
       "HB 2492"
     ]
-  },
-  {
-    "bill_id": 2088980,
-    "bill_number": "SB 6284",
-    "title": "Providing consumer protections for artificial intelligence systems.",
-    "description": "",
-    "status": "N/A",
-    "chamber": "Senate",
-    "sponsors": [],
-    "introduced_date": "",
-    "last_action": null,
-    "last_action_date": null,
-    "history": [],
-    "official_url": "https://app.leg.wa.gov/billsummary?BillNumber=6284&Year=2025",
-    "threat_score": 1,
-    "threat_level": "moderate",
-    "threat_label": "Moderate Concern",
-    "amended": false,
-    "amendment_count": 0,
-    "related_bills": []
   },
   {
     "bill_id": 2089180,
