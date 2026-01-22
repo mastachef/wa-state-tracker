@@ -15,6 +15,7 @@ permalink: /how-to-act/
   <ul>
     <li><a href="#legislative-abuse">The Problem: Legislative Abuse</a></li>
     <li><a href="#citizen-initiative">Citizen Initiative: Bypass the Legislature</a></li>
+    <li><a href="#quick-fill">Save Your Info (Quick Fill)</a></li>
     <li><a href="#submit-comments">Submit Written Comments</a></li>
     <li><a href="#testify">Testify at Hearings</a></li>
     <li><a href="#contact-legislators">Contact Your Legislators</a></li>
@@ -185,6 +186,76 @@ permalink: /how-to-act/
         <li><strong>Effect:</strong> Suspends the law until voters decide</li>
       </ul>
       <p><a href="https://www.sos.wa.gov/elections/initiatives-referenda" target="_blank" rel="noopener">Learn about referendums →</a></p>
+    </div>
+  </section>
+
+  <!-- QUICK FILL - Save Your Info -->
+  <section id="quick-fill" class="guide-section quick-fill-section">
+    <h2>💾 Save Your Info for Quick Form Filling</h2>
+
+    <p>Commenting on multiple bills? Save your contact information here and quickly copy it to any testimony form. Your data is stored <strong>only on your device</strong> - we never see it.</p>
+
+    <div id="quick-fill-panel" class="quick-fill-panel">
+      <button class="quick-fill-toggle" aria-expanded="true" aria-controls="quick-fill-form">
+        <span class="toggle-icon">▼</span> Edit Your Information
+      </button>
+
+      <div class="quick-fill-form" id="quick-fill-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="qf-firstName">First Name</label>
+            <input type="text" id="qf-firstName" name="firstName" placeholder="Jane">
+          </div>
+          <div class="form-group">
+            <label for="qf-lastName">Last Name</label>
+            <input type="text" id="qf-lastName" name="lastName" placeholder="Smith">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="qf-email">Email</label>
+            <input type="email" id="qf-email" name="email" placeholder="jane@example.com">
+          </div>
+          <div class="form-group">
+            <label for="qf-phone">Phone <span class="optional">(optional)</span></label>
+            <input type="tel" id="qf-phone" name="phone" placeholder="(206) 555-1234">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="qf-address">Street Address</label>
+          <input type="text" id="qf-address" name="address" placeholder="123 Main Street">
+        </div>
+
+        <div class="form-row form-row-3">
+          <div class="form-group">
+            <label for="qf-city">City</label>
+            <input type="text" id="qf-city" name="city" placeholder="Seattle">
+          </div>
+          <div class="form-group form-group-small">
+            <label for="qf-zip">ZIP</label>
+            <input type="text" id="qf-zip" name="zip" placeholder="98101" maxlength="10">
+          </div>
+          <div class="form-group form-group-small">
+            <label for="qf-district">District <a href="https://app.leg.wa.gov/districtfinder/" target="_blank" class="help-link" title="Find your district">?</a></label>
+            <input type="text" id="qf-district" name="district" placeholder="43">
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="button" class="btn btn-primary quick-fill-save">Save My Info</button>
+          <button type="button" class="btn btn-outline quick-fill-clear">Clear</button>
+        </div>
+      </div>
+
+      <div class="quick-fill-preview">
+        <p class="no-data">No information saved yet. Fill out the form above and click Save.</p>
+      </div>
+
+      <div class="quick-fill-privacy">
+        <span class="privacy-icon">🔒</span> Your data stays on your device. We don't collect or store any personal information.
+      </div>
     </div>
   </section>
 

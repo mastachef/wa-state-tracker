@@ -243,6 +243,28 @@ description: Track Washington State legislation, follow the money, expose legisl
   </div>
 </section>
 
+<!-- NEWSLETTER SIGNUP -->
+<section class="home-section newsletter-section" id="newsletter">
+  <h2>Stay Informed. Stay Organized.</h2>
+  <p class="section-subtitle">Get weekly updates on critical bills, hearing alerts, and action opportunities.</p>
+
+  <form class="newsletter-form" action="https://formspree.io/f/xgegkpvb" method="POST" id="newsletter-form">
+    <div class="newsletter-input-group">
+      <input type="email" name="email" placeholder="Enter your email" required aria-label="Email address">
+      <button type="submit" class="btn btn-primary btn-large">Join the Movement</button>
+    </div>
+    <input type="hidden" name="_subject" value="New WA Bill Tracker Subscriber">
+    <input type="text" name="_gotcha" style="display:none">
+  </form>
+
+  <p class="newsletter-privacy">We respect your privacy. Unsubscribe anytime. We'll never share your email.</p>
+
+  <div class="newsletter-success" id="newsletter-success" style="display: none;">
+    <span class="success-icon">✓</span>
+    <span>Thanks for joining! You'll receive updates on critical bills and action opportunities.</span>
+  </div>
+</section>
+
 <!-- QUICK LINKS -->
 <section class="home-section">
   <h2>Quick Links</h2>
@@ -757,4 +779,100 @@ description: Track Washington State legislation, follow the money, expose legisl
     gap: var(--space-4);
   }
 }
+
+/* Newsletter */
+.newsletter-section {
+  background: linear-gradient(135deg, var(--color-bg-light) 0%, var(--color-bg-medium) 100%);
+  text-align: center;
+  padding: var(--space-10) var(--space-4);
+  border: 2px solid var(--color-primary);
+}
+
+.newsletter-section h2 {
+  margin-bottom: var(--space-2);
+}
+
+.newsletter-section .section-subtitle {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-6);
+  font-size: 1.1rem;
+}
+
+.newsletter-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.newsletter-input-group {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.newsletter-input-group input[type="email"] {
+  flex: 1;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-bg-darkest);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  color: var(--color-text-primary);
+  font-size: 1rem;
+}
+
+.newsletter-input-group input[type="email"]:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.newsletter-input-group .btn {
+  white-space: nowrap;
+}
+
+.newsletter-privacy {
+  margin-top: var(--space-3);
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.newsletter-success {
+  background: var(--color-success-bg);
+  border: 1px solid var(--color-success);
+  border-radius: var(--radius);
+  padding: var(--space-4);
+  margin-top: var(--space-4);
+  color: var(--color-success);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+}
+
+.success-icon {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .newsletter-input-group {
+    flex-direction: column;
+  }
+
+  .newsletter-input-group .btn {
+    width: 100%;
+  }
+}
 </style>
+
+<script>
+// Newsletter form handling
+document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+  const form = this;
+  const successMsg = document.getElementById('newsletter-success');
+
+  // Let Formspree handle the submission
+  form.addEventListener('formdata', function() {
+    setTimeout(function() {
+      form.style.display = 'none';
+      successMsg.style.display = 'flex';
+    }, 100);
+  });
+});
+</script>
