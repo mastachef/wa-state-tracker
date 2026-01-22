@@ -1,0 +1,18 @@
+# Robots.txt for WA Bill Tracker
+# https://billtracker.website
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://billtracker.website/sitemap.xml
+
+# Crawl-delay for politeness
+Crawl-delay: 1
+
+# Block common bot paths that don't exist
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /.git/
+Disallow: /node_modules/

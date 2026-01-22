@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3"
 gem "jekyll-seo-tag"
+gem "jekyll-sitemap"
 
 # Windows and JRuby timezone support
 platforms :mingw, :x64_mingw, :mswin, :jruby do

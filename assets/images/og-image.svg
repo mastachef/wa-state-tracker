@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#050d1a"/>
+      <stop offset="50%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#0f2744"/>
+    </linearGradient>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(59,130,246,0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg-grad)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Red accent line at top -->
+  <rect x="0" y="0" width="1200" height="4" fill="#dc2626"/>
+
+  <!-- Content area -->
+  <g transform="translate(80, 180)">
+    <!-- Badge -->
+    <rect x="0" y="0" width="160" height="32" fill="rgba(220,38,38,0.2)" stroke="rgba(220,38,38,0.4)"/>
+    <text x="80" y="22" font-family="monospace" font-size="12" fill="#fca5a5" text-anchor="middle" letter-spacing="2">WATCHDOG</text>
+
+    <!-- Main headline -->
+    <text y="100" font-family="Arial Black, sans-serif" font-size="72" font-weight="900" fill="white" letter-spacing="-2">
+      <tspan>EXPOSE WA</tspan>
+    </text>
+    <text y="180" font-family="Arial Black, sans-serif" font-size="72" font-weight="900" fill="#dc2626" letter-spacing="-2">
+      <tspan>LEGISLATIVE</tspan>
+    </text>
+    <text y="260" font-family="Arial Black, sans-serif" font-size="72" font-weight="900" fill="#dc2626" letter-spacing="-2">
+      <tspan>ABUSE</tspan>
+    </text>
+
+    <!-- Tagline -->
+    <text y="320" font-family="Georgia, serif" font-size="24" fill="#94a3b8">
+      Track bills. Follow the money. Take action.
+    </text>
+  </g>
+
+  <!-- URL -->
+  <text x="80" y="580" font-family="monospace" font-size="18" fill="#64748b">billtracker.website</text>
+
+  <!-- Stats on right side -->
+  <g transform="translate(850, 200)">
+    <text font-family="Arial Black, sans-serif" font-size="64" font-weight="900" fill="#3b82f6">2000+</text>
+    <text y="30" font-family="monospace" font-size="14" fill="#64748b" letter-spacing="1">BILLS TRACKED</text>
+
+    <text y="120" font-family="Arial Black, sans-serif" font-size="64" font-weight="900" fill="#22c55e">147</text>
+    <text y="150" font-family="monospace" font-size="14" fill="#64748b" letter-spacing="1">LEGISLATORS</text>
+
+    <text y="240" font-family="monospace" font-size="14" fill="#fca5a5" letter-spacing="1">REAL-TIME DATA</text>
+  </g>
+
+  <!-- Decorative elements -->
+  <rect x="1150" y="100" width="4" height="430" fill="#1e4470"/>
+</svg>

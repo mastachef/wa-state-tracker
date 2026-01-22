@@ -1,12 +1,14 @@
 /**
  * Quick Fill - Save your info for faster form filling
  * Stores user data in localStorage for easy copy/paste to testimony forms
+ * Enhanced with comment templates for quick bill responses
  */
 
 (function() {
   'use strict';
 
   const STORAGE_KEY = 'wa_bill_tracker_user_info';
+  const TEMPLATES_KEY = 'wa_bill_tracker_comment_templates';
 
   // Default empty user info
   const defaultUserInfo = {
@@ -18,6 +20,13 @@
     city: '',
     zip: '',
     district: ''
+  };
+
+  // Default comment templates
+  const defaultTemplates = {
+    support: "I am writing in SUPPORT of this bill. As a Washington resident, I believe this legislation will benefit our community by [YOUR REASON]. I urge you to vote YES on this bill.",
+    oppose: "I am writing in OPPOSITION to this bill. As a Washington resident, I am concerned that this legislation would [YOUR CONCERN]. I urge you to vote NO on this bill.",
+    neutral: "I am writing regarding this bill. As a Washington resident, I would like to share my perspective: [YOUR COMMENTS]."
   };
 
   // Load saved user info
@@ -51,6 +60,74 @@
       console.error('Error clearing user info:', e);
       return false;
     }
+  }
+
+  // Load comment templates
+  function loadTemplates() {
+    try {
+      const saved = localStorage.getItem(TEMPLATES_KEY);
+      return saved ? { ...defaultTemplates, ...JSON.parse(saved) } : { ...defaultTemplates };
+    } catch (e) {
+      console.error('Error loading templates:', e);
+      return { ...defaultTemplates };
+    }
+  }
+
+  // Save comment templates
+  function saveTemplates(templates) {
+    try {
+      localStorage.setItem(TEMPLATES_KEY, JSON.stringify(templates));
+      return true;
+    } catch (e) {
+      console.error('Error saving templates:', e);
+      return false;
+    }
+  }
+
+  // Generate a complete comment for a bill
+  function generateComment(billNumber, position, customReason, userInfo) {
+    const templates = loadTemplates();
+    const info = userInfo || loadUserInfo();
+
+    let template = templates[position] || templates.neutral;
+
+    // Replace placeholder with custom reason if provided
+    if (customReason && customReason.trim()) {
+      template = template
+        .replace('[YOUR REASON]', customReason.trim())
+        .replace('[YOUR CONCERN]', customReason.trim())
+        .replace('[YOUR COMMENTS]', customReason.trim());
+    }
+
+    // Build the full comment
+    const lines = [];
+
+    // Add greeting with bill number
+    lines.push(`RE: ${billNumber}`);
+    lines.push('');
+    lines.push(template);
+    lines.push('');
+
+    // Add signature block
+    lines.push('Sincerely,');
+    if (info.firstName || info.lastName) {
+      lines.push(`${info.firstName} ${info.lastName}`.trim());
+    }
+    if (info.address) {
+      lines.push(`${info.address}`);
+      lines.push(`${info.city}, WA ${info.zip}`);
+    }
+    if (info.district) {
+      lines.push(`Legislative District ${info.district}`);
+    }
+    if (info.email) {
+      lines.push(info.email);
+    }
+    if (info.phone) {
+      lines.push(info.phone);
+    }
+
+    return lines.join('\n');
   }
 
   // Copy text to clipboard
@@ -306,15 +383,181 @@
     document.body.appendChild(indicator);
   }
 
+  // Initialize the bill page comment helper
+  function initBillPageHelper() {
+    const billPage = document.querySelector('.bill-page');
+    if (!billPage) return;
+
+    // Get bill number from the page
+    const billNumberEl = billPage.querySelector('.bill-number');
+    if (!billNumberEl) return;
+
+    const billNumber = billNumberEl.textContent.trim();
+    const userInfo = loadUserInfo();
+    const hasUserInfo = Object.values(userInfo).some(v => v);
+
+    // Find the actions panel and insert our helper after it
+    const actionsPanel = billPage.querySelector('.actions-panel');
+    if (!actionsPanel) return;
+
+    // Create the Quick Comment panel
+    const panel = document.createElement('section');
+    panel.className = 'quick-comment-panel';
+    panel.innerHTML = `
+      <h2>Quick Comment Builder</h2>
+      <p class="panel-subtitle">Build your comment in seconds, then copy and paste into the official form.</p>
+
+      ${!hasUserInfo ? `
+      <div class="quick-comment-notice">
+        <p><strong>Save time!</strong> <a href="/how-to-act/#quick-fill">Save your contact info</a> once, use it on every bill.</p>
+      </div>
+      ` : ''}
+
+      <div class="position-selector">
+        <label class="position-label">Your Position:</label>
+        <div class="position-buttons">
+          <button type="button" class="position-btn position-support" data-position="support">
+            <span class="position-icon">👍</span>
+            <span class="position-text">Support</span>
+          </button>
+          <button type="button" class="position-btn position-oppose" data-position="oppose">
+            <span class="position-icon">👎</span>
+            <span class="position-text">Oppose</span>
+          </button>
+          <button type="button" class="position-btn position-neutral" data-position="neutral">
+            <span class="position-icon">💬</span>
+            <span class="position-text">Comment</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="reason-input" style="display: none;">
+        <label for="custom-reason">Add your reason (optional):</label>
+        <textarea id="custom-reason" placeholder="Why do you support/oppose this bill? Personal stories are powerful!" rows="3"></textarea>
+        <p class="reason-hint">Tip: Personal stories about how this bill affects you are most impactful.</p>
+      </div>
+
+      <div class="comment-preview" style="display: none;">
+        <label>Your Comment Preview:</label>
+        <div class="preview-box">
+          <pre class="preview-text"></pre>
+        </div>
+        <div class="preview-actions">
+          <button type="button" class="btn btn-primary btn-large copy-comment-btn">
+            <span class="btn-icon">📋</span> Copy Full Comment
+          </button>
+          <button type="button" class="btn btn-secondary edit-comment-btn">Edit</button>
+        </div>
+        <p class="next-step">
+          <strong>Next:</strong> Click "Comment on This Bill" above, paste your comment, and submit!
+        </p>
+      </div>
+    `;
+
+    actionsPanel.after(panel);
+
+    // Set up event handlers
+    const positionBtns = panel.querySelectorAll('.position-btn');
+    const reasonInput = panel.querySelector('.reason-input');
+    const commentPreview = panel.querySelector('.comment-preview');
+    const previewText = panel.querySelector('.preview-text');
+    const customReasonTextarea = panel.querySelector('#custom-reason');
+    const copyBtn = panel.querySelector('.copy-comment-btn');
+    const editBtn = panel.querySelector('.edit-comment-btn');
+
+    let selectedPosition = null;
+
+    // Position button click handlers
+    positionBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update selected state
+        positionBtns.forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        selectedPosition = btn.dataset.position;
+
+        // Show reason input
+        reasonInput.style.display = 'block';
+
+        // Update placeholder based on position
+        if (selectedPosition === 'support') {
+          customReasonTextarea.placeholder = 'Why do you support this bill? (e.g., "it will help families like mine by...")';
+        } else if (selectedPosition === 'oppose') {
+          customReasonTextarea.placeholder = 'Why do you oppose this bill? (e.g., "it would negatively impact my community by...")';
+        } else {
+          customReasonTextarea.placeholder = 'What would you like to share about this bill?';
+        }
+
+        // Generate and show preview
+        updatePreview();
+      });
+    });
+
+    // Update preview when reason changes
+    customReasonTextarea.addEventListener('input', debounce(updatePreview, 300));
+
+    function updatePreview() {
+      if (!selectedPosition) return;
+
+      const comment = generateComment(
+        billNumber,
+        selectedPosition,
+        customReasonTextarea.value,
+        userInfo
+      );
+
+      previewText.textContent = comment;
+      commentPreview.style.display = 'block';
+
+      // Scroll to preview
+      commentPreview.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    // Copy button handler
+    copyBtn.addEventListener('click', () => {
+      const comment = previewText.textContent;
+      copyToClipboard(comment, copyBtn);
+
+      // Update button text temporarily
+      const originalHTML = copyBtn.innerHTML;
+      copyBtn.innerHTML = '<span class="btn-icon">✓</span> Copied!';
+      copyBtn.classList.add('copied');
+
+      setTimeout(() => {
+        copyBtn.innerHTML = originalHTML;
+        copyBtn.classList.remove('copied');
+      }, 2000);
+    });
+
+    // Edit button handler
+    editBtn.addEventListener('click', () => {
+      customReasonTextarea.focus();
+    });
+  }
+
+  // Debounce helper
+  function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+      const later = () => {
+        clearTimeout(timeout);
+        func(...args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  }
+
   // Run on DOM ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
       initQuickFill();
       initQuickCopyButton();
+      initBillPageHelper();
     });
   } else {
     initQuickFill();
     initQuickCopyButton();
+    initBillPageHelper();
   }
 
   // Expose for external use
@@ -322,6 +565,9 @@
     load: loadUserInfo,
     save: saveUserInfo,
     clear: clearUserInfo,
-    copy: copyToClipboard
+    copy: copyToClipboard,
+    loadTemplates: loadTemplates,
+    saveTemplates: saveTemplates,
+    generateComment: generateComment
   };
 })();

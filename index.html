@@ -4,859 +4,1875 @@ title: Home
 description: Track Washington State legislation, follow the money, expose legislative abuse, and take action. Your watchdog for WA State government.
 ---
 
-<section class="hero">
-  <div class="hero-content">
-    <h1>Expose WA Legislative Abuse.<br>Follow the Money. Take Action.</h1>
-    <p class="hero-subtitle">{{ site.data.bills.size }} bills tracked. {{ site.data.legislators.size }} legislators exposed. Real-time campaign finance data. Your watchdog for Washington State government.</p>
-    <div class="hero-actions">
-      <a href="#abuse-alert" class="btn btn-danger btn-large">See the Abuse</a>
-      <a href="{{ '/legislators/' | relative_url }}" class="btn btn-outline btn-large">Follow the Money</a>
+<section class="hero-v2">
+  <div class="hero-bg-effects">
+    <div class="scan-line"></div>
+    <div class="grid-overlay"></div>
+    <div class="vignette"></div>
+  </div>
+
+  <div class="hero-content-v2">
+    <div class="hero-badge">
+      <span class="badge-pulse"></span>
+      <span class="badge-text">LIVE MONITORING</span>
     </div>
+
+    <h1 class="hero-headline">
+      <span class="headline-row">
+        <span class="word" style="--delay: 0">EXPOSE</span>
+        <span class="word" style="--delay: 1">WA</span>
+        <span class="word highlight-danger" style="--delay: 2">LEGISLATIVE</span>
+      </span>
+      <span class="headline-row">
+        <span class="word highlight-danger" style="--delay: 3">ABUSE</span>
+      </span>
+    </h1>
+
+    <div class="hero-tagline">
+      <span class="tagline-item"><span class="tagline-num">{{ site.data.bills.size }}</span> Bills Tracked</span>
+      <span class="tagline-divider">|</span>
+      <span class="tagline-item"><span class="tagline-num">{{ site.data.legislators.size }}</span> Legislators</span>
+      <span class="tagline-divider">|</span>
+      <span class="tagline-item"><span class="tagline-accent">Real-Time</span> Data</span>
+    </div>
+
+    <p class="hero-desc">Your independent watchdog tracking every bill, exposing campaign finance, and holding power accountable.</p>
+
+    <div class="hero-actions-v2">
+      <a href="#abuse-alert" class="btn-v2 btn-danger-v2">
+        <span class="btn-icon-v2">⚠</span>
+        <span class="btn-text-v2">See the Abuse</span>
+        <span class="btn-arrow">→</span>
+      </a>
+      <a href="{{ '/legislators/' | relative_url }}" class="btn-v2 btn-money-v2">
+        <span class="btn-icon-v2">$</span>
+        <span class="btn-text-v2">Follow the Money</span>
+        <span class="btn-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-scroll-indicator">
+    <span>SCROLL</span>
+    <div class="scroll-line"></div>
   </div>
 </section>
 
 <!-- ABUSE ALERT - Bill Flooding -->
 {% if site.data.flooding %}
-<section id="abuse-alert" class="home-section abuse-highlight">
-  <div class="section-header">
-    <span class="section-badge badge-danger">Legislative Abuse</span>
-    <h2>{{ site.data.flooding.summary.worst_day_count }} Bills in One Day</h2>
-    <p>On {{ site.data.flooding.summary.worst_single_day }}, legislators dumped {{ site.data.flooding.summary.flood_percentage }}% of all bills at once. This makes public review impossible.</p>
+<section id="abuse-alert" class="abuse-alert-v2">
+  <div class="abuse-container">
+    <div class="abuse-header">
+      <div class="abuse-stamp">
+        <span class="stamp-text">DOCUMENTED ABUSE</span>
+      </div>
+      <div class="abuse-title-block">
+        <span class="abuse-label-v2">BILL FLOODING DETECTED</span>
+        <h2 class="abuse-headline">
+          <span class="abuse-big-num">{{ site.data.flooding.summary.worst_day_count }}</span>
+          <span class="abuse-headline-text">Bills Dumped<br>in One Day</span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="abuse-evidence">
+      <p class="evidence-text">On <strong>{{ site.data.flooding.summary.worst_single_day }}</strong>, legislators flooded the system with <strong>{{ site.data.flooding.summary.flood_percentage }}%</strong> of all bills at once—making meaningful public review impossible.</p>
+    </div>
+
+    <div class="abuse-stats-v2">
+      <div class="abuse-stat-v2">
+        <div class="stat-visual">
+          <svg viewBox="0 0 100 100" class="stat-ring">
+            <circle cx="50" cy="50" r="45" class="ring-bg"/>
+            <circle cx="50" cy="50" r="45" class="ring-fill" style="--percent: {{ site.data.flooding.summary.flood_percentage }}"/>
+          </svg>
+          <span class="stat-center-num">{{ site.data.flooding.summary.flood_percentage }}%</span>
+        </div>
+        <span class="stat-label-v2">Bills on Flood Days</span>
+      </div>
+      <div class="abuse-stat-v2">
+        <span class="stat-num-v2">{{ site.data.flooding.summary.flood_days_count }}</span>
+        <span class="stat-label-v2">Flood Days<br><small>(50+ bills each)</small></span>
+      </div>
+      <div class="abuse-stat-v2">
+        <span class="stat-num-v2">{{ site.data.flooding.total_bills }}</span>
+        <span class="stat-label-v2">Total Bills<br><small>This Session</small></span>
+      </div>
+    </div>
+
+    <div class="abuse-actions">
+      <a href="{{ '/analytics/' | relative_url }}" class="btn-v2 btn-danger-v2">
+        <span class="btn-text-v2">See Full Analysis</span>
+        <span class="btn-arrow">→</span>
+      </a>
+      <a href="{{ '/how-to-act/' | relative_url }}#citizen-initiative" class="btn-v2 btn-outline-v2">
+        <span class="btn-text-v2">Fight Back</span>
+        <span class="btn-arrow">→</span>
+      </a>
+    </div>
   </div>
 
-  <div class="abuse-quick-stats">
-    <div class="abuse-stat">
-      <span class="abuse-num">{{ site.data.flooding.summary.flood_percentage }}%</span>
-      <span class="abuse-label">Bills on Flood Days</span>
+  <div class="abuse-decoration">
+    <div class="redact-lines">
+      <span></span><span></span><span></span>
     </div>
-    <div class="abuse-stat">
-      <span class="abuse-num">{{ site.data.flooding.summary.flood_days_count }}</span>
-      <span class="abuse-label">Flood Days (50+ bills)</span>
-    </div>
-    <div class="abuse-stat">
-      <span class="abuse-num">{{ site.data.flooding.total_bills }}</span>
-      <span class="abuse-label">Total Bills</span>
-    </div>
-  </div>
-
-  <div class="section-cta">
-    <a href="{{ '/analytics/' | relative_url }}" class="btn btn-danger">See Full Analysis</a>
-    <a href="{{ '/how-to-act/' | relative_url }}#citizen-initiative" class="btn btn-outline">Fight Back</a>
   </div>
 </section>
 {% endif %}
 
 <!-- KEY STATS ROW -->
-<section class="home-stats">
+<section class="stats-dashboard">
   {% assign critical_count = site.data.bills | where: "threat_level", "critical" | size %}
   {% assign high_count = site.data.bills | where: "threat_level", "high" | size %}
   {% assign harmful_total = critical_count | plus: high_count %}
 
-  <div class="stats-row">
-    <a href="{{ '/all-bills/' | relative_url }}" class="stat-box">
-      <span class="stat-icon">📜</span>
-      <span class="stat-number">{{ site.data.bills.size }}</span>
-      <span class="stat-label">Bills Tracked</span>
+  <div class="stats-grid-v2">
+    <a href="{{ '/all-bills/' | relative_url }}" class="stat-card-v2">
+      <div class="stat-icon-v2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+        </svg>
+      </div>
+      <div class="stat-content-v2">
+        <span class="stat-number-v2">{{ site.data.bills.size }}</span>
+        <span class="stat-label-v3">Bills Tracked</span>
+      </div>
+      <div class="stat-arrow-v2">→</div>
     </a>
-    <a href="{{ '/all-bills/' | relative_url }}?threat=critical" class="stat-box stat-danger">
-      <span class="stat-icon">⚠️</span>
-      <span class="stat-number">{{ harmful_total }}</span>
-      <span class="stat-label">Harmful Bills</span>
+    <a href="{{ '/all-bills/' | relative_url }}?threat=critical" class="stat-card-v2 stat-danger-v2">
+      <div class="stat-icon-v2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+        </svg>
+      </div>
+      <div class="stat-content-v2">
+        <span class="stat-number-v2">{{ harmful_total }}</span>
+        <span class="stat-label-v3">Harmful Bills</span>
+      </div>
+      <div class="stat-arrow-v2">→</div>
     </a>
-    <a href="{{ '/legislators/' | relative_url }}" class="stat-box stat-money">
-      <span class="stat-icon">💰</span>
-      <span class="stat-number">{{ site.data.legislators.size }}</span>
-      <span class="stat-label">Legislators</span>
+    <a href="{{ '/legislators/' | relative_url }}" class="stat-card-v2 stat-money-v2">
+      <div class="stat-icon-v2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+      </div>
+      <div class="stat-content-v2">
+        <span class="stat-number-v2">{{ site.data.legislators.size }}</span>
+        <span class="stat-label-v3">Legislators</span>
+      </div>
+      <div class="stat-arrow-v2">→</div>
     </a>
-    <a href="{{ '/analytics/' | relative_url }}" class="stat-box">
-      <span class="stat-icon">📊</span>
-      <span class="stat-number">Live</span>
-      <span class="stat-label">Analytics</span>
+    <a href="{{ '/analytics/' | relative_url }}" class="stat-card-v2 stat-live-v2">
+      <div class="stat-icon-v2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+        </svg>
+      </div>
+      <div class="stat-content-v2">
+        <span class="stat-number-v2">
+          <span class="live-dot"></span>
+          Live
+        </span>
+        <span class="stat-label-v3">Analytics</span>
+      </div>
+      <div class="stat-arrow-v2">→</div>
     </a>
   </div>
 </section>
 
 <!-- FOLLOW THE MONEY - Legislators Preview -->
-<section class="home-section">
-  <div class="section-header">
-    <span class="section-badge badge-money">Follow the Money</span>
-    <h2>Top Fundraising Legislators</h2>
-    <p>See who's collecting the most campaign cash and from whom.</p>
+<section class="money-trail-section">
+  <div class="section-header-v2">
+    <div class="section-marker">
+      <span class="marker-line"></span>
+      <span class="marker-text">INVESTIGATION</span>
+      <span class="marker-line"></span>
+    </div>
+    <h2 class="section-title-v2">Follow the <span class="text-money">Money</span></h2>
+    <p class="section-desc-v2">Campaign finance data exposes who's funding your representatives.</p>
   </div>
 
   {% if site.data.campaign_finance.top_fundraisers %}
-  <div class="top-legislators-grid">
-    {% for leg in site.data.campaign_finance.top_fundraisers limit: 6 %}
+  <div class="money-leaderboard">
+    <div class="leaderboard-header">
+      <span class="lb-col lb-rank">RANK</span>
+      <span class="lb-col lb-name">LEGISLATOR</span>
+      <span class="lb-col lb-party">PARTY</span>
+      <span class="lb-col lb-amount">RAISED</span>
+    </div>
+    {% for leg in site.data.campaign_finance.top_fundraisers limit: 5 %}
     {% assign slug = leg.name | slugify %}
-    <a href="{{ '/legislators/' | relative_url }}{{ slug }}/" class="legislator-preview">
-      <div class="leg-rank">#{{ forloop.index }}</div>
-      <img src="https://ui-avatars.com/api/?name={{ leg.name | url_encode }}&background=1e4470&color=fff&size=60"
-           alt="{{ leg.name }}" class="leg-thumb">
-      <div class="leg-info">
-        <span class="leg-name">{{ leg.name }}</span>
-        <span class="leg-detail">{{ leg.party }} - {{ leg.chamber }}</span>
-      </div>
-      <div class="leg-money">${{ leg.total_raised | divided_by: 1000 | round }}K</div>
+    <a href="{{ '/legislators/' | relative_url }}{{ slug }}/" class="leaderboard-row">
+      <span class="lb-col lb-rank">
+        <span class="rank-num">#{{ forloop.index }}</span>
+      </span>
+      <span class="lb-col lb-name">
+        <span class="leg-name-v2">{{ leg.name }}</span>
+        <span class="leg-chamber">{{ leg.chamber }}</span>
+      </span>
+      <span class="lb-col lb-party">
+        <span class="party-badge party-{{ leg.party | downcase }}">{{ leg.party }}</span>
+      </span>
+      <span class="lb-col lb-amount">
+        <span class="money-amount">${{ leg.total_raised | divided_by: 1000 | round }}K</span>
+      </span>
     </a>
     {% endfor %}
   </div>
   {% endif %}
 
-  <div class="section-cta">
-    <a href="{{ '/legislators/' | relative_url }}" class="btn btn-primary">View All Legislators</a>
+  <div class="section-cta-v2">
+    <a href="{{ '/legislators/' | relative_url }}" class="btn-v2 btn-money-v2">
+      <span class="btn-text-v2">View All Legislators</span>
+      <span class="btn-arrow">→</span>
+    </a>
   </div>
 </section>
 
 <!-- CRITICAL BILLS -->
-<section class="home-section" id="featured-bills">
-  <div class="section-header">
-    <span class="section-badge badge-critical">High Priority</span>
-    <h2>Critical Threat Bills</h2>
-    <p>Bills that pose the highest threat and need immediate attention.</p>
+<section class="critical-bills-section" id="featured-bills">
+  <div class="section-header-v2">
+    <div class="section-marker">
+      <span class="marker-line"></span>
+      <span class="marker-text marker-urgent">URGENT</span>
+      <span class="marker-line"></span>
+    </div>
+    <h2 class="section-title-v2">Critical <span class="text-danger">Threat</span> Bills</h2>
+    <p class="section-desc-v2">Bills that pose the highest threat and need immediate attention.</p>
   </div>
 
   {% assign critical_bills = site.data.bills | where: "threat_level", "critical" %}
   {% if critical_bills.size > 0 %}
-  <div class="bills-grid">
+  <div class="bills-grid-v2">
     {% for bill in critical_bills limit: 4 %}
       {% include bill-card.html bill=bill %}
     {% endfor %}
   </div>
   {% else %}
-  <div class="empty-state">
+  <div class="empty-state-v2">
+    <div class="empty-icon">✓</div>
     <p>No critical threat bills at this time.</p>
   </div>
   {% endif %}
 
-  <div class="section-cta">
-    <a href="{{ '/all-bills/' | relative_url }}?threat=critical" class="btn btn-danger">View All Critical Bills</a>
-    <a href="{{ '/all-bills/' | relative_url }}" class="btn btn-secondary">Browse All {{ site.data.bills.size }} Bills</a>
+  <div class="section-cta-v2">
+    <a href="{{ '/all-bills/' | relative_url }}?threat=critical" class="btn-v2 btn-danger-v2">
+      <span class="btn-text-v2">View All Critical Bills</span>
+      <span class="btn-arrow">→</span>
+    </a>
+    <a href="{{ '/all-bills/' | relative_url }}" class="btn-v2 btn-outline-v2">
+      <span class="btn-text-v2">Browse All {{ site.data.bills.size }} Bills</span>
+      <span class="btn-arrow">→</span>
+    </a>
   </div>
 </section>
 
 <!-- ANALYTICS PREVIEW -->
-<section class="home-section analytics-preview">
-  <div class="section-header">
-    <span class="section-badge">Data & Charts</span>
-    <h2>Bill Analytics</h2>
-    <p>Visual breakdown of legislation by threat level, chamber, and timeline.</p>
+<section class="analytics-section-v2">
+  <div class="section-header-v2">
+    <div class="section-marker">
+      <span class="marker-line"></span>
+      <span class="marker-text">DATA</span>
+      <span class="marker-line"></span>
+    </div>
+    <h2 class="section-title-v2">Bill <span class="text-primary">Analytics</span></h2>
+    <p class="section-desc-v2">Visual breakdown of legislation by threat level and chamber.</p>
   </div>
 
-  <div class="analytics-preview-grid">
-    <div class="preview-card">
-      <h3>Threat Distribution</h3>
-      <div class="threat-bars">
-        {% assign total = site.data.bills.size | times: 1.0 %}
-        {% assign critical = site.data.bills | where: "threat_level", "critical" | size %}
-        {% assign high = site.data.bills | where: "threat_level", "high" | size %}
-        {% assign moderate = site.data.bills | where: "threat_level", "moderate" | size %}
-        {% assign low = site.data.bills | where: "threat_level", "low" | size %}
-        {% assign beneficial = site.data.bills | where: "threat_level", "beneficial" | size %}
+  <div class="analytics-grid-v2">
+    {% assign total = site.data.bills.size | times: 1.0 %}
+    {% assign critical = site.data.bills | where: "threat_level", "critical" | size %}
+    {% assign high = site.data.bills | where: "threat_level", "high" | size %}
+    {% assign moderate = site.data.bills | where: "threat_level", "moderate" | size %}
+    {% assign low = site.data.bills | where: "threat_level", "low" | size %}
+    {% assign beneficial = site.data.bills | where: "threat_level", "beneficial" | size %}
 
-        <div class="threat-bar-row">
-          <span class="bar-label">Critical</span>
-          <div class="bar-track"><div class="bar-fill bar-critical" style="width: {% if total > 0 %}{{ critical | times: 100 | divided_by: total }}%{% else %}0{% endif %}"></div></div>
-          <span class="bar-count">{{ critical }}</span>
+    <div class="analytics-card-v2 threat-card">
+      <h3 class="card-title-v2">Threat Distribution</h3>
+      <div class="threat-chart">
+        <div class="threat-row-v2" data-level="critical">
+          <span class="threat-label-v2">Critical</span>
+          <div class="threat-bar-v2">
+            <div class="threat-fill-v2 fill-critical" style="--width: {% if total > 0 %}{{ critical | times: 100 | divided_by: total }}{% else %}0{% endif %}%"></div>
+          </div>
+          <span class="threat-count-v2">{{ critical }}</span>
         </div>
-        <div class="threat-bar-row">
-          <span class="bar-label">High</span>
-          <div class="bar-track"><div class="bar-fill bar-high" style="width: {% if total > 0 %}{{ high | times: 100 | divided_by: total }}%{% else %}0{% endif %}"></div></div>
-          <span class="bar-count">{{ high }}</span>
+        <div class="threat-row-v2" data-level="high">
+          <span class="threat-label-v2">High</span>
+          <div class="threat-bar-v2">
+            <div class="threat-fill-v2 fill-high" style="--width: {% if total > 0 %}{{ high | times: 100 | divided_by: total }}{% else %}0{% endif %}%"></div>
+          </div>
+          <span class="threat-count-v2">{{ high }}</span>
         </div>
-        <div class="threat-bar-row">
-          <span class="bar-label">Moderate</span>
-          <div class="bar-track"><div class="bar-fill bar-moderate" style="width: {% if total > 0 %}{{ moderate | times: 100 | divided_by: total }}%{% else %}0{% endif %}"></div></div>
-          <span class="bar-count">{{ moderate }}</span>
+        <div class="threat-row-v2" data-level="moderate">
+          <span class="threat-label-v2">Moderate</span>
+          <div class="threat-bar-v2">
+            <div class="threat-fill-v2 fill-moderate" style="--width: {% if total > 0 %}{{ moderate | times: 100 | divided_by: total }}{% else %}0{% endif %}%"></div>
+          </div>
+          <span class="threat-count-v2">{{ moderate }}</span>
         </div>
-        <div class="threat-bar-row">
-          <span class="bar-label">Low</span>
-          <div class="bar-track"><div class="bar-fill bar-low" style="width: {% if total > 0 %}{{ low | times: 100 | divided_by: total }}%{% else %}0{% endif %}"></div></div>
-          <span class="bar-count">{{ low }}</span>
+        <div class="threat-row-v2" data-level="low">
+          <span class="threat-label-v2">Low</span>
+          <div class="threat-bar-v2">
+            <div class="threat-fill-v2 fill-low" style="--width: {% if total > 0 %}{{ low | times: 100 | divided_by: total }}{% else %}0{% endif %}%"></div>
+          </div>
+          <span class="threat-count-v2">{{ low }}</span>
         </div>
-        <div class="threat-bar-row">
-          <span class="bar-label">Beneficial</span>
-          <div class="bar-track"><div class="bar-fill bar-beneficial" style="width: {% if total > 0 %}{{ beneficial | times: 100 | divided_by: total }}%{% else %}0{% endif %}"></div></div>
-          <span class="bar-count">{{ beneficial }}</span>
+        <div class="threat-row-v2" data-level="beneficial">
+          <span class="threat-label-v2">Beneficial</span>
+          <div class="threat-bar-v2">
+            <div class="threat-fill-v2 fill-beneficial" style="--width: {% if total > 0 %}{{ beneficial | times: 100 | divided_by: total }}{% else %}0{% endif %}%"></div>
+          </div>
+          <span class="threat-count-v2">{{ beneficial }}</span>
         </div>
       </div>
     </div>
 
-    <div class="preview-card">
-      <h3>By Chamber</h3>
+    <div class="analytics-card-v2 chamber-card">
+      <h3 class="card-title-v2">By Chamber</h3>
       {% assign house = site.data.bills | where: "chamber", "House" | size %}
       {% assign senate = site.data.bills | where: "chamber", "Senate" | size %}
-      <div class="chamber-split">
-        <div class="chamber-box chamber-house">
-          <span class="chamber-num">{{ house }}</span>
-          <span class="chamber-label">House</span>
+      <div class="chamber-viz">
+        <div class="chamber-item house">
+          <div class="chamber-icon-v2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+            </svg>
+          </div>
+          <span class="chamber-num-v2">{{ house }}</span>
+          <span class="chamber-label-v2">House</span>
         </div>
-        <div class="chamber-box chamber-senate">
-          <span class="chamber-num">{{ senate }}</span>
-          <span class="chamber-label">Senate</span>
+        <div class="chamber-divider">
+          <span class="divider-line"></span>
+          <span class="divider-vs">VS</span>
+          <span class="divider-line"></span>
+        </div>
+        <div class="chamber-item senate">
+          <div class="chamber-icon-v2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"/>
+            </svg>
+          </div>
+          <span class="chamber-num-v2">{{ senate }}</span>
+          <span class="chamber-label-v2">Senate</span>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="section-cta">
-    <a href="{{ '/analytics/' | relative_url }}" class="btn btn-primary">View Full Analytics</a>
+  <div class="section-cta-v2">
+    <a href="{{ '/analytics/' | relative_url }}" class="btn-v2 btn-primary-v2">
+      <span class="btn-text-v2">View Full Analytics</span>
+      <span class="btn-arrow">→</span>
+    </a>
   </div>
 </section>
 
 <!-- TAKE ACTION -->
-<section class="home-section action-section">
-  <div class="section-header">
-    <span class="section-badge badge-action">Take Action</span>
-    <h2>Fight Back Against Legislative Abuse</h2>
-    <p>Washington gives citizens the power to bypass the legislature entirely.</p>
-  </div>
+<section class="action-hub-section">
+  <div class="action-hub-bg"></div>
+  <div class="action-hub-content">
+    <div class="section-header-v2">
+      <div class="section-marker">
+        <span class="marker-line"></span>
+        <span class="marker-text">YOUR POWER</span>
+        <span class="marker-line"></span>
+      </div>
+      <h2 class="section-title-v2">Fight <span class="text-action">Back</span></h2>
+      <p class="section-desc-v2">Washington gives citizens the power to bypass the legislature entirely.</p>
+    </div>
 
-  <div class="action-options">
-    <div class="action-card">
-      <span class="action-icon">📜</span>
-      <h3>Citizen Initiative</h3>
-      <p>Propose your own law. ~324,000 signatures needed to get on the ballot.</p>
-      <a href="{{ '/how-to-act/' | relative_url }}#citizen-initiative" class="btn btn-small">Learn How</a>
+    <div class="action-grid-v2">
+      <a href="{{ '/how-to-act/' | relative_url }}#citizen-initiative" class="action-card-v2">
+        <div class="action-number">01</div>
+        <div class="action-icon-v2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+          </svg>
+        </div>
+        <h3>Citizen Initiative</h3>
+        <p>Propose your own law. ~324,000 signatures to reach the ballot.</p>
+        <span class="action-link">Learn How <span>→</span></span>
+      </a>
+      <a href="{{ '/how-to-act/' | relative_url }}#submit-comments" class="action-card-v2">
+        <div class="action-number">02</div>
+        <div class="action-icon-v2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+          </svg>
+        </div>
+        <h3>Comment on Bills</h3>
+        <p>Submit written comments before hearings. Your voice is on the record.</p>
+        <span class="action-link">Learn How <span>→</span></span>
+      </a>
+      <a href="{{ '/how-to-act/' | relative_url }}#testify" class="action-card-v2">
+        <div class="action-number">03</div>
+        <div class="action-icon-v2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
+          </svg>
+        </div>
+        <h3>Testify</h3>
+        <p>Speak directly to committees. Remote testimony via Zoom available.</p>
+        <span class="action-link">Learn How <span>→</span></span>
+      </a>
+      <a href="{{ '/how-to-act/' | relative_url }}#contact-legislators" class="action-card-v2">
+        <div class="action-number">04</div>
+        <div class="action-icon-v2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+          </svg>
+        </div>
+        <h3>Contact Legislators</h3>
+        <p>Call, email, or meet with your representatives. They work for you.</p>
+        <span class="action-link">Learn How <span>→</span></span>
+      </a>
     </div>
-    <div class="action-card">
-      <span class="action-icon">📝</span>
-      <h3>Comment on Bills</h3>
-      <p>Submit written comments before hearings. Your voice is part of the record.</p>
-      <a href="{{ '/how-to-act/' | relative_url }}#submit-comments" class="btn btn-small">Learn How</a>
-    </div>
-    <div class="action-card">
-      <span class="action-icon">🎤</span>
-      <h3>Testify</h3>
-      <p>Speak directly to committees. Remote testimony available via Zoom.</p>
-      <a href="{{ '/how-to-act/' | relative_url }}#testify" class="btn btn-small">Learn How</a>
-    </div>
-    <div class="action-card">
-      <span class="action-icon">📞</span>
-      <h3>Contact Legislators</h3>
-      <p>Call, email, or meet with your representatives. They work for you.</p>
-      <a href="{{ '/how-to-act/' | relative_url }}#contact-legislators" class="btn btn-small">Learn How</a>
-    </div>
-  </div>
 
-  <div class="section-cta">
-    <a href="{{ '/how-to-act/' | relative_url }}" class="btn btn-primary btn-large">Full Action Guide</a>
+    <div class="section-cta-v2">
+      <a href="{{ '/how-to-act/' | relative_url }}" class="btn-v2 btn-action-v2 btn-large-v2">
+        <span class="btn-text-v2">Full Action Guide</span>
+        <span class="btn-arrow">→</span>
+      </a>
+    </div>
   </div>
 </section>
 
 <!-- NEWSLETTER SIGNUP -->
-<section class="home-section newsletter-section" id="newsletter">
-  <h2>Stay Informed. Stay Organized.</h2>
-  <p class="section-subtitle">Get weekly updates on critical bills, hearing alerts, and action opportunities.</p>
-
-  <form class="newsletter-form" action="https://formspree.io/f/xgegkpvb" method="POST" id="newsletter-form">
-    <div class="newsletter-input-group">
-      <input type="email" name="email" placeholder="Enter your email" required aria-label="Email address">
-      <button type="submit" class="btn btn-primary btn-large">Join the Movement</button>
+<section class="newsletter-v2" id="newsletter">
+  <div class="newsletter-content">
+    <div class="newsletter-text">
+      <span class="newsletter-label">JOIN THE WATCHDOG NETWORK</span>
+      <h2 class="newsletter-title">Stay Informed.<br>Stay <span class="text-highlight">Organized</span>.</h2>
+      <p>Weekly briefings on critical bills, hearing alerts, and action opportunities.</p>
     </div>
-    <input type="hidden" name="_subject" value="New WA Bill Tracker Subscriber">
-    <input type="text" name="_gotcha" style="display:none">
-  </form>
 
-  <p class="newsletter-privacy">We respect your privacy. Unsubscribe anytime. We'll never share your email.</p>
+    <form class="newsletter-form-v2" action="https://formspree.io/f/xgegkpvb" method="POST" id="newsletter-form">
+      <div class="form-row-v2">
+        <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
+        <button type="submit" class="btn-v2 btn-primary-v2">
+          <span>Subscribe</span>
+          <span class="btn-arrow">→</span>
+        </button>
+      </div>
+      <input type="hidden" name="_subject" value="New WA Bill Tracker Subscriber">
+      <input type="text" name="_gotcha" style="display:none">
+      <p class="form-note">No spam. Unsubscribe anytime.</p>
+    </form>
 
-  <div class="newsletter-success" id="newsletter-success" style="display: none;">
-    <span class="success-icon">✓</span>
-    <span>Thanks for joining! You'll receive updates on critical bills and action opportunities.</span>
+    <div class="newsletter-success" id="newsletter-success" style="display: none;">
+      <span class="success-icon-v2">✓</span>
+      <span>You're in. Watch your inbox for updates.</span>
+    </div>
   </div>
 </section>
 
 <!-- QUICK LINKS -->
-<section class="home-section">
-  <h2>Quick Links</h2>
-  <div class="links-grid">
-    <a href="https://app.leg.wa.gov/districtfinder/" class="quick-link" target="_blank" rel="noopener">
-      <span class="quick-link-icon">📍</span>
-      <span class="quick-link-title">Find Your District</span>
-      <span class="quick-link-desc">Look up your legislators</span>
+<section class="resources-section">
+  <div class="section-header-v2">
+    <h2 class="section-title-v2">Official Resources</h2>
+  </div>
+  <div class="resources-grid">
+    <a href="https://app.leg.wa.gov/districtfinder/" class="resource-card" target="_blank" rel="noopener">
+      <div class="resource-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+          <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+        </svg>
+      </div>
+      <div class="resource-content">
+        <span class="resource-title">Find Your District</span>
+        <span class="resource-desc">Look up your legislators</span>
+      </div>
+      <span class="resource-arrow">↗</span>
     </a>
-    <a href="https://leg.wa.gov/legislature/pages/calendar.aspx" class="quick-link" target="_blank" rel="noopener">
-      <span class="quick-link-icon">📅</span>
-      <span class="quick-link-title">Legislative Calendar</span>
-      <span class="quick-link-desc">Upcoming hearings & sessions</span>
+    <a href="https://leg.wa.gov/legislature/pages/calendar.aspx" class="resource-card" target="_blank" rel="noopener">
+      <div class="resource-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+        </svg>
+      </div>
+      <div class="resource-content">
+        <span class="resource-title">Legislative Calendar</span>
+        <span class="resource-desc">Upcoming hearings & sessions</span>
+      </div>
+      <span class="resource-arrow">↗</span>
     </a>
-    <a href="https://tvw.org" class="quick-link" target="_blank" rel="noopener">
-      <span class="quick-link-icon">📺</span>
-      <span class="quick-link-title">Watch TVW</span>
-      <span class="quick-link-desc">Live & recorded hearings</span>
+    <a href="https://tvw.org" class="resource-card" target="_blank" rel="noopener">
+      <div class="resource-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+        </svg>
+      </div>
+      <div class="resource-content">
+        <span class="resource-title">Watch TVW</span>
+        <span class="resource-desc">Live & recorded hearings</span>
+      </div>
+      <span class="resource-arrow">↗</span>
     </a>
-    <a href="tel:1-800-562-6000" class="quick-link">
-      <span class="quick-link-icon">📞</span>
-      <span class="quick-link-title">Legislative Hotline</span>
-      <span class="quick-link-desc">1-800-562-6000</span>
+    <a href="tel:1-800-562-6000" class="resource-card">
+      <div class="resource-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+        </svg>
+      </div>
+      <div class="resource-content">
+        <span class="resource-title">Legislative Hotline</span>
+        <span class="resource-desc">1-800-562-6000</span>
+      </div>
+      <span class="resource-arrow">→</span>
     </a>
   </div>
 </section>
 
+<!-- FOOTER DATA FRESHNESS -->
 {% if site.data.bills %}
-<section class="data-freshness">
-  <p>Data updated daily from official sources. Last build: <time>{{ site.time | date: "%B %d, %Y" }}</time></p>
+<section class="data-freshness-v2">
+  <div class="freshness-content">
+    <span class="freshness-dot"></span>
+    <p>Data updated daily from official sources. Last build: <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: "%B %d, %Y" }}</time></p>
+  </div>
 </section>
 {% endif %}
 
 <style>
-/* HOME PAGE STYLES */
+/* ============================================
+   HOMEPAGE V2 - INVESTIGATIVE NEWSROOM AESTHETIC
+   ============================================ */
 
-/* Hero */
-.hero {
-  background: linear-gradient(135deg, #0a1628 0%, #1e3a5f 50%, #0f2744 100%);
-  padding: var(--space-12) var(--space-4);
+/* Import distinctive fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --font-display: 'Oswald', sans-serif;
+  --font-body: 'Source Serif 4', Georgia, serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Extended palette */
+  --color-danger: #dc2626;
+  --color-danger-light: #fca5a5;
+  --color-money: #22c55e;
+  --color-money-light: #86efac;
+  --color-action: #3b82f6;
+  --color-action-light: #93c5fd;
+  --color-gold: #f59e0b;
+}
+
+/* ============================================
+   HERO V2
+   ============================================ */
+.hero-v2 {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-16) var(--space-4);
+  overflow: hidden;
+  background: linear-gradient(180deg, #050d1a 0%, #0a1628 50%, #0f2744 100%);
+}
+
+.hero-bg-effects {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.scan-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.5), transparent);
+  animation: scan 4s linear infinite;
+}
+
+@keyframes scan {
+  0% { top: 0; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+.grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 0%, rgba(5, 13, 26, 0.8) 100%);
+}
+
+.hero-content-v2 {
+  position: relative;
+  z-index: 1;
   text-align: center;
-  border-bottom: 3px solid #dc2626;
+  max-width: 900px;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  background: rgba(220, 38, 38, 0.15);
+  border: 1px solid rgba(220, 38, 38, 0.4);
+  border-radius: 2px;
+  margin-bottom: var(--space-6);
+  animation: fadeInDown 0.6s ease-out;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.badge-pulse {
+  width: 8px;
+  height: 8px;
+  background: var(--color-danger);
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.2); }
+}
+
+.badge-text {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--color-danger-light);
+}
+
+.hero-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-6);
+}
+
+.headline-row {
+  display: block;
+}
+
+.word {
+  display: inline-block;
+  opacity: 0;
+  animation: wordReveal 0.5s ease-out forwards;
+  animation-delay: calc(var(--delay) * 0.15s);
+}
+
+@keyframes wordReveal {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.highlight-danger {
+  color: var(--color-danger);
+  text-shadow: 0 0 40px rgba(220, 38, 38, 0.4);
+}
+
+.hero-tagline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
   margin-bottom: var(--space-4);
-  line-height: 1.2;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  animation: fadeIn 0.6s ease-out 0.8s both;
 }
 
-.hero-subtitle {
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.tagline-num {
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.tagline-accent {
+  color: var(--color-action-light);
+}
+
+.tagline-divider {
+  color: var(--color-border);
+}
+
+.hero-desc {
+  font-family: var(--font-body);
   font-size: 1.125rem;
   color: var(--color-text-secondary);
-  max-width: 700px;
-  margin: 0 auto var(--space-6);
+  max-width: 600px;
+  margin: 0 auto var(--space-8);
+  line-height: 1.7;
+  animation: fadeIn 0.6s ease-out 1s both;
 }
 
-.hero-actions {
+.hero-actions-v2 {
   display: flex;
-  gap: var(--space-3);
+  gap: var(--space-4);
   justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeIn 0.6s ease-out 1.2s both;
+}
+
+/* Button V2 System */
+.btn-v2 {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-5);
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-v2:hover {
+  text-decoration: none;
+}
+
+.btn-danger-v2 {
+  background: var(--color-danger);
+  color: white;
+  border-color: var(--color-danger);
+}
+
+.btn-danger-v2:hover {
+  background: transparent;
+  color: var(--color-danger-light);
+  box-shadow: 0 0 20px rgba(220, 38, 38, 0.3);
+}
+
+.btn-money-v2 {
+  background: transparent;
+  color: var(--color-money-light);
+  border-color: var(--color-money);
+}
+
+.btn-money-v2:hover {
+  background: var(--color-money);
+  color: white;
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+}
+
+.btn-primary-v2 {
+  background: var(--color-action);
+  color: white;
+  border-color: var(--color-action);
+}
+
+.btn-primary-v2:hover {
+  background: transparent;
+  color: var(--color-action-light);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+.btn-outline-v2 {
+  background: transparent;
+  color: var(--color-text-secondary);
+  border-color: var(--color-border-light);
+}
+
+.btn-outline-v2:hover {
+  border-color: var(--color-text-secondary);
+  color: var(--color-text-primary);
+}
+
+.btn-action-v2 {
+  background: var(--color-action);
+  color: white;
+  border-color: var(--color-action);
+}
+
+.btn-action-v2:hover {
+  background: #2563eb;
+}
+
+.btn-large-v2 {
+  padding: var(--space-4) var(--space-8);
+  font-size: 1rem;
+}
+
+.btn-icon-v2 {
+  font-weight: 700;
+}
+
+.btn-arrow {
+  transition: transform 0.2s;
+}
+
+.btn-v2:hover .btn-arrow {
+  transform: translateX(4px);
+}
+
+/* Hero scroll indicator */
+.hero-scroll-indicator {
+  position: absolute;
+  bottom: var(--space-8);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-text-dim);
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.2em;
+  animation: fadeIn 0.6s ease-out 1.5s both;
+}
+
+.scroll-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, var(--color-border-light), transparent);
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.5; height: 40px; }
+  50% { opacity: 1; height: 50px; }
+}
+
+/* ============================================
+   ABUSE ALERT V2
+   ============================================ */
+.abuse-alert-v2 {
+  position: relative;
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.1) 0%, var(--color-bg-darkest) 100%);
+  padding: var(--space-12) var(--space-4);
+  overflow: hidden;
+}
+
+.abuse-alert-v2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: repeating-linear-gradient(90deg, var(--color-danger) 0px, var(--color-danger) 20px, transparent 20px, transparent 40px);
+}
+
+.abuse-container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.abuse-header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-6);
+  margin-bottom: var(--space-6);
   flex-wrap: wrap;
 }
 
-.btn-danger {
-  background: #dc2626;
+.abuse-stamp {
+  background: var(--color-danger);
+  padding: var(--space-2) var(--space-4);
+  transform: rotate(-3deg);
+  border: 2px solid var(--color-danger-light);
+}
+
+.stamp-text {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   color: white;
 }
 
-.btn-danger:hover {
-  background: #b91c1c;
+.abuse-title-block {
+  flex: 1;
 }
 
-/* Home Stats */
-.home-stats {
-  margin: calc(-1 * var(--space-8)) auto var(--space-8);
-  max-width: 900px;
+.abuse-label-v2 {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--color-danger-light);
+  margin-bottom: var(--space-2);
+}
+
+.abuse-headline {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-4);
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+}
+
+.abuse-big-num {
+  font-size: clamp(4rem, 12vw, 7rem);
+  color: var(--color-danger);
+  text-shadow: 0 0 60px rgba(220, 38, 38, 0.5);
+}
+
+.abuse-headline-text {
+  font-size: clamp(1.25rem, 4vw, 2rem);
+  color: var(--color-text-primary);
+  text-transform: uppercase;
+}
+
+.abuse-evidence {
+  background: rgba(220, 38, 38, 0.1);
+  border-left: 4px solid var(--color-danger);
+  padding: var(--space-4) var(--space-5);
+  margin-bottom: var(--space-6);
+}
+
+.evidence-text {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.evidence-text strong {
+  color: var(--color-danger-light);
+}
+
+.abuse-stats-v2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.abuse-stat-v2 {
+  text-align: center;
+  padding: var(--space-4);
+  background: var(--color-bg-dark);
+  border: 1px solid var(--color-border);
+}
+
+.stat-visual {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto var(--space-2);
+}
+
+.stat-ring {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.ring-bg {
+  fill: none;
+  stroke: var(--color-bg-darkest);
+  stroke-width: 8;
+}
+
+.ring-fill {
+  fill: none;
+  stroke: var(--color-danger);
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-dasharray: 283;
+  stroke-dashoffset: calc(283 - (283 * var(--percent)) / 100);
+  transition: stroke-dashoffset 1s ease-out;
+}
+
+.stat-center-num {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-danger-light);
+}
+
+.stat-num-v2 {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.stat-label-v2 {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.stat-label-v2 small {
+  display: block;
+  font-size: 0.625rem;
+  opacity: 0.7;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.abuse-actions {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.abuse-decoration {
+  position: absolute;
+  right: var(--space-4);
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.1;
+}
+
+.redact-lines span {
+  display: block;
+  height: 12px;
+  background: var(--color-danger);
+  margin-bottom: 8px;
+}
+
+.redact-lines span:nth-child(1) { width: 120px; }
+.redact-lines span:nth-child(2) { width: 80px; }
+.redact-lines span:nth-child(3) { width: 100px; }
+
+/* ============================================
+   STATS DASHBOARD
+   ============================================ */
+.stats-dashboard {
+  margin: calc(-1 * var(--space-10)) auto var(--space-8);
+  max-width: 1000px;
   padding: 0 var(--space-4);
+  position: relative;
+  z-index: 10;
 }
 
-.stats-row {
+.stats-grid-v2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: var(--space-3);
 }
 
-.stat-box {
-  background: var(--color-bg-medium);
-  border-radius: var(--radius-lg);
+.stat-card-v2 {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
   padding: var(--space-4);
-  text-align: center;
+  background: var(--color-bg-medium);
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
   text-decoration: none;
   color: inherit;
-  border: 1px solid var(--color-border);
-  transition: transform 0.2s, border-color 0.2s;
+  transition: all 0.2s ease;
 }
 
-.stat-box:hover {
-  transform: translateY(-3px);
-  border-color: var(--color-primary);
+.stat-card-v2:hover {
+  background: var(--color-bg-light);
+  border-color: var(--color-border-light);
+  transform: translateY(-2px);
+  text-decoration: none;
 }
 
-.stat-icon {
+.stat-icon-v2 {
+  width: 40px;
+  height: 40px;
+  color: var(--color-text-muted);
+}
+
+.stat-icon-v2 svg {
+  width: 100%;
+  height: 100%;
+}
+
+.stat-content-v2 {
+  flex: 1;
+}
+
+.stat-number-v2 {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-display);
   font-size: 1.5rem;
-  display: block;
-  margin-bottom: var(--space-2);
-}
-
-.stat-box .stat-number {
-  display: block;
-  font-size: 1.75rem;
   font-weight: 700;
-  color: var(--color-primary-light);
+  color: var(--color-text-primary);
 }
 
-.stat-box.stat-danger .stat-number {
-  color: #fca5a5;
-}
-
-.stat-box.stat-money .stat-number {
-  color: #86efac;
-}
-
-.stat-box .stat-label {
-  font-size: 0.75rem;
-  color: var(--color-text-dim);
+.stat-label-v3 {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
+  color: var(--color-text-dim);
 }
 
-/* Home Sections */
-.home-section {
-  padding: var(--space-10) var(--space-4);
-  max-width: 1200px;
-  margin: 0 auto;
+.stat-arrow-v2 {
+  font-size: 1.25rem;
+  color: var(--color-text-dim);
+  transition: transform 0.2s;
 }
 
-.section-header {
+.stat-card-v2:hover .stat-arrow-v2 {
+  transform: translateX(4px);
+}
+
+.stat-danger-v2 .stat-icon-v2 { color: var(--color-danger-light); }
+.stat-danger-v2 .stat-number-v2 { color: var(--color-danger-light); }
+
+.stat-money-v2 .stat-icon-v2 { color: var(--color-money-light); }
+.stat-money-v2 .stat-number-v2 { color: var(--color-money-light); }
+
+.stat-live-v2 .stat-icon-v2 { color: var(--color-action-light); }
+
+.live-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--color-success);
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* ============================================
+   SECTION HEADERS V2
+   ============================================ */
+.section-header-v2 {
   text-align: center;
   margin-bottom: var(--space-8);
 }
 
-.section-badge {
-  display: inline-block;
-  padding: var(--space-1) var(--space-3);
-  background: var(--color-bg-darkest);
-  border-radius: var(--radius-full);
-  font-size: 0.75rem;
-  font-weight: 600;
+.section-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.marker-line {
+  width: 40px;
+  height: 1px;
+  background: var(--color-border-light);
+}
+
+.marker-text {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.2em;
+  color: var(--color-text-dim);
+}
+
+.marker-urgent {
+  color: var(--color-danger-light);
+}
+
+.section-title-v2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: -0.02em;
   margin-bottom: var(--space-3);
-  color: var(--color-text-muted);
 }
 
-.badge-danger {
-  background: rgba(220, 38, 38, 0.2);
-  color: #fca5a5;
-}
+.text-danger { color: var(--color-danger); }
+.text-money { color: var(--color-money); }
+.text-action { color: var(--color-action-light); }
+.text-primary { color: var(--color-action-light); }
+.text-highlight { color: var(--color-gold); }
 
-.badge-money {
-  background: rgba(22, 163, 74, 0.2);
-  color: #86efac;
-}
-
-.badge-critical {
-  background: rgba(220, 38, 38, 0.2);
-  color: #fca5a5;
-}
-
-.badge-action {
-  background: rgba(59, 130, 246, 0.2);
-  color: #93c5fd;
-}
-
-.section-header h2 {
-  font-size: 2rem;
-  margin-bottom: var(--space-2);
-}
-
-.section-header p {
+.section-desc-v2 {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
   color: var(--color-text-muted);
   max-width: 600px;
   margin: 0 auto;
 }
 
-.section-cta {
-  text-align: center;
-  margin-top: var(--space-6);
+.section-cta-v2 {
   display: flex;
+  justify-content: center;
   gap: var(--space-3);
-  justify-content: center;
+  margin-top: var(--space-8);
   flex-wrap: wrap;
 }
 
-/* Abuse Highlight */
-.abuse-highlight {
-  background: linear-gradient(135deg, rgba(220, 38, 38, 0.15) 0%, var(--color-bg-dark) 100%);
-  border-top: 3px solid #dc2626;
-  border-bottom: 3px solid #dc2626;
-  max-width: none;
-  padding: var(--space-10) var(--space-4);
+/* ============================================
+   MONEY TRAIL SECTION
+   ============================================ */
+.money-trail-section {
+  padding: var(--space-12) var(--space-4);
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.abuse-quick-stats {
-  display: flex;
-  justify-content: center;
-  gap: var(--space-8);
-  flex-wrap: wrap;
-  margin: var(--space-6) 0;
+.money-leaderboard {
+  background: var(--color-bg-darkest);
+  border: 1px solid var(--color-border);
+  margin-bottom: var(--space-6);
 }
 
-.abuse-stat {
-  text-align: center;
+.leaderboard-header {
+  display: grid;
+  grid-template-columns: 60px 1fr 80px 100px;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-bg-dark);
+  border-bottom: 1px solid var(--color-border);
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.1em;
+  color: var(--color-text-dim);
+  text-transform: uppercase;
 }
 
-.abuse-num {
-  display: block;
-  font-size: 3rem;
+.leaderboard-row {
+  display: grid;
+  grid-template-columns: 60px 1fr 80px 100px;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid var(--color-border);
+  transition: background 0.2s;
+}
+
+.leaderboard-row:last-child {
+  border-bottom: none;
+}
+
+.leaderboard-row:hover {
+  background: var(--color-bg-dark);
+  text-decoration: none;
+}
+
+.rank-num {
+  font-family: var(--font-display);
+  font-size: 1rem;
   font-weight: 700;
+  color: var(--color-text-dim);
+}
+
+.leg-name-v2 {
+  display: block;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.leg-chamber {
+  font-size: 0.75rem;
+  color: var(--color-text-dim);
+}
+
+.party-badge {
+  display: inline-block;
+  padding: var(--space-1) var(--space-2);
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-radius: 2px;
+}
+
+.party-d, .party-democrat {
+  background: rgba(59, 130, 246, 0.2);
+  color: #93c5fd;
+}
+
+.party-r, .party-republican {
+  background: rgba(239, 68, 68, 0.2);
   color: #fca5a5;
 }
 
-.abuse-label {
-  font-size: 0.875rem;
-  color: var(--color-text-muted);
-}
-
-/* Top Legislators Grid */
-.top-legislators-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: var(--space-3);
-}
-
-.legislator-preview {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-  background: var(--color-bg-medium);
-  padding: var(--space-3);
-  border-radius: var(--radius-lg);
-  text-decoration: none;
-  color: inherit;
-  border: 1px solid var(--color-border);
-  transition: border-color 0.2s;
-}
-
-.legislator-preview:hover {
-  border-color: var(--color-primary);
-}
-
-.leg-rank {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--color-text-dim);
-  min-width: 35px;
-}
-
-.leg-thumb {
-  width: 45px;
-  height: 45px;
-  border-radius: var(--radius-md);
-}
-
-.leg-info {
-  flex: 1;
-}
-
-.legislator-preview .leg-name {
-  display: block;
-  font-weight: 600;
-  color: var(--color-text-primary);
-}
-
-.leg-detail {
-  font-size: 0.75rem;
-  color: var(--color-text-dim);
-}
-
-.leg-money {
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: #86efac;
+.money-amount {
   font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-money-light);
 }
 
-/* Analytics Preview */
-.analytics-preview-grid {
+/* ============================================
+   CRITICAL BILLS SECTION
+   ============================================ */
+.critical-bills-section {
+  padding: var(--space-12) var(--space-4);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bills-grid-v2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: var(--space-4);
 }
 
-.preview-card {
+.empty-state-v2 {
+  text-align: center;
+  padding: var(--space-10);
   background: var(--color-bg-medium);
-  border-radius: var(--radius-lg);
-  padding: var(--space-5);
+  border: 1px dashed var(--color-border);
+}
+
+.empty-icon {
+  font-size: 2rem;
+  margin-bottom: var(--space-3);
+  color: var(--color-success);
+}
+
+/* ============================================
+   ANALYTICS SECTION V2
+   ============================================ */
+.analytics-section-v2 {
+  padding: var(--space-12) var(--space-4);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.analytics-grid-v2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-4);
+}
+
+.analytics-card-v2 {
+  background: var(--color-bg-medium);
   border: 1px solid var(--color-border);
+  padding: var(--space-5);
 }
 
-.preview-card h3 {
-  font-size: 1rem;
-  margin-bottom: var(--space-4);
-  color: var(--color-text-secondary);
+.card-title-v2 {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-5);
 }
 
-/* Threat Bars */
-.threat-bars {
+.threat-chart {
   display: flex;
   flex-direction: column;
-  gap: var(--space-2);
+  gap: var(--space-3);
 }
 
-.threat-bar-row {
+.threat-row-v2 {
   display: grid;
   grid-template-columns: 70px 1fr 40px;
-  gap: var(--space-2);
+  gap: var(--space-3);
   align-items: center;
 }
 
-.bar-label {
+.threat-label-v2 {
+  font-family: var(--font-mono);
   font-size: 0.75rem;
   color: var(--color-text-muted);
 }
 
-.bar-track {
-  height: 12px;
+.threat-bar-v2 {
+  height: 8px;
   background: var(--color-bg-darkest);
-  border-radius: var(--radius-full);
+  border-radius: 0;
   overflow: hidden;
 }
 
-.bar-fill {
+.threat-fill-v2 {
   height: 100%;
-  border-radius: var(--radius-full);
-  min-width: 4px;
+  width: var(--width);
+  transition: width 1s ease-out;
 }
 
-.bar-critical { background: #dc2626; }
-.bar-high { background: #ea580c; }
-.bar-moderate { background: #ca8a04; }
-.bar-low { background: #16a34a; }
-.bar-beneficial { background: #059669; }
+.fill-critical { background: var(--color-danger); }
+.fill-high { background: #ea580c; }
+.fill-moderate { background: #ca8a04; }
+.fill-low { background: #16a34a; }
+.fill-beneficial { background: #059669; }
 
-.bar-count {
-  font-size: 0.75rem;
-  color: var(--color-text-muted);
-  text-align: right;
+.threat-count-v2 {
   font-family: var(--font-mono);
-}
-
-/* Chamber Split */
-.chamber-split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-3);
-}
-
-.chamber-box {
-  padding: var(--space-4);
-  border-radius: var(--radius-lg);
-  text-align: center;
-}
-
-.chamber-house {
-  background: rgba(59, 130, 246, 0.15);
-  border: 1px solid #3b82f6;
-}
-
-.chamber-senate {
-  background: rgba(139, 92, 246, 0.15);
-  border: 1px solid #8b5cf6;
-}
-
-.chamber-num {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.chamber-house .chamber-num { color: #93c5fd; }
-.chamber-senate .chamber-num { color: #c4b5fd; }
-
-.chamber-label {
   font-size: 0.875rem;
-  color: var(--color-text-muted);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  text-align: right;
 }
 
-/* Action Section */
-.action-section {
-  background: var(--color-bg-medium);
-  border-radius: var(--radius-lg);
-  max-width: 1000px;
-}
-
-.action-options {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.chamber-viz {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   gap: var(--space-4);
 }
 
-.action-card {
-  background: var(--color-bg-darkest);
-  border-radius: var(--radius-lg);
-  padding: var(--space-5);
+.chamber-item {
   text-align: center;
 }
 
-.action-icon {
-  font-size: 2rem;
-  display: block;
-  margin-bottom: var(--space-2);
-}
-
-.action-card h3 {
-  font-size: 1rem;
-  margin-bottom: var(--space-2);
-}
-
-.action-card p {
-  font-size: 0.875rem;
+.chamber-icon-v2 {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto var(--space-3);
   color: var(--color-text-muted);
-  margin-bottom: var(--space-3);
 }
 
-.btn-small {
-  padding: var(--space-2) var(--space-3);
-  font-size: 0.75rem;
+.chamber-icon-v2 svg {
+  width: 100%;
+  height: 100%;
 }
 
-/* Quick Links */
-.links-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: var(--space-3);
+.house .chamber-icon-v2 { color: #93c5fd; }
+.senate .chamber-icon-v2 { color: #c4b5fd; }
+
+.chamber-num-v2 {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: var(--space-1);
 }
 
-.quick-link {
+.house .chamber-num-v2 { color: #93c5fd; }
+.senate .chamber-num-v2 { color: #c4b5fd; }
+
+.chamber-label-v2 {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-dim);
+}
+
+.chamber-divider {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: var(--space-4);
+  gap: var(--space-2);
+}
+
+.divider-line {
+  width: 1px;
+  height: 30px;
+  background: var(--color-border);
+}
+
+.divider-vs {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  color: var(--color-text-dim);
+}
+
+/* ============================================
+   ACTION HUB SECTION
+   ============================================ */
+.action-hub-section {
+  position: relative;
+  padding: var(--space-12) var(--space-4);
+  overflow: hidden;
+}
+
+.action-hub-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(34, 197, 94, 0.1) 0%, transparent 50%);
+}
+
+.action-hub-content {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.action-grid-v2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-4);
+}
+
+.action-card-v2 {
+  position: relative;
+  display: block;
+  padding: var(--space-6) var(--space-5);
   background: var(--color-bg-medium);
-  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
   text-decoration: none;
   color: inherit;
-  border: 1px solid var(--color-border);
-  transition: border-color 0.2s;
-  text-align: center;
+  transition: all 0.3s ease;
 }
 
-.quick-link:hover {
-  border-color: var(--color-primary);
+.action-card-v2:hover {
+  background: var(--color-bg-light);
+  border-color: var(--color-action);
+  transform: translateY(-4px);
+  text-decoration: none;
 }
 
-.quick-link-icon {
-  font-size: 1.5rem;
+.action-number {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-bg-darkest);
+  opacity: 0.5;
+}
+
+.action-icon-v2 {
+  width: 40px;
+  height: 40px;
+  color: var(--color-action-light);
+  margin-bottom: var(--space-4);
+}
+
+.action-icon-v2 svg {
+  width: 100%;
+  height: 100%;
+}
+
+.action-card-v2 h3 {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
   margin-bottom: var(--space-2);
 }
 
-.quick-link-title {
+.action-card-v2 p {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: var(--space-4);
+}
+
+.action-link {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  color: var(--color-action-light);
+}
+
+.action-link span {
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.action-card-v2:hover .action-link span {
+  transform: translateX(4px);
+}
+
+/* ============================================
+   NEWSLETTER V2
+   ============================================ */
+.newsletter-v2 {
+  padding: var(--space-12) var(--space-4);
+  background: linear-gradient(135deg, var(--color-bg-light) 0%, var(--color-bg-medium) 100%);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.newsletter-content {
+  max-width: 700px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.newsletter-label {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.2em;
+  color: var(--color-text-dim);
+  margin-bottom: var(--space-2);
+  display: block;
+}
+
+.newsletter-title {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: var(--space-3);
+}
+
+.newsletter-text p {
+  font-family: var(--font-body);
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.newsletter-form-v2 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.form-row-v2 {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.form-row-v2 input[type="email"] {
+  flex: 1;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-bg-darkest);
+  border: 1px solid var(--color-border);
+  border-radius: 0;
+  color: var(--color-text-primary);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+}
+
+.form-row-v2 input[type="email"]:focus {
+  outline: none;
+  border-color: var(--color-action);
+}
+
+.form-row-v2 input[type="email"]::placeholder {
+  color: var(--color-text-dim);
+}
+
+.form-note {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  color: var(--color-text-dim);
+  margin: 0;
+}
+
+.newsletter-success {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  background: var(--color-success-bg);
+  border: 1px solid var(--color-success);
+}
+
+.success-icon-v2 {
+  font-size: 1.25rem;
+  color: var(--color-success);
+}
+
+/* ============================================
+   RESOURCES SECTION
+   ============================================ */
+.resources-section {
+  padding: var(--space-10) var(--space-4);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-3);
+}
+
+.resource-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--color-bg-medium);
+  border: 1px solid var(--color-border);
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+.resource-card:hover {
+  background: var(--color-bg-light);
+  border-color: var(--color-border-light);
+  text-decoration: none;
+}
+
+.resource-icon {
+  width: 36px;
+  height: 36px;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.resource-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.resource-content {
+  flex: 1;
+}
+
+.resource-title {
+  display: block;
   font-weight: 600;
+  font-size: 0.9rem;
   color: var(--color-text-primary);
 }
 
-.quick-link-desc {
+.resource-desc {
   font-size: 0.75rem;
   color: var(--color-text-dim);
 }
 
-/* Data Freshness */
-.data-freshness {
-  text-align: center;
-  padding: var(--space-6);
+.resource-arrow {
   color: var(--color-text-dim);
-  font-size: 0.875rem;
+  font-size: 1rem;
+  transition: transform 0.2s;
 }
 
-/* Responsive */
+.resource-card:hover .resource-arrow {
+  transform: translateX(2px);
+}
+
+/* ============================================
+   DATA FRESHNESS V2
+   ============================================ */
+.data-freshness-v2 {
+  padding: var(--space-6) var(--space-4);
+  background: var(--color-bg-darkest);
+  border-top: 1px solid var(--color-border);
+}
+
+.freshness-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+}
+
+.freshness-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--color-success);
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.freshness-content p {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-dim);
+  margin: 0;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 1.75rem;
+  .hero-v2 {
+    min-height: auto;
+    padding: var(--space-12) var(--space-4) var(--space-16);
   }
 
-  .stats-row {
+  .hero-scroll-indicator {
+    display: none;
+  }
+
+  .hero-headline {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  .hero-tagline {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .tagline-divider {
+    display: none;
+  }
+
+  .stats-grid-v2 {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .abuse-num {
-    font-size: 2rem;
+  .abuse-header {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .section-header h2 {
-    font-size: 1.5rem;
+  .abuse-stamp {
+    transform: none;
   }
 
-  .top-legislators-grid {
+  .abuse-headline {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .leaderboard-header,
+  .leaderboard-row {
+    grid-template-columns: 50px 1fr 70px;
+  }
+
+  .lb-party {
+    display: none;
+  }
+
+  .newsletter-content {
     grid-template-columns: 1fr;
+    text-align: center;
   }
 }
 
 @media (max-width: 480px) {
-  .stats-row {
-    grid-template-columns: 1fr 1fr;
+  .stats-grid-v2 {
+    grid-template-columns: 1fr;
   }
 
-  .stat-box .stat-number {
-    font-size: 1.25rem;
+  .stat-card-v2 {
+    justify-content: center;
+    text-align: center;
   }
 
-  .abuse-quick-stats {
-    gap: var(--space-4);
+  .stat-arrow-v2 {
+    display: none;
   }
-}
 
-/* Newsletter */
-.newsletter-section {
-  background: linear-gradient(135deg, var(--color-bg-light) 0%, var(--color-bg-medium) 100%);
-  text-align: center;
-  padding: var(--space-10) var(--space-4);
-  border: 2px solid var(--color-primary);
-}
+  .abuse-big-num {
+    font-size: 4rem;
+  }
 
-.newsletter-section h2 {
-  margin-bottom: var(--space-2);
-}
-
-.newsletter-section .section-subtitle {
-  color: var(--color-text-secondary);
-  margin-bottom: var(--space-6);
-  font-size: 1.1rem;
-}
-
-.newsletter-form {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.newsletter-input-group {
-  display: flex;
-  gap: var(--space-2);
-}
-
-.newsletter-input-group input[type="email"] {
-  flex: 1;
-  padding: var(--space-3) var(--space-4);
-  background: var(--color-bg-darkest);
-  border: 2px solid var(--color-border);
-  border-radius: var(--radius);
-  color: var(--color-text-primary);
-  font-size: 1rem;
-}
-
-.newsletter-input-group input[type="email"]:focus {
-  outline: none;
-  border-color: var(--color-primary);
-}
-
-.newsletter-input-group .btn {
-  white-space: nowrap;
-}
-
-.newsletter-privacy {
-  margin-top: var(--space-3);
-  font-size: 0.8rem;
-  color: var(--color-text-muted);
-}
-
-.newsletter-success {
-  background: var(--color-success-bg);
-  border: 1px solid var(--color-success);
-  border-radius: var(--radius);
-  padding: var(--space-4);
-  margin-top: var(--space-4);
-  color: var(--color-success);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-2);
-}
-
-.success-icon {
-  font-size: 1.5rem;
-}
-
-@media (max-width: 600px) {
-  .newsletter-input-group {
+  .form-row-v2 {
     flex-direction: column;
-  }
-
-  .newsletter-input-group .btn {
-    width: 100%;
   }
 }
 </style>

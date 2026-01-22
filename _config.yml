@@ -1,8 +1,26 @@
 # WA Bill Tracker - Jekyll Configuration
 title: WA Bill Tracker
-description: Track Washington State legislation and take action
+tagline: "Expose WA Legislative Abuse. Follow the Money. Take Action."
+description: "Track Washington State legislation, follow campaign finance, expose legislative abuse, and take action. Independent watchdog tracking every bill and holding power accountable."
 baseurl: "" # empty for custom domain
 url: "https://billtracker.website" # custom domain
+
+# Author / Organization info (for SEO)
+author:
+  name: WA Bill Tracker
+  url: https://billtracker.website
+
+# Social links (for SEO tag)
+social:
+  name: WA Bill Tracker
+  links:
+    - https://billtracker.website
+
+# Default image for social sharing
+defaults_image: /assets/images/og-image.png
+
+# Google verification (add your code if you have one)
+# google_site_verification: YOUR_CODE_HERE
 
 # Build settings
 markdown: kramdown
@@ -33,6 +51,7 @@ defaults:
       path: ""
     values:
       layout: "default"
+      image: /assets/images/og-image.png
 
 # Exclude from build
 exclude:
@@ -43,12 +62,18 @@ exclude:
   - .github/
   - "*.py"
   - requirements.txt
+  - node_modules/
+  - vendor/
+
+# Include (make sure sitemap and robots are built)
+include:
+  - robots.txt
 
 # Plugins
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Site settings
 current_session: "2025-26"
 legislature_year: 2025
-
