@@ -4280,211 +4280,211 @@
   },
   {
     "date": "2026-01-12",
-    "activity": 1578,
-    "cumulative": 2136,
+    "activity": 1572,
+    "cumulative": 2130,
     "critical": 5,
-    "high": 160,
-    "moderate": 1374,
+    "high": 159,
+    "moderate": 1369,
     "low": 38,
     "beneficial": 1,
-    "cumulative_threats": 203
+    "cumulative_threats": 202
   },
   {
     "date": "2026-01-13",
-    "activity": 49,
-    "cumulative": 2185,
+    "activity": 46,
+    "cumulative": 2176,
     "critical": 0,
     "high": 7,
-    "moderate": 39,
+    "moderate": 36,
     "low": 3,
     "beneficial": 0,
-    "cumulative_threats": 210
+    "cumulative_threats": 209
   },
   {
     "date": "2026-01-14",
-    "activity": 52,
-    "cumulative": 2237,
+    "activity": 50,
+    "cumulative": 2226,
     "critical": 0,
     "high": 12,
-    "moderate": 39,
+    "moderate": 37,
     "low": 1,
     "beneficial": 0,
-    "cumulative_threats": 222
+    "cumulative_threats": 221
   },
   {
     "date": "2026-01-15",
-    "activity": 46,
-    "cumulative": 2283,
+    "activity": 44,
+    "cumulative": 2270,
     "critical": 0,
     "high": 9,
-    "moderate": 36,
+    "moderate": 34,
     "low": 1,
     "beneficial": 0,
-    "cumulative_threats": 231
+    "cumulative_threats": 230
   },
   {
     "date": "2026-01-16",
-    "activity": 39,
-    "cumulative": 2322,
+    "activity": 37,
+    "cumulative": 2307,
     "critical": 0,
     "high": 5,
-    "moderate": 33,
+    "moderate": 31,
     "low": 1,
     "beneficial": 0,
-    "cumulative_threats": 236
+    "cumulative_threats": 235
   },
   {
     "date": "2026-01-17",
     "activity": 0,
-    "cumulative": 2322,
+    "cumulative": 2307,
     "critical": 0,
     "high": 0,
     "moderate": 0,
     "low": 0,
     "beneficial": 0,
-    "cumulative_threats": 236
+    "cumulative_threats": 235
   },
   {
     "date": "2026-01-18",
     "activity": 0,
-    "cumulative": 2322,
+    "cumulative": 2307,
     "critical": 0,
     "high": 0,
     "moderate": 0,
     "low": 0,
     "beneficial": 0,
-    "cumulative_threats": 236
+    "cumulative_threats": 235
   },
   {
     "date": "2026-01-19",
-    "activity": 86,
-    "cumulative": 2408,
+    "activity": 84,
+    "cumulative": 2391,
     "critical": 1,
-    "high": 15,
-    "moderate": 70,
+    "high": 14,
+    "moderate": 69,
     "low": 0,
     "beneficial": 0,
-    "cumulative_threats": 252
+    "cumulative_threats": 250
   },
   {
     "date": "2026-01-20",
-    "activity": 112,
-    "cumulative": 2520,
+    "activity": 107,
+    "cumulative": 2498,
     "critical": 2,
-    "high": 29,
-    "moderate": 80,
+    "high": 26,
+    "moderate": 78,
     "low": 1,
     "beneficial": 0,
-    "cumulative_threats": 283
+    "cumulative_threats": 278
   },
   {
     "date": "2026-01-21",
-    "activity": 121,
-    "cumulative": 2641,
+    "activity": 122,
+    "cumulative": 2620,
     "critical": 0,
     "high": 33,
-    "moderate": 87,
+    "moderate": 88,
     "low": 1,
     "beneficial": 0,
-    "cumulative_threats": 316
+    "cumulative_threats": 311
   },
   {
     "date": "2026-01-22",
-    "activity": 101,
-    "cumulative": 2742,
+    "activity": 100,
+    "cumulative": 2720,
     "critical": 1,
-    "high": 44,
+    "high": 43,
     "moderate": 56,
     "low": 0,
     "beneficial": 0,
-    "cumulative_threats": 361
+    "cumulative_threats": 355
   },
   {
     "date": "2026-01-23",
-    "activity": 101,
-    "cumulative": 2843,
+    "activity": 98,
+    "cumulative": 2818,
     "critical": 0,
-    "high": 36,
-    "moderate": 65,
+    "high": 35,
+    "moderate": 63,
     "low": 0,
     "beneficial": 0,
-    "cumulative_threats": 397
+    "cumulative_threats": 390
   },
   {
     "date": "2026-01-24",
     "activity": 0,
-    "cumulative": 2843,
+    "cumulative": 2818,
     "critical": 0,
     "high": 0,
     "moderate": 0,
     "low": 0,
     "beneficial": 0,
-    "cumulative_threats": 397
+    "cumulative_threats": 390
   },
   {
     "date": "2026-01-25",
     "activity": 0,
-    "cumulative": 2843,
+    "cumulative": 2818,
     "critical": 0,
     "high": 0,
     "moderate": 0,
     "low": 0,
     "beneficial": 0,
-    "cumulative_threats": 397
+    "cumulative_threats": 390
   },
   {
     "date": "2026-01-26",
-    "activity": 23,
-    "cumulative": 2866,
+    "activity": 25,
+    "cumulative": 2843,
     "critical": 0,
     "high": 10,
-    "moderate": 13,
+    "moderate": 15,
     "low": 0,
     "beneficial": 0,
-    "cumulative_threats": 407
+    "cumulative_threats": 400
   },
   {
     "date": "2026-01-27",
-    "activity": 66,
-    "cumulative": 2932,
+    "activity": 79,
+    "cumulative": 2922,
     "critical": 0,
-    "high": 25,
-    "moderate": 41,
+    "high": 31,
+    "moderate": 48,
     "low": 0,
     "beneficial": 0,
-    "cumulative_threats": 432
+    "cumulative_threats": 431
   },
   {
     "date": "2026-01-28",
-    "activity": 55,
-    "cumulative": 2987,
+    "activity": 61,
+    "cumulative": 2983,
     "critical": 0,
-    "high": 21,
-    "moderate": 34,
+    "high": 24,
+    "moderate": 37,
     "low": 0,
     "beneficial": 0,
-    "cumulative_threats": 453
+    "cumulative_threats": 455
   },
   {
     "date": "2026-01-29",
-    "activity": 52,
+    "activity": 56,
     "cumulative": 3039,
     "critical": 0,
-    "high": 12,
-    "moderate": 40,
+    "high": 13,
+    "moderate": 43,
     "low": 0,
     "beneficial": 0,
-    "cumulative_threats": 465
+    "cumulative_threats": 468
   },
   {
     "date": "2026-01-30",
-    "activity": 43,
-    "cumulative": 3082,
+    "activity": 48,
+    "cumulative": 3087,
     "critical": 1,
-    "high": 13,
-    "moderate": 29,
+    "high": 16,
+    "moderate": 31,
     "low": 0,
     "beneficial": 0,
-    "cumulative_threats": 479
+    "cumulative_threats": 485
   }
 ]
