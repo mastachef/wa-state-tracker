@@ -90,7 +90,13 @@ permalink: /legislators/
         <span class="fundraiser-name">{{ leg.name }}</span>
         <span class="fundraiser-meta">{{ leg.party }} - {{ leg.chamber }} D{{ leg.district }}</span>
       </div>
-      <span class="fundraiser-amount">${{ leg.total_raised | divided_by: 1000 | round }}K</span>
+      {% assign fr_k = leg.total_raised | divided_by: 1000 | round %}
+      {% if fr_k >= 1000 %}
+        {% assign fr_m = leg.total_raised | divided_by: 100000 | round | divided_by: 10.0 %}
+        <span class="fundraiser-amount">${{ fr_m }}M</span>
+      {% else %}
+        <span class="fundraiser-amount">${{ fr_k }}K</span>
+      {% endif %}
     </a>
     {% endfor %}
   </div>
@@ -133,7 +139,13 @@ permalink: /legislators/
 
       <div class="leg-stats">
         <div class="leg-stat">
-          <span class="leg-stat-number money">${{ leg.total_raised | divided_by: 1000 | round }}K</span>
+          {% assign raised_k = leg.total_raised | divided_by: 1000 | round %}
+          {% if raised_k >= 1000 %}
+            {% assign raised_m = leg.total_raised | divided_by: 100000 | round | divided_by: 10.0 %}
+            <span class="leg-stat-number money">${{ raised_m }}M</span>
+          {% else %}
+            <span class="leg-stat-number money">${{ raised_k }}K</span>
+          {% endif %}
           <span class="leg-stat-label">Raised</span>
         </div>
         <div class="leg-stat">
