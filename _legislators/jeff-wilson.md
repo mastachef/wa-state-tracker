@@ -11,10 +11,10 @@ phone: "(360) 786-7636"
 legislator_id: "31537"
 total_raised: 33703.97
 total_raised_formatted: "$34K"
-bills_count: 542
-harmful_bills_count: 80
-critical_bills: 2
-high_bills: 78
+bills_count: 0
+harmful_bills_count: 0
+critical_bills: 0
+high_bills: 0
 avg_threat_score: 0
 contribution_count: 82
 permalink: /legislators/jeff-wilson/

@@ -11,10 +11,10 @@ phone: "(360) 786-7632"
 legislator_id: "15813"
 total_raised: 1269790.6200000008
 total_raised_formatted: "$1.3M"
-bills_count: 123
-harmful_bills_count: 13
+bills_count: 0
+harmful_bills_count: 0
 critical_bills: 0
-high_bills: 13
+high_bills: 0
 avg_threat_score: 0
 contribution_count: 1482
 permalink: /legislators/paul-harris/

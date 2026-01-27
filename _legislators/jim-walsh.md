@@ -11,10 +11,10 @@ phone: "(360) 786-7806"
 legislator_id: "27181"
 total_raised: 395695.82
 total_raised_formatted: "$396K"
-bills_count: 67
-harmful_bills_count: 8
+bills_count: 0
+harmful_bills_count: 0
 critical_bills: 0
-high_bills: 8
+high_bills: 0
 avg_threat_score: 0
 contribution_count: 711
 permalink: /legislators/jim-walsh/

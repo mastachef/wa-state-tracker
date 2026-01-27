@@ -11,7 +11,7 @@ phone: "(360) 786-7667"
 legislator_id: "29088"
 total_raised: 166636.51
 total_raised_formatted: "$167K"
-bills_count: 2
+bills_count: 0
 harmful_bills_count: 0
 critical_bills: 0
 high_bills: 0

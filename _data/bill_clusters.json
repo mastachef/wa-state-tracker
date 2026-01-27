@@ -1,7 +1,7 @@
 [
   {
     "topic": "education",
-    "count": 307,
+    "count": 311,
     "bills": [
       "HB 1011",
       "HB 1020",
@@ -27,7 +27,7 @@
   },
   {
     "topic": "tax",
-    "count": 292,
+    "count": 300,
     "bills": [
       "HB 1004",
       "HB 1016",
@@ -53,7 +53,7 @@
   },
   {
     "topic": "health",
-    "count": 284,
+    "count": 292,
     "bills": [
       "HB 1013",
       "HB 1025",
@@ -79,7 +79,7 @@
   },
   {
     "topic": "transportation",
-    "count": 118,
+    "count": 119,
     "bills": [
       "HB 1038",
       "HB 1046",
@@ -105,7 +105,7 @@
   },
   {
     "topic": "housing",
-    "count": 108,
+    "count": 110,
     "bills": [
       "HB 1027",
       "HB 1075",
@@ -157,7 +157,7 @@
   },
   {
     "topic": "environment",
-    "count": 73,
+    "count": 75,
     "bills": [
       "HB 1107",
       "HB 1208",
@@ -183,7 +183,7 @@
   },
   {
     "topic": "public safety",
-    "count": 60,
+    "count": 62,
     "bills": [
       "HB 1052",
       "HB 1087",

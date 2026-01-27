@@ -11,10 +11,10 @@ phone: "(360) 786-7604"
 legislator_id: "15706"
 total_raised: 715049.99
 total_raised_formatted: "$715K"
-bills_count: 230
-harmful_bills_count: 42
+bills_count: 0
+harmful_bills_count: 0
 critical_bills: 0
-high_bills: 42
+high_bills: 0
 avg_threat_score: 0
 contribution_count: 1131
 permalink: /legislators/marcus-riccelli/

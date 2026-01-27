@@ -17,5 +17,5 @@ critical_bills: 0
 high_bills: 0
 avg_threat_score: 0
 contribution_count: 0
-permalink: /legislators/rebecca-salda-a/
+permalink: /legislators/rebecca-saldaa/
 ---

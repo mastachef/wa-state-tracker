@@ -3,20 +3,20 @@
     {
       "id": "introduced",
       "name": "Introduced",
-      "total": 2522,
-      "harmful": 451
+      "total": 2582,
+      "harmful": 438
     },
     {
       "id": "passed_origin",
       "name": "Passed Origin Chamber",
-      "total": 17,
-      "harmful": 3
+      "total": 13,
+      "harmful": 2
     },
     {
       "id": "passed_both",
       "name": "Passed Both Chambers",
-      "total": 590,
-      "harmful": 42
+      "total": 618,
+      "harmful": 60
     },
     {
       "id": "enrolled",
@@ -38,11 +38,137 @@
   },
   "bills_to_watch": [
     {
-      "bill_number": "SB 5581",
-      "title": "Implementing safe system approach strategies for active transportation infrastructure.",
+      "bill_number": "SB 5892",
+      "title": "Concerning protection of the voter registration database.",
       "threat_level": "high",
-      "status": "Engrossed",
-      "last_action_date": "2026-01-21"
+      "status": "Introduced",
+      "last_action_date": "2026-01-26"
+    },
+    {
+      "bill_number": "SB 5968",
+      "title": "Improving regulatory efficiency by integrating executive order 25-03, concerning permitting and lice",
+      "threat_level": "high",
+      "status": "Introduced",
+      "last_action_date": "2026-01-26"
+    },
+    {
+      "bill_number": "SB 5972",
+      "title": "Revised for 1st substitute: Expanding the definition of uniformed personnel regarding correctional o",
+      "threat_level": "high",
+      "status": "Introduced",
+      "last_action_date": "2026-01-26"
+    },
+    {
+      "bill_number": "SB 6034",
+      "title": "Concerning statutory establishment of the governor's office of Indian affairs.",
+      "threat_level": "high",
+      "status": "Introduced",
+      "last_action_date": "2026-01-26"
+    },
+    {
+      "bill_number": "SB 6039",
+      "title": "Modernizing methods of communications by the department of labor and industries.",
+      "threat_level": "high",
+      "status": "Introduced",
+      "last_action_date": "2026-01-26"
+    },
+    {
+      "bill_number": "SB 6058",
+      "title": "Adding discretion to wage enforcement actions.",
+      "threat_level": "high",
+      "status": "Introduced",
+      "last_action_date": "2026-01-26"
+    },
+    {
+      "bill_number": "SB 6188",
+      "title": "Concerning the department of labor and industries' authority to enact rules related to regulating as",
+      "threat_level": "high",
+      "status": "Introduced",
+      "last_action_date": "2026-01-26"
+    },
+    {
+      "bill_number": "SB 5720",
+      "title": "Enacting the uniform consumer debt default judgments act.",
+      "threat_level": "high",
+      "status": "Introduced",
+      "last_action_date": "2026-01-23"
+    },
+    {
+      "bill_number": "SB 5956",
+      "title": "Addressing artificial intelligence, student discipline, and surveillance in public schools.",
+      "threat_level": "high",
+      "status": "Introduced",
+      "last_action_date": "2026-01-23"
+    },
+    {
+      "bill_number": "SB 5983",
+      "title": "Exempting land classified under current use that is sold or transferred to a governmental entity fro",
+      "threat_level": "high",
+      "status": "Introduced",
+      "last_action_date": "2026-01-23"
+    },
+    {
+      "bill_number": "SB 5993",
+      "title": "Revised for 1st substitute: Concerning lowering the interest rate for medical debt.",
+      "threat_level": "high",
+      "status": "Introduced",
+      "last_action_date": "2026-01-23"
+    },
+    {
+      "bill_number": "SB 6011",
+      "title": "Concerning the authority of court of appeals bailiffs to assess threats to court of appeals judicial",
+      "threat_level": "high",
+      "status": "Introduced",
+      "last_action_date": "2026-01-23"
+    },
+    {
+      "bill_number": "SB 6031",
+      "title": "Enhancing public safety and enforcement of crimes that impact insurance.",
+      "threat_level": "high",
+      "status": "Introduced",
+      "last_action_date": "2026-01-23"
+    },
+    {
+      "bill_number": "SB 6102",
+      "title": "Aligning the quality assurance fee for the ambulance transport fund with federal regulations.",
+      "threat_level": "high",
+      "status": "Introduced",
+      "last_action_date": "2026-01-23"
+    },
+    {
+      "bill_number": "SB 6103",
+      "title": "Making payments for services provided by a rural emergency hospital subject to appropriation.",
+      "threat_level": "high",
+      "status": "Introduced",
+      "last_action_date": "2026-01-23"
+    },
+    {
+      "bill_number": "SB 5877",
+      "title": "Making a technical correction to the surcharges authorized for certified anesthesiologist assistants",
+      "threat_level": "high",
+      "status": "Introduced",
+      "last_action_date": "2026-01-22"
+    },
+    {
+      "bill_number": "SB 5915",
+      "title": "Concerning the health technology assessment program.",
+      "threat_level": "high",
+      "status": "Introduced",
+      "last_action_date": "2026-01-22"
+    },
+    {
+      "bill_number": "SB 5919",
+      "title": "Encouraging fire districts and insurance providers to develop voluntary incentives to promote best p",
+      "threat_level": "high",
+      "status": "Introduced",
+      "last_action_date": "2026-01-22"
+    },
+    {
+      "bill_number": "SB 5957",
+      "title": "Concerning the office of homeless youth prevention and protection programs advisory committee.",
+      "threat_level": "high",
+      "status": "Introduced",
+      "last_action_date": "2026-01-22"
     },
     {
       "bill_number": "SB 5825",
@@ -50,137 +176,11 @@
       "threat_level": "high",
       "status": "Introduced",
       "last_action_date": "2026-01-19"
-    },
-    {
-      "bill_number": "SB 5840",
-      "title": "Making adjustments to the schedule for reporting campaign finance expenditure activity.",
-      "threat_level": "high",
-      "status": "Introduced",
-      "last_action_date": "2026-01-19"
-    },
-    {
-      "bill_number": "SB 5912",
-      "title": "Reinstating the indigent defense task force.",
-      "threat_level": "high",
-      "status": "Introduced",
-      "last_action_date": "2026-01-16"
-    },
-    {
-      "bill_number": "SB 5922",
-      "title": "Authorizing transportation vehicle fund transfers.",
-      "threat_level": "high",
-      "status": "Introduced",
-      "last_action_date": "2026-01-15"
-    },
-    {
-      "bill_number": "SB 5672",
-      "title": "Delaying the home care aide certification requirements.",
-      "threat_level": "high",
-      "status": "Passed",
-      "last_action_date": "2025-05-23"
-    },
-    {
-      "bill_number": "HB 1119",
-      "title": "Concerning supervision compliance credit.",
-      "threat_level": "high",
-      "status": "Passed",
-      "last_action_date": "2025-05-20"
-    },
-    {
-      "bill_number": "HB 1958",
-      "title": "Concerning the interstate bridge replacement toll bond authority.",
-      "threat_level": "high",
-      "status": "Passed",
-      "last_action_date": "2025-05-20"
-    },
-    {
-      "bill_number": "SB 5194",
-      "title": "Concerning state general obligation bonds and related accounts.",
-      "threat_level": "high",
-      "status": "Passed",
-      "last_action_date": "2025-05-20"
-    },
-    {
-      "bill_number": "SB 5232",
-      "title": "Revised for 1st substitute: Supporting economic security by updating provisions related to the home ",
-      "threat_level": "high",
-      "status": "Passed",
-      "last_action_date": "2025-05-20"
-    },
-    {
-      "bill_number": "SB 5686",
-      "title": "Expanding and funding the foreclosure mediation program.",
-      "threat_level": "high",
-      "status": "Passed",
-      "last_action_date": "2025-05-20"
-    },
-    {
-      "bill_number": "SB 5721",
-      "title": "Enhancing consumer protections for automobile insurance coverage.",
-      "threat_level": "high",
-      "status": "Passed",
-      "last_action_date": "2025-05-20"
-    },
-    {
-      "bill_number": "HB 1552",
-      "title": "Extending the fee on real estate broker licenses to fund the Washington center for real estate resea",
-      "threat_level": "high",
-      "status": "Passed",
-      "last_action_date": "2025-05-19"
-    },
-    {
-      "bill_number": "SB 5224",
-      "title": "Concerning officer certification definitions, processes, and commissioning.",
-      "threat_level": "high",
-      "status": "Passed",
-      "last_action_date": "2025-05-19"
-    },
-    {
-      "bill_number": "HB 1382",
-      "title": "Modernizing the all payers claim database.",
-      "threat_level": "high",
-      "status": "Passed",
-      "last_action_date": "2025-05-17"
-    },
-    {
-      "bill_number": "SB 5077",
-      "title": "Concerning expansion of voter registration services by government agencies.",
-      "threat_level": "high",
-      "status": "Passed",
-      "last_action_date": "2025-05-17"
-    },
-    {
-      "bill_number": "SB 5127",
-      "title": "Creating additional requirements for collector vehicle and horseless carriage license plates to impr",
-      "threat_level": "high",
-      "status": "Passed",
-      "last_action_date": "2025-05-17"
-    },
-    {
-      "bill_number": "SB 5334",
-      "title": "Adding the department of natural resources' civil enforcement decisions under RCW 76.04.205 to appea",
-      "threat_level": "high",
-      "status": "Passed",
-      "last_action_date": "2025-05-17"
-    },
-    {
-      "bill_number": "HB 1167",
-      "title": "Directing the statewide career and technical education task force to consider educational opportunit",
-      "threat_level": "high",
-      "status": "Passed",
-      "last_action_date": "2025-05-13"
-    },
-    {
-      "bill_number": "HB 1533",
-      "title": "Allowing a specialty electrician to continue working under a valid specialty certificate of competen",
-      "threat_level": "high",
-      "status": "Passed",
-      "last_action_date": "2025-05-12"
     }
   ],
   "summary": {
-    "total_active": 3133,
-    "total_harmful_active": 496,
+    "total_active": 3217,
+    "total_harmful_active": 500,
     "total_dead": 1
   }
 }

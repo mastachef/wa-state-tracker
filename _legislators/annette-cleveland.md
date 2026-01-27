@@ -11,10 +11,10 @@ phone: "(360) 786-7696"
 legislator_id: "17294"
 total_raised: 790893.4299999999
 total_raised_formatted: "$791K"
-bills_count: 116
-harmful_bills_count: 14
+bills_count: 0
+harmful_bills_count: 0
 critical_bills: 0
-high_bills: 14
+high_bills: 0
 avg_threat_score: 0
 contribution_count: 1125
 permalink: /legislators/annette-cleveland/
