@@ -6,9 +6,10 @@ layout: default
   {% assign legislator = site.data.legislators | where: "name", page.name | first %}
   <header class="legislator-header">
     <div class="legislator-photo">
-      <img src="{{ legislator.photo_url | default: 'https://ui-avatars.com/api/?name=' | append: page.name | url_encode | append: '&background=1e4470&color=fff&size=200' }}"
+      <img src="{{ legislator.photo_url }}"
            alt="{{ page.name }}"
-           class="photo-img">
+           class="photo-img"
+           onerror="this.src='https://ui-avatars.com/api/?name={{ page.name | url_encode }}&background=1e4470&color=fff&size=200'">
     </div>
     <div class="legislator-title">
       <h1>{{ page.name }}</h1>

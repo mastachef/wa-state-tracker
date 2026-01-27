@@ -117,9 +117,10 @@ permalink: /legislators/
        data-bills="{{ leg.bills_count }}">
 
       <div class="leg-header">
-        <img src="{{ leg.photo_url | default: 'https://ui-avatars.com/api/?name=' | append: leg.first_name | append: '+' | append: leg.last_name | append: '&background=1e4470&color=fff&size=80' }}"
+        <img src="{{ leg.photo_url }}"
              alt="{{ leg.name }}"
-             class="leg-photo">
+             class="leg-photo"
+             onerror="this.src='https://ui-avatars.com/api/?name={{ leg.first_name }}+{{ leg.last_name }}&background=1e4470&color=fff&size=80'">
         <div class="leg-header-info">
           <span class="leg-name">{{ leg.name }}</span>
           <span class="party-pill party-{{ leg.party | downcase }}">{{ leg.party }}</span>
