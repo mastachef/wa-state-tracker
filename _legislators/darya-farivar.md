@@ -11,10 +11,10 @@ phone: "(360) 786-7818"
 legislator_id: "34030"
 total_raised: 226963.7
 total_raised_formatted: "$227K"
-bills_count: 0
-harmful_bills_count: 0
+bills_count: 170
+harmful_bills_count: 42
 critical_bills: 0
-high_bills: 0
+high_bills: 42
 avg_threat_score: 0
 contribution_count: 567
 permalink: /legislators/darya-farivar/

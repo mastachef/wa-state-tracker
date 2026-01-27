@@ -11,10 +11,10 @@ phone: "(360) 786-7641"
 legislator_id: "27211"
 total_raised: 293396.38999999996
 total_raised_formatted: "$293K"
-bills_count: 0
-harmful_bills_count: 0
+bills_count: 200
+harmful_bills_count: 39
 critical_bills: 0
-high_bills: 0
+high_bills: 39
 avg_threat_score: 0
 contribution_count: 472
 permalink: /legislators/lisa-wellman/

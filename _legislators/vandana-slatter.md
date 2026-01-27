@@ -11,10 +11,10 @@ phone: "(360) 786-7694"
 legislator_id: "27504"
 total_raised: 388073.61
 total_raised_formatted: "$388K"
-bills_count: 0
-harmful_bills_count: 0
-critical_bills: 0
-high_bills: 0
+bills_count: 191
+harmful_bills_count: 31
+critical_bills: 2
+high_bills: 29
 avg_threat_score: 0
 contribution_count: 584
 permalink: /legislators/vandana-slatter/

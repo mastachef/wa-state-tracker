@@ -11,10 +11,10 @@ phone: "(360) 786-7928"
 legislator_id: "29877"
 total_raised: 188534.3
 total_raised_formatted: "$189K"
-bills_count: 0
-harmful_bills_count: 0
-critical_bills: 0
-high_bills: 0
+bills_count: 210
+harmful_bills_count: 43
+critical_bills: 1
+high_bills: 42
 avg_threat_score: 0
 contribution_count: 332
 permalink: /legislators/davina-duerr/

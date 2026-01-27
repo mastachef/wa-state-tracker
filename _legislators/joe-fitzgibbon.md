@@ -11,10 +11,10 @@ phone: "(360) 786-7952"
 legislator_id: "13198"
 total_raised: 717998.4299999999
 total_raised_formatted: "$718K"
-bills_count: 0
-harmful_bills_count: 0
+bills_count: 151
+harmful_bills_count: 25
 critical_bills: 0
-high_bills: 0
+high_bills: 25
 avg_threat_score: 0
 contribution_count: 886
 permalink: /legislators/joe-fitzgibbon/

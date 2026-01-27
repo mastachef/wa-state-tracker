@@ -11,10 +11,10 @@ phone: "(360) 786-7830"
 legislator_id: "27182"
 total_raised: 629719.62
 total_raised_formatted: "$630K"
-bills_count: 0
-harmful_bills_count: 0
-critical_bills: 0
-high_bills: 0
+bills_count: 278
+harmful_bills_count: 62
+critical_bills: 1
+high_bills: 61
 avg_threat_score: 0
 contribution_count: 753
 permalink: /legislators/kristine-reeves/

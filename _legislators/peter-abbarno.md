@@ -11,10 +11,10 @@ phone: "(360) 786-7896"
 legislator_id: "31526"
 total_raised: 407794.46
 total_raised_formatted: "$408K"
-bills_count: 0
-harmful_bills_count: 0
+bills_count: 59
+harmful_bills_count: 8
 critical_bills: 0
-high_bills: 0
+high_bills: 8
 avg_threat_score: 0
 contribution_count: 687
 permalink: /legislators/peter-abbarno/

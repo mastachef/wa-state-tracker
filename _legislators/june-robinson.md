@@ -11,10 +11,10 @@ phone: "(360) 786-7674"
 legislator_id: "18265"
 total_raised: 333752.63
 total_raised_formatted: "$334K"
-bills_count: 0
-harmful_bills_count: 0
+bills_count: 86
+harmful_bills_count: 7
 critical_bills: 0
-high_bills: 0
+high_bills: 7
 avg_threat_score: 0
 contribution_count: 490
 permalink: /legislators/june-robinson/

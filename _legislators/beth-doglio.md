@@ -11,10 +11,10 @@ phone: "(360) 786-7940"
 legislator_id: "26175"
 total_raised: 300466.0599999996
 total_raised_formatted: "$300K"
-bills_count: 0
-harmful_bills_count: 0
+bills_count: 397
+harmful_bills_count: 66
 critical_bills: 0
-high_bills: 0
+high_bills: 66
 avg_threat_score: 0
 contribution_count: 704
 permalink: /legislators/beth-doglio/

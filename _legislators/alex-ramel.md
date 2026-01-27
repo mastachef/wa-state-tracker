@@ -11,10 +11,10 @@ phone: "(360) 786-7970"
 legislator_id: "30127"
 total_raised: 391243.95
 total_raised_formatted: "$391K"
-bills_count: 0
-harmful_bills_count: 0
+bills_count: 366
+harmful_bills_count: 64
 critical_bills: 0
-high_bills: 0
+high_bills: 64
 avg_threat_score: 0
 contribution_count: 790
 permalink: /legislators/alex-ramel/

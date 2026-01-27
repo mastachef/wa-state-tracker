@@ -11,7 +11,7 @@ phone: "(360) 786-7930"
 legislator_id: "15817"
 total_raised: 1015731.6400000002
 total_raised_formatted: "$1.0M"
-bills_count: 0
+bills_count: 17
 harmful_bills_count: 0
 critical_bills: 0
 high_bills: 0

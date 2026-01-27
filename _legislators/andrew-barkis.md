@@ -11,10 +11,10 @@ phone: "(360) 786-7824"
 legislator_id: "24075"
 total_raised: 656038.46
 total_raised_formatted: "$656K"
-bills_count: 0
-harmful_bills_count: 0
-critical_bills: 0
-high_bills: 0
+bills_count: 148
+harmful_bills_count: 24
+critical_bills: 1
+high_bills: 23
 avg_threat_score: 0
 contribution_count: 1003
 permalink: /legislators/andrew-barkis/

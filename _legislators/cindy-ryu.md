@@ -11,10 +11,10 @@ phone: "(360) 786-7880"
 legislator_id: "15736"
 total_raised: 342950.93000000005
 total_raised_formatted: "$343K"
-bills_count: 0
-harmful_bills_count: 0
-critical_bills: 0
-high_bills: 0
+bills_count: 353
+harmful_bills_count: 66
+critical_bills: 2
+high_bills: 64
 avg_threat_score: 0
 contribution_count: 527
 permalink: /legislators/cindy-ryu/

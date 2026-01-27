@@ -11,10 +11,10 @@ phone: "(360) 786-7986"
 legislator_id: "34025"
 total_raised: 213657.72999999998
 total_raised_formatted: "$214K"
-bills_count: 0
-harmful_bills_count: 0
-critical_bills: 0
-high_bills: 0
+bills_count: 171
+harmful_bills_count: 33
+critical_bills: 2
+high_bills: 31
 avg_threat_score: 0
 contribution_count: 411
 permalink: /legislators/stephanie-barnard/

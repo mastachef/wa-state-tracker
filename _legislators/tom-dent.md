@@ -11,10 +11,10 @@ phone: "(360) 786-7932"
 legislator_id: "20761"
 total_raised: 376201.77999999997
 total_raised_formatted: "$376K"
-bills_count: 0
-harmful_bills_count: 0
+bills_count: 100
+harmful_bills_count: 16
 critical_bills: 0
-high_bills: 0
+high_bills: 16
 avg_threat_score: 0
 contribution_count: 592
 permalink: /legislators/tom-dent/
