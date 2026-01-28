@@ -3,19 +3,19 @@
     {
       "id": "introduced",
       "name": "Introduced",
-      "total": 2582,
-      "harmful": 438
+      "total": 2602,
+      "harmful": 443
     },
     {
       "id": "passed_origin",
       "name": "Passed Origin Chamber",
-      "total": 13,
+      "total": 14,
       "harmful": 2
     },
     {
       "id": "passed_both",
       "name": "Passed Both Chambers",
-      "total": 618,
+      "total": 620,
       "harmful": 60
     },
     {
@@ -179,8 +179,8 @@
     }
   ],
   "summary": {
-    "total_active": 3217,
-    "total_harmful_active": 500,
+    "total_active": 3240,
+    "total_harmful_active": 505,
     "total_dead": 1
   }
 }
