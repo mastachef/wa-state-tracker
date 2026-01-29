@@ -1,19 +1,19 @@
 {
-  "updated": "2026-01-28T08:25:35.564776",
+  "updated": "2026-01-29T08:33:06.583616",
   "election_years": [
     2024,
     2022,
     2020
   ],
   "total_contributions": 150000,
-  "matched_contributions": 90668,
+  "matched_contributions": 90709,
   "top_fundraisers": [
     {
       "name": "Ron Muzzall",
       "chamber": "Senate",
       "party": "R",
       "district": "10",
-      "total_raised": 1436015.16,
+      "total_raised": 1439615.16,
       "top_donors": [
         {
           "name": "House Republican Organizational Committee",
@@ -130,7 +130,7 @@
       "chamber": "House",
       "party": "D",
       "district": "10",
-      "total_raised": 1126477.88,
+      "total_raised": 1125327.88,
       "top_donors": [
         {
           "name": "House Democratic Campaign Committee",
@@ -481,7 +481,7 @@
       "chamber": "House",
       "party": "D",
       "district": "10",
-      "total_raised": 904893.75,
+      "total_raised": 902993.75,
       "top_donors": [
         {
           "name": "House Democratic Campaign Committee",
@@ -509,9 +509,9 @@
         },
         {
           "name": "SMALL CONTRIBUTIONS",
-          "total": 19571.13,
+          "total": 19421.13,
           "employer": "",
-          "count": 72
+          "count": 69
         }
       ]
     },
@@ -613,19 +613,19 @@
           "count": 2
         },
         {
-          "name": "WA Affordable Housing Council",
+          "name": "USAA",
           "total": 4400.0,
           "employer": "",
           "count": 4
         },
         {
-          "name": "Doordash Inc",
+          "name": "Washingtonians Win - sponsored by Maverick Gaming",
           "total": 4400.0,
           "employer": "",
-          "count": 6
+          "count": 4
         },
         {
-          "name": "WA Beverage Assn PAC",
+          "name": "Puget Sound Energy",
           "total": 4400.0,
           "employer": "",
           "count": 4
@@ -676,7 +676,7 @@
       "chamber": "Senate",
       "party": "D",
       "district": "49",
-      "total_raised": 790893.43,
+      "total_raised": 791843.43,
       "top_donors": [
         {
           "name": "MISCELLANEOUS RECEIPTS",
@@ -691,19 +691,19 @@
           "count": 2
         },
         {
-          "name": "WASHINGTON BEVERAGE ASSOCIATION",
+          "name": "NOVARTIS",
           "total": 4400.0,
           "employer": "",
           "count": 4
         },
         {
-          "name": "IRON WORKERS DISTRICT COUNCIL OF THE PNW",
+          "name": "THE BOEING COMPANY PAC",
           "total": 4400.0,
           "employer": "",
           "count": 5
         },
         {
-          "name": "NOVARTIS",
+          "name": "CREDIT UNION LEGISLATIVE ACTION FUND",
           "total": 4400.0,
           "employer": "",
           "count": 4
@@ -718,31 +718,31 @@
       "total_raised": 776209.76,
       "top_donors": [
         {
-          "name": "WASHINGTON BEVERAGE ASSOCIATION PAC",
+          "name": "PUGET SOUND ENERGY",
           "total": 6400.0,
           "employer": "",
           "count": 6
         },
         {
-          "name": "WASHINGTON STATE AUTO DEALERS PAC",
+          "name": "PREMERA BLUE CROSS",
+          "total": 6400.0,
+          "employer": "",
+          "count": 7
+        },
+        {
+          "name": "DELTA DENTAL",
           "total": 6400.0,
           "employer": "",
           "count": 6
         },
         {
-          "name": "USAA",
+          "name": "WASHINGTON STATE DENTAL PAC",
           "total": 6400.0,
           "employer": "",
           "count": 6
         },
         {
-          "name": "THE BOEING COMPANY PAC",
-          "total": 6400.0,
-          "employer": "",
-          "count": 6
-        },
-        {
-          "name": "BIG I PAC",
+          "name": "WASHINGTON AFFORDABLE HOUSING COUNCIL",
           "total": 6400.0,
           "employer": "",
           "count": 6
@@ -814,16 +814,16 @@
           "count": 4
         },
         {
-          "name": "ACTIVE IN DEMOCRACY",
+          "name": "PUGET SOUND PILOTS PAC",
           "total": 6400.0,
           "employer": "",
           "count": 6
         },
         {
-          "name": "WEST PIERCE FIRE FIGHTERS LOCAL 1488 PAC",
+          "name": "JUSTICE FOR ALL PAC",
           "total": 6400.0,
           "employer": "",
-          "count": 6
+          "count": 7
         }
       ]
     },
@@ -1036,19 +1036,19 @@
           "count": 25
         },
         {
-          "name": "Puget Sound Pilots PAC",
-          "total": 4900.0,
-          "employer": "",
-          "count": 5
-        },
-        {
           "name": "Iron Workers District Council of the PNW SSF",
           "total": 4900.0,
           "employer": "",
           "count": 5
         },
         {
-          "name": "Credit Union Leg Action Fund/NW Credit Union",
+          "name": "Puget Sound Pilots PAC",
+          "total": 4900.0,
+          "employer": "",
+          "count": 5
+        },
+        {
+          "name": "WA Beverage Assn PAC",
           "total": 4400.0,
           "employer": "",
           "count": 4
@@ -1183,7 +1183,7 @@
       "chamber": "House",
       "party": "D",
       "district": "30",
-      "total_raised": 629719.62,
+      "total_raised": 629869.62,
       "top_donors": [
         {
           "name": "House Democratic Campaign Committee",
@@ -1204,13 +1204,13 @@
           "count": 1
         },
         {
-          "name": "Boeing Employees Credit Union (BECU)",
+          "name": "USAA",
           "total": 4400.0,
           "employer": "",
           "count": 4
         },
         {
-          "name": "WA Forest Protection Assn State PAC",
+          "name": "WASHBANKPAC (WA Bankers Assn)",
           "total": 4400.0,
           "employer": "",
           "count": 4
@@ -1303,12 +1303,6 @@
       "total_raised": 605520.35,
       "top_donors": [
         {
-          "name": "MCGREE CHRIS",
-          "total": 6400.0,
-          "employer": "MCGREE INSURANCE",
-          "count": 6
-        },
-        {
           "name": "WYCKOFF DAVID",
           "total": 6400.0,
           "employer": "WYCKOFF FARMS INC.",
@@ -1318,6 +1312,12 @@
           "name": "WYCKOFF KATIE",
           "total": 6400.0,
           "employer": "SELF-EMPLOYED",
+          "count": 6
+        },
+        {
+          "name": "MCGREE GERRY",
+          "total": 6400.0,
+          "employer": "MCGREE INSURANCE",
           "count": 6
         },
         {
@@ -1381,7 +1381,7 @@
       "total_raised": 595045.31,
       "top_donors": [
         {
-          "name": "PUGET SOUND CHAPTER NECA PAC",
+          "name": "WASHINGTON AFFORDABLE HOUSING COUNCIL",
           "total": 6400.0,
           "employer": "",
           "count": 6
@@ -1393,7 +1393,7 @@
           "count": 6
         },
         {
-          "name": "WASHINGTON AFFORDABLE HOUSING COUNCIL",
+          "name": "PUGET SOUND CHAPTER NECA PAC",
           "total": 6400.0,
           "employer": "",
           "count": 6
@@ -1417,13 +1417,13 @@
       "chamber": "House",
       "party": "D",
       "district": "23",
-      "total_raised": 593230.92,
+      "total_raised": 593730.92,
       "top_donors": [
         {
           "name": "SMALL CONTRIBUTIONS",
-          "total": 15800.3,
+          "total": 16000.3,
           "employer": "",
-          "count": 74
+          "count": 78
         },
         {
           "name": "23RD DISTRICT DEMOCRATS",
@@ -1465,6 +1465,12 @@
           "count": 6
         },
         {
+          "name": "WHCA-PAC",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
           "name": "WASHINGTON STATE AUTO DEALERS PAC",
           "total": 4400.0,
           "employer": "",
@@ -1481,12 +1487,6 @@
           "total": 4400.0,
           "employer": "",
           "count": 5
-        },
-        {
-          "name": "WHCA-PAC",
-          "total": 4400.0,
-          "employer": "",
-          "count": 4
         }
       ]
     },
@@ -1573,7 +1573,7 @@
       "chamber": "House",
       "party": "D",
       "district": "11",
-      "total_raised": 512866.47,
+      "total_raised": 512816.47,
       "top_donors": [
         {
           "name": "MISCELLANEOUS RECEIPTS",
@@ -1654,19 +1654,7 @@
       "total_raised": 485112.03,
       "top_donors": [
         {
-          "name": "SEIU 775 Quality Care Committee",
-          "total": 4400.0,
-          "employer": "",
-          "count": 4
-        },
-        {
           "name": "Delta Dental of WA",
-          "total": 4400.0,
-          "employer": "",
-          "count": 4
-        },
-        {
-          "name": "Regence",
           "total": 4400.0,
           "employer": "",
           "count": 4
@@ -1679,6 +1667,18 @@
         },
         {
           "name": "Nisqually Indian Tribe",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "Puget Sound Pilots PAC",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "Regence",
           "total": 4400.0,
           "employer": "",
           "count": 4
@@ -1861,19 +1861,19 @@
           "count": 4
         },
         {
+          "name": "Kennedy Fund",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
+          "name": "Centene Management Company LLC",
+          "total": 4400.0,
+          "employer": "",
+          "count": 4
+        },
+        {
           "name": "PSE SEIU 1948 Political Fund",
-          "total": 4400.0,
-          "employer": "",
-          "count": 4
-        },
-        {
-          "name": "Harry Truman Fund",
-          "total": 4400.0,
-          "employer": "",
-          "count": 4
-        },
-        {
-          "name": "Muckleshoot Indian Tribe",
           "total": 4400.0,
           "employer": "",
           "count": 4
@@ -1927,13 +1927,13 @@
       "total_raised": 407794.46,
       "top_donors": [
         {
-          "name": "WA AFFORDABLE HOUSING COUNCIL",
+          "name": "PUYALLUP TRIBE OF INDIANS",
           "total": 6400.0,
           "employer": "",
           "count": 6
         },
         {
-          "name": "PUYALLUP TRIBE OF INDIANS",
+          "name": "WA AFFORDABLE HOUSING COUNCIL",
           "total": 6400.0,
           "employer": "",
           "count": 6
@@ -1951,7 +1951,7 @@
           "count": 5
         },
         {
-          "name": "WEYERHAEUSER",
+          "name": "NECA PAC - PUGET SOUND CHAPTER",
           "total": 5400.0,
           "employer": "",
           "count": 5

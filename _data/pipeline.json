@@ -3,20 +3,20 @@
     {
       "id": "introduced",
       "name": "Introduced",
-      "total": 2602,
-      "harmful": 443
+      "total": 2622,
+      "harmful": 473
     },
     {
       "id": "passed_origin",
       "name": "Passed Origin Chamber",
-      "total": 14,
+      "total": 10,
       "harmful": 2
     },
     {
       "id": "passed_both",
       "name": "Passed Both Chambers",
-      "total": 620,
-      "harmful": 60
+      "total": 619,
+      "harmful": 54
     },
     {
       "id": "enrolled",
@@ -38,18 +38,32 @@
   },
   "bills_to_watch": [
     {
-      "bill_number": "SB 5892",
-      "title": "Concerning protection of the voter registration database.",
+      "bill_number": "SB 5272",
+      "title": "Improving school safety by extending penalties for interference by, or intimidation by threat of, fo",
       "threat_level": "high",
-      "status": "Introduced",
-      "last_action_date": "2026-01-26"
+      "status": "Engrossed",
+      "last_action_date": "2026-01-28"
     },
     {
-      "bill_number": "SB 5968",
-      "title": "Improving regulatory efficiency by integrating executive order 25-03, concerning permitting and lice",
+      "bill_number": "SB 5855",
+      "title": "Concerning the use of face coverings by law enforcement officers.",
+      "threat_level": "high",
+      "status": "Engrossed",
+      "last_action_date": "2026-01-28"
+    },
+    {
+      "bill_number": "SB 6024",
+      "title": "Streamlining monitoring and oversight activities related to community residential service business p",
       "threat_level": "high",
       "status": "Introduced",
-      "last_action_date": "2026-01-26"
+      "last_action_date": "2026-01-28"
+    },
+    {
+      "bill_number": "SJM8006",
+      "title": "Concerning the limited license legal technician program.",
+      "threat_level": "high",
+      "status": "Engrossed",
+      "last_action_date": "2026-01-28"
     },
     {
       "bill_number": "SB 5972",
@@ -61,13 +75,6 @@
     {
       "bill_number": "SB 6034",
       "title": "Concerning statutory establishment of the governor's office of Indian affairs.",
-      "threat_level": "high",
-      "status": "Introduced",
-      "last_action_date": "2026-01-26"
-    },
-    {
-      "bill_number": "SB 6039",
-      "title": "Modernizing methods of communications by the department of labor and industries.",
       "threat_level": "high",
       "status": "Introduced",
       "last_action_date": "2026-01-26"
@@ -129,41 +136,6 @@
       "last_action_date": "2026-01-23"
     },
     {
-      "bill_number": "SB 6102",
-      "title": "Aligning the quality assurance fee for the ambulance transport fund with federal regulations.",
-      "threat_level": "high",
-      "status": "Introduced",
-      "last_action_date": "2026-01-23"
-    },
-    {
-      "bill_number": "SB 6103",
-      "title": "Making payments for services provided by a rural emergency hospital subject to appropriation.",
-      "threat_level": "high",
-      "status": "Introduced",
-      "last_action_date": "2026-01-23"
-    },
-    {
-      "bill_number": "SB 5877",
-      "title": "Making a technical correction to the surcharges authorized for certified anesthesiologist assistants",
-      "threat_level": "high",
-      "status": "Introduced",
-      "last_action_date": "2026-01-22"
-    },
-    {
-      "bill_number": "SB 5915",
-      "title": "Concerning the health technology assessment program.",
-      "threat_level": "high",
-      "status": "Introduced",
-      "last_action_date": "2026-01-22"
-    },
-    {
-      "bill_number": "SB 5919",
-      "title": "Encouraging fire districts and insurance providers to develop voluntary incentives to promote best p",
-      "threat_level": "high",
-      "status": "Introduced",
-      "last_action_date": "2026-01-22"
-    },
-    {
       "bill_number": "SB 5957",
       "title": "Concerning the office of homeless youth prevention and protection programs advisory committee.",
       "threat_level": "high",
@@ -171,16 +143,44 @@
       "last_action_date": "2026-01-22"
     },
     {
-      "bill_number": "SB 5825",
-      "title": "Authorizing the Washington state leadership board to solicit gifts, grants, and endowments from publ",
+      "bill_number": "SB 5840",
+      "title": "Making adjustments to the schedule for reporting campaign finance expenditure activity.",
       "threat_level": "high",
       "status": "Introduced",
       "last_action_date": "2026-01-19"
+    },
+    {
+      "bill_number": "SB 5922",
+      "title": "Authorizing transportation vehicle fund transfers.",
+      "threat_level": "high",
+      "status": "Introduced",
+      "last_action_date": "2026-01-15"
+    },
+    {
+      "bill_number": "SB 5672",
+      "title": "Delaying the home care aide certification requirements.",
+      "threat_level": "high",
+      "status": "Passed",
+      "last_action_date": "2025-05-23"
+    },
+    {
+      "bill_number": "HB 1119",
+      "title": "Concerning supervision compliance credit.",
+      "threat_level": "high",
+      "status": "Passed",
+      "last_action_date": "2025-05-20"
+    },
+    {
+      "bill_number": "HB 1958",
+      "title": "Concerning the interstate bridge replacement toll bond authority.",
+      "threat_level": "high",
+      "status": "Passed",
+      "last_action_date": "2025-05-20"
     }
   ],
   "summary": {
-    "total_active": 3240,
-    "total_harmful_active": 505,
+    "total_active": 3255,
+    "total_harmful_active": 529,
     "total_dead": 1
   }
 }

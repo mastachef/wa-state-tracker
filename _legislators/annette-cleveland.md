@@ -9,13 +9,13 @@ party_full: "Democrat"
 email: "Annette.Cleveland@leg.wa.gov"
 phone: "(360) 786-7696"
 legislator_id: "17294"
-total_raised: 790893.4299999999
-total_raised_formatted: "$791K"
+total_raised: 791843.4299999999
+total_raised_formatted: "$792K"
 bills_count: 0
 harmful_bills_count: 0
 critical_bills: 0
 high_bills: 0
 avg_threat_score: 0
-contribution_count: 1125
+contribution_count: 1144
 permalink: /legislators/annette-cleveland/
 ---

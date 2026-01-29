@@ -19,7 +19,7 @@
     "critical_bills": 0,
     "high_bills": 0,
     "avg_threat_score": 0,
-    "total_raised": 1436015.1599999997,
+    "total_raised": 1439615.1599999997,
     "top_donors": [
       {
         "name": "House Republican Organizational Committee",
@@ -106,37 +106,37 @@
         "count": 2
       },
       {
-        "name": "J. Christian Moller",
+        "name": "Washington Wheat PAC",
         "total": 2400.0,
         "employer": "",
         "count": 2
       },
       {
-        "name": "Puget Sound Chapter NECA PAC",
+        "name": "The Boeing Company PAC",
+        "total": 2400.0,
+        "employer": "",
+        "count": 3
+      },
+      {
+        "name": "DoorDash, Inc.",
         "total": 2400.0,
         "employer": "",
         "count": 2
       },
       {
-        "name": "Marathon Petroleum Corporation",
+        "name": "Centene Management Company LLC",
         "total": 2400.0,
         "employer": "",
         "count": 2
       },
       {
-        "name": "Alaska Airlines",
+        "name": "Washington Food PAC",
         "total": 2400.0,
         "employer": "",
         "count": 2
       },
       {
         "name": "Kaiser Aluminum",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
-        "name": "Affordable Reliable Energy Future PAC",
         "total": 2400.0,
         "employer": "",
         "count": 2
@@ -149,10 +149,10 @@
       },
       {
         "category": "Individual",
-        "total": 201092.8
+        "total": 204692.8
       }
     ],
-    "contribution_count": 1310
+    "contribution_count": 1382
   },
   {
     "id": "31533",
@@ -255,6 +255,24 @@
         "count": 5
       },
       {
+        "name": "Kennedy Fund",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "WA Hospitality Assn PAC",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "Jackson Legacy Fund",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
         "name": "IBEW Local 77 PAC",
         "total": 4400.0,
         "employer": "",
@@ -277,24 +295,6 @@
         "total": 4400.0,
         "employer": "",
         "count": 6
-      },
-      {
-        "name": "Harry Truman Fund",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "WA Hospitality Assn PAC",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "Kennedy Fund",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
       }
     ],
     "donor_categories": [
@@ -410,7 +410,7 @@
         "count": 11
       },
       {
-        "name": "PUYALLUP TRIBE OF INDIANS",
+        "name": "USAA",
         "total": 6600.0,
         "employer": "",
         "count": 6
@@ -428,14 +428,8 @@
         "count": 6
       },
       {
-        "name": "USAA",
+        "name": "PUYALLUP TRIBE OF INDIANS",
         "total": 6600.0,
-        "employer": "",
-        "count": 6
-      },
-      {
-        "name": "WASHINGTON BEER & WINE DISTRIBUTORS ASSOCIATION",
-        "total": 6400.0,
         "employer": "",
         "count": 6
       },
@@ -446,10 +440,16 @@
         "count": 6
       },
       {
-        "name": "CENTENE MANAGEMENT COMPANY LLC",
+        "name": "WASHINGTON BEER & WINE DISTRIBUTORS ASSOCIATION",
         "total": 6400.0,
         "employer": "",
         "count": 6
+      },
+      {
+        "name": "WA CHARTERS PAC",
+        "total": 6400.0,
+        "employer": "",
+        "count": 7
       }
     ],
     "donor_categories": [
@@ -484,7 +484,7 @@
     "critical_bills": 0,
     "high_bills": 0,
     "avg_threat_score": 0,
-    "total_raised": 1126477.8800000001,
+    "total_raised": 1125327.8800000001,
     "top_donors": [
       {
         "name": "House Democratic Campaign Committee",
@@ -524,9 +524,9 @@
       },
       {
         "name": "SMALL CONTRIBUTIONS",
-        "total": 22261.99,
+        "total": 22111.99,
         "employer": "",
-        "count": 122
+        "count": 119
       },
       {
         "name": "Wa State Democrats",
@@ -614,10 +614,10 @@
       },
       {
         "category": "Individual",
-        "total": 317689.2
+        "total": 316539.2
       }
     ],
-    "contribution_count": 1604
+    "contribution_count": 1581
   },
   {
     "id": "31536",
@@ -732,9 +732,21 @@
         "count": 1
       },
       {
-        "name": "Lisa Mennet",
+        "name": "WASHBANKPAC State",
         "total": 2400.0,
-        "employer": "Retired",
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "SEIU Healthcare 1199 NW PAC",
+        "total": 2400.0,
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "WA State Auto Dealers PAC",
+        "total": 2400.0,
+        "employer": "",
         "count": 2
       },
       {
@@ -744,21 +756,9 @@
         "count": 2
       },
       {
-        "name": "Patricia McGinnis Raikes",
-        "total": 2400.0,
-        "employer": "Raikes Foundation",
-        "count": 3
-      },
-      {
-        "name": "SEIU Healthcare 1199 NW PAC",
+        "name": "Harry Truman Fund",
         "total": 2400.0,
         "employer": "",
-        "count": 2
-      },
-      {
-        "name": "Jeffrey S. Raikes",
-        "total": 2400.0,
-        "employer": "Raikes Foundation",
         "count": 2
       }
     ],
@@ -845,7 +845,55 @@
         "count": 7
       },
       {
-        "name": "WASHINGTON REFUSE AND RECYCLING ASSOCIATION PAC",
+        "name": "PHILLIPS 66 COMPANY",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "THE NOEL CORPORATION",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "TRUCKING ACTION COMMITTEE",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "NOEL TERESA",
+        "total": 4400.0,
+        "employer": "NOEL CORPORATION",
+        "count": 6
+      },
+      {
+        "name": "NOEL RODGER",
+        "total": 4400.0,
+        "employer": "NOEL CORPORATION",
+        "count": 6
+      },
+      {
+        "name": "PREMERA BLUE CROSS",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "CHEVRON POLICY, GOVT & PUBLIC AFFAIRS",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "WASHINGTON FOREST PROTECTION ASSOCIATION STATE POLITICAL ACTION COMMITTEE",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "ASSOCIATED GENERAL CONTRACTORS OF WASHINGTONS BUILD PAC",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -863,55 +911,7 @@
         "count": 4
       },
       {
-        "name": "WASHINGTON AFFORDABLE",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "SANITARY SERVICES COMPANY",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "USAA",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "WEYERHAEUSER NR COMPANY",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "WASHINGTON FOREST PROTECTION ASSOCIATION STATE POLITICAL ACTION COMMITTEE",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
         "name": "WASHINGTONIANS WIN SPONSORED BY MAVERICK GAMING",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "WASHINGTON BEER & WINE DISTRIBUTORS ASSOCIATION",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "WASHINGTON STATE AUTO DEALERS PAC",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "DELTA DENTAL OF WASHINGTON",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -1614,6 +1614,12 @@
         "count": 4
       },
       {
+        "name": "Justice For All PAC",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
         "name": "Harry Truman Fund",
         "total": 4400.0,
         "employer": "",
@@ -1621,12 +1627,6 @@
       },
       {
         "name": "Washington Education Association PAC",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "Justice For All PAC",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -1644,13 +1644,7 @@
         "count": 4
       },
       {
-        "name": "Credit Union Legislative Action Fund",
-        "total": 3400.0,
-        "employer": "",
-        "count": 3
-      },
-      {
-        "name": "SEIU Healthcare 1199NW",
+        "name": "Sustainable Future PAC",
         "total": 3400.0,
         "employer": "",
         "count": 3
@@ -1662,7 +1656,7 @@
         "count": 3
       },
       {
-        "name": "Sustainable Future PAC",
+        "name": "SEIU Healthcare 1199NW",
         "total": 3400.0,
         "employer": "",
         "count": 3
@@ -1678,6 +1672,12 @@
         "total": 3400.0,
         "employer": "",
         "count": 4
+      },
+      {
+        "name": "Credit Union Legislative Action Fund",
+        "total": 3400.0,
+        "employer": "",
+        "count": 3
       },
       {
         "name": "Stewardship PAC",
@@ -1879,7 +1879,7 @@
     "critical_bills": 0,
     "high_bills": 0,
     "avg_threat_score": 0,
-    "total_raised": 904893.7499999999,
+    "total_raised": 902993.7499999999,
     "top_donors": [
       {
         "name": "House Democratic Campaign Committee",
@@ -1907,9 +1907,9 @@
       },
       {
         "name": "SMALL CONTRIBUTIONS",
-        "total": 19571.13,
+        "total": 19421.13,
         "employer": "",
-        "count": 72
+        "count": 69
       },
       {
         "name": "Skagit County Democratic Party",
@@ -2009,10 +2009,10 @@
       },
       {
         "category": "Individual",
-        "total": 250001.94
+        "total": 248101.94
       }
     ],
-    "contribution_count": 1026
+    "contribution_count": 988
   },
   {
     "id": "31530",
@@ -2115,45 +2115,45 @@
         "count": 8
       },
       {
-        "name": "Alspach Sammi",
+        "name": "Palmer Andy",
         "total": 3000.0,
-        "employer": "UW Medicine",
+        "employer": "Tamr",
         "count": 3
       },
       {
-        "name": "Sunderland Julie",
+        "name": "Law Chris",
         "total": 3000.0,
-        "employer": "Biomatics Capital",
+        "employer": "Google",
         "count": 3
       },
       {
-        "name": "Goldfein Jocelyn",
+        "name": "Rollins Bryan",
         "total": 3000.0,
-        "employer": "Zetta Venture Partners",
+        "employer": "Atlassian ::: Atlassian",
         "count": 3
       },
       {
-        "name": "Wingard-Phillips Tom",
+        "name": "Alspach Scott",
         "total": 3000.0,
-        "employer": "Retired",
+        "employer": "Microsoft",
         "count": 3
       },
       {
-        "name": "Bender Angelique",
+        "name": "Andersen Hans",
         "total": 3000.0,
-        "employer": "None",
+        "employer": "Microsoft Corp.",
         "count": 4
       },
       {
-        "name": "Duryee Cornelia",
+        "name": "Wingard-Phillips Virginia",
         "total": 3000.0,
-        "employer": "Cornelia Moore",
+        "employer": "Math 'n' Stuff",
         "count": 3
       },
       {
-        "name": "Vafaie Aimee Dr",
+        "name": "Young-Law Courtney",
         "total": 3000.0,
-        "employer": "Equinox Physicians",
+        "employer": "CORO Northern California",
         "count": 3
       }
     ],
@@ -2246,18 +2246,6 @@
         "count": 4
       },
       {
-        "name": "Harry Truman Fund",
-        "total": 3400.0,
-        "employer": "",
-        "count": 3
-      },
-      {
-        "name": "Retired Public Employees Council of WA/RPEC-PAC",
-        "total": 3400.0,
-        "employer": "",
-        "count": 3
-      },
-      {
         "name": "Service Employees Intl Union Local 925 Public Service PAC",
         "total": 3400.0,
         "employer": "",
@@ -2288,8 +2276,26 @@
         "count": 3
       },
       {
+        "name": "Retired Public Employees Council of WA/RPEC-PAC",
+        "total": 3400.0,
+        "employer": "",
+        "count": 3
+      },
+      {
         "name": "Kennedy Fund",
         "total": 3400.0,
+        "employer": "",
+        "count": 3
+      },
+      {
+        "name": "Harry Truman Fund",
+        "total": 3400.0,
+        "employer": "",
+        "count": 3
+      },
+      {
+        "name": "Lummi Indian Business Council",
+        "total": 3200.0,
         "employer": "",
         "count": 3
       },
@@ -2301,12 +2307,6 @@
       },
       {
         "name": "Promise of Progress PAC",
-        "total": 3200.0,
-        "employer": "",
-        "count": 3
-      },
-      {
-        "name": "UA Plumbers & Pipefitters Local 26 Segregated Fund",
         "total": 3200.0,
         "employer": "",
         "count": 3
@@ -2359,6 +2359,48 @@
         "count": 2
       },
       {
+        "name": "USAA",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "Washingtonians Win - sponsored by Maverick Gaming",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "Puget Sound Energy",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "Amazon.com Services LLC",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "Jackson Legacy Fund",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "WA Food Industry Assn PAC",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "WA Beverage Assn PAC",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
         "name": "WA Affordable Housing Council",
         "total": 4400.0,
         "employer": "",
@@ -2371,37 +2413,7 @@
         "count": 6
       },
       {
-        "name": "WA Beverage Assn PAC",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "Puget Sound Energy",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
         "name": "WA State Auto Dealers PAC",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "Jackson Legacy Fund",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "Washingtonians Win - sponsored by Maverick Gaming",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "WA Food Industry Assn PAC",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -2425,28 +2437,16 @@
         "count": 4
       },
       {
-        "name": "USAA",
+        "name": "WA Insurers PAC",
         "total": 4400.0,
         "employer": "",
-        "count": 4
-      },
-      {
-        "name": "Amazon.com Services LLC",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
+        "count": 8
       },
       {
         "name": "Sabey Corporation",
         "total": 4400.0,
         "employer": "",
         "count": 6
-      },
-      {
-        "name": "WA Insurers PAC",
-        "total": 4400.0,
-        "employer": "",
-        "count": 8
       },
       {
         "name": "CATTLE PAC",
@@ -2654,7 +2654,7 @@
     "critical_bills": 0,
     "high_bills": 0,
     "avg_threat_score": 0,
-    "total_raised": 790893.4299999999,
+    "total_raised": 791843.4299999999,
     "top_donors": [
       {
         "name": "MISCELLANEOUS RECEIPTS",
@@ -2669,73 +2669,7 @@
         "count": 2
       },
       {
-        "name": "WASHINGTON BEVERAGE ASSOCIATION",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "IRON WORKERS DISTRICT COUNCIL OF THE PNW",
-        "total": 4400.0,
-        "employer": "",
-        "count": 5
-      },
-      {
         "name": "NOVARTIS",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "SEIU 775 QUALITY CARE COMMITTEE",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "WASHINGTON STATE AUTO DEALERS PAC",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "WASHINGTON EDUCATION ASSOCIATION PAC",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "CENTENE MANAGEMENT COMPANY LLC",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "JUSTICE FOR ALL PAC",
-        "total": 4400.0,
-        "employer": "",
-        "count": 6
-      },
-      {
-        "name": "DAVITA",
-        "total": 4400.0,
-        "employer": "",
-        "count": 5
-      },
-      {
-        "name": "WASHINGTON CHIROPRACTIC TRUST",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "DELTA DENTAL",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "WASHINGTON STATE DENTAL PAC",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -2765,6 +2699,12 @@
         "count": 5
       },
       {
+        "name": "WASHINGTON BEVERAGE ASSOCIATION",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
         "name": "WASHINGTON OPTOMETRIC POLITICAL ACTION COMMITTEE",
         "total": 4400.0,
         "employer": "",
@@ -2775,19 +2715,79 @@
         "total": 4400.0,
         "employer": "",
         "count": 4
+      },
+      {
+        "name": "WASHINGTON STATE AUTO DEALERS PAC",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "BNSF RAILWAY COMPANY",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "SEIU 775 QUALITY CARE COMMITTEE",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "WASHINGTON STATE DENTAL PAC",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "DAVITA",
+        "total": 4400.0,
+        "employer": "",
+        "count": 5
+      },
+      {
+        "name": "DELTA DENTAL",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "WASHINGTON CHIROPRACTIC TRUST",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "JUSTICE FOR ALL PAC",
+        "total": 4400.0,
+        "employer": "",
+        "count": 6
+      },
+      {
+        "name": "CENTENE MANAGEMENT COMPANY LLC",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "WASHINGTON EDUCATION ASSOCIATION PAC",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
       }
     ],
     "donor_categories": [
       {
         "category": "Organization",
-        "total": 595828.25
+        "total": 595928.25
       },
       {
         "category": "Individual",
-        "total": 195065.18
+        "total": 195915.18
       }
     ],
-    "contribution_count": 1125
+    "contribution_count": 1144
   },
   {
     "id": "29109",
@@ -2812,6 +2812,60 @@
     "total_raised": 776209.76,
     "top_donors": [
       {
+        "name": "PUGET SOUND ENERGY",
+        "total": 6400.0,
+        "employer": "",
+        "count": 6
+      },
+      {
+        "name": "PREMERA BLUE CROSS",
+        "total": 6400.0,
+        "employer": "",
+        "count": 7
+      },
+      {
+        "name": "DELTA DENTAL",
+        "total": 6400.0,
+        "employer": "",
+        "count": 6
+      },
+      {
+        "name": "WASHINGTON STATE DENTAL PAC",
+        "total": 6400.0,
+        "employer": "",
+        "count": 6
+      },
+      {
+        "name": "WASHINGTON AFFORDABLE HOUSING COUNCIL",
+        "total": 6400.0,
+        "employer": "",
+        "count": 6
+      },
+      {
+        "name": "BNSF RAILWAY COMPANY",
+        "total": 6400.0,
+        "employer": "",
+        "count": 6
+      },
+      {
+        "name": "USAA",
+        "total": 6400.0,
+        "employer": "",
+        "count": 6
+      },
+      {
+        "name": "COMCAST",
+        "total": 6400.0,
+        "employer": "",
+        "count": 6
+      },
+      {
+        "name": "BIG I PAC",
+        "total": 6400.0,
+        "employer": "",
+        "count": 6
+      },
+      {
         "name": "WASHINGTON BEVERAGE ASSOCIATION PAC",
         "total": 6400.0,
         "employer": "",
@@ -2824,61 +2878,7 @@
         "count": 6
       },
       {
-        "name": "USAA",
-        "total": 6400.0,
-        "employer": "",
-        "count": 6
-      },
-      {
         "name": "THE BOEING COMPANY PAC",
-        "total": 6400.0,
-        "employer": "",
-        "count": 6
-      },
-      {
-        "name": "BIG I PAC",
-        "total": 6400.0,
-        "employer": "",
-        "count": 6
-      },
-      {
-        "name": "BNSF RAILWAY COMPANY",
-        "total": 6400.0,
-        "employer": "",
-        "count": 6
-      },
-      {
-        "name": "COMCAST",
-        "total": 6400.0,
-        "employer": "",
-        "count": 6
-      },
-      {
-        "name": "WASHINGTON AFFORDABLE HOUSING COUNCIL",
-        "total": 6400.0,
-        "employer": "",
-        "count": 6
-      },
-      {
-        "name": "WASHINGTON STATE DENTAL PAC",
-        "total": 6400.0,
-        "employer": "",
-        "count": 6
-      },
-      {
-        "name": "DELTA DENTAL",
-        "total": 6400.0,
-        "employer": "",
-        "count": 6
-      },
-      {
-        "name": "PREMERA BLUE CROSS",
-        "total": 6400.0,
-        "employer": "",
-        "count": 7
-      },
-      {
-        "name": "PUGET SOUND ENERGY",
         "total": 6400.0,
         "employer": "",
         "count": 6
@@ -2896,13 +2896,13 @@
         "count": 8
       },
       {
-        "name": "WASHINGTON ASSOCIATION OF REALTORS",
+        "name": "WASHBANKPAC",
         "total": 5400.0,
         "employer": "",
         "count": 5
       },
       {
-        "name": "WASHBANKPAC",
+        "name": "WASHINGTON ASSOCIATION OF REALTORS",
         "total": 5400.0,
         "employer": "",
         "count": 5
@@ -3015,31 +3015,7 @@
         "count": 24
       },
       {
-        "name": "WACA PAC",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "MUCKLESHOOT INDIAN TRIBE",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "ANHEUSER BUSCH",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "PORT GAMBLE SKLALLAM TRIBE",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "WASHINGTON INDIAN GAMING ASSOCIATION",
+        "name": "WASHINGTON BEER & WINE DISTRIBUTORS ASSOCIATION",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -3051,13 +3027,19 @@
         "count": 4
       },
       {
-        "name": "WASHINGTON BEER & WINE DISTRIBUTORS ASSOCIATION",
+        "name": "WASHINGTON INDIAN GAMING ASSOCIATION",
         "total": 4400.0,
         "employer": "",
         "count": 4
       },
       {
-        "name": "WASHINGTON EDUCATION ASSOCIATION POLITICAL ACTION COMMITTEE",
+        "name": "WACA PAC",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "ANHEUSER BUSCH",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -3075,10 +3057,28 @@
         "count": 4
       },
       {
+        "name": "PORT GAMBLE SKLALLAM TRIBE",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "MUCKLESHOOT INDIAN TRIBE",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
         "name": "PUYALLUP TRIBE OF INDIANS",
         "total": 4400.0,
         "employer": "",
         "count": 5
+      },
+      {
+        "name": "WASHINGTON EDUCATION ASSOCIATION POLITICAL ACTION COMMITTEE",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
       },
       {
         "name": "UFCW 21 PAC",
@@ -3140,19 +3140,19 @@
         "count": 4
       },
       {
-        "name": "ACTIVE IN DEMOCRACY",
+        "name": "PUGET SOUND PILOTS PAC",
         "total": 6400.0,
         "employer": "",
         "count": 6
       },
       {
-        "name": "WEST PIERCE FIRE FIGHTERS LOCAL 1488 PAC",
+        "name": "JUSTICE FOR ALL PAC",
         "total": 6400.0,
         "employer": "",
-        "count": 6
+        "count": 7
       },
       {
-        "name": "SEIU 775 QUALITY CARE COMMITTEE",
+        "name": "WA ST BUILDING & CONSTRUCTION TRADES COUNCIL PAC",
         "total": 6400.0,
         "employer": "",
         "count": 6
@@ -3164,7 +3164,7 @@
         "count": 6
       },
       {
-        "name": "WA EDUCATION ASSOCIATION PAC",
+        "name": "SEIU 775 QUALITY CARE COMMITTEE",
         "total": 6400.0,
         "employer": "",
         "count": 6
@@ -3176,28 +3176,34 @@
         "count": 6
       },
       {
-        "name": "PUGET SOUND PILOTS PAC",
-        "total": 6400.0,
-        "employer": "",
-        "count": 6
-      },
-      {
         "name": "BRONOSKE MARY ANN",
         "total": 6400.0,
         "employer": "",
         "count": 6
       },
       {
-        "name": "WA ST BUILDING & CONSTRUCTION TRADES COUNCIL PAC",
+        "name": "WA EDUCATION ASSOCIATION PAC",
         "total": 6400.0,
         "employer": "",
         "count": 6
       },
       {
-        "name": "JUSTICE FOR ALL PAC",
+        "name": "WEST PIERCE FIRE FIGHTERS LOCAL 1488 PAC",
         "total": 6400.0,
         "employer": "",
-        "count": 7
+        "count": 6
+      },
+      {
+        "name": "ACTIVE IN DEMOCRACY",
+        "total": 6400.0,
+        "employer": "",
+        "count": 6
+      },
+      {
+        "name": "WA STATE AUTO DEALERS PAC",
+        "total": 5400.0,
+        "employer": "",
+        "count": 5
       },
       {
         "name": "WA BEER & WINE DISTRIBUTORS ASSN",
@@ -3212,19 +3218,7 @@
         "count": 5
       },
       {
-        "name": "WA STATE AUTO DEALERS PAC",
-        "total": 5400.0,
-        "employer": "",
-        "count": 5
-      },
-      {
-        "name": "HARRY TRUMAN FUND",
-        "total": 5200.0,
-        "employer": "",
-        "count": 5
-      },
-      {
-        "name": "KENNEDY FUND",
+        "name": "SEIU HEALTHCARE 1199NW PAC",
         "total": 5200.0,
         "employer": "",
         "count": 5
@@ -3236,7 +3230,13 @@
         "count": 6
       },
       {
-        "name": "SEIU HEALTHCARE 1199NW PAC",
+        "name": "KENNEDY FUND",
+        "total": 5200.0,
+        "employer": "",
+        "count": 5
+      },
+      {
+        "name": "HARRY TRUMAN FUND",
         "total": 5200.0,
         "employer": "",
         "count": 5
@@ -3987,33 +3987,33 @@
         "count": 1
       },
       {
-        "name": "Steven Shepard",
+        "name": "Campaign For Tribal Self Reliance / WA Indian Gaming Assn",
         "total": 2400.0,
-        "employer": "Susman Godfrey LLP",
+        "employer": "",
         "count": 2
       },
       {
-        "name": "Steven Sklaver",
+        "name": "Catherine Carmody",
+        "total": 2400.0,
+        "employer": "Retired",
+        "count": 2
+      },
+      {
+        "name": "Bill Carmody",
         "total": 2400.0,
         "employer": "Susman Godfrey",
         "count": 2
       },
       {
-        "name": "Elizabeth Hanley",
+        "name": "Vitaliy Kertchen",
         "total": 2400.0,
-        "employer": "Schroeter, Goldmark & Bender",
-        "count": 3
-      },
-      {
-        "name": "Maurice Callahan",
-        "total": 2400.0,
-        "employer": "Urban Renaissance  Group",
+        "employer": "Kertchen Law, PLLC",
         "count": 2
       },
       {
-        "name": "Seth Ard",
+        "name": "Chelsea Vessenes",
         "total": 2400.0,
-        "employer": "Susman Godfrey",
+        "employer": "Bainbridge island rowing",
         "count": 2
       }
     ],
@@ -4058,25 +4058,37 @@
         "count": 25
       },
       {
-        "name": "Puget Sound Pilots PAC",
-        "total": 4900.0,
-        "employer": "",
-        "count": 5
-      },
-      {
         "name": "Iron Workers District Council of the PNW SSF",
         "total": 4900.0,
         "employer": "",
         "count": 5
       },
       {
-        "name": "Credit Union Leg Action Fund/NW Credit Union",
+        "name": "Puget Sound Pilots PAC",
+        "total": 4900.0,
+        "employer": "",
+        "count": 5
+      },
+      {
+        "name": "WA Beverage Assn PAC",
         "total": 4400.0,
         "employer": "",
         "count": 4
       },
       {
         "name": "Muckleshoot Indian Tribe",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "WA Education Assn PAC/WEA PAC",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "Credit Union Leg Action Fund/NW Credit Union",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -4094,22 +4106,16 @@
         "count": 6
       },
       {
-        "name": "WA Beverage Assn PAC",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "WA Education Assn PAC/WEA PAC",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
         "name": "Justice For All PAC",
         "total": 3800.0,
         "employer": "",
         "count": 5
+      },
+      {
+        "name": "USAA",
+        "total": 3400.0,
+        "employer": "",
+        "count": 3
       },
       {
         "name": "Kaiser Aluminum WA",
@@ -4130,19 +4136,13 @@
         "count": 3
       },
       {
-        "name": "USAA",
-        "total": 3400.0,
-        "employer": "",
-        "count": 3
-      },
-      {
-        "name": "WA Beer & Wine Distributors Assn PAC",
+        "name": "Service Employees Intl Union Local 925 Public Service PAC",
         "total": 3200.0,
         "employer": "",
         "count": 3
       },
       {
-        "name": "Service Employees Intl Union Local 925 Public Service PAC",
+        "name": "WA Beer & Wine Distributors Assn PAC",
         "total": 3200.0,
         "employer": "",
         "count": 3
@@ -4404,19 +4404,7 @@
         "count": 4
       },
       {
-        "name": "Jackson Legacy Fund",
-        "total": 3400.0,
-        "employer": "",
-        "count": 3
-      },
-      {
-        "name": "Puget Sound Energy",
-        "total": 3400.0,
-        "employer": "",
-        "count": 3
-      },
-      {
-        "name": "Green Diamond Resource Company",
+        "name": "WA State Auto Dealers PAC",
         "total": 3400.0,
         "employer": "",
         "count": 4
@@ -4428,10 +4416,22 @@
         "count": 3
       },
       {
-        "name": "WA State Auto Dealers PAC",
+        "name": "Green Diamond Resource Company",
         "total": 3400.0,
         "employer": "",
         "count": 4
+      },
+      {
+        "name": "Puget Sound Energy",
+        "total": 3400.0,
+        "employer": "",
+        "count": 3
+      },
+      {
+        "name": "Jackson Legacy Fund",
+        "total": 3400.0,
+        "employer": "",
+        "count": 3
       },
       {
         "name": "CATTLE PAC",
@@ -4669,7 +4669,7 @@
     "critical_bills": 0,
     "high_bills": 0,
     "avg_threat_score": 0,
-    "total_raised": 629719.62,
+    "total_raised": 629869.62,
     "top_donors": [
       {
         "name": "House Democratic Campaign Committee",
@@ -4690,19 +4690,7 @@
         "count": 1
       },
       {
-        "name": "Boeing Employees Credit Union (BECU)",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "WA Forest Protection Assn State PAC",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "Regence",
+        "name": "USAA",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -4720,19 +4708,31 @@
         "count": 4
       },
       {
-        "name": "USAA",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
         "name": "Wa Assn of Realtors PAC",
         "total": 4400.0,
         "employer": "",
         "count": 4
       },
       {
+        "name": "WA Forest Protection Assn State PAC",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "Regence",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
         "name": "WA State Dental PAC",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "Boeing Employees Credit Union (BECU)",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -4750,10 +4750,16 @@
         "count": 4
       },
       {
-        "name": "Justice for All PAC",
+        "name": "Muckleshoot Indian Tribe",
         "total": 3400.0,
         "employer": "",
-        "count": 4
+        "count": 3
+      },
+      {
+        "name": "Amazon.com Services LLC",
+        "total": 3400.0,
+        "employer": "",
+        "count": 3
       },
       {
         "name": "WA Medical PAC",
@@ -4780,13 +4786,7 @@
         "count": 3
       },
       {
-        "name": "Muckleshoot Indian Tribe",
-        "total": 3400.0,
-        "employer": "",
-        "count": 3
-      },
-      {
-        "name": "Amazon.com Services LLC",
+        "name": "Puget Sound Energy",
         "total": 3400.0,
         "employer": "",
         "count": 3
@@ -4799,10 +4799,10 @@
       },
       {
         "category": "Individual",
-        "total": 141624.96
+        "total": 141774.96
       }
     ],
-    "contribution_count": 753
+    "contribution_count": 756
   },
   {
     "id": "34031",
@@ -5137,12 +5137,6 @@
     "total_raised": 605520.3500000001,
     "top_donors": [
       {
-        "name": "MCGREE CHRIS",
-        "total": 6400.0,
-        "employer": "MCGREE INSURANCE",
-        "count": 6
-      },
-      {
         "name": "WYCKOFF DAVID",
         "total": 6400.0,
         "employer": "WYCKOFF FARMS INC.",
@@ -5152,6 +5146,12 @@
         "name": "WYCKOFF KATIE",
         "total": 6400.0,
         "employer": "SELF-EMPLOYED",
+        "count": 6
+      },
+      {
+        "name": "MCGREE GERRY",
+        "total": 6400.0,
+        "employer": "MCGREE INSURANCE",
         "count": 6
       },
       {
@@ -5173,7 +5173,7 @@
         "count": 7
       },
       {
-        "name": "MCGREE GERRY",
+        "name": "MCGREE CHRIS",
         "total": 6400.0,
         "employer": "MCGREE INSURANCE",
         "count": 6
@@ -5191,10 +5191,10 @@
         "count": 7
       },
       {
-        "name": "WA STATE AUTO DEALERS PAC",
+        "name": "PLATH DAN",
         "total": 5400.0,
-        "employer": "",
-        "count": 6
+        "employer": "WASHINGTON FRUIT & PRODUCE CO.",
+        "count": 5
       },
       {
         "name": "MARTIN GINA",
@@ -5203,19 +5203,19 @@
         "count": 5
       },
       {
-        "name": "PLATH DAN",
+        "name": "WA STATE AUTO DEALERS PAC",
         "total": 5400.0,
-        "employer": "WASHINGTON FRUIT & PRODUCE CO.",
-        "count": 5
+        "employer": "",
+        "count": 6
       },
       {
-        "name": "WILSON MICHELLE",
+        "name": "WILSON ROGER",
         "total": 4650.0,
         "employer": "WILSON REAL ESTATE MANAGEMENT",
         "count": 5
       },
       {
-        "name": "WILSON ROGER",
+        "name": "WILSON MICHELLE",
         "total": 4650.0,
         "employer": "WILSON REAL ESTATE MANAGEMENT",
         "count": 5
@@ -5227,31 +5227,31 @@
         "count": 5
       },
       {
-        "name": "SABEY CORPORATION",
-        "total": 4500.0,
-        "employer": "",
-        "count": 5
-      },
-      {
         "name": "ALLRED AUSTIN",
         "total": 4500.0,
         "employer": "SELF-EMPLOYED",
         "count": 5
       },
       {
-        "name": "DAY DANIEL A",
+        "name": "SABEY CORPORATION",
+        "total": 4500.0,
+        "employer": "",
+        "count": 5
+      },
+      {
+        "name": "BNSF RAILWAY COMPANY",
         "total": 4400.0,
         "employer": "",
         "count": 4
       },
       {
-        "name": "MARTIN KERRY",
+        "name": "GORDON STEVE",
         "total": 4400.0,
-        "employer": "ALLIANCE PROPERTY MANAGEMENT, LLC",
+        "employer": "",
         "count": 4
       },
       {
-        "name": "GORDON STEVE",
+        "name": "DAY DANIEL A",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -5447,7 +5447,7 @@
     "total_raised": 595045.31,
     "top_donors": [
       {
-        "name": "PUGET SOUND CHAPTER NECA PAC",
+        "name": "WASHINGTON AFFORDABLE HOUSING COUNCIL",
         "total": 6400.0,
         "employer": "",
         "count": 6
@@ -5459,7 +5459,7 @@
         "count": 6
       },
       {
-        "name": "WASHINGTON AFFORDABLE HOUSING COUNCIL",
+        "name": "PUGET SOUND CHAPTER NECA PAC",
         "total": 6400.0,
         "employer": "",
         "count": 6
@@ -5477,54 +5477,6 @@
         "count": 7
       },
       {
-        "name": "PSE SEIU 1948",
-        "total": 5400.0,
-        "employer": "",
-        "count": 5
-      },
-      {
-        "name": "ANHEUSER BUSCH",
-        "total": 5400.0,
-        "employer": "",
-        "count": 5
-      },
-      {
-        "name": "BNSF RAILWAY",
-        "total": 5400.0,
-        "employer": "",
-        "count": 5
-      },
-      {
-        "name": "WASHINGTON STATE AUTO DEALERS PAC",
-        "total": 5400.0,
-        "employer": "",
-        "count": 6
-      },
-      {
-        "name": "USAA",
-        "total": 5400.0,
-        "employer": "",
-        "count": 5
-      },
-      {
-        "name": "AVISTA CORP",
-        "total": 5400.0,
-        "employer": "",
-        "count": 5
-      },
-      {
-        "name": "TRUCKING ACTION COMMITTEE",
-        "total": 5400.0,
-        "employer": "",
-        "count": 5
-      },
-      {
-        "name": "SABEY CORPORATION",
-        "total": 5400.0,
-        "employer": "",
-        "count": 7
-      },
-      {
         "name": "DELTA DENTAL",
         "total": 5400.0,
         "employer": "",
@@ -5537,7 +5489,55 @@
         "count": 5
       },
       {
+        "name": "USAA",
+        "total": 5400.0,
+        "employer": "",
+        "count": 5
+      },
+      {
+        "name": "ANHEUSER BUSCH",
+        "total": 5400.0,
+        "employer": "",
+        "count": 5
+      },
+      {
         "name": "WASHINGTON ASSOCIATION OF REALTORS PAC",
+        "total": 5400.0,
+        "employer": "",
+        "count": 5
+      },
+      {
+        "name": "WASHINGTON STATE AUTO DEALERS PAC",
+        "total": 5400.0,
+        "employer": "",
+        "count": 6
+      },
+      {
+        "name": "AVISTA CORP",
+        "total": 5400.0,
+        "employer": "",
+        "count": 5
+      },
+      {
+        "name": "SABEY CORPORATION",
+        "total": 5400.0,
+        "employer": "",
+        "count": 7
+      },
+      {
+        "name": "TRUCKING ACTION COMMITTEE",
+        "total": 5400.0,
+        "employer": "",
+        "count": 5
+      },
+      {
+        "name": "PSE SEIU 1948",
+        "total": 5400.0,
+        "employer": "",
+        "count": 5
+      },
+      {
+        "name": "BNSF RAILWAY",
         "total": 5400.0,
         "employer": "",
         "count": 5
@@ -5599,13 +5599,13 @@
     "critical_bills": 0,
     "high_bills": 0,
     "avg_threat_score": 0,
-    "total_raised": 593230.92,
+    "total_raised": 593730.92,
     "top_donors": [
       {
         "name": "SMALL CONTRIBUTIONS",
-        "total": 15800.3,
+        "total": 16000.3,
         "employer": "",
-        "count": 74
+        "count": 78
       },
       {
         "name": "23RD DISTRICT DEMOCRATS",
@@ -5725,14 +5725,14 @@
     "donor_categories": [
       {
         "category": "Individual",
-        "total": 375039.26
+        "total": 375539.26
       },
       {
         "category": "Organization",
         "total": 218191.66
       }
     ],
-    "contribution_count": 1616
+    "contribution_count": 1626
   },
   {
     "id": "652",
@@ -5763,6 +5763,12 @@
         "count": 6
       },
       {
+        "name": "WHCA-PAC",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
         "name": "WASHINGTON STATE AUTO DEALERS PAC",
         "total": 4400.0,
         "employer": "",
@@ -5781,13 +5787,13 @@
         "count": 5
       },
       {
-        "name": "WHCA-PAC",
+        "name": "THE CONFEDERATED TRIBES OF THE COLVILLE RESERVATION",
         "total": 4400.0,
         "employer": "",
-        "count": 4
+        "count": 5
       },
       {
-        "name": "TRUCKING ACTION COMMITTEE",
+        "name": "WASHINGTON AFFORDABLE HOUSING COUNCIL",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -5799,37 +5805,7 @@
         "count": 4
       },
       {
-        "name": "WASHINGTON AFFORDABLE HOUSING COUNCIL",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "THE CONFEDERATED TRIBES OF THE COLVILLE RESERVATION",
-        "total": 4400.0,
-        "employer": "",
-        "count": 5
-      },
-      {
-        "name": "WASHINGTON HOSPITALITY ASSOCIATION POLITICAL ACTION COMMITTEE",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "MANUFACTURED HOUSING COMMUNITIES OF WASHINGTON, INC. PAC",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "WASHINGTON STATE DENTAL PAC",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "BNSF RAILWAY COMPANY",
+        "name": "TRUCKING ACTION COMMITTEE",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -5841,13 +5817,37 @@
         "count": 4
       },
       {
+        "name": "ALTRIA CLIENT SERVICES LLC",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
         "name": "NISQUALLY INDIAN TRIBE",
         "total": 4400.0,
         "employer": "",
         "count": 4
       },
       {
-        "name": "ALTRIA CLIENT SERVICES LLC",
+        "name": "BNSF RAILWAY COMPANY",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "MANUFACTURED HOUSING COMMUNITIES OF WASHINGTON, INC. PAC",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "WASHINGTON HOSPITALITY ASSOCIATION POLITICAL ACTION COMMITTEE",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "WASHINGTON STATE DENTAL PAC",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -5871,7 +5871,7 @@
         "count": 5
       },
       {
-        "name": "PEMCO MUTUAL INSURANCE COMPANY",
+        "name": "UNITEDHEALTH GROUP INC",
         "total": 3500.0,
         "employer": "",
         "count": 8
@@ -6151,7 +6151,25 @@
         "count": 4
       },
       {
-        "name": "Phillips 66 Company",
+        "name": "Amazon.com Services LLC",
+        "total": 2400.0,
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "IUPAT Political Action Together Legislative Education Committee",
+        "total": 2400.0,
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "Premera Blue Cross",
+        "total": 2400.0,
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "Marathon Petroleum Corporation",
         "total": 2400.0,
         "employer": "",
         "count": 2
@@ -6163,25 +6181,7 @@
         "count": 2
       },
       {
-        "name": "Delta Dental of Washington",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
-        "name": "Washington Health Care Association PAC",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
-        "name": "Washington Medical PAC",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
-        "name": "Credit Union Legislative Action Fund",
+        "name": "Puget Sound Chapter NECA PAC",
         "total": 2400.0,
         "employer": "",
         "count": 2
@@ -6219,7 +6219,7 @@
     "critical_bills": 0,
     "high_bills": 0,
     "avg_threat_score": 0,
-    "total_raised": 512866.47,
+    "total_raised": 512816.47,
     "top_donors": [
       {
         "name": "MISCELLANEOUS RECEIPTS",
@@ -6349,10 +6349,10 @@
       },
       {
         "category": "Individual",
-        "total": 205421.09
+        "total": 205371.09
       }
     ],
-    "contribution_count": 464
+    "contribution_count": 463
   },
   {
     "id": "35473",
@@ -6532,19 +6532,7 @@
     "total_raised": 485112.0300000001,
     "top_donors": [
       {
-        "name": "SEIU 775 Quality Care Committee",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
         "name": "Delta Dental of WA",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "Regence",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -6568,7 +6556,25 @@
         "count": 4
       },
       {
+        "name": "Regence",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
         "name": "IBEW Local 77 PAC",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "SEIU 775 Quality Care Committee",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "Centene Management Co LLC",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -6578,12 +6584,6 @@
         "total": 4400.0,
         "employer": "",
         "count": 5
-      },
-      {
-        "name": "Centene Management Co LLC",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
       },
       {
         "name": "Kaiser Aluminum",
@@ -6628,13 +6628,13 @@
         "count": 3
       },
       {
-        "name": "WA Hospitality Assn PAC",
+        "name": "WA Forest Protection Assn St PAC",
         "total": 3200.0,
         "employer": "",
         "count": 3
       },
       {
-        "name": "WA Beverage Assn PAC",
+        "name": "WA Hospitality Assn PAC",
         "total": 3200.0,
         "employer": "",
         "count": 3
@@ -6646,7 +6646,7 @@
         "count": 3
       },
       {
-        "name": "Weyerhaeuser",
+        "name": "WA Beverage Assn PAC",
         "total": 3200.0,
         "employer": "",
         "count": 3
@@ -7319,6 +7319,18 @@
         "count": 4
       },
       {
+        "name": "Kennedy Fund",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "Centene Management Company LLC",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
         "name": "PSE SEIU 1948 Political Fund",
         "total": 4400.0,
         "employer": "",
@@ -7331,25 +7343,13 @@
         "count": 4
       },
       {
-        "name": "Muckleshoot Indian Tribe",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
         "name": "Washington Education Association PAC",
         "total": 4400.0,
         "employer": "",
         "count": 4
       },
       {
-        "name": "Centene Management Company LLC",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "Kennedy Fund",
+        "name": "Muckleshoot Indian Tribe",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -7361,13 +7361,13 @@
         "count": 4
       },
       {
-        "name": "Credit Union Legislative Action Fund NW",
+        "name": "SEIU Local 925",
         "total": 3400.0,
         "employer": "",
         "count": 3
       },
       {
-        "name": "SEIU Local 925",
+        "name": "Credit Union Legislative Action Fund NW",
         "total": 3400.0,
         "employer": "",
         "count": 3
@@ -7379,13 +7379,13 @@
         "count": 3
       },
       {
-        "name": "WA CHARTERS PAC",
+        "name": "SEIU HEALTHCARE 1199NW",
         "total": 3200.0,
         "employer": "",
         "count": 3
       },
       {
-        "name": "SEIU HEALTHCARE 1199NW",
+        "name": "WA CHARTERS PAC",
         "total": 3200.0,
         "employer": "",
         "count": 3
@@ -7617,13 +7617,13 @@
     "total_raised": 407794.46,
     "top_donors": [
       {
-        "name": "WA AFFORDABLE HOUSING COUNCIL",
+        "name": "PUYALLUP TRIBE OF INDIANS",
         "total": 6400.0,
         "employer": "",
         "count": 6
       },
       {
-        "name": "PUYALLUP TRIBE OF INDIANS",
+        "name": "WA AFFORDABLE HOUSING COUNCIL",
         "total": 6400.0,
         "employer": "",
         "count": 6
@@ -7641,13 +7641,7 @@
         "count": 5
       },
       {
-        "name": "WEYERHAEUSER",
-        "total": 5400.0,
-        "employer": "",
-        "count": 5
-      },
-      {
-        "name": "BNSF RAILWAY COMPANY",
+        "name": "NECA PAC - PUGET SOUND CHAPTER",
         "total": 5400.0,
         "employer": "",
         "count": 5
@@ -7659,7 +7653,13 @@
         "count": 5
       },
       {
-        "name": "NECA PAC - PUGET SOUND CHAPTER",
+        "name": "BNSF RAILWAY COMPANY",
+        "total": 5400.0,
+        "employer": "",
+        "count": 5
+      },
+      {
+        "name": "WEYERHAEUSER",
         "total": 5400.0,
         "employer": "",
         "count": 5
@@ -7683,24 +7683,6 @@
         "count": 5
       },
       {
-        "name": "HAMPTON LUMBER",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "RAYONIER OPERATING COMPANY",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "WA FOOD INDUSTRY ASSOC PAC",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
         "name": "WA STATE DENTAL PAC",
         "total": 4400.0,
         "employer": "",
@@ -7713,19 +7695,37 @@
         "count": 4
       },
       {
+        "name": "WA FOOD INDUSTRY ASSOC PAC",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "RAYONIER OPERATING COMPANY",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "HAMPTON LUMBER",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
         "name": "DELTA DENTAL",
         "total": 4400.0,
         "employer": "",
         "count": 6
       },
       {
-        "name": "HOSPITALS FOR A HEALTHY FUTURE PAC",
+        "name": "AMAZON.COM SERVICES, INC",
         "total": 4200.0,
         "employer": "",
         "count": 4
       },
       {
-        "name": "AMAZON.COM SERVICES, INC",
+        "name": "HOSPITALS FOR A HEALTHY FUTURE PAC",
         "total": 4200.0,
         "employer": "",
         "count": 4
@@ -8434,7 +8434,7 @@
         "count": 4
       },
       {
-        "name": "WA Medical PAC",
+        "name": "Delta Dental",
         "total": 3400.0,
         "employer": "",
         "count": 4
@@ -8446,7 +8446,7 @@
         "count": 3
       },
       {
-        "name": "Delta Dental",
+        "name": "WA Medical PAC",
         "total": 3400.0,
         "employer": "",
         "count": 4
@@ -8506,10 +8506,10 @@
         "count": 3
       },
       {
-        "name": "WA Beer & Wine Distributors Assn",
+        "name": "Justice for All PAC",
         "total": 2400.0,
         "employer": "",
-        "count": 2
+        "count": 3
       }
     ],
     "donor_categories": [
@@ -8929,15 +8929,15 @@
         "count": 4
       },
       {
-        "name": "BECKETT BRUCE",
-        "total": 4000.0,
-        "employer": "SELF",
-        "count": 5
-      },
-      {
         "name": "ALTRIA CLIENT SERVICES",
         "total": 4000.0,
         "employer": "",
+        "count": 5
+      },
+      {
+        "name": "BECKETT BRUCE",
+        "total": 4000.0,
+        "employer": "SELF",
         "count": 5
       },
       {
@@ -9319,7 +9319,7 @@
     "critical_bills": 0,
     "high_bills": 0,
     "avg_threat_score": 0,
-    "total_raised": 355458.83,
+    "total_raised": 355758.83,
     "top_donors": [
       {
         "name": "Senate Republican Campaign Committee",
@@ -9445,14 +9445,14 @@
     "donor_categories": [
       {
         "category": "Organization",
-        "total": 273033.0
+        "total": 273333.0
       },
       {
         "category": "Individual",
         "total": 82425.83
       }
     ],
-    "contribution_count": 581
+    "contribution_count": 582
   },
   {
     "id": "35422",
@@ -9644,19 +9644,7 @@
         "count": 5
       },
       {
-        "name": "Credit Union Legislative Action Fund / NW Credit Union Assn",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
         "name": "Puyallup Tribe of Indians",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "Jackson Legacy Fund",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -9668,7 +9656,19 @@
         "count": 4
       },
       {
+        "name": "Jackson Legacy Fund",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
         "name": "WASHBANKPAC State",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "Credit Union Legislative Action Fund / NW Credit Union Assn",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -9710,13 +9710,13 @@
         "count": 4
       },
       {
-        "name": "SEIU Healthcare 1199 NW",
+        "name": "WA Beer & Wine Distributors Assn PAC",
         "total": 3200.0,
         "employer": "",
         "count": 3
       },
       {
-        "name": "WA Beer & Wine Distributors Assn PAC",
+        "name": "SEIU Healthcare 1199 NW",
         "total": 3200.0,
         "employer": "",
         "count": 3
@@ -9942,6 +9942,36 @@
     "total_raised": 339274.81,
     "top_donors": [
       {
+        "name": "PUGET SOUND PILOTS PAC",
+        "total": 6400.0,
+        "employer": "",
+        "count": 6
+      },
+      {
+        "name": "WA STATE AUTO DEALERS PAC",
+        "total": 6400.0,
+        "employer": "",
+        "count": 6
+      },
+      {
+        "name": "WA AFFORDABLE HOUSING COUNCIL",
+        "total": 6400.0,
+        "employer": "",
+        "count": 6
+      },
+      {
+        "name": "THE BOEING COMPANY PAC",
+        "total": 6400.0,
+        "employer": "",
+        "count": 7
+      },
+      {
+        "name": "BNSF RAILWAY COMPANY",
+        "total": 6400.0,
+        "employer": "",
+        "count": 6
+      },
+      {
         "name": "NECA PAC - PUGET SOUND CHAPTER",
         "total": 6400.0,
         "employer": "",
@@ -9952,12 +9982,6 @@
         "total": 6400.0,
         "employer": "",
         "count": 7
-      },
-      {
-        "name": "WA STATE AUTO DEALERS PAC",
-        "total": 6400.0,
-        "employer": "",
-        "count": 6
       },
       {
         "name": "AMAZON.COM SERVICES, INC",
@@ -9972,37 +9996,13 @@
         "count": 6
       },
       {
-        "name": "WA BEVERAGE ASSOCIATION PAC",
-        "total": 6400.0,
-        "employer": "",
-        "count": 6
-      },
-      {
         "name": "TRUCKING ACTION COMMITTEE",
         "total": 6400.0,
         "employer": "",
         "count": 6
       },
       {
-        "name": "PUGET SOUND PILOTS PAC",
-        "total": 6400.0,
-        "employer": "",
-        "count": 6
-      },
-      {
-        "name": "BNSF RAILWAY COMPANY",
-        "total": 6400.0,
-        "employer": "",
-        "count": 6
-      },
-      {
-        "name": "THE BOEING COMPANY PAC",
-        "total": 6400.0,
-        "employer": "",
-        "count": 7
-      },
-      {
-        "name": "WA AFFORDABLE HOUSING COUNCIL",
+        "name": "WA BEVERAGE ASSOCIATION PAC",
         "total": 6400.0,
         "employer": "",
         "count": 6
@@ -10026,13 +10026,13 @@
         "count": 5
       },
       {
-        "name": "WA HOSPITALITY ASSOC PAC",
+        "name": "PUGET SOUND ENERGY",
         "total": 4900.0,
         "employer": "",
         "count": 5
       },
       {
-        "name": "PUGET SOUND ENERGY",
+        "name": "WA HOSPITALITY ASSOC PAC",
         "total": 4900.0,
         "employer": "",
         "count": 5
@@ -10044,10 +10044,10 @@
         "count": 5
       },
       {
-        "name": "RAYONIER OPERATING COMPANY LLC",
+        "name": "SABEY CORPORATION",
         "total": 4400.0,
         "employer": "",
-        "count": 4
+        "count": 6
       },
       {
         "name": "WA CHARTERS ACTION PAC",
@@ -10056,10 +10056,10 @@
         "count": 7
       },
       {
-        "name": "SABEY CORPORATION",
+        "name": "RAYONIER OPERATING COMPANY LLC",
         "total": 4400.0,
         "employer": "",
-        "count": 6
+        "count": 4
       }
     ],
     "donor_categories": [
@@ -10503,25 +10503,25 @@
         "count": 5
       },
       {
-        "name": "Puget Sound Pilots PAC",
+        "name": "WA State Dental Assn",
         "total": 2400.0,
         "employer": "",
         "count": 2
       },
       {
-        "name": "WA Beer & Wine Distributors Assn",
+        "name": "WA Education Assn",
         "total": 2400.0,
         "employer": "",
         "count": 2
       },
       {
-        "name": "Regence",
+        "name": "Muckleshoot Indian Tribe",
         "total": 2400.0,
         "employer": "",
         "count": 2
       },
       {
-        "name": "WA Beverage Assn",
+        "name": "WA Forest Protection Assn",
         "total": 2400.0,
         "employer": "",
         "count": 2
@@ -10568,16 +10568,16 @@
         "count": 3
       },
       {
-        "name": "THE BOEING COMPANY PAC",
-        "total": 6400.0,
-        "employer": "",
-        "count": 7
-      },
-      {
         "name": "WA AFFORDABLE HOUSING COUNCIL",
         "total": 6400.0,
         "employer": "",
         "count": 6
+      },
+      {
+        "name": "THE BOEING COMPANY PAC",
+        "total": 6400.0,
+        "employer": "",
+        "count": 7
       },
       {
         "name": "WASHINGTON FED OF STATE EMPLOYEES",
@@ -10586,7 +10586,19 @@
         "count": 7
       },
       {
-        "name": "WA ASSOCIATION OF REALTORS",
+        "name": "WASHINGTON INDIAN GAMING ASSOCIATION",
+        "total": 5400.0,
+        "employer": "",
+        "count": 5
+      },
+      {
+        "name": "PUYALLUP TRIBE OF INDIANS",
+        "total": 5400.0,
+        "employer": "",
+        "count": 5
+      },
+      {
+        "name": "WA STATE COUNCIL OF FIREFIGHTERS",
         "total": 5400.0,
         "employer": "",
         "count": 5
@@ -10604,37 +10616,19 @@
         "count": 5
       },
       {
-        "name": "PUYALLUP TRIBE OF INDIANS",
-        "total": 5400.0,
-        "employer": "",
-        "count": 5
-      },
-      {
-        "name": "WASHINGTON INDIAN GAMING ASSOCIATION",
-        "total": 5400.0,
-        "employer": "",
-        "count": 5
-      },
-      {
         "name": "AMAZON .COM SERVICES, INC",
         "total": 5400.0,
         "employer": "",
         "count": 6
       },
       {
-        "name": "WA STATE COUNCIL OF FIREFIGHTERS",
+        "name": "WA ASSOCIATION OF REALTORS",
         "total": 5400.0,
         "employer": "",
         "count": 5
       },
       {
-        "name": "OVERTON DAVID",
-        "total": 5200.0,
-        "employer": "EE OVERTON",
-        "count": 5
-      },
-      {
-        "name": "MUCKLESHOOT INDIAN TRIBE",
+        "name": "WA BEVERAGE ASSOCIATION",
         "total": 5200.0,
         "employer": "",
         "count": 5
@@ -10646,9 +10640,15 @@
         "count": 5
       },
       {
-        "name": "WA BEVERAGE ASSOCIATION",
+        "name": "MUCKLESHOOT INDIAN TRIBE",
         "total": 5200.0,
         "employer": "",
+        "count": 5
+      },
+      {
+        "name": "OVERTON DAVID",
+        "total": 5200.0,
+        "employer": "EE OVERTON",
         "count": 5
       },
       {
@@ -10869,7 +10869,7 @@
     "critical_bills": 0,
     "high_bills": 0,
     "avg_threat_score": 0,
-    "total_raised": 317692.1400000001,
+    "total_raised": 317592.1400000001,
     "top_donors": [
       {
         "name": "MISCELLANEOUS RECEIPTS",
@@ -10879,9 +10879,9 @@
       },
       {
         "name": "SMALL CONTRIBUTIONS",
-        "total": 5646.98,
+        "total": 5546.98,
         "employer": "",
-        "count": 24
+        "count": 22
       },
       {
         "name": "Puyallup Tribe of Indians",
@@ -10995,14 +10995,14 @@
     "donor_categories": [
       {
         "category": "Individual",
-        "total": 173803.02
+        "total": 173703.02
       },
       {
         "category": "Organization",
         "total": 143889.12
       }
     ],
-    "contribution_count": 784
+    "contribution_count": 782
   },
   {
     "id": "29318",
@@ -11045,13 +11045,13 @@
         "count": 5
       },
       {
-        "name": "WASHINGTON FOOD INDUSTRY ASSOCIATION-PAC",
+        "name": "WASHINGTON ASSOCIATION OF REALTORS POLITICAL AFFAIRS COUNCIL",
         "total": 5400.0,
         "employer": "",
         "count": 5
       },
       {
-        "name": "WASHINGTON ASSOCIATION OF REALTORS POLITICAL AFFAIRS COUNCIL",
+        "name": "WASHINGTON FOOD INDUSTRY ASSOCIATION-PAC",
         "total": 5400.0,
         "employer": "",
         "count": 5
@@ -11081,43 +11081,13 @@
         "count": 1
       },
       {
-        "name": "DELTA DENTAL",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "PUYALLUP TRIBE OF INDIANS",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "PUGET SOUND CHAPTER - NECA PAC",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "PHILLIPS 66 COMPANY",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
         "name": "MUCKLESHOOT INDIAN TRIBE",
         "total": 4400.0,
         "employer": "",
         "count": 4
       },
       {
-        "name": "WASHINGTON STATE DENTAL PAC",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "WASHBANKPAC STATE",
+        "name": "PUGET SOUND CHAPTER - NECA PAC",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -11136,6 +11106,36 @@
       },
       {
         "name": "WASHINGTON INDIAN GAMING ASSOCIATION CAMPAIGN FOR TRIBAL SELF-RELIANCE",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "PHILLIPS 66 COMPANY",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "PUYALLUP TRIBE OF INDIANS",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "DELTA DENTAL",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "WASHINGTON STATE DENTAL PAC",
+        "total": 4400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "WASHBANKPAC STATE",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -11188,13 +11188,13 @@
         "count": 4
       },
       {
-        "name": "WASHINGTON HOSPITALITY ASSOCIATION PAC",
+        "name": "PUGET SOUND CHAPTER - NECA PAC",
         "total": 4400.0,
         "employer": "",
         "count": 4
       },
       {
-        "name": "PUGET SOUND CHAPTER - NECA PAC",
+        "name": "WASHINGTON HOSPITALITY ASSOCIATION PAC",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -11218,19 +11218,13 @@
         "count": 3
       },
       {
-        "name": "WASHINGTON STATE AUTO DEALERS PAC",
-        "total": 3400.0,
-        "employer": "",
-        "count": 3
-      },
-      {
         "name": "AMAZON.COM SERVICES LLC",
         "total": 3400.0,
         "employer": "",
         "count": 3
       },
       {
-        "name": "DELTA DENTAL",
+        "name": "BNSF RAILWAY COMPANY",
         "total": 3400.0,
         "employer": "",
         "count": 3
@@ -11242,7 +11236,13 @@
         "count": 3
       },
       {
-        "name": "BNSF RAILWAY COMPANY",
+        "name": "WASHINGTON STATE AUTO DEALERS PAC",
+        "total": 3400.0,
+        "employer": "",
+        "count": 3
+      },
+      {
+        "name": "DELTA DENTAL",
         "total": 3400.0,
         "employer": "",
         "count": 3
@@ -11284,19 +11284,19 @@
         "count": 3
       },
       {
-        "name": "Washington State Dental PAC",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
-        "name": "IUPAT Political Action Together Legislative Education Committee",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
         "name": "Puyallup Tribe of Indians",
+        "total": 2400.0,
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "WASHBANKPAC STATE",
+        "total": 2400.0,
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "USAA",
         "total": 2400.0,
         "employer": "",
         "count": 2
@@ -11808,16 +11808,10 @@
         "count": 40
       },
       {
-        "name": "Washington Medical Political Action Committee",
+        "name": "Washington Federation of State Employees SSF",
         "total": 4400.0,
         "employer": "",
         "count": 4
-      },
-      {
-        "name": "Justice for All PAC",
-        "total": 4400.0,
-        "employer": "",
-        "count": 5
       },
       {
         "name": "Puget Sound Pilots PAC",
@@ -11832,10 +11826,16 @@
         "count": 4
       },
       {
-        "name": "Washington Federation of State Employees SSF",
+        "name": "Washington Medical Political Action Committee",
         "total": 4400.0,
         "employer": "",
         "count": 4
+      },
+      {
+        "name": "Justice for All PAC",
+        "total": 4400.0,
+        "employer": "",
+        "count": 5
       },
       {
         "name": "Washington State Auto Dealers PAC",
@@ -11850,12 +11850,6 @@
         "count": 4
       },
       {
-        "name": "Credit Union Legislative Action Fund",
-        "total": 3400.0,
-        "employer": "",
-        "count": 3
-      },
-      {
         "name": "Puyallup Tribe of Indians",
         "total": 3400.0,
         "employer": "",
@@ -11866,6 +11860,12 @@
         "total": 3400.0,
         "employer": "",
         "count": 4
+      },
+      {
+        "name": "Credit Union Legislative Action Fund",
+        "total": 3400.0,
+        "employer": "",
+        "count": 3
       },
       {
         "name": "SEIU Healthcare 1199NW",
@@ -11886,25 +11886,7 @@
         "count": 4
       },
       {
-        "name": "Cypress Creek Renewables LLC",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
         "name": "United Food and Commercial Workers International Union Active Ballot Club",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
-        "name": "The Tulalip Tribes of Washington",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
-        "name": "Washington State Council of Firefighters Support Team",
         "total": 2400.0,
         "employer": "",
         "count": 2
@@ -11916,9 +11898,27 @@
         "count": 2
       },
       {
+        "name": "Cypress Creek Renewables LLC",
+        "total": 2400.0,
+        "employer": "",
+        "count": 2
+      },
+      {
         "name": "Chris Stolte",
         "total": 2400.0,
         "employer": "Not Employed",
+        "count": 2
+      },
+      {
+        "name": "Washington State Council of Firefighters Support Team",
+        "total": 2400.0,
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "The Tulalip Tribes of Washington",
+        "total": 2400.0,
+        "employer": "",
         "count": 2
       }
     ],
@@ -12118,16 +12118,16 @@
         "count": 23
       },
       {
-        "name": "MICROSOFT",
-        "total": 4000.0,
-        "employer": "",
-        "count": 7
-      },
-      {
         "name": "ENTERTAINMENT SOFTWARE ASSOCIATION",
         "total": 4000.0,
         "employer": "",
         "count": 6
+      },
+      {
+        "name": "MICROSOFT",
+        "total": 4000.0,
+        "employer": "",
+        "count": 7
       },
       {
         "name": "Comcast Financial Agency Corporation",
@@ -12148,19 +12148,19 @@
         "count": 3
       },
       {
-        "name": "Puget Sound Energy",
+        "name": "WA Beverage Association PAC",
         "total": 2400.0,
         "employer": "",
         "count": 2
       },
       {
-        "name": "Amazon.Com Services LLC",
+        "name": "Washington State Radiological Society PAC",
         "total": 2400.0,
         "employer": "",
         "count": 2
       },
       {
-        "name": "Anheuser Busch Companies",
+        "name": "Kennedy Fund",
         "total": 2400.0,
         "employer": "",
         "count": 2
@@ -12172,9 +12172,15 @@
         "count": 2
       },
       {
-        "name": "Zetumer Matthew",
+        "name": "Credit Union Legislative Action Fund Northwest Credit Union Association",
         "total": 2400.0,
-        "employer": "Matthew Zetumer, M.D.",
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "WashbankPAC",
+        "total": 2400.0,
+        "employer": "",
         "count": 2
       },
       {
@@ -12184,31 +12190,13 @@
         "count": 2
       },
       {
-        "name": "Alan Crain",
-        "total": 2400.0,
-        "employer": "Kitsap Bank",
-        "count": 2
-      },
-      {
-        "name": "Washington State Radiological Society PAC",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
-        "name": "Washington Refuse and Recycling Association PAC",
+        "name": "Anheuser Busch Companies",
         "total": 2400.0,
         "employer": "",
         "count": 2
       },
       {
         "name": "Washington Federation of State Employees SSF",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
-        "name": "T-Mobile USA, Inc.",
         "total": 2400.0,
         "employer": "",
         "count": 2
@@ -12226,7 +12214,19 @@
         "count": 2
       },
       {
-        "name": "WA Beverage Association PAC",
+        "name": "T-Mobile USA, Inc.",
+        "total": 2400.0,
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "Washington Refuse and Recycling Association PAC",
+        "total": 2400.0,
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "Puget Sound Energy",
         "total": 2400.0,
         "employer": "",
         "count": 2
@@ -12574,7 +12574,7 @@
     "critical_bills": 0,
     "high_bills": 0,
     "avg_threat_score": 0,
-    "total_raised": 285422.41000000003,
+    "total_raised": 284722.41000000003,
     "top_donors": [
       {
         "name": "Lillian Ortiz-Self Surplus Funds Acct",
@@ -12691,10 +12691,10 @@
         "count": 4
       },
       {
-        "name": "SMALL CONTRIBUTIONS",
-        "total": 2610.0,
+        "name": "MISCELLANEOUS RECEIPTS",
+        "total": 2500.0,
         "employer": "",
-        "count": 20
+        "count": 1
       }
     ],
     "donor_categories": [
@@ -12704,10 +12704,10 @@
       },
       {
         "category": "Individual",
-        "total": 72325.48
+        "total": 71625.48
       }
     ],
-    "contribution_count": 379
+    "contribution_count": 365
   },
   {
     "id": "20755",
@@ -12810,13 +12810,13 @@
         "count": 3
       },
       {
-        "name": "Goodman Real Estate Inc.",
+        "name": "WA Optometric PAC",
         "total": 2500.0,
         "employer": "",
         "count": 3
       },
       {
-        "name": "WA Optometric PAC",
+        "name": "Goodman Real Estate Inc.",
         "total": 2500.0,
         "employer": "",
         "count": 3
@@ -13364,13 +13364,13 @@
         "count": 4
       },
       {
-        "name": "WASHINGTON BEER & WINE DISTRIBUTORS ASSOCIATION",
+        "name": "WASHINGTON HOSPITALITY ASSOCIATION",
         "total": 4400.0,
         "employer": "",
         "count": 4
       },
       {
-        "name": "WASHINGTON HOSPITALITY ASSOCIATION",
+        "name": "WASHINGTON BEER & WINE DISTRIBUTORS ASSOCIATION",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -13388,19 +13388,7 @@
         "count": 4
       },
       {
-        "name": "BNSF RAILWAY COMPANY",
-        "total": 3400.0,
-        "employer": "",
-        "count": 3
-      },
-      {
         "name": "GREEN DIAMOND RESOURCE COMPANY",
-        "total": 3400.0,
-        "employer": "",
-        "count": 3
-      },
-      {
-        "name": "PUGET SOUND CHAPTER - NECA PAC",
         "total": 3400.0,
         "employer": "",
         "count": 3
@@ -13412,8 +13400,14 @@
         "count": 3
       },
       {
-        "name": "AVISTA CORP",
-        "total": 3200.0,
+        "name": "PUGET SOUND CHAPTER - NECA PAC",
+        "total": 3400.0,
+        "employer": "",
+        "count": 3
+      },
+      {
+        "name": "BNSF RAILWAY COMPANY",
+        "total": 3400.0,
         "employer": "",
         "count": 3
       },
@@ -13421,6 +13415,12 @@
         "name": "NIERENBERG DAVID",
         "total": 3200.0,
         "employer": "Nierenberg Investment Management",
+        "count": 3
+      },
+      {
+        "name": "AVISTA CORP",
+        "total": 3200.0,
+        "employer": "",
         "count": 3
       },
       {
@@ -13686,13 +13686,25 @@
         "count": 3
       },
       {
-        "name": "SEIU Local 925 Public Service PAC",
+        "name": "NICHOLS KEVIN",
+        "total": 2400.0,
+        "employer": "APTITUDE MEDICAL SYSTEMS",
+        "count": 2
+      },
+      {
+        "name": "YOUNG JAMES",
         "total": 2400.0,
         "employer": "",
         "count": 2
       },
       {
-        "name": "SEIU 775 Quality Care Committee",
+        "name": "BURNETT JASON",
+        "total": 2400.0,
+        "employer": "CROSSWALK LABS",
+        "count": 2
+      },
+      {
+        "name": "SEIU Local 925 Public Service PAC",
         "total": 2400.0,
         "employer": "",
         "count": 2
@@ -13704,10 +13716,10 @@
         "count": 2
       },
       {
-        "name": "SEIU Healthcare 1199NW PAC",
+        "name": "Retired Public Employees Council PAC",
         "total": 2400.0,
         "employer": "",
-        "count": 2
+        "count": 3
       },
       {
         "name": "PAC 48 of Washington",
@@ -13716,25 +13728,13 @@
         "count": 2
       },
       {
-        "name": "NICHOLS KEVIN",
-        "total": 2400.0,
-        "employer": "APTITUDE MEDICAL SYSTEMS",
-        "count": 2
-      },
-      {
-        "name": "Retired Public Employees Council PAC",
+        "name": "SEIU 775 Quality Care Committee",
         "total": 2400.0,
         "employer": "",
-        "count": 3
-      },
-      {
-        "name": "BURNETT JASON",
-        "total": 2400.0,
-        "employer": "CROSSWALK LABS",
         "count": 2
       },
       {
-        "name": "YOUNG JAMES",
+        "name": "SEIU Healthcare 1199NW PAC",
         "total": 2400.0,
         "employer": "",
         "count": 2
@@ -13847,10 +13847,10 @@
         "count": 25
       },
       {
-        "name": "MUCKLESHOOT TRIBE",
+        "name": "WASHINGTON STATE AUTO DEALERS PAC",
         "total": 3400.0,
         "employer": "",
-        "count": 3
+        "count": 4
       },
       {
         "name": "WASHINGTON BEER AND WINE DISTRIBUTORS ASSOCIATION",
@@ -13865,10 +13865,10 @@
         "count": 3
       },
       {
-        "name": "WASHINGTON STATE AUTO DEALERS PAC",
+        "name": "MUCKLESHOOT TRIBE",
         "total": 3400.0,
         "employer": "",
-        "count": 4
+        "count": 3
       },
       {
         "name": "MARTIN BUSINESS GROUP LLC",
@@ -13877,7 +13877,19 @@
         "count": 3
       },
       {
-        "name": "WA Affordable Housing Council",
+        "name": "WA Federation of State Employees",
+        "total": 2400.0,
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "Centene Management Co LLC",
+        "total": 2400.0,
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "WA Association of Realtors PAC",
         "total": 2400.0,
         "employer": "",
         "count": 2
@@ -13907,31 +13919,19 @@
         "count": 2
       },
       {
-        "name": "WA Federation of State Employees",
+        "name": "WA Affordable Housing Council",
         "total": 2400.0,
         "employer": "",
         "count": 2
       },
       {
-        "name": "WA Association of Realtors PAC",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
-        "name": "Centene Management Co LLC",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
-        "name": "AVISTA CORP",
+        "name": "CHEVRON",
         "total": 2200.0,
         "employer": "",
         "count": 2
       },
       {
-        "name": "WASHINGTON STATE DENTAL PAC",
+        "name": "AMAZON SERVICES LLC",
         "total": 2200.0,
         "employer": "",
         "count": 2
@@ -13978,13 +13978,13 @@
         "count": 1
       },
       {
-        "name": "USAA",
+        "name": "STCU",
         "total": 4400.0,
         "employer": "",
         "count": 4
       },
       {
-        "name": "STCU",
+        "name": "USAA",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -14050,7 +14050,13 @@
         "count": 4
       },
       {
-        "name": "Build East PAC",
+        "name": "Washington Association of Realtors",
+        "total": 2400.0,
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "Puyallup Tribe of Indians",
         "total": 2400.0,
         "employer": "",
         "count": 2
@@ -14062,19 +14068,13 @@
         "count": 2
       },
       {
-        "name": "Credit Union Legislative Action Fund",
+        "name": "BSNF Railway Company",
         "total": 2400.0,
         "employer": "",
         "count": 2
       },
       {
-        "name": "Washington Affordable Housing Council",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
-        "name": "WASHBANK Pac",
+        "name": "Tulalip Tribes of Washington",
         "total": 2400.0,
         "employer": "",
         "count": 2
@@ -14086,10 +14086,10 @@
         "count": 2
       },
       {
-        "name": "Washington Hospitality Assoc.",
+        "name": "Avista Corp",
         "total": 2400.0,
         "employer": "",
-        "count": 3
+        "count": 2
       }
     ],
     "donor_categories": [
@@ -14324,7 +14324,13 @@
         "count": 4
       },
       {
-        "name": "WA Education Assn PAC / WEA PAC",
+        "name": "Credit Union Legislative Action Fund",
+        "total": 2400.0,
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "Puyallup Tribe of Indians",
         "total": 2400.0,
         "employer": "",
         "count": 2
@@ -14336,13 +14342,7 @@
         "count": 2
       },
       {
-        "name": "Credit Union Legislative Action Fund",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
-        "name": "Puyallup Tribe of Indians",
+        "name": "WA Education Assn PAC / WEA PAC",
         "total": 2400.0,
         "employer": "",
         "count": 2
@@ -16294,7 +16294,7 @@
     "critical_bills": 0,
     "high_bills": 0,
     "avg_threat_score": 0,
-    "total_raised": 219749.56000000006,
+    "total_raised": 220399.56000000006,
     "top_donors": [
       {
         "name": "SMALL CONTRIBUTIONS",
@@ -16317,6 +16317,18 @@
       {
         "name": "Jefferson County Democrats & Central Committee",
         "total": 5373.46,
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "Chevron",
+        "total": 2400.0,
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "Washington Hospitality Association",
+        "total": 2400.0,
         "employer": "",
         "count": 2
       },
@@ -16351,18 +16363,6 @@
         "count": 2
       },
       {
-        "name": "Chevron",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
-        "name": "Washington Hospitality Association",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
         "name": "Hartman Richard",
         "total": 2200.0,
         "employer": "Five Star Dealerships",
@@ -16375,13 +16375,13 @@
         "count": 2
       },
       {
-        "name": "Cattle PAC",
+        "name": "RPEC-PAC",
         "total": 1800.0,
         "employer": "",
         "count": 3
       },
       {
-        "name": "RPEC-PAC",
+        "name": "Cattle PAC",
         "total": 1800.0,
         "employer": "",
         "count": 3
@@ -16424,10 +16424,10 @@
       },
       {
         "category": "Individual",
-        "total": 93820.18
+        "total": 94470.18
       }
     ],
-    "contribution_count": 352
+    "contribution_count": 365
   },
   {
     "id": "34024",
@@ -16476,19 +16476,13 @@
         "count": 3
       },
       {
-        "name": "WA Education Assn PAC / WEA PAC",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
         "name": "SEIU 775 Quality Care Committee",
         "total": 2400.0,
         "employer": "",
         "count": 2
       },
       {
-        "name": "Puyallup Tribe of Indians",
+        "name": "Puget Sound Energy",
         "total": 2400.0,
         "employer": "",
         "count": 2
@@ -16506,7 +16500,13 @@
         "count": 2
       },
       {
-        "name": "Puget Sound Energy",
+        "name": "Puyallup Tribe of Indians",
+        "total": 2400.0,
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "WA Education Assn PAC / WEA PAC",
         "total": 2400.0,
         "employer": "",
         "count": 2
@@ -16613,6 +16613,18 @@
         "count": 4
       },
       {
+        "name": "PUGET SOUND CHAPTER - NECA PAC",
+        "total": 3600.0,
+        "employer": "",
+        "count": 3
+      },
+      {
+        "name": "AVISTA CORP",
+        "total": 3600.0,
+        "employer": "",
+        "count": 3
+      },
+      {
         "name": "WASHINGTON  HOSPITALITY ASSOCIATION",
         "total": 3600.0,
         "employer": "",
@@ -16625,31 +16637,19 @@
         "count": 3
       },
       {
-        "name": "AVISTA CORP",
-        "total": 3600.0,
-        "employer": "",
-        "count": 3
-      },
-      {
-        "name": "PUGET SOUND CHAPTER - NECA PAC",
-        "total": 3600.0,
-        "employer": "",
-        "count": 3
-      },
-      {
         "name": "ALTRIA CLIENT SERVICES LLC",
         "total": 2700.0,
         "employer": "",
         "count": 4
       },
       {
-        "name": "WASHINGTON STATE AUTO DEALERS PAC",
+        "name": "ASSOCIATED GENERAL CONTRACTORS OF WASHINGTON",
         "total": 2400.0,
         "employer": "",
         "count": 2
       },
       {
-        "name": "CHEVRON",
+        "name": "WASHINGTON STATE AUTO DEALERS PAC",
         "total": 2400.0,
         "employer": "",
         "count": 2
@@ -16661,13 +16661,13 @@
         "count": 2
       },
       {
-        "name": "ASSOCIATED GENERAL CONTRACTORS OF WASHINGTON",
+        "name": "DELTA DENTAL",
         "total": 2400.0,
         "employer": "",
         "count": 2
       },
       {
-        "name": "DELTA DENTAL",
+        "name": "CHEVRON",
         "total": 2400.0,
         "employer": "",
         "count": 2
@@ -16691,7 +16691,7 @@
         "count": 2
       },
       {
-        "name": "WASHINGTON FOREST PROTECTION ASSOCIATION",
+        "name": "POTATO PAC",
         "total": 1800.0,
         "employer": "",
         "count": 2
@@ -16703,25 +16703,25 @@
         "count": 2
       },
       {
-        "name": "POTATO PAC",
+        "name": "WASHINGTON FOREST PROTECTION ASSOCIATION",
         "total": 1800.0,
         "employer": "",
         "count": 2
       },
       {
-        "name": "HOSPITALS FOR A HEALTHY FUTURE PAC",
+        "name": "WASHINGTON STATE DENTAL PAC",
         "total": 1200.0,
         "employer": "",
         "count": 1
       },
       {
-        "name": "WASHINGTON OIL MARKETERS ASSOCIATION - PAC FUND",
+        "name": "Aristotle International Inc",
         "total": 1200.0,
         "employer": "",
         "count": 1
       },
       {
-        "name": "ASSOCIATION OF WASHINGTON BUSINESS",
+        "name": "Johnson & Johnson Services Inc",
         "total": 1200.0,
         "employer": "",
         "count": 1
@@ -17084,7 +17084,7 @@
         "count": 2
       },
       {
-        "name": "IBEW LOCAL 77 PAC",
+        "name": "NW REGIONAL COUNCIL OF SMART SSF",
         "total": 4400.0,
         "employer": "",
         "count": 4
@@ -17102,22 +17102,16 @@
         "count": 4
       },
       {
-        "name": "WA EDUCATION ASSOCIATION PAC",
+        "name": "TULALIP TRIBES OF WASHINGTON",
         "total": 4400.0,
         "employer": "",
         "count": 4
       },
       {
-        "name": "WA FEDERATION OF STATE EMPLOYEES SSF",
+        "name": "ANDERSON TRYGVE",
         "total": 4400.0,
         "employer": "",
-        "count": 5
-      },
-      {
-        "name": "JUSTICE FOR ALL PAC",
-        "total": 4400.0,
-        "employer": "",
-        "count": 5
+        "count": 4
       },
       {
         "name": "ANDERSON LYLA",
@@ -17132,28 +17126,28 @@
         "count": 4
       },
       {
-        "name": "ANDERSON TRYGVE",
+        "name": "JUSTICE FOR ALL PAC",
+        "total": 4400.0,
+        "employer": "",
+        "count": 5
+      },
+      {
+        "name": "WA FEDERATION OF STATE EMPLOYEES SSF",
+        "total": 4400.0,
+        "employer": "",
+        "count": 5
+      },
+      {
+        "name": "WA EDUCATION ASSOCIATION PAC",
         "total": 4400.0,
         "employer": "",
         "count": 4
       },
       {
-        "name": "TULALIP TRIBES OF WASHINGTON",
+        "name": "IBEW LOCAL 77 PAC",
         "total": 4400.0,
         "employer": "",
         "count": 4
-      },
-      {
-        "name": "NW REGIONAL COUNCIL OF SMART SSF",
-        "total": 4400.0,
-        "employer": "",
-        "count": 4
-      },
-      {
-        "name": "SEIU LOCAL 925 PUBLIC SERVICE PAC",
-        "total": 3400.0,
-        "employer": "",
-        "count": 3
       },
       {
         "name": "MUCKLESHOOT INDIAN TRIBE",
@@ -17162,7 +17156,13 @@
         "count": 3
       },
       {
-        "name": "SEIU HEALTHCARE 1199NW PAC",
+        "name": "SEIU LOCAL 925 PUBLIC SERVICE PAC",
+        "total": 3400.0,
+        "employer": "",
+        "count": 3
+      },
+      {
+        "name": "IBEW LOCAL 191 COPE",
         "total": 3200.0,
         "employer": "",
         "count": 3
@@ -17174,7 +17174,7 @@
         "count": 3
       },
       {
-        "name": "IBEW LOCAL 191 COPE",
+        "name": "SEIU HEALTHCARE 1199NW PAC",
         "total": 3200.0,
         "employer": "",
         "count": 3
@@ -17579,13 +17579,25 @@
         "count": 4
       },
       {
-        "name": "MUCKELSHOOT INDIAN TRIBE",
+        "name": "WASHINGTON INDIAN GAMING ASSOCIATION",
+        "total": 3400.0,
+        "employer": "",
+        "count": 4
+      },
+      {
+        "name": "ASSOCIATION OF WASHINGTON BUSINESS",
         "total": 3400.0,
         "employer": "",
         "count": 3
       },
       {
-        "name": "CREDIT UNION LEGISLATIVE ACTION FUND",
+        "name": "WASHINGTON ASSOCIATION OF REALTORS",
+        "total": 3400.0,
+        "employer": "",
+        "count": 3
+      },
+      {
+        "name": "MUCKELSHOOT INDIAN TRIBE",
         "total": 3400.0,
         "employer": "",
         "count": 3
@@ -17597,22 +17609,10 @@
         "count": 6
       },
       {
-        "name": "WASHINGTON ASSOCIATION OF REALTORS",
+        "name": "CREDIT UNION LEGISLATIVE ACTION FUND",
         "total": 3400.0,
         "employer": "",
         "count": 3
-      },
-      {
-        "name": "ASSOCIATION OF WASHINGTON BUSINESS",
-        "total": 3400.0,
-        "employer": "",
-        "count": 3
-      },
-      {
-        "name": "WASHINGTON INDIAN GAMING ASSOCIATION",
-        "total": 3400.0,
-        "employer": "",
-        "count": 4
       },
       {
         "name": "SKAGIT COUNTY GOP",
@@ -17621,16 +17621,16 @@
         "count": 4
       },
       {
-        "name": "WA BEVERAGE ASSOCIATION PAC",
-        "total": 3200.0,
-        "employer": "",
-        "count": 3
-      },
-      {
         "name": "WASHINGTON STATE DENTAL PAC",
         "total": 3200.0,
         "employer": "",
         "count": 4
+      },
+      {
+        "name": "WA BEVERAGE ASSOCIATION PAC",
+        "total": 3200.0,
+        "employer": "",
+        "count": 3
       },
       {
         "name": "UNITED HEALTH GROUP",
@@ -18646,13 +18646,13 @@
         "count": 3
       },
       {
-        "name": "Nisqually Indian Tribe",
+        "name": "Perry Justin",
         "total": 2400.0,
-        "employer": "",
+        "employer": "self",
         "count": 2
       },
       {
-        "name": "Port Gamble S'klallam Tribe",
+        "name": "Washington Indian Gaming Association",
         "total": 2400.0,
         "employer": "",
         "count": 2
@@ -18664,37 +18664,19 @@
         "count": 2
       },
       {
-        "name": "Washington Indian Gaming Association",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
-        "name": "Muckleshoot Indian Tribe",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
-        "name": "IBEW Local 77 PAC",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
         "name": "Goldman Addis",
         "total": 2400.0,
         "employer": "",
         "count": 2
       },
       {
-        "name": "Suquamish Indian Tribe",
+        "name": "Grana Paul",
         "total": 2400.0,
-        "employer": "",
+        "employer": "Aurora Solar",
         "count": 2
       },
       {
-        "name": "Washington State Troopers PAC",
+        "name": "Muckleshoot Indian Tribe",
         "total": 2400.0,
         "employer": "",
         "count": 2
@@ -18706,15 +18688,33 @@
         "count": 2
       },
       {
-        "name": "Perry Justin",
+        "name": "Washington State Troopers PAC",
         "total": 2400.0,
-        "employer": "self",
+        "employer": "",
         "count": 2
       },
       {
-        "name": "Grana Paul",
+        "name": "Suquamish Indian Tribe",
         "total": 2400.0,
-        "employer": "Aurora Solar",
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "IBEW Local 77 PAC",
+        "total": 2400.0,
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "Nisqually Indian Tribe",
+        "total": 2400.0,
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "Port Gamble S'klallam Tribe",
+        "total": 2400.0,
+        "employer": "",
         "count": 2
       },
       {
@@ -19260,6 +19260,12 @@
         "count": 5
       },
       {
+        "name": "Service Employees International Union Local (SEIU) 925 Public Service PAC",
+        "total": 2400.0,
+        "employer": "",
+        "count": 2
+      },
+      {
         "name": "SEIU Healthcare 1199 NW",
         "total": 2400.0,
         "employer": "",
@@ -19305,12 +19311,6 @@
         "name": "Suzanne Hittman",
         "total": 2400.0,
         "employer": "Retired",
-        "count": 2
-      },
-      {
-        "name": "Service Employees International Union Local (SEIU) 925 Public Service PAC",
-        "total": 2400.0,
-        "employer": "",
         "count": 2
       },
       {
@@ -19874,15 +19874,15 @@
         "count": 15
       },
       {
-        "name": "Washington Hospitality Assoc PAC",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
         "name": "Connelly John",
         "total": 2400.0,
         "employer": "Connelly Law Offices",
+        "count": 2
+      },
+      {
+        "name": "Washington Hospitality Assoc PAC",
+        "total": 2400.0,
+        "employer": "",
         "count": 2
       },
       {
@@ -19940,24 +19940,6 @@
         "count": 3
       },
       {
-        "name": "WHCA Political Action Committee",
-        "total": 1200.0,
-        "employer": "",
-        "count": 1
-      },
-      {
-        "name": "PS Chapter NECA PAC",
-        "total": 1200.0,
-        "employer": "",
-        "count": 1
-      },
-      {
-        "name": "Sundsmo Candace",
-        "total": 1200.0,
-        "employer": "",
-        "count": 1
-      },
-      {
         "name": "Nisqually Indian Tribe",
         "total": 1200.0,
         "employer": "",
@@ -19977,6 +19959,24 @@
       },
       {
         "name": "Retail Action Council",
+        "total": 1200.0,
+        "employer": "",
+        "count": 1
+      },
+      {
+        "name": "McKinley Connie",
+        "total": 1200.0,
+        "employer": "",
+        "count": 1
+      },
+      {
+        "name": "Washington Society of CPA PAC",
+        "total": 1200.0,
+        "employer": "",
+        "count": 1
+      },
+      {
+        "name": "WA Association of Realtors Political Affairs Council",
         "total": 1200.0,
         "employer": "",
         "count": 1
@@ -20339,15 +20339,15 @@
         "count": 4
       },
       {
-        "name": "SEIU 1199 NW",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
         "name": "Lopez Rebecca",
         "total": 2400.0,
         "employer": "Silver Safari",
+        "count": 2
+      },
+      {
+        "name": "SEIU 1199 NW",
+        "total": 2400.0,
+        "employer": "",
         "count": 2
       },
       {
@@ -20375,49 +20375,13 @@
         "count": 2
       },
       {
-        "name": "Spokane Tribe of Indians",
+        "name": "Kauffman Jo Ann",
         "total": 1200.0,
-        "employer": "",
+        "employer": "Kauffman Associates Inc",
         "count": 1
       },
       {
-        "name": "Washington State Building and Construction Trades council",
-        "total": 1200.0,
-        "employer": "",
-        "count": 1
-      },
-      {
-        "name": "Win With Women PAC",
-        "total": 1200.0,
-        "employer": "",
-        "count": 1
-      },
-      {
-        "name": "Harry Truman Fund",
-        "total": 1200.0,
-        "employer": "",
-        "count": 1
-      },
-      {
-        "name": "Hospitals for a Healthy Future PAC",
-        "total": 1200.0,
-        "employer": "",
-        "count": 1
-      },
-      {
-        "name": "Perry Ileia",
-        "total": 1200.0,
-        "employer": "Steno",
-        "count": 1
-      },
-      {
-        "name": "RPEC - PAC",
-        "total": 1200.0,
-        "employer": "",
-        "count": 1
-      },
-      {
-        "name": "Washington Federation of State Employees",
+        "name": "WEA PAC",
         "total": 1200.0,
         "employer": "",
         "count": 1
@@ -20429,19 +20393,55 @@
         "count": 1
       },
       {
-        "name": "WEA PAC",
+        "name": "Washington Federation of State Employees",
         "total": 1200.0,
         "employer": "",
         "count": 1
       },
       {
-        "name": "Kauffman Jo Ann",
+        "name": "RPEC - PAC",
         "total": 1200.0,
-        "employer": "Kauffman Associates Inc",
+        "employer": "",
         "count": 1
       },
       {
-        "name": "Justice for All PAC",
+        "name": "Perry Ileia",
+        "total": 1200.0,
+        "employer": "Steno",
+        "count": 1
+      },
+      {
+        "name": "Hospitals for a Healthy Future PAC",
+        "total": 1200.0,
+        "employer": "",
+        "count": 1
+      },
+      {
+        "name": "Harry Truman Fund",
+        "total": 1200.0,
+        "employer": "",
+        "count": 1
+      },
+      {
+        "name": "Win With Women PAC",
+        "total": 1200.0,
+        "employer": "",
+        "count": 1
+      },
+      {
+        "name": "Washington State Building and Construction Trades council",
+        "total": 1200.0,
+        "employer": "",
+        "count": 1
+      },
+      {
+        "name": "Spokane Tribe of Indians",
+        "total": 1200.0,
+        "employer": "",
+        "count": 1
+      },
+      {
+        "name": "Washington Society of CPAs PAC",
         "total": 1200.0,
         "employer": "",
         "count": 1
@@ -20953,6 +20953,42 @@
         "count": 2
       },
       {
+        "name": "Hebein Mark",
+        "total": 2400.0,
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "Hebein Donna",
+        "total": 2400.0,
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "Associated General Contractors of Washington's BUILD PAC",
+        "total": 2400.0,
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "Washington Hospitality Association PAC",
+        "total": 2400.0,
+        "employer": "",
+        "count": 2
+      },
+      {
+        "name": "Atherton Michael",
+        "total": 2400.0,
+        "employer": "Glen Oaks Hospital",
+        "count": 2
+      },
+      {
+        "name": "Gaddis Faye",
+        "total": 2400.0,
+        "employer": "",
+        "count": 2
+      },
+      {
         "name": "Delta Dental of Washington",
         "total": 2400.0,
         "employer": "",
@@ -20971,42 +21007,6 @@
         "count": 2
       },
       {
-        "name": "Hebein Mark",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
-        "name": "Hebein Donna",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
-        "name": "Atherton Michael",
-        "total": 2400.0,
-        "employer": "Glen Oaks Hospital",
-        "count": 2
-      },
-      {
-        "name": "Gaddis Faye",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
-        "name": "Associated General Contractors of Washington's BUILD PAC",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
-        "name": "Washington Hospitality Association PAC",
-        "total": 2400.0,
-        "employer": "",
-        "count": 2
-      },
-      {
         "name": "Phair Michael",
         "total": 1250.31,
         "employer": "EJ Poultry",
@@ -21019,43 +21019,43 @@
         "count": 3
       },
       {
-        "name": "Puget Sound Energy",
+        "name": "Hospitals for a Healthy Future PAC",
         "total": 1200.0,
         "employer": "",
         "count": 1
       },
       {
-        "name": "Washington State Dental PAC",
+        "name": "Kemper Holdings LLC",
         "total": 1200.0,
         "employer": "",
         "count": 1
       },
       {
-        "name": "Washington State Auto Dealers PAC",
+        "name": "McDonald Kirk",
+        "total": 1200.0,
+        "employer": "Allied Restoration, Inc.",
+        "count": 1
+      },
+      {
+        "name": "Epic Mildred LLC",
         "total": 1200.0,
         "employer": "",
         "count": 1
       },
       {
-        "name": "Hopke Corwyn",
-        "total": 1200.0,
-        "employer": "Self Employed",
-        "count": 1
-      },
-      {
-        "name": "Washington Association of Realtors PAC",
+        "name": "Weyerhaeuser",
         "total": 1200.0,
         "employer": "",
         "count": 1
       },
       {
-        "name": "Washington Beer & Wine Distributors Association",
+        "name": "Amazon.com Services LLC",
         "total": 1200.0,
         "employer": "",
         "count": 1
       },
       {
-        "name": "Avista Corp.",
+        "name": "NFIB Washington PAC",
         "total": 1200.0,
         "employer": "",
         "count": 1
@@ -21138,13 +21138,19 @@
         "count": 2
       },
       {
-        "name": "Kalispel Tribal Economic Authority",
+        "name": "Vaagen Bros. Lumber, Inc.",
         "total": 2400.0,
         "employer": "",
         "count": 2
       },
       {
-        "name": "Vaagen Bros. Lumber, Inc.",
+        "name": "Rowley George",
+        "total": 2400.0,
+        "employer": "Rowley Properties Inc.",
+        "count": 3
+      },
+      {
+        "name": "Kalispel Tribal Economic Authority",
         "total": 2400.0,
         "employer": "",
         "count": 2
@@ -21156,69 +21162,63 @@
         "count": 2
       },
       {
-        "name": "Rowley George",
-        "total": 2400.0,
-        "employer": "Rowley Properties Inc.",
-        "count": 3
-      },
-      {
         "name": "Washington Affordable Housing Council",
         "total": 1450.0,
         "employer": "",
         "count": 2
       },
       {
-        "name": "NFIB WA PAC",
+        "name": "Build East PAC",
         "total": 1200.0,
         "employer": "",
         "count": 1
       },
       {
-        "name": "WHCA PAC",
+        "name": "Amazon",
         "total": 1200.0,
         "employer": "",
         "count": 1
       },
       {
-        "name": "Rental Houseing Association of WA",
+        "name": "Washington Electric Cooperative PAC",
         "total": 1200.0,
         "employer": "",
         "count": 1
       },
       {
-        "name": "Avista Corp",
+        "name": "West 117 LLC",
         "total": 1200.0,
         "employer": "",
         "count": 1
       },
       {
-        "name": "Highline Grain Growers, Inc.",
+        "name": "Broadband Communications Assoc of Washington PAC",
         "total": 1200.0,
         "employer": "",
         "count": 1
       },
       {
-        "name": "Washington Beer & Wine Distributors Association",
+        "name": "Puget Sound Energy",
         "total": 1200.0,
         "employer": "",
         "count": 1
       },
       {
-        "name": "Washington State Auto Dealers PAC",
+        "name": "Asmus Tracey",
         "total": 1200.0,
-        "employer": "",
-        "count": 1
-      },
-      {
-        "name": "IUPAT Political Action Together Legislative Education Committee",
-        "total": 1200.0,
-        "employer": "",
+        "employer": "Gurr Contracting",
         "count": 1
       },
       {
         "name": "Asmus Ronald",
         "total": 1200.0,
         "employer": "Gurr Contracting",
+        "count": 1
+      },
+      {
+        "name": "IUPAT Political Action Together Legislative Education Committee",
+        "total": 1200.0,
+        "employer": "",
         "count": 1
       }
     ],
@@ -21719,7 +21719,7 @@
     "critical_bills": 0,
     "high_bills": 0,
     "avg_threat_score": 0,
-    "total_raised": 51907.630000000005,
+    "total_raised": 51957.630000000005,
     "top_donors": [
       {
         "name": "Pierce County Republican Party",
@@ -21771,9 +21771,9 @@
       },
       {
         "name": "SMALL CONTRIBUTIONS",
-        "total": 1420.0,
+        "total": 1470.0,
         "employer": "",
-        "count": 13
+        "count": 14
       },
       {
         "name": "WA Beverage Association PAC",
@@ -21800,12 +21800,6 @@
         "count": 1
       },
       {
-        "name": "Marshal Jessica",
-        "total": 1000.0,
-        "employer": "self",
-        "count": 1
-      },
-      {
         "name": "Tooker Home Group",
         "total": 1000.0,
         "employer": "",
@@ -21815,6 +21809,12 @@
         "name": "Esch Wade",
         "total": 1000.0,
         "employer": "",
+        "count": 1
+      },
+      {
+        "name": "Marshal Jessica",
+        "total": 1000.0,
+        "employer": "self",
         "count": 1
       },
       {
@@ -21845,14 +21845,14 @@
     "donor_categories": [
       {
         "category": "Individual",
-        "total": 34382.63
+        "total": 34432.63
       },
       {
         "category": "Organization",
         "total": 17525.0
       }
     ],
-    "contribution_count": 111
+    "contribution_count": 112
   },
   {
     "id": "31537",
@@ -21985,15 +21985,15 @@
         "count": 2
       },
       {
-        "name": "Heritage Properties",
+        "name": "Spokane Police Guild PAC",
         "total": 500.0,
         "employer": "",
         "count": 1
       },
       {
-        "name": "Tobacco World",
+        "name": "Colliton Kelly",
         "total": 500.0,
-        "employer": "",
+        "employer": "Retired",
         "count": 1
       }
     ],

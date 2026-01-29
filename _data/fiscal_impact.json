@@ -1,20 +1,20 @@
 {
   "summary": {
-    "total_bills": 3241,
-    "fiscal_bills": 611,
-    "percentage": 18.9
+    "total_bills": 3256,
+    "fiscal_bills": 619,
+    "percentage": 19.0
   },
   "by_category": {
-    "New Tax/Fee": 174,
-    "New Spending": 379,
+    "New Tax/Fee": 175,
+    "New Spending": 387,
     "New Debt": 0,
-    "Tax Relief": 55,
+    "Tax Relief": 54,
     "Cost Savings": 3
   },
   "by_magnitude": {
     "High": 9,
     "Medium": 1,
-    "Low": 601
+    "Low": 609
   },
   "categories": [
     {
@@ -245,6 +245,366 @@
       "ai_summary": ""
     },
     {
+      "bill_id": 2068427,
+      "bill_number": "HB 2334",
+      "title": "Adjusting the price of a cash transaction to eliminate the need for pennies.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2071991,
+      "bill_number": "HB 2431",
+      "title": "Increasing the maximum annual limit for regularly scheduled fundraising activities for the nonprofit public assembly halls and meeting places property tax exemption.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2056557,
+      "bill_number": "HB 2089",
+      "title": "Supporting wildfire mitigation by modifying RCW 82.04.29005, concerning taxes on loan interest.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2064914,
+      "bill_number": "HB 2236",
+      "title": "Concerning the housing finance commission.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2065245,
+      "bill_number": "HB 2255",
+      "title": "Concerning litigation finance.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2072026,
+      "bill_number": "HB 2443",
+      "title": "Creating the armed forces reserve postsecondary education grant.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2085180,
+      "bill_number": "HB 2567",
+      "title": "Concerning the Washington college grant and college bound scholarship program for students attending private four-year not-for-profit institutions of higher education in Washington.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2086108,
+      "bill_number": "HB 2584",
+      "title": "Providing a sales and use tax exemption for qualifying farm machinery and equipment.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2087099,
+      "bill_number": "HB 2610",
+      "title": "Ensuring nonprofit housing providers qualify for a property tax exemption when the property is temporarily used for certain community purposes other than affordable housing.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2057467,
+      "bill_number": "SB 5849",
+      "title": "Making financial education a graduation requirement in Washington state.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2071605,
+      "bill_number": "SB 6079",
+      "title": "Creating a wildfire mitigation grant program.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2057326,
+      "bill_number": "HB 2104",
+      "title": "Concerning aviation assurance funding in response to wildland fires.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2069780,
+      "bill_number": "HB 2367",
+      "title": "Eliminating preferential treatment related to a coal-fired electric generating plant.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2073384,
+      "bill_number": "HB 2458",
+      "title": "Expanding access to the Washington college grant to students enrolled in eligible postsecondary nondegree credential programs.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2083191,
+      "bill_number": "HB 2551",
+      "title": "Maintaining the financial solvency of school districts.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2086101,
+      "bill_number": "HB 2579",
+      "title": "Promoting and funding public media and digital equity.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2086087,
+      "bill_number": "HB 2594",
+      "title": "Ensuring that unhoused children and youths in Washington have equal access to free, appropriate public education.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 1929252,
+      "bill_number": "SB 5379",
+      "title": "Granting interest arbitration to certain parks and recreation commission employees.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 1972782,
+      "bill_number": "SB 5763",
+      "title": "Concerning the law enforcement aviation support grant program.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2057240,
+      "bill_number": "SB 5834",
+      "title": "Concerning payment of expenses from the earnings of retirement system trust funds.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2059605,
+      "bill_number": "SB 5905",
+      "title": "Concerning membership in the public employees' retirement system for port workers who participate in a federal railroad retirement plan, a union-sponsored defined benefit retirement plan, or another employer-funded private pension plan.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2060244,
+      "bill_number": "SB 5918",
+      "title": "Providing funding for school materials, supplies, and operating costs.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2065615,
+      "bill_number": "SB 5963",
+      "title": "Modifying funding for the passport to careers program and eligibility for the Washington college grant.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2066338,
+      "bill_number": "SB 5992",
+      "title": "Creating the youth development fund account to increase access to positive youth development programs.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2069943,
+      "bill_number": "SB 6065",
+      "title": "Concerning school district transportation vehicle funds.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2071563,
+      "bill_number": "SB 6105",
+      "title": "Raising the exemption from garnishment of earnings for judgments arising from medical debt.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2087408,
+      "bill_number": "SB 6252",
+      "title": "Adding certain students at certain community and technical colleges to the passengers that must be allowed to ride transit for free under the transit support grant program.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 1903879,
+      "bill_number": "HB 1170",
+      "title": "Informing users when content is developed or modified by artificial intelligence.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 1918743,
+      "bill_number": "HB 1317",
+      "title": "Concerning persons serving long sentences for offenses committed prior to reaching 21 years of age.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 1938802,
+      "bill_number": "HB 1570",
+      "title": "Concerning collective bargaining for certain employees who are enrolled in academic programs at public institutions of higher education.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 1944851,
+      "bill_number": "HB 1710",
+      "title": "Concerning compliance with the Washington voting rights act of 2018.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 1946592,
+      "bill_number": "HB 1750",
+      "title": "Creating guidelines for voter suppression and vote dilution claims under the Washington voting rights act.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 1952458,
+      "bill_number": "HB 1834",
+      "title": "Protecting Washington children online.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2058079,
+      "bill_number": "HB 2132",
+      "title": "Concerning applications for state financial aid.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2071989,
+      "bill_number": "HB 2403",
+      "title": "Modifying provisions relating to the crime of failure to register.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2071981,
+      "bill_number": "HB 2441",
+      "title": "Concerning medical insurance premium reimbursements for surviving spouses of line of duty deaths.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2085925,
+      "bill_number": "HB 2587",
+      "title": "Establishing a pilot program to advance funds to nonprofits to support grant performance.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "critical",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2065650,
+      "bill_number": "SB 5971",
+      "title": "Establishing a green fertilizer incentive program to support the production and adoption of low-carbon nitrogen fertilizer in Washington state.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2067961,
+      "bill_number": "SB 6018",
+      "title": "Concerning the housing finance commission.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2067516,
+      "bill_number": "SB 6028",
+      "title": "Establishing a revolving loan fund for mixed-income affordable homeownership development.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
       "bill_id": 1979916,
       "bill_number": "HB 2018",
       "title": "Concerning solid waste and establishing the local government solid waste assistance account.",
@@ -266,15 +626,6 @@
       "bill_id": 2073426,
       "bill_number": "HB 2487",
       "title": "Concerning taxes imposed on insurers operating within the state.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2086101,
-      "bill_number": "HB 2579",
-      "title": "Promoting and funding public media and digital equity.",
       "category": "New Spending",
       "magnitude": "Low",
       "threat_level": "high",
@@ -398,15 +749,6 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2073894,
-      "bill_number": "SB 6149",
-      "title": "Concerning the definition of \"rural county\" for purposes of public facilities funding.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 2085124,
       "bill_number": "SB 6209",
       "title": "Concerning financial aid awards for students attending private four-year institutions of higher education.",
@@ -461,6 +803,24 @@
       "ai_summary": ""
     },
     {
+      "bill_id": 2057374,
+      "bill_number": "HB 2105",
+      "title": "Concerning immigrant worker protections.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "moderate",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2058892,
+      "bill_number": "HB 2145",
+      "title": "Protecting patient access to discounted medications and health care services through Washington's health care safety net by preventing manufacturer limitations on the 340B drug pricing program.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
       "bill_id": 2065226,
       "bill_number": "HB 2254",
       "title": "Providing flexibility in the partnership access line assessment to cover administrative costs.",
@@ -473,15 +833,6 @@
       "bill_id": 2069695,
       "bill_number": "HB 2385",
       "title": "Concerning the medicaid access program.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2073384,
-      "bill_number": "HB 2458",
-      "title": "Expanding access to the Washington college grant to students enrolled in eligible postsecondary nondegree credential programs.",
       "category": "New Spending",
       "magnitude": "Low",
       "threat_level": "high",
@@ -509,6 +860,69 @@
       "bill_id": 2085186,
       "bill_number": "HB 2565",
       "title": "Concerning the investment of gifts, grants, conveyances, bequests, and devises of the University of Washington.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2095160,
+      "bill_number": "HB 2688",
+      "title": "Providing adjustments to the early support for infants and toddlers program.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2095265,
+      "bill_number": "HB 2689",
+      "title": "Concerning the working connections child care program.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2095252,
+      "bill_number": "HB 2691",
+      "title": "Adjusting the state apportionment schedule to schools to mitigate cash flow issues.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "moderate",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2056502,
+      "bill_number": "SB 5825",
+      "title": "Authorizing the Washington state leadership board to solicit gifts, grants, and endowments from public or private sources.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2060529,
+      "bill_number": "SB 5919",
+      "title": "Encouraging fire districts and insurance providers to develop voluntary incentives to promote best practices.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "moderate",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2071889,
+      "bill_number": "SB 6103",
+      "title": "Making payments for services provided by a rural emergency hospital subject to appropriation.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "moderate",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2073894,
+      "bill_number": "SB 6149",
+      "title": "Concerning the definition of \"rural county\" for purposes of public facilities funding.",
       "category": "New Spending",
       "magnitude": "Low",
       "threat_level": "high",
@@ -659,15 +1073,6 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2064914,
-      "bill_number": "HB 2236",
-      "title": "Concerning the housing finance commission.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 2065311,
       "bill_number": "HB 2248",
       "title": "Concerning corporate filings and other documents processed by the secretary of state's corporations and charities division.",
@@ -713,15 +1118,6 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2069780,
-      "bill_number": "HB 2367",
-      "title": "Eliminating preferential treatment related to a coal-fired electric generating plant.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 2071971,
       "bill_number": "HB 2418",
       "title": "Concerning permit review processes.",
@@ -758,12 +1154,12 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2086087,
-      "bill_number": "HB 2594",
-      "title": "Ensuring that unhoused children and youths in Washington have equal access to free, appropriate public education.",
+      "bill_id": 2093793,
+      "bill_number": "HB 2672",
+      "title": "Requiring certain disclosures from private entities that receive state funding.",
       "category": "New Spending",
       "magnitude": "Low",
-      "threat_level": "high",
+      "threat_level": "moderate",
       "ai_summary": ""
     },
     {
@@ -821,24 +1217,6 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 1929252,
-      "bill_number": "SB 5379",
-      "title": "Granting interest arbitration to certain parks and recreation commission employees.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 1972782,
-      "bill_number": "SB 5763",
-      "title": "Concerning the law enforcement aviation support grant program.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 2059316,
       "bill_number": "SB 5893",
       "title": "Addressing appropriations for long-term forest health and wildfire reduction.",
@@ -866,30 +1244,12 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 1903879,
-      "bill_number": "HB 1170",
-      "title": "Informing users when content is developed or modified by artificial intelligence.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 1909791,
       "bill_number": "HB 1228",
       "title": "Concerning toxicology testing by certified or accredited laboratories.",
       "category": "New Spending",
       "magnitude": "Low",
       "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 1938802,
-      "bill_number": "HB 1570",
-      "title": "Concerning collective bargaining for certain employees who are enrolled in academic programs at public institutions of higher education.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
       "ai_summary": ""
     },
     {
@@ -902,30 +1262,12 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 1952458,
-      "bill_number": "HB 1834",
-      "title": "Protecting Washington children online.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 2083301,
       "bill_number": "HB 2527",
       "title": "Increasing opportunities for tenants to own homes under eventual tenant ownership programs established under the federal low-income housing tax credit program.",
       "category": "New Spending",
       "magnitude": "Low",
       "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2083191,
-      "bill_number": "HB 2551",
-      "title": "Maintaining the financial solvency of school districts.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
       "ai_summary": ""
     },
     {
@@ -1010,42 +1352,6 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2056557,
-      "bill_number": "HB 2089",
-      "title": "Supporting wildfire mitigation by modifying RCW 82.04.29005, concerning taxes on loan interest.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2057326,
-      "bill_number": "HB 2104",
-      "title": "Concerning aviation assurance funding in response to wildland fires.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2058079,
-      "bill_number": "HB 2132",
-      "title": "Concerning applications for state financial aid.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2071989,
-      "bill_number": "HB 2403",
-      "title": "Modifying provisions relating to the crime of failure to register.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 2091054,
       "bill_number": "HB 2647",
       "title": "Establishing accountability requirements for homeless housing grant programs.",
@@ -1073,15 +1379,6 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2065615,
-      "bill_number": "SB 5963",
-      "title": "Modifying funding for the passport to careers program and eligibility for the Washington college grant.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 2066227,
       "bill_number": "SB 5993",
       "title": "Revised for 1st substitute: Concerning lowering the interest rate for medical debt.",
@@ -1100,24 +1397,6 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2071889,
-      "bill_number": "SB 6103",
-      "title": "Making payments for services provided by a rural emergency hospital subject to appropriation.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 1944851,
-      "bill_number": "HB 1710",
-      "title": "Concerning compliance with the Washington voting rights act of 2018.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 2068816,
       "bill_number": "HB 2326",
       "title": "Concerning emergency medical service levies.",
@@ -1130,15 +1409,6 @@
       "bill_id": 2068783,
       "bill_number": "HB 2330",
       "title": "Establishing a prioritization process for capital funding for state campus district energy systems.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2068427,
-      "bill_number": "HB 2334",
-      "title": "Adjusting the price of a cash transaction to eliminate the need for pennies.",
       "category": "New Spending",
       "magnitude": "Low",
       "threat_level": "high",
@@ -1190,66 +1460,12 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2060529,
-      "bill_number": "SB 5919",
-      "title": "Encouraging fire districts and insurance providers to develop voluntary incentives to promote best practices.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2065650,
-      "bill_number": "SB 5971",
-      "title": "Establishing a green fertilizer incentive program to support the production and adoption of low-carbon nitrogen fertilizer in Washington state.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2067961,
-      "bill_number": "SB 6018",
-      "title": "Concerning the housing finance commission.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 2067944,
       "bill_number": "SB 6027",
       "title": "Revised for 1st substitute: Modifying certain funding and exemptions related to providing and maintaining affordable housing and related services.",
       "category": "New Spending",
       "magnitude": "Low",
       "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2067516,
-      "bill_number": "SB 6028",
-      "title": "Establishing a revolving loan fund for mixed-income affordable homeownership development.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2069943,
-      "bill_number": "SB 6065",
-      "title": "Concerning school district transportation vehicle funds.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2071605,
-      "bill_number": "SB 6079",
-      "title": "Creating a wildfire mitigation grant program.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
       "ai_summary": ""
     },
     {
@@ -1271,36 +1487,9 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2065245,
-      "bill_number": "HB 2255",
-      "title": "Concerning litigation finance.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2071981,
-      "bill_number": "HB 2441",
-      "title": "Concerning medical insurance premium reimbursements for surviving spouses of line of duty deaths.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 2087398,
       "bill_number": "HB 2607",
       "title": "Concerning child care rate regions.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2087099,
-      "bill_number": "HB 2610",
-      "title": "Ensuring nonprofit housing providers qualify for a property tax exemption when the property is temporarily used for certain community purposes other than affordable housing.",
       "category": "New Spending",
       "magnitude": "Low",
       "threat_level": "moderate",
@@ -1325,33 +1514,6 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2060244,
-      "bill_number": "SB 5918",
-      "title": "Providing funding for school materials, supplies, and operating costs.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2066338,
-      "bill_number": "SB 5992",
-      "title": "Creating the youth development fund account to increase access to positive youth development programs.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2087408,
-      "bill_number": "SB 6252",
-      "title": "Adding certain students at certain community and technical colleges to the passengers that must be allowed to ride transit for free under the transit support grant program.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 2057236,
       "bill_number": "HB 2102",
       "title": "Concerning legal financial obligations.",
@@ -1367,42 +1529,6 @@
       "category": "New Spending",
       "magnitude": "Low",
       "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2086108,
-      "bill_number": "HB 2584",
-      "title": "Providing a sales and use tax exemption for qualifying farm machinery and equipment.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2085925,
-      "bill_number": "HB 2587",
-      "title": "Establishing a pilot program to advance funds to nonprofits to support grant performance.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "critical",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2057240,
-      "bill_number": "SB 5834",
-      "title": "Concerning payment of expenses from the earnings of retirement system trust funds.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2059605,
-      "bill_number": "SB 5905",
-      "title": "Concerning membership in the public employees' retirement system for port workers who participate in a federal railroad retirement plan, a union-sponsored defined benefit retirement plan, or another employer-funded private pension plan.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
       "ai_summary": ""
     },
     {
@@ -1442,15 +1568,6 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2085180,
-      "bill_number": "HB 2567",
-      "title": "Concerning the Washington college grant and college bound scholarship program for students attending private four-year not-for-profit institutions of higher education in Washington.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 2085134,
       "bill_number": "HB 2569",
       "title": "Clarifying eligibility for the tiered multiplier and alternative lump sum benefits in the law enforcement officers and firefighters' retirement system plan 2.",
@@ -1463,15 +1580,6 @@
       "bill_id": 1958261,
       "bill_number": "SB 5690",
       "title": "Revised for 1st substitute: Concerning actions of the department of transportation to notify utility owners of projects and seek federal funding for utility relocation costs.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2056502,
-      "bill_number": "SB 5825",
-      "title": "Authorizing the Washington state leadership board to solicit gifts, grants, and endowments from public or private sources.",
       "category": "New Spending",
       "magnitude": "Low",
       "threat_level": "high",
@@ -1640,24 +1748,6 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2071991,
-      "bill_number": "HB 2431",
-      "title": "Increasing the maximum annual limit for regularly scheduled fundraising activities for the nonprofit public assembly halls and meeting places property tax exemption.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2072026,
-      "bill_number": "HB 2443",
-      "title": "Creating the armed forces reserve postsecondary education grant.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 2071986,
       "bill_number": "HB 2444",
       "title": "Requiring Washington state's participation in the federal tax credit program for contributions of individuals to scholarship granting organizations.",
@@ -1697,15 +1787,6 @@
       "bill_id": 2067808,
       "bill_number": "SB 6005",
       "title": "Making supplemental transportation appropriations for the 2025-2027 fiscal biennium.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2071563,
-      "bill_number": "SB 6105",
-      "title": "Raising the exemption from garnishment of earnings for judgments arising from medical debt.",
       "category": "New Spending",
       "magnitude": "Low",
       "threat_level": "high",
@@ -1940,15 +2021,6 @@
       "bill_id": 1918674,
       "bill_number": "HB 1310",
       "title": "Concerning special education funding.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 1918743,
-      "bill_number": "HB 1317",
-      "title": "Concerning persons serving long sentences for offenses committed prior to reaching 21 years of age.",
       "category": "New Spending",
       "magnitude": "Low",
       "threat_level": "moderate",
@@ -2297,15 +2369,6 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 1946592,
-      "bill_number": "HB 1750",
-      "title": "Creating guidelines for voter suppression and vote dilution claims under the Washington voting rights act.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 1949252,
       "bill_number": "HB 1763",
       "title": "Providing state funding for essential affordable housing programs.",
@@ -2429,6 +2492,15 @@
       "category": "New Spending",
       "magnitude": "Low",
       "threat_level": "low",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 1960738,
+      "bill_number": "HB 1896",
+      "title": "Increasing local law enforcement officers by authorizing a local sales and use tax credited against the state portion to hire additional officers and increasing the number of basic law enforcement courses offered by the criminal justice training commission.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "moderate",
       "ai_summary": ""
     },
     {
@@ -3278,15 +3350,6 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2057467,
-      "bill_number": "SB 5849",
-      "title": "Making financial education a graduation requirement in Washington state.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 2060966,
       "bill_number": "SB 5939",
       "title": "Creating the Washington is simply unaffordable fund.",
@@ -3593,10 +3656,118 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2093793,
-      "bill_number": "HB 2672",
-      "title": "Requiring certain disclosures from private entities that receive state funding.",
+      "bill_id": 2100777,
+      "bill_number": "HB 2705",
+      "title": "Concerning the use of campaign and surplus funds in responding to ethics complaints.",
       "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "moderate",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2100453,
+      "bill_number": "HJM4014",
+      "title": "Requesting a federal investigation of allegations of fraud in certain taxpayer funded programs.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2090854,
+      "bill_number": "SB 6294",
+      "title": "Providing local governments tax resources and fund flexibility.",
+      "category": "New Tax/Fee",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 1975786,
+      "bill_number": "HB 2006",
+      "title": "Extending the deadline for a rural county collecting the sales and use tax for economic development purposes to designate industrial land banks under the growth management act.",
+      "category": "New Tax/Fee",
+      "magnitude": "Low",
+      "threat_level": "moderate",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2061009,
+      "bill_number": "HB 2194",
+      "title": "Concerning sales and use tax for cultural access programs.",
+      "category": "New Tax/Fee",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2089269,
+      "bill_number": "HB 2615",
+      "title": "Codifying the voluntary disclosure tax program and authorizing temporary tax amnesty.",
+      "category": "New Tax/Fee",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2089336,
+      "bill_number": "HB 2626",
+      "title": "Increasing the insurance premium tax on certain health insurance providers.",
+      "category": "New Tax/Fee",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2090873,
+      "bill_number": "HB 2650",
+      "title": "Concerning notifications and effective dates for department of revenue administration of certain excise taxes.",
+      "category": "New Tax/Fee",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2056961,
+      "bill_number": "SB 5832",
+      "title": "Updating the arbitration fee collected for the new motor vehicle arbitration account.",
+      "category": "New Tax/Fee",
+      "magnitude": "Low",
+      "threat_level": "moderate",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2066169,
+      "bill_number": "SB 5988",
+      "title": "Establishing fee authority for accreditation services provided to opioid treatment programs by the department of health.",
+      "category": "New Tax/Fee",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2066160,
+      "bill_number": "SB 5994",
+      "title": "Preserving timber tax distributions for school districts with recent school district levy failures.",
+      "category": "New Tax/Fee",
+      "magnitude": "Low",
+      "threat_level": "moderate",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2059005,
+      "bill_number": "SB 5884",
+      "title": "Expanding the limited sales and use tax incentive program to encourage redevelopment of underutilized property.",
+      "category": "New Tax/Fee",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2085108,
+      "bill_number": "SB 6211",
+      "title": "Creating uniformity for the process by which cities planning under the growth management act implement real estate excise taxes.",
+      "category": "New Tax/Fee",
       "magnitude": "Low",
       "threat_level": "moderate",
       "ai_summary": ""
@@ -3701,6 +3872,42 @@
       "ai_summary": ""
     },
     {
+      "bill_id": 2095043,
+      "bill_number": "HB 2697",
+      "title": "Expanding the eligibility for historic preservation property tax special valuation.",
+      "category": "New Tax/Fee",
+      "magnitude": "Low",
+      "threat_level": "moderate",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2058768,
+      "bill_number": "SB 5877",
+      "title": "Making a technical correction to the surcharges authorized for certified anesthesiologist assistants.",
+      "category": "New Tax/Fee",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2060974,
+      "bill_number": "SB 5938",
+      "title": "Concerning the foreclosure prevention fee.",
+      "category": "New Tax/Fee",
+      "magnitude": "Low",
+      "threat_level": "moderate",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2071724,
+      "bill_number": "SB 6102",
+      "title": "Aligning the quality assurance fee for the ambulance transport fund with federal regulations.",
+      "category": "New Tax/Fee",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
       "bill_id": 2060450,
       "bill_number": "HB 2175",
       "title": "Exempting providers of free durable medical equipment from retail sales and use tax for certain items.",
@@ -3737,39 +3944,12 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2085108,
-      "bill_number": "SB 6211",
-      "title": "Creating uniformity for the process by which cities planning under the growth management act implement real estate excise taxes.",
-      "category": "New Tax/Fee",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 2086074,
       "bill_number": "SB 6240",
       "title": "Allocating a portion of hazardous substance tax revenues derived from aviation fuel to aircraft noise and air quality mitigation.",
       "category": "New Tax/Fee",
       "magnitude": "Low",
       "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2061009,
-      "bill_number": "HB 2194",
-      "title": "Concerning sales and use tax for cultural access programs.",
-      "category": "New Tax/Fee",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2090873,
-      "bill_number": "HB 2650",
-      "title": "Concerning notifications and effective dates for department of revenue administration of certain excise taxes.",
-      "category": "New Tax/Fee",
-      "magnitude": "Low",
-      "threat_level": "high",
       "ai_summary": ""
     },
     {
@@ -3791,24 +3971,6 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2071724,
-      "bill_number": "SB 6102",
-      "title": "Aligning the quality assurance fee for the ambulance transport fund with federal regulations.",
-      "category": "New Tax/Fee",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2090854,
-      "bill_number": "SB 6294",
-      "title": "Providing local governments tax resources and fund flexibility.",
-      "category": "New Tax/Fee",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 2091089,
       "bill_number": "SB 6297",
       "title": "Making temporary staffing services provided to nonprofit behavioral health entities exempt from retail sales tax.",
@@ -3827,15 +3989,6 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2089269,
-      "bill_number": "HB 2615",
-      "title": "Codifying the voluntary disclosure tax program and authorizing temporary tax amnesty.",
-      "category": "New Tax/Fee",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 2089348,
       "bill_number": "HB 2621",
       "title": "Concerning property tax reform.",
@@ -3845,36 +3998,9 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2089336,
-      "bill_number": "HB 2626",
-      "title": "Increasing the insurance premium tax on certain health insurance providers.",
-      "category": "New Tax/Fee",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 2057431,
       "bill_number": "SB 5857",
       "title": "Concerning architectural and engineering fee funding assistance limits for school district construction and modernization projects.",
-      "category": "New Tax/Fee",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2058768,
-      "bill_number": "SB 5877",
-      "title": "Making a technical correction to the surcharges authorized for certified anesthesiologist assistants.",
-      "category": "New Tax/Fee",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2059005,
-      "bill_number": "SB 5884",
-      "title": "Expanding the limited sales and use tax incentive program to encourage redevelopment of underutilized property.",
       "category": "New Tax/Fee",
       "magnitude": "Low",
       "threat_level": "high",
@@ -3908,54 +4034,9 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 1975786,
-      "bill_number": "HB 2006",
-      "title": "Extending the deadline for a rural county collecting the sales and use tax for economic development purposes to designate industrial land banks under the growth management act.",
-      "category": "New Tax/Fee",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 2086005,
       "bill_number": "HB 2583",
       "title": "Concerning authority to impose local excise taxes on lodging.",
-      "category": "New Tax/Fee",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2056961,
-      "bill_number": "SB 5832",
-      "title": "Updating the arbitration fee collected for the new motor vehicle arbitration account.",
-      "category": "New Tax/Fee",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2060974,
-      "bill_number": "SB 5938",
-      "title": "Concerning the foreclosure prevention fee.",
-      "category": "New Tax/Fee",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2066169,
-      "bill_number": "SB 5988",
-      "title": "Establishing fee authority for accreditation services provided to opioid treatment programs by the department of health.",
-      "category": "New Tax/Fee",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2066160,
-      "bill_number": "SB 5994",
-      "title": "Preserving timber tax distributions for school districts with recent school district levy failures.",
       "category": "New Tax/Fee",
       "magnitude": "Low",
       "threat_level": "moderate",
@@ -5123,10 +5204,19 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2095043,
-      "bill_number": "HB 2697",
-      "title": "Expanding the eligibility for historic preservation property tax special valuation.",
+      "bill_id": 2100670,
+      "bill_number": "SB 6328",
+      "title": "Concerning the cannabis excise tax.",
       "category": "New Tax/Fee",
+      "magnitude": "Low",
+      "threat_level": "moderate",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2087443,
+      "bill_number": "SB 6256",
+      "title": "Concerning tax exemptions for unoccupied property used for affordable housing that is owned by a nonprofit entity.",
+      "category": "Tax Relief",
       "magnitude": "Low",
       "threat_level": "moderate",
       "ai_summary": ""
@@ -5138,6 +5228,15 @@
       "category": "Tax Relief",
       "magnitude": "Low",
       "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2095278,
+      "bill_number": "SB 6327",
+      "title": "Providing a sales and use tax exemption for adult and baby diapers.",
+      "category": "Tax Relief",
+      "magnitude": "Low",
+      "threat_level": "moderate",
       "ai_summary": ""
     },
     {
@@ -5198,15 +5297,6 @@
       "bill_id": 2089067,
       "bill_number": "SB 6283",
       "title": "Providing a sales and use tax exemption for qualifying farm machinery and equipment.",
-      "category": "Tax Relief",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2087443,
-      "bill_number": "SB 6256",
-      "title": "Concerning tax exemptions for unoccupied property used for affordable housing that is owned by a nonprofit entity.",
       "category": "Tax Relief",
       "magnitude": "Low",
       "threat_level": "moderate",
@@ -5351,15 +5441,6 @@
       "bill_id": 1947312,
       "bill_number": "HB 1751",
       "title": "Establishing a sales and use tax exemption for required course materials at public institutions of higher education.",
-      "category": "Tax Relief",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 1960738,
-      "bill_number": "HB 1896",
-      "title": "Increasing local law enforcement officers by authorizing a local sales and use tax credited against the state portion to hire additional officers and increasing the number of basic law enforcement courses offered by the criminal justice training commission.",
       "category": "Tax Relief",
       "magnitude": "Low",
       "threat_level": "moderate",
@@ -5612,15 +5693,6 @@
       "bill_id": 1897631,
       "bill_number": "HB 1094",
       "title": "Providing a property tax exemption for property owned by a qualifying nonprofit organization and loaned, leased, or rented to and used by any government entity to provide character-building, benevolent, protective, or rehabilitative social services.",
-      "category": "Tax Relief",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2095278,
-      "bill_number": "SB 6327",
-      "title": "Providing a sales and use tax exemption for adult and baby diapers.",
       "category": "Tax Relief",
       "magnitude": "Low",
       "threat_level": "moderate",

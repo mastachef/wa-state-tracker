@@ -5,7 +5,7 @@
     "party": "R",
     "chamber": "Senate",
     "district": "10",
-    "total_raised": 1436015.1599999997,
+    "total_raised": 1439615.1599999997,
     "bills_count": 0,
     "harmful_bills_count": 0,
     "avg_threat_score": 0
@@ -38,7 +38,7 @@
     "party": "D",
     "chamber": "House",
     "district": "10",
-    "total_raised": 1126477.8800000001,
+    "total_raised": 1125327.8800000001,
     "bills_count": 0,
     "harmful_bills_count": 0,
     "avg_threat_score": 0
@@ -137,7 +137,7 @@
     "party": "D",
     "chamber": "House",
     "district": "10",
-    "total_raised": 904893.7499999999,
+    "total_raised": 902993.7499999999,
     "bills_count": 0,
     "harmful_bills_count": 0,
     "avg_threat_score": 0
@@ -192,7 +192,7 @@
     "party": "D",
     "chamber": "Senate",
     "district": "49",
-    "total_raised": 790893.4299999999,
+    "total_raised": 791843.4299999999,
     "bills_count": 0,
     "harmful_bills_count": 0,
     "avg_threat_score": 0
@@ -335,7 +335,7 @@
     "party": "D",
     "chamber": "House",
     "district": "30",
-    "total_raised": 629719.62,
+    "total_raised": 629869.62,
     "bills_count": 0,
     "harmful_bills_count": 0,
     "avg_threat_score": 0
@@ -401,7 +401,7 @@
     "party": "D",
     "chamber": "House",
     "district": "23",
-    "total_raised": 593230.92,
+    "total_raised": 593730.92,
     "bills_count": 0,
     "harmful_bills_count": 0,
     "avg_threat_score": 0
@@ -445,7 +445,7 @@
     "party": "D",
     "chamber": "House",
     "district": "11",
-    "total_raised": 512866.47,
+    "total_raised": 512816.47,
     "bills_count": 0,
     "harmful_bills_count": 0,
     "avg_threat_score": 0
@@ -665,7 +665,7 @@
     "party": "R",
     "chamber": "Senate",
     "district": "12",
-    "total_raised": 355458.83,
+    "total_raised": 355758.83,
     "bills_count": 0,
     "harmful_bills_count": 0,
     "avg_threat_score": 0
@@ -775,7 +775,7 @@
     "party": "D",
     "chamber": "House",
     "district": "29",
-    "total_raised": 317692.1400000001,
+    "total_raised": 317592.1400000001,
     "bills_count": 0,
     "harmful_bills_count": 0,
     "avg_threat_score": 0
@@ -896,7 +896,7 @@
     "party": "D",
     "chamber": "House",
     "district": "21",
-    "total_raised": 285422.41000000003,
+    "total_raised": 284722.41000000003,
     "bills_count": 0,
     "harmful_bills_count": 0,
     "avg_threat_score": 0
@@ -1160,7 +1160,7 @@
     "party": "D",
     "chamber": "House",
     "district": "24",
-    "total_raised": 219749.56000000006,
+    "total_raised": 220399.56000000006,
     "bills_count": 0,
     "harmful_bills_count": 0,
     "avg_threat_score": 0
@@ -1545,7 +1545,7 @@
     "party": "R",
     "chamber": "House",
     "district": "2",
-    "total_raised": 51907.630000000005,
+    "total_raised": 51957.630000000005,
     "bills_count": 0,
     "harmful_bills_count": 0,
     "avg_threat_score": 0

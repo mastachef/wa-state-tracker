@@ -1,19 +1,19 @@
 {
-  "analysis_date": "2026-01-28T08:25:09.169662",
-  "total_bills": 3241,
+  "analysis_date": "2026-01-29T08:32:48.727551",
+  "total_bills": 3256,
   "flood_threshold": 50,
   "summary": {
     "flood_days_count": 13,
-    "bills_on_flood_days": 2625,
-    "flood_percentage": 81.0,
+    "bills_on_flood_days": 2545,
+    "flood_percentage": 78.2,
     "worst_single_day": "2026-01-12",
-    "worst_day_count": 1549,
-    "average_per_day": 34.8
+    "worst_day_count": 1539,
+    "average_per_day": 33.2
   },
   "flood_days": [
     {
       "date": "2026-01-12",
-      "total": 1549,
+      "total": 1539,
       "harmful": 162,
       "sample_bills": [
         "HB 1000",
@@ -30,76 +30,25 @@
     },
     {
       "date": "2026-01-27",
-      "total": 193,
-      "harmful": 55,
+      "total": 162,
+      "harmful": 43,
       "sample_bills": [
         "HB 1002",
         "HB 1065",
-        "HB 1078",
         "HB 1155",
         "HB 1269",
         "HB 1376",
         "HB 1544",
         "HB 1662",
         "HB 1683",
-        "HB 1795"
-      ]
-    },
-    {
-      "date": "2026-01-26",
-      "total": 115,
-      "harmful": 27,
-      "sample_bills": [
-        "HB 1170",
-        "HB 1187",
-        "HB 1228",
-        "HB 1345",
-        "HB 1501",
-        "HB 1541",
-        "HB 1570",
-        "HB 1634",
-        "HB 1833",
-        "HB 1834"
-      ]
-    },
-    {
-      "date": "2026-01-29",
-      "total": 114,
-      "harmful": 36,
-      "sample_bills": [
-        "HB 1239",
-        "HB 1295",
-        "HB 1420",
-        "HB 1542",
-        "HB 1591",
-        "HB 1717",
-        "HB 1859",
-        "HB 1960",
-        "HB 2007",
-        "HB 2133"
-      ]
-    },
-    {
-      "date": "2026-01-30",
-      "total": 105,
-      "harmful": 29,
-      "sample_bills": [
-        "HB 1364",
-        "HB 1496",
-        "HB 1529",
-        "HB 2018",
-        "HB 2038",
-        "HB 2094",
-        "HB 2131",
-        "HB 2155",
-        "HB 2161",
-        "HB 2200"
+        "HB 1795",
+        "HB 1812"
       ]
     },
     {
       "date": "2026-01-28",
-      "total": 98,
-      "harmful": 37,
+      "total": 147,
+      "harmful": 48,
       "sample_bills": [
         "HB 1571",
         "HB 1607",
@@ -107,18 +56,85 @@
         "HB 1784",
         "HB 1809",
         "HB 2095",
+        "HB 2105",
         "HB 2109",
         "HB 2129",
-        "HB 2134",
-        "HB 2144"
+        "HB 2134"
+      ]
+    },
+    {
+      "date": "2026-02-03",
+      "total": 99,
+      "harmful": 42,
+      "sample_bills": [
+        "HB 1541",
+        "HB 1652",
+        "HB 1701",
+        "HB 1980",
+        "HB 2104",
+        "HB 2207",
+        "HB 2266",
+        "HB 2348",
+        "HB 2367",
+        "HB 2427"
+      ]
+    },
+    {
+      "date": "2026-01-29",
+      "total": 92,
+      "harmful": 29,
+      "sample_bills": [
+        "HB 1420",
+        "HB 1542",
+        "HB 1591",
+        "HB 1717",
+        "HB 1859",
+        "HB 1960",
+        "HB 2007",
+        "HB 2133",
+        "HB 2135",
+        "HB 2140"
+      ]
+    },
+    {
+      "date": "2026-01-30",
+      "total": 91,
+      "harmful": 28,
+      "sample_bills": [
+        "HB 1078",
+        "HB 1364",
+        "HB 1496",
+        "HB 1932",
+        "HB 2018",
+        "HB 2038",
+        "HB 2155",
+        "HB 2161",
+        "HB 2221",
+        "HB 2230"
+      ]
+    },
+    {
+      "date": "2026-01-26",
+      "total": 86,
+      "harmful": 14,
+      "sample_bills": [
+        "HB 1187",
+        "HB 1228",
+        "HB 1501",
+        "HB 1634",
+        "HB 1833",
+        "HB 2113",
+        "HB 2122",
+        "HB 2146",
+        "HB 2152",
+        "HB 2349"
       ]
     },
     {
       "date": "2026-01-22",
-      "total": 88,
-      "harmful": 26,
+      "total": 61,
+      "harmful": 13,
       "sample_bills": [
-        "HB 1710",
         "HB 1941",
         "HB 2100",
         "HB 2118",
@@ -127,75 +143,25 @@
         "HB 2192",
         "HB 2220",
         "HB 2244",
-        "HB 2281"
+        "HB 2281",
+        "HB 2326"
       ]
     },
     {
-      "date": "2026-01-23",
-      "total": 80,
-      "harmful": 27,
+      "date": "2026-02-02",
+      "total": 59,
+      "harmful": 24,
       "sample_bills": [
-        "HB 1066",
-        "HB 1069",
-        "HB 1347",
-        "HB 1823",
-        "HB 2087",
-        "HB 2089",
-        "HB 2104",
-        "HB 2105",
+        "HB 1170",
+        "HB 1239",
+        "HB 1295",
+        "HB 1317",
+        "HB 1570",
+        "HB 1710",
+        "HB 1750",
+        "HB 1834",
         "HB 2132",
-        "HB 2145"
-      ]
-    },
-    {
-      "date": "2026-01-21",
-      "total": 62,
-      "harmful": 14,
-      "sample_bills": [
-        "HB 1701",
-        "HB 2128",
-        "HB 2207",
-        "HB 2255",
-        "HB 2259",
-        "HB 2260",
-        "HB 2307",
-        "HB 2320",
-        "HB 2374",
-        "HB 2379"
-      ]
-    },
-    {
-      "date": "2026-01-19",
-      "total": 58,
-      "harmful": 12,
-      "sample_bills": [
-        "HB 1160",
-        "HB 1175",
-        "HB 1289",
-        "HB 1339",
-        "HB 1390",
-        "HB 1500",
-        "HB 1574",
-        "HB 1604",
-        "HB 1652",
-        "HB 1798"
-      ]
-    },
-    {
-      "date": "2026-01-20",
-      "total": 57,
-      "harmful": 16,
-      "sample_bills": [
-        "HB 1828",
-        "HB 2006",
-        "HB 2102",
-        "HB 2103",
-        "HB 2142",
-        "HB 2148",
-        "HB 2171",
-        "HB 2237",
-        "HB 2266",
-        "HB 2279"
+        "HB 2212"
       ]
     },
     {
@@ -213,6 +179,40 @@
         "HB 1958",
         "HB 2020",
         "HB 2039"
+      ]
+    },
+    {
+      "date": "2026-02-04",
+      "total": 52,
+      "harmful": 22,
+      "sample_bills": [
+        "HB 1345",
+        "HB 1500",
+        "HB 1529",
+        "HB 1735",
+        "HB 2006",
+        "HB 2087",
+        "HB 2089",
+        "HB 2094",
+        "HB 2103",
+        "HB 2131"
+      ]
+    },
+    {
+      "date": "2026-01-23",
+      "total": 51,
+      "harmful": 18,
+      "sample_bills": [
+        "HB 1066",
+        "HB 1069",
+        "HB 1347",
+        "HB 1823",
+        "HB 2156",
+        "HB 2198",
+        "HB 2238",
+        "HB 2402",
+        "HB 2454",
+        "HB 2639"
       ]
     },
     {
@@ -704,93 +704,123 @@
     },
     {
       "date": "2026-01-12",
-      "total": 1549,
+      "total": 1539,
       "harmful": 162,
       "is_flood": true
     },
     {
       "date": "2026-01-13",
-      "total": 37,
-      "harmful": 7,
+      "total": 35,
+      "harmful": 6,
       "is_flood": false
     },
     {
       "date": "2026-01-14",
-      "total": 44,
-      "harmful": 10,
+      "total": 40,
+      "harmful": 9,
       "is_flood": false
     },
     {
       "date": "2026-01-15",
-      "total": 33,
+      "total": 28,
       "harmful": 5,
       "is_flood": false
     },
     {
       "date": "2026-01-16",
-      "total": 29,
-      "harmful": 4,
+      "total": 24,
+      "harmful": 3,
       "is_flood": false
     },
     {
       "date": "2026-01-19",
-      "total": 58,
-      "harmful": 12,
-      "is_flood": true
+      "total": 41,
+      "harmful": 8,
+      "is_flood": false
     },
     {
       "date": "2026-01-20",
-      "total": 57,
-      "harmful": 16,
-      "is_flood": true
+      "total": 37,
+      "harmful": 9,
+      "is_flood": false
     },
     {
       "date": "2026-01-21",
-      "total": 62,
-      "harmful": 14,
-      "is_flood": true
+      "total": 35,
+      "harmful": 4,
+      "is_flood": false
     },
     {
       "date": "2026-01-22",
-      "total": 88,
-      "harmful": 26,
+      "total": 61,
+      "harmful": 13,
       "is_flood": true
     },
     {
       "date": "2026-01-23",
-      "total": 80,
-      "harmful": 27,
+      "total": 51,
+      "harmful": 18,
       "is_flood": true
     },
     {
       "date": "2026-01-26",
-      "total": 115,
-      "harmful": 27,
+      "total": 86,
+      "harmful": 14,
       "is_flood": true
     },
     {
       "date": "2026-01-27",
-      "total": 193,
-      "harmful": 55,
+      "total": 162,
+      "harmful": 43,
       "is_flood": true
     },
     {
       "date": "2026-01-28",
-      "total": 98,
-      "harmful": 37,
+      "total": 147,
+      "harmful": 48,
       "is_flood": true
     },
     {
       "date": "2026-01-29",
-      "total": 114,
-      "harmful": 36,
+      "total": 92,
+      "harmful": 29,
       "is_flood": true
     },
     {
       "date": "2026-01-30",
-      "total": 105,
-      "harmful": 29,
+      "total": 91,
+      "harmful": 28,
       "is_flood": true
+    },
+    {
+      "date": "2026-02-02",
+      "total": 59,
+      "harmful": 24,
+      "is_flood": true
+    },
+    {
+      "date": "2026-02-03",
+      "total": 99,
+      "harmful": 42,
+      "is_flood": true
+    },
+    {
+      "date": "2026-02-04",
+      "total": 52,
+      "harmful": 22,
+      "is_flood": true
+    },
+    {
+      "date": "2026-02-05",
+      "total": 6,
+      "harmful": 3,
+      "is_flood": false
+    },
+    {
+      "date": "2026-02-06",
+      "total": 1,
+      "harmful": 1,
+      "is_flood": false
     }
   ],
   "monthly_data": [
@@ -826,14 +856,19 @@
     },
     {
       "month": "2026-01",
-      "total": 2662,
-      "harmful": 467
+      "total": 2469,
+      "harmful": 399
+    },
+    {
+      "month": "2026-02",
+      "total": 217,
+      "harmful": 92
     }
   ],
   "by_year": {
     "2026": {
-      "total": 2662,
-      "harmful": 467
+      "total": 2686,
+      "harmful": 491
     },
     "2025": {
       "total": 556,
