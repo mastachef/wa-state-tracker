@@ -1,19 +1,19 @@
 {
-  "analysis_date": "2026-01-30T08:31:38.259912",
+  "analysis_date": "2026-01-31T08:23:00.445577",
   "total_bills": 3267,
   "flood_threshold": 50,
   "summary": {
     "flood_days_count": 12,
-    "bills_on_flood_days": 2523,
-    "flood_percentage": 77.2,
+    "bills_on_flood_days": 2531,
+    "flood_percentage": 77.5,
     "worst_single_day": "2026-01-12",
-    "worst_day_count": 1534,
+    "worst_day_count": 1528,
     "average_per_day": 33.3
   },
   "flood_days": [
     {
       "date": "2026-01-12",
-      "total": 1534,
+      "total": 1528,
       "harmful": 161,
       "sample_bills": [
         "HB 1000",
@@ -30,59 +30,93 @@
     },
     {
       "date": "2026-02-03",
-      "total": 145,
-      "harmful": 50,
+      "total": 169,
+      "harmful": 57,
       "sample_bills": [
         "HB 1295",
         "HB 1529",
         "HB 1541",
         "HB 1591",
-        "HB 1652",
         "HB 1974",
         "HB 1980",
         "HB 2095",
         "HB 2104",
+        "HB 2141",
         "HB 2146"
       ]
     },
     {
-      "date": "2026-01-28",
-      "total": 134,
-      "harmful": 38,
+      "date": "2026-01-30",
+      "total": 162,
+      "harmful": 42,
       "sample_bills": [
+        "HB 1078",
+        "HB 1101",
+        "HB 1364",
+        "HB 1496",
         "HB 1571",
         "HB 1607",
-        "HB 1622",
-        "HB 1784",
-        "HB 1809",
-        "HB 2105",
-        "HB 2109",
-        "HB 2129",
-        "HB 2134",
-        "HB 2144"
+        "HB 1662",
+        "HB 1683",
+        "HB 1701",
+        "HB 1784"
       ]
     },
     {
       "date": "2026-01-27",
-      "total": 118,
-      "harmful": 24,
+      "total": 99,
+      "harmful": 23,
       "sample_bills": [
         "HB 1002",
         "HB 1065",
         "HB 1155",
         "HB 1376",
         "HB 1544",
-        "HB 1662",
-        "HB 1683",
         "HB 1795",
         "HB 1812",
-        "HB 1904"
+        "HB 1904",
+        "HB 1916",
+        "HB 1982"
+      ]
+    },
+    {
+      "date": "2026-02-04",
+      "total": 90,
+      "harmful": 35,
+      "sample_bills": [
+        "HB 1345",
+        "HB 1500",
+        "HB 1501",
+        "HB 1589",
+        "HB 1735",
+        "HB 2006",
+        "HB 2087",
+        "HB 2089",
+        "HB 2131",
+        "HB 2188"
+      ]
+    },
+    {
+      "date": "2026-01-28",
+      "total": 88,
+      "harmful": 29,
+      "sample_bills": [
+        "HB 1622",
+        "HB 1809",
+        "HB 2105",
+        "HB 2109",
+        "HB 2129",
+        "HB 2145",
+        "HB 2170",
+        "HB 2174",
+        "HB 2176",
+        "HB 2243"
       ]
     },
     {
       "date": "2026-01-29",
-      "total": 111,
-      "harmful": 32,
+      "total": 84,
+      "harmful": 24,
       "sample_bills": [
         "HB 1269",
         "HB 1420",
@@ -98,7 +132,7 @@
     },
     {
       "date": "2026-02-02",
-      "total": 84,
+      "total": 82,
       "harmful": 34,
       "sample_bills": [
         "HB 1170",
@@ -114,40 +148,6 @@
       ]
     },
     {
-      "date": "2026-01-30",
-      "total": 84,
-      "harmful": 27,
-      "sample_bills": [
-        "HB 1078",
-        "HB 1364",
-        "HB 1496",
-        "HB 1701",
-        "HB 1932",
-        "HB 2018",
-        "HB 2038",
-        "HB 2094",
-        "HB 2155",
-        "HB 2161"
-      ]
-    },
-    {
-      "date": "2026-02-04",
-      "total": 83,
-      "harmful": 33,
-      "sample_bills": [
-        "HB 1345",
-        "HB 1500",
-        "HB 1501",
-        "HB 1735",
-        "HB 2006",
-        "HB 2087",
-        "HB 2089",
-        "HB 2103",
-        "HB 2131",
-        "HB 2188"
-      ]
-    },
-    {
       "date": "2026-01-26",
       "total": 69,
       "harmful": 11,
@@ -159,7 +159,7 @@
         "HB 2122",
         "HB 2152",
         "HB 2349",
-        "HB 2430",
+        "HB 2457",
         "HB 2467",
         "HB 2495"
       ]
@@ -183,7 +183,7 @@
     },
     {
       "date": "2026-01-22",
-      "total": 55,
+      "total": 54,
       "harmful": 11,
       "sample_bills": [
         "HB 1941",
@@ -687,19 +687,19 @@
     },
     {
       "date": "2026-01-12",
-      "total": 1534,
+      "total": 1528,
       "harmful": 161,
       "is_flood": true
     },
     {
       "date": "2026-01-13",
-      "total": 34,
+      "total": 33,
       "harmful": 6,
       "is_flood": false
     },
     {
       "date": "2026-01-14",
-      "total": 40,
+      "total": 41,
       "harmful": 9,
       "is_flood": false
     },
@@ -711,7 +711,7 @@
     },
     {
       "date": "2026-01-16",
-      "total": 22,
+      "total": 21,
       "harmful": 2,
       "is_flood": false
     },
@@ -723,26 +723,26 @@
     },
     {
       "date": "2026-01-20",
-      "total": 35,
-      "harmful": 9,
+      "total": 34,
+      "harmful": 7,
       "is_flood": false
     },
     {
       "date": "2026-01-21",
-      "total": 30,
-      "harmful": 3,
+      "total": 29,
+      "harmful": 2,
       "is_flood": false
     },
     {
       "date": "2026-01-22",
-      "total": 55,
+      "total": 54,
       "harmful": 11,
       "is_flood": true
     },
     {
       "date": "2026-01-23",
-      "total": 47,
-      "harmful": 16,
+      "total": 42,
+      "harmful": 14,
       "is_flood": false
     },
     {
@@ -753,50 +753,50 @@
     },
     {
       "date": "2026-01-27",
-      "total": 118,
-      "harmful": 24,
+      "total": 99,
+      "harmful": 23,
       "is_flood": true
     },
     {
       "date": "2026-01-28",
-      "total": 134,
-      "harmful": 38,
+      "total": 88,
+      "harmful": 29,
       "is_flood": true
     },
     {
       "date": "2026-01-29",
-      "total": 111,
-      "harmful": 32,
+      "total": 84,
+      "harmful": 24,
       "is_flood": true
     },
     {
       "date": "2026-01-30",
-      "total": 84,
-      "harmful": 27,
+      "total": 162,
+      "harmful": 42,
       "is_flood": true
     },
     {
       "date": "2026-02-02",
-      "total": 84,
+      "total": 82,
       "harmful": 34,
       "is_flood": true
     },
     {
       "date": "2026-02-03",
-      "total": 145,
-      "harmful": 50,
+      "total": 169,
+      "harmful": 57,
       "is_flood": true
     },
     {
       "date": "2026-02-04",
-      "total": 83,
-      "harmful": 33,
+      "total": 90,
+      "harmful": 35,
       "is_flood": true
     },
     {
       "date": "2026-02-05",
-      "total": 7,
-      "harmful": 3,
+      "total": 18,
+      "harmful": 8,
       "is_flood": false
     },
     {
@@ -839,19 +839,19 @@
     },
     {
       "month": "2026-01",
-      "total": 2378,
-      "harmful": 362
+      "total": 2349,
+      "harmful": 354
     },
     {
       "month": "2026-02",
-      "total": 320,
-      "harmful": 121
+      "total": 360,
+      "harmful": 135
     }
   ],
   "by_year": {
     "2026": {
-      "total": 2698,
-      "harmful": 483
+      "total": 2709,
+      "harmful": 489
     },
     "2025": {
       "total": 556,

@@ -3,8 +3,8 @@
     {
       "id": "introduced",
       "name": "Introduced",
-      "total": 2618,
-      "harmful": 462
+      "total": 2619,
+      "harmful": 468
     },
     {
       "id": "passed_origin",
@@ -15,7 +15,7 @@
     {
       "id": "passed_both",
       "name": "Passed Both Chambers",
-      "total": 636,
+      "total": 635,
       "harmful": 56
     },
     {
@@ -37,6 +37,27 @@
     "bills": []
   },
   "bills_to_watch": [
+    {
+      "bill_number": "SB 5841",
+      "title": "Concerning the completion of postsecondary financial aid applications.",
+      "threat_level": "high",
+      "status": "Introduced",
+      "last_action_date": "2026-01-30"
+    },
+    {
+      "bill_number": "SB 5907",
+      "title": "Expanding access to the early childhood education and assistance program for military families.",
+      "threat_level": "high",
+      "status": "Introduced",
+      "last_action_date": "2026-01-30"
+    },
+    {
+      "bill_number": "SB 6132",
+      "title": "Authorizing a narrow modification to indebtedness limits for select inland port districts to ensure ",
+      "threat_level": "high",
+      "status": "Introduced",
+      "last_action_date": "2026-01-30"
+    },
     {
       "bill_number": "SB 5942",
       "title": "Concerning the department of children, youth, and families accountability board.",
@@ -73,31 +94,10 @@
       "last_action_date": "2026-01-29"
     },
     {
-      "bill_number": "SB 5272",
-      "title": "Improving school safety by extending penalties for interference by, or intimidation by threat of, fo",
-      "threat_level": "high",
-      "status": "Engrossed",
-      "last_action_date": "2026-01-28"
-    },
-    {
-      "bill_number": "SB 5855",
-      "title": "Concerning the use of face coverings by law enforcement officers.",
-      "threat_level": "high",
-      "status": "Engrossed",
-      "last_action_date": "2026-01-28"
-    },
-    {
       "bill_number": "SB 6024",
       "title": "Streamlining monitoring and oversight activities related to community residential service business p",
       "threat_level": "high",
       "status": "Introduced",
-      "last_action_date": "2026-01-28"
-    },
-    {
-      "bill_number": "SJM8006",
-      "title": "Concerning the limited license legal technician program.",
-      "threat_level": "high",
-      "status": "Engrossed",
       "last_action_date": "2026-01-28"
     },
     {
@@ -180,7 +180,7 @@
   ],
   "summary": {
     "total_active": 3266,
-    "total_harmful_active": 520,
+    "total_harmful_active": 526,
     "total_dead": 1
   }
 }

@@ -1,20 +1,20 @@
 {
   "summary": {
     "total_bills": 3267,
-    "fiscal_bills": 620,
-    "percentage": 19.0
+    "fiscal_bills": 633,
+    "percentage": 19.4
   },
   "by_category": {
     "New Tax/Fee": 175,
-    "New Spending": 386,
+    "New Spending": 401,
     "New Debt": 0,
-    "Tax Relief": 56,
+    "Tax Relief": 54,
     "Cost Savings": 3
   },
   "by_magnitude": {
     "High": 9,
     "Medium": 1,
-    "Low": 610
+    "Low": 623
   },
   "categories": [
     {
@@ -54,8 +54,8 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2070134,
-      "bill_number": "SB 6061",
+      "bill_id": 2068452,
+      "bill_number": "HB 2325",
       "title": "Establishing a tourism self-supported assessment program to fund statewide tourism promotion.",
       "category": "New Spending",
       "magnitude": "High",
@@ -63,8 +63,8 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2068452,
-      "bill_number": "HB 2325",
+      "bill_id": 2070134,
+      "bill_number": "SB 6061",
       "title": "Establishing a tourism self-supported assessment program to fund statewide tourism promotion.",
       "category": "New Spending",
       "magnitude": "High",
@@ -137,8 +137,8 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2070134,
-      "bill_number": "SB 6061",
+      "bill_id": 2068452,
+      "bill_number": "HB 2325",
       "title": "Establishing a tourism self-supported assessment program to fund statewide tourism promotion.",
       "category": "New Spending",
       "magnitude": "High",
@@ -146,8 +146,8 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2068452,
-      "bill_number": "HB 2325",
+      "bill_id": 2070134,
+      "bill_number": "SB 6061",
       "title": "Establishing a tourism self-supported assessment program to fund statewide tourism promotion.",
       "category": "New Spending",
       "magnitude": "High",
@@ -257,6 +257,15 @@
       "bill_id": 2071991,
       "bill_number": "HB 2431",
       "title": "Increasing the maximum annual limit for regularly scheduled fundraising activities for the nonprofit public assembly halls and meeting places property tax exemption.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2071706,
+      "bill_number": "SB 6082",
+      "title": "Safeguarding student financial aid from fraud.",
       "category": "New Spending",
       "magnitude": "Low",
       "threat_level": "high",
@@ -533,6 +542,15 @@
       "ai_summary": ""
     },
     {
+      "bill_id": 2089144,
+      "bill_number": "SB 6292",
+      "title": "Establishing a joint legislative executive committee on health care financing.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
       "bill_id": 1903879,
       "bill_number": "HB 1170",
       "title": "Informing users when content is developed or modified by artificial intelligence.",
@@ -704,12 +722,57 @@
       "ai_summary": ""
     },
     {
+      "bill_id": 1938619,
+      "bill_number": "HB 1571",
+      "title": "Removing qualifiers related to the presumption of occupational disease for heart problems.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "moderate",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 1943648,
+      "bill_number": "HB 1662",
+      "title": "Removing the requirement for certain education agencies to reside in the office of the superintendent of public instruction for administrative purposes and by making other necessary changes to support independent administration of each agency.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
       "bill_id": 1979916,
       "bill_number": "HB 2018",
       "title": "Concerning solid waste and establishing the local government solid waste assistance account.",
       "category": "New Spending",
       "magnitude": "Low",
       "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2058904,
+      "bill_number": "HB 2144",
+      "title": "Requiring notices to employees when electronic monitoring is used to assist employers conducting performance evaluations.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "moderate",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2061352,
+      "bill_number": "HB 2215",
+      "title": "Concerning climate commitment act compliance obligations for fuels supplied or otherwise sold into Washington.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2066109,
+      "bill_number": "HB 2278",
+      "title": "Concerning tourism promotion areas.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "moderate",
       "ai_summary": ""
     },
     {
@@ -722,9 +785,162 @@
       "ai_summary": ""
     },
     {
+      "bill_id": 2068864,
+      "bill_number": "HB 2324",
+      "title": "Concerning tuition waivers for children of eligible veterans.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "moderate",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2069789,
+      "bill_number": "HB 2357",
+      "title": "Establishing the Washington division of civil air patrol as part of the Washington military department.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2069591,
+      "bill_number": "HB 2365",
+      "title": "Advancing digital opportunities for all.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "moderate",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2069557,
+      "bill_number": "HB 2372",
+      "title": "Concerning workers' compensation benefits.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "moderate",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2069583,
+      "bill_number": "HB 2384",
+      "title": "Increasing regulatory oversight of continuing care retirement communities.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2072006,
+      "bill_number": "HB 2397",
+      "title": "Requiring timely reimbursement of state agencies and local jurisdictions mobilized under the Washington state fire services mobilization plan.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "moderate",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2071978,
+      "bill_number": "HB 2435",
+      "title": "Creating the legislative office on Indian affairs.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2071939,
+      "bill_number": "HB 2446",
+      "title": "Developing the quantum technology industry into the state's economic development and workforce.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "moderate",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2073668,
+      "bill_number": "HB 2481",
+      "title": "Prohibiting surveillance-based price discrimination and surge pricing for retail goods.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
       "bill_id": 2073426,
       "bill_number": "HB 2487",
       "title": "Concerning taxes imposed on insurers operating within the state.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2080106,
+      "bill_number": "HB 2503",
+      "title": "Regulating artificial intelligence training data.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2102089,
+      "bill_number": "HB 2707",
+      "title": "Removing a tax exemption for the warehousing and reselling of prescription drugs.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "moderate",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2102202,
+      "bill_number": "HB 2708",
+      "title": "Removing a tax exemption for the replacement of equipment for data centers.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "moderate",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 1941440,
+      "bill_number": "SB 5500",
+      "title": "Revised for engrossed: Defining the cost of quality child care for the biennial survey.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "moderate",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2057238,
+      "bill_number": "SB 5841",
+      "title": "Concerning the completion of postsecondary financial aid applications.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2073910,
+      "bill_number": "SB 6132",
+      "title": "Authorizing a narrow modification to indebtedness limits for select inland port districts to ensure continued eligibility for federal funding for rail, power, and other critical public infrastructure improvements.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2085124,
+      "bill_number": "SB 6209",
+      "title": "Revised for 1st substitute: Concerning financial aid awards for students attending private four-year and two-year institutions of higher education.",
+      "category": "New Spending",
+      "magnitude": "Low",
+      "threat_level": "moderate",
+      "ai_summary": ""
+    },
+    {
+      "bill_id": 2085160,
+      "bill_number": "SB 6217",
+      "title": "Expanding access to the Washington college grant to students enrolled in eligible postsecondary nondegree credential programs.",
       "category": "New Spending",
       "magnitude": "Low",
       "threat_level": "high",
@@ -812,15 +1028,6 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2057238,
-      "bill_number": "SB 5841",
-      "title": "Concerning the completion of postsecondary financial aid applications.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 2073803,
       "bill_number": "SB 6109",
       "title": "Prohibiting investment of funds under management by the state investment board in private detention facilities.",
@@ -839,15 +1046,6 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2073910,
-      "bill_number": "SB 6132",
-      "title": "Authorizing a narrow modification to indebtedness limits for select inland port districts to ensure continued eligibility for federal funding for rail, power, and other critical public infrastructure improvements.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 2073746,
       "bill_number": "SB 6148",
       "title": "Modifying the maximum terms of regional transit authority bond issues.",
@@ -857,36 +1055,9 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2085124,
-      "bill_number": "SB 6209",
-      "title": "Concerning financial aid awards for students attending private four-year institutions of higher education.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2085160,
-      "bill_number": "SB 6217",
-      "title": "Expanding access to the Washington college grant to students enrolled in eligible postsecondary nondegree credential programs.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 2086033,
       "bill_number": "SB 6235",
       "title": "Prohibiting certain private equity and sovereign wealth fund agreements in intercollegiate athletics.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2089144,
-      "bill_number": "SB 6292",
-      "title": "Establishing a joint legislative executive committee on health care financing.",
       "category": "New Spending",
       "magnitude": "Low",
       "threat_level": "high",
@@ -920,27 +1091,9 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2065226,
-      "bill_number": "HB 2254",
-      "title": "Providing flexibility in the partnership access line assessment to cover administrative costs.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 2069695,
       "bill_number": "HB 2385",
       "title": "Concerning the medicaid access program.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2082628,
-      "bill_number": "HB 2543",
-      "title": "Concerning county clerk fees.",
       "category": "New Spending",
       "magnitude": "Low",
       "threat_level": "high",
@@ -1424,15 +1577,6 @@
       "ai_summary": ""
     },
     {
-      "bill_id": 2071706,
-      "bill_number": "SB 6082",
-      "title": "Safeguarding student financial aid from fraud.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
       "bill_id": 2068816,
       "bill_number": "HB 2326",
       "title": "Concerning emergency medical service levies.",
@@ -1700,15 +1844,6 @@
       "category": "New Spending",
       "magnitude": "Low",
       "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2073418,
-      "bill_number": "HB 2482",
-      "title": "Permitting retired members of the law enforcement officers' and firefighters' retirement system plan 2 to serve as chiefs of police in small police departments.",
-      "category": "New Spending",
-      "magnitude": "Low",
-      "threat_level": "high",
       "ai_summary": ""
     },
     {
@@ -3674,6 +3809,15 @@
       "ai_summary": ""
     },
     {
+      "bill_id": 2100670,
+      "bill_number": "SB 6328",
+      "title": "Concerning the cannabis excise tax.",
+      "category": "New Tax/Fee",
+      "magnitude": "Low",
+      "threat_level": "moderate",
+      "ai_summary": ""
+    },
+    {
       "bill_id": 1975786,
       "bill_number": "HB 2006",
       "title": "Extending the deadline for a rural county collecting the sales and use tax for economic development purposes to designate industrial land banks under the growth management act.",
@@ -3809,6 +3953,15 @@
       "ai_summary": ""
     },
     {
+      "bill_id": 2082808,
+      "bill_number": "HB 2531",
+      "title": "Aligning the quality assurance fee for the ambulance transport fund with federal regulations.",
+      "category": "New Tax/Fee",
+      "magnitude": "Low",
+      "threat_level": "high",
+      "ai_summary": ""
+    },
+    {
       "bill_id": 1945082,
       "bill_number": "HB 1717",
       "title": "Creating a sales and use tax remittance program for affordable housing.",
@@ -3857,24 +4010,6 @@
       "bill_id": 2071957,
       "bill_number": "HB 2442",
       "title": "Providing local governments tax resources and fund flexibility.",
-      "category": "New Tax/Fee",
-      "magnitude": "Low",
-      "threat_level": "high",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2100670,
-      "bill_number": "SB 6328",
-      "title": "Concerning the cannabis excise tax.",
-      "category": "New Tax/Fee",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2082808,
-      "bill_number": "HB 2531",
-      "title": "Aligning the quality assurance fee for the ambulance transport fund with federal regulations.",
       "category": "New Tax/Fee",
       "magnitude": "Low",
       "threat_level": "high",
@@ -5684,24 +5819,6 @@
       "bill_id": 1897631,
       "bill_number": "HB 1094",
       "title": "Providing a property tax exemption for property owned by a qualifying nonprofit organization and loaned, leased, or rented to and used by any government entity to provide character-building, benevolent, protective, or rehabilitative social services.",
-      "category": "Tax Relief",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2102089,
-      "bill_number": "HB 2707",
-      "title": "Removing a tax exemption for the warehousing and reselling of prescription drugs.",
-      "category": "Tax Relief",
-      "magnitude": "Low",
-      "threat_level": "moderate",
-      "ai_summary": ""
-    },
-    {
-      "bill_id": 2102202,
-      "bill_number": "HB 2708",
-      "title": "Removing a tax exemption for the replacement of equipment for data centers.",
       "category": "Tax Relief",
       "magnitude": "Low",
       "threat_level": "moderate",
