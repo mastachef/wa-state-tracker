@@ -202,7 +202,14 @@ def transform_bill_data(master_bill: dict, detail_bill: dict | None) -> dict:
 
     # Enrich with detail data if available
     if detail_bill:
-        bill["description"] = detail_bill.get("description", "")
+        # Clean description of problematic characters
+        desc = detail_bill.get("description", "") or ""
+        # Replace smart quotes and other problematic chars with ASCII equivalents
+        desc = desc.replace('\u2019', "'").replace('\u2018', "'")
+        desc = desc.replace('\u201c', '"').replace('\u201d', '"')
+        desc = desc.replace('\u2013', '-').replace('\u2014', '-')
+        desc = desc.encode('utf-8', errors='ignore').decode('utf-8')
+        bill["description"] = desc
 
         # Sponsors
         sponsors = detail_bill.get("sponsors", [])
@@ -233,9 +240,13 @@ def load_existing_bills() -> dict[int, dict]:
     """Load existing bills.json and return a lookup by bill_id."""
     bills_file = DATA_DIR / "bills.json"
     if bills_file.exists():
-        with open(bills_file, 'r', encoding='utf-8') as f:
-            bills = json.load(f)
-            return {b.get("bill_id"): b for b in bills if b.get("bill_id")}
+        try:
+            with open(bills_file, 'r', encoding='utf-8', errors='ignore') as f:
+                bills = json.load(f)
+                return {b.get("bill_id"): b for b in bills if b.get("bill_id")}
+        except (json.JSONDecodeError, UnicodeDecodeError) as e:
+            print(f"Warning: Could not load existing bills: {e}")
+            return {}
     return {}
 
 
