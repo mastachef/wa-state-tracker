@@ -229,11 +229,24 @@ def transform_bill_data(master_bill: dict, detail_bill: dict | None) -> dict:
     return bill
 
 
+def load_existing_bills() -> dict[int, dict]:
+    """Load existing bills.json and return a lookup by bill_id."""
+    bills_file = DATA_DIR / "bills.json"
+    if bills_file.exists():
+        with open(bills_file, 'r', encoding='utf-8') as f:
+            bills = json.load(f)
+            return {b.get("bill_id"): b for b in bills if b.get("bill_id")}
+    return {}
+
+
 def fetch_all_bills(api_key: str, limit: int | None = None, fetch_details: bool = False) -> list[dict]:
     """Fetch all bills from the current WA session.
 
     By default, uses master list data only (fast, no extra API calls).
     Set fetch_details=True to get full bill details (slow, many API calls).
+
+    Smart mode (default): Fetches details only for bills missing descriptions,
+    preserving existing data for bills we already have.
     """
     print("Fetching Washington State session info...")
     session = get_wa_session(api_key)
@@ -253,30 +266,56 @@ def fetch_all_bills(api_key: str, limit: int | None = None, fetch_details: bool 
         master_bills = master_bills[:limit]
         print(f"Limiting to {limit} bills")
 
+    # Load existing bills to preserve data and check what needs details
+    existing_bills = load_existing_bills()
+    print(f"Found {len(existing_bills)} existing bills in cache")
+
     bills = []
     total = len(master_bills)
+    details_fetched = 0
 
-    if fetch_details:
-        # Fetch full details for each bill (slow - use with limit)
-        for i, master_bill in enumerate(master_bills, 1):
-            bill_id = master_bill.get("bill_id")
-            bill_number = master_bill.get("number", "Unknown")
+    for i, master_bill in enumerate(master_bills, 1):
+        bill_id = master_bill.get("bill_id")
+        bill_number = master_bill.get("number", "Unknown")
 
+        existing = existing_bills.get(bill_id)
+
+        # Check if we need to fetch details for this bill
+        needs_details = False
+        if fetch_details:
+            needs_details = True
+        elif existing is None:
+            # New bill - fetch details
+            needs_details = True
+        elif not existing.get("description"):
+            # Existing bill but missing description
+            needs_details = True
+
+        if needs_details:
             print(f"  [{i}/{total}] Fetching {bill_number}...", end="", flush=True)
-
             detail_bill = get_bill_details(bill_id, api_key)
             bill_data = transform_bill_data(master_bill, detail_bill)
-            bills.append(bill_data)
-
+            details_fetched += 1
             print(" done")
-    else:
-        # Use master list data only (fast)
-        print("Using master list data (no detail fetch)...")
-        for master_bill in master_bills:
+        else:
+            # Use existing data, just update from master list
             bill_data = transform_bill_data(master_bill, None)
-            bills.append(bill_data)
-        print(f"Processed {len(bills)} bills from master list")
+            # Preserve existing description, sponsors, history, ai_summary, scores
+            if existing:
+                bill_data["description"] = existing.get("description", "")
+                bill_data["sponsors"] = existing.get("sponsors", [])
+                bill_data["history"] = existing.get("history", [])
+                bill_data["introduced_date"] = existing.get("introduced_date", "")
+                # Preserve scoring and AI data
+                for key in ["threat_score", "threat_level", "threat_label", "concerns",
+                           "positives", "ai_summary", "plain_summary", "amended",
+                           "amendment_count", "related_bills", "fiscal_impact"]:
+                    if key in existing:
+                        bill_data[key] = existing[key]
 
+        bills.append(bill_data)
+
+    print(f"\nProcessed {len(bills)} bills ({details_fetched} detail fetches)")
     return bills
 
 

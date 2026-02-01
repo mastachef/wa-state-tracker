@@ -2322,6 +2322,144 @@ main {
   }
 }
 
+/* =============================================
+   Side Navigation Arrows (Bill Pages)
+   ============================================= */
+
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.side-nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-4) var(--space-3);
+  background: var(--color-bg-medium);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  pointer-events: auto;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.side-nav-prev {
+  left: 0;
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+  border-left: none;
+  transform: translateY(-50%) translateX(-100%);
+}
+
+.side-nav-next {
+  right: 0;
+  border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+  border-right: none;
+  transform: translateY(-50%) translateX(100%);
+}
+
+.side-nav-prev:hover,
+.side-nav-next:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white;
+}
+
+/* Show arrows on hover near edges */
+.side-nav-prev {
+  opacity: 0;
+}
+
+.side-nav-next {
+  opacity: 0;
+}
+
+/* Trigger zones for showing arrows */
+body:has(.side-nav) {
+  position: relative;
+}
+
+.side-nav::before,
+.side-nav::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  pointer-events: auto;
+}
+
+.side-nav::before {
+  left: 0;
+}
+
+.side-nav::after {
+  right: 0;
+}
+
+.side-nav::before:hover ~ .side-nav-prev,
+.side-nav:hover .side-nav-prev {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+.side-nav:hover .side-nav-next {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+/* Make arrows visible when hovering near edges using JS class */
+.side-nav.show-prev .side-nav-prev {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+.side-nav.show-next .side-nav-next {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+/* Arrow styling */
+.arrow-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.arrow-label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.arrow-direction {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.7;
+}
+
+.arrow-bill {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Hide on mobile - too cramped */
+@media (max-width: 1024px) {
+  .side-nav {
+    display: none;
+  }
+}
+
 /* Print styles */
 @media print {
   .site-header,
@@ -2330,7 +2468,8 @@ main {
   .search-filters,
   .bill-card-actions,
   .mobile-menu-toggle,
-  .quick-comment-panel {
+  .quick-comment-panel,
+  .side-nav {
     display: none;
   }
 

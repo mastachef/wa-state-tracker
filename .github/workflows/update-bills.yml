@@ -51,6 +51,11 @@ jobs:
       - name: Score bills by threat level
         run: python scripts/score_bills.py
 
+      - name: Generate AI summaries
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: python scripts/generate_ai_summaries.py
+
       - name: Generate timeline data
         run: python scripts/generate_timeline.py
 
