@@ -81,24 +81,6 @@
 
     document.body.appendChild(nav);
 
-    // Mouse edge detection for showing arrows
-    document.addEventListener('mousemove', function(e) {
-      const threshold = 100; // pixels from edge
-      const windowWidth = window.innerWidth;
-
-      if (e.clientX < threshold) {
-        nav.classList.add('show-prev');
-      } else {
-        nav.classList.remove('show-prev');
-      }
-
-      if (e.clientX > windowWidth - threshold) {
-        nav.classList.add('show-next');
-      } else {
-        nav.classList.remove('show-next');
-      }
-    });
-
     // Keyboard navigation
     document.addEventListener('keydown', function(e) {
       // Don't navigate if user is typing in an input

@@ -2392,94 +2392,35 @@ main {
   align-items: center;
   gap: var(--space-2);
   padding: var(--space-4) var(--space-3);
-  background: var(--color-bg-medium);
-  border: 1px solid var(--color-border);
+  background: transparent;
+  border: none;
   color: var(--color-text-secondary);
   text-decoration: none;
   pointer-events: auto;
-  opacity: 0;
+  opacity: 0.3;
   transition: all 0.3s ease;
 }
 
 .side-nav-prev {
   left: 0;
-  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
-  border-left: none;
-  transform: translateY(-50%) translateX(-100%);
+  padding-left: var(--space-2);
 }
 
 .side-nav-next {
   right: 0;
-  border-radius: var(--radius-lg) 0 0 var(--radius-lg);
-  border-right: none;
-  transform: translateY(-50%) translateX(100%);
+  padding-right: var(--space-2);
 }
 
-.side-nav-prev:hover,
-.side-nav-next:hover {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
-  color: white;
-}
-
-/* Show arrows on hover near edges */
-.side-nav-prev {
-  opacity: 0;
-}
-
-.side-nav-next {
-  opacity: 0;
-}
-
-/* Trigger zones for showing arrows */
-body:has(.side-nav) {
-  position: relative;
-}
-
-.side-nav::before,
-.side-nav::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 80px;
-  pointer-events: auto;
-}
-
-.side-nav::before {
-  left: 0;
-}
-
-.side-nav::after {
-  right: 0;
-}
-
-.side-nav::before:hover ~ .side-nav-prev,
-.side-nav:hover .side-nav-prev {
+.side-nav-arrow:hover {
   opacity: 1;
-  transform: translateY(-50%) translateX(0);
-}
-
-.side-nav:hover .side-nav-next {
-  opacity: 1;
-  transform: translateY(-50%) translateX(0);
-}
-
-/* Make arrows visible when hovering near edges using JS class */
-.side-nav.show-prev .side-nav-prev {
-  opacity: 1;
-  transform: translateY(-50%) translateX(0);
-}
-
-.side-nav.show-next .side-nav-next {
-  opacity: 1;
-  transform: translateY(-50%) translateX(0);
+  background: rgba(59, 130, 246, 0.15);
+  color: var(--color-primary-light);
 }
 
 /* Arrow styling */
 .arrow-icon {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 300;
   line-height: 1;
 }
 
@@ -2498,7 +2439,20 @@ body:has(.side-nav) {
 
 .arrow-bill {
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+}
+
+/* Hide labels by default, show on hover */
+.side-nav-arrow .arrow-label {
+  opacity: 0;
+  max-width: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.side-nav-arrow:hover .arrow-label {
+  opacity: 1;
+  max-width: 100px;
 }
 
 /* Hide on mobile - too cramped */
