@@ -469,7 +469,7 @@ def save_bills(bills: list[dict]) -> None:
     bills.sort(key=lambda b: b.get("last_action_date") or "", reverse=True)
 
     with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(bills, f, indent=2, ensure_ascii=False)
+        json.dump(bills, f, indent=2, ensure_ascii=True)  # ASCII-safe to prevent UTF-8 issues
 
     print(f"\nSaved {len(bills)} bills to {output_file}")
 
