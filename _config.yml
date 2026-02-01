@@ -17,7 +17,7 @@ social:
     - https://billtracker.website
 
 # Default image for social sharing
-defaults_image: /assets/images/og-image.png
+defaults_image: /assets/images/og-image.png?v=2
 
 # Google verification (add your code if you have one)
 # google_site_verification: YOUR_CODE_HERE
@@ -51,7 +51,7 @@ defaults:
       path: ""
     values:
       layout: "default"
-      image: /assets/images/og-image.png
+      image: /assets/images/og-image.png?v=2
 
 # Exclude from build
 exclude:

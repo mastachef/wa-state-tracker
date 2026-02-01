@@ -65,7 +65,15 @@ layout: default
     {% endif %}
   </section>
 
-  {% if page.ai_summary %}
+  {% if page.bill_analysis %}
+  <section class="deep-analysis">
+    <h2>Constitutional Analysis</h2>
+    <div class="analysis-content">
+      {{ page.bill_analysis | markdownify }}
+    </div>
+    <p class="ai-disclaimer">AI analysis of full bill text from a constitutional/liberty perspective.</p>
+  </section>
+  {% elsif page.ai_summary %}
   <section class="ai-analysis">
     <h2>Watchdog Analysis</h2>
     <div class="ai-summary-box">

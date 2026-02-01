@@ -865,6 +865,54 @@ main {
   color: var(--color-text-muted);
   font-style: italic;
   margin-top: var(--space-4);
+}
+
+/* Deep Constitutional Analysis */
+.deep-analysis {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, rgba(249, 115, 22, 0.1) 100%);
+  border: 2px solid rgba(239, 68, 68, 0.4);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.deep-analysis h2 {
+  color: var(--color-danger) !important;
+  border-bottom: 2px solid rgba(239, 68, 68, 0.3);
+  padding-bottom: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.analysis-content {
+  color: var(--color-text-primary);
+  line-height: 1.7;
+}
+
+.analysis-content h2 {
+  font-size: 1.1rem;
+  color: var(--color-warning) !important;
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-3);
+  border-bottom: 1px solid rgba(234, 179, 8, 0.3);
+  padding-bottom: var(--space-2);
+}
+
+.analysis-content ul {
+  margin: var(--space-3) 0;
+  padding-left: var(--space-6);
+}
+
+.analysis-content li {
+  margin-bottom: var(--space-2);
+  color: var(--color-text-secondary);
+}
+
+.analysis-content p {
+  margin-bottom: var(--space-3);
+}
+
+.analysis-content strong {
+  color: var(--color-text-primary);
   margin-bottom: 0;
 }
 

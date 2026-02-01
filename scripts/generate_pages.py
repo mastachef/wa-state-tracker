@@ -98,6 +98,7 @@ def generate_bill_page(bill: dict, featured_data: dict | None = None) -> str:
         "hearing_date",
         "hearing_info",
         "ai_summary",
+        "bill_analysis",
         "threat_level",
         "threat_label",
         "threat_score",
@@ -106,7 +107,13 @@ def generate_bill_page(bill: dict, featured_data: dict | None = None) -> str:
     for field in optional_fields:
         value = bill.get(field)
         if value:
-            front_matter.append(f"{field}: {escape_yaml(str(value))}")
+            # Handle multiline content (like bill_analysis) with YAML block scalar
+            if field == "bill_analysis" and '\n' in str(value):
+                front_matter.append(f"{field}: |")
+                for line in str(value).split('\n'):
+                    front_matter.append(f"  {line}")
+            else:
+                front_matter.append(f"{field}: {escape_yaml(str(value))}")
 
     # Sponsors list
     sponsors = bill.get("sponsors", [])
