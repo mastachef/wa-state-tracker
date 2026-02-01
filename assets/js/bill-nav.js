@@ -11,30 +11,19 @@
   if (!billNumberEl) return;
   const currentBillNumber = billNumberEl.textContent.trim();
 
-  // Fetch bills data and set up navigation
-  // Try multiple paths to handle both local dev and GitHub Pages
-  const paths = [
-    '/api/bills.json',
-    '/wa-state-tracker/api/bills.json'
-  ];
+  // Detect base path from current URL
+  const basePath = window.location.pathname.includes('/wa-state-tracker') ? '/wa-state-tracker' : '';
 
-  function tryFetch(pathIndex) {
-    if (pathIndex >= paths.length) {
-      console.log('Bill navigation: Could not load bills data');
-      return;
-    }
-    fetch(paths[pathIndex])
-      .then(response => {
-        if (!response.ok) throw new Error('Not found');
-        return response.json();
-      })
-      .then(bills => setupNavigation(bills, currentBillNumber))
-      .catch(() => tryFetch(pathIndex + 1));
-  }
+  // Fetch bills data
+  fetch(basePath + '/api/bills.json')
+    .then(response => {
+      if (!response.ok) throw new Error('Not found');
+      return response.json();
+    })
+    .then(bills => setupNavigation(bills, currentBillNumber, basePath))
+    .catch(err => console.log('Bill navigation: Could not load bills data', err));
 
-  tryFetch(0);
-
-  function setupNavigation(bills, currentBillNumber) {
+  function setupNavigation(bills, currentBillNumber, basePath) {
     // Find current bill index
     const currentIndex = bills.findIndex(b => b.bill_number === currentBillNumber);
     if (currentIndex === -1) return;
@@ -50,7 +39,7 @@
     // Previous arrow
     if (prevBill) {
       const prevLink = document.createElement('a');
-      prevLink.href = '/bills/' + slugify(prevBill.bill_number) + '/';
+      prevLink.href = basePath + '/bills/' + slugify(prevBill.bill_number) + '/';
       prevLink.className = 'side-nav-arrow side-nav-prev';
       prevLink.setAttribute('aria-label', 'Previous bill: ' + prevBill.bill_number);
       prevLink.innerHTML = `
@@ -66,7 +55,7 @@
     // Next arrow
     if (nextBill) {
       const nextLink = document.createElement('a');
-      nextLink.href = '/bills/' + slugify(nextBill.bill_number) + '/';
+      nextLink.href = basePath + '/bills/' + slugify(nextBill.bill_number) + '/';
       nextLink.className = 'side-nav-arrow side-nav-next';
       nextLink.setAttribute('aria-label', 'Next bill: ' + nextBill.bill_number);
       nextLink.innerHTML = `
@@ -87,9 +76,9 @@
       if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
 
       if (e.key === 'ArrowLeft' && prevBill) {
-        window.location.href = '/bills/' + slugify(prevBill.bill_number) + '/';
+        window.location.href = basePath + '/bills/' + slugify(prevBill.bill_number) + '/';
       } else if (e.key === 'ArrowRight' && nextBill) {
-        window.location.href = '/bills/' + slugify(nextBill.bill_number) + '/';
+        window.location.href = basePath + '/bills/' + slugify(nextBill.bill_number) + '/';
       }
     });
   }
