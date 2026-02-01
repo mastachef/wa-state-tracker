@@ -11,8 +11,8 @@
   if (!billNumberEl) return;
   const currentBillNumber = billNumberEl.textContent.trim();
 
-  // Detect base path from current URL
-  const basePath = window.location.pathname.includes('/wa-state-tracker') ? '/wa-state-tracker' : '';
+  // Detect base path from current URL (for GitHub Pages vs custom domain)
+  const basePath = window.location.pathname.startsWith('/wa-state-tracker') ? '/wa-state-tracker' : '';
 
   // Fetch bills data
   fetch(basePath + '/api/bills.json')
@@ -39,7 +39,7 @@
     // Previous arrow
     if (prevBill) {
       const prevLink = document.createElement('a');
-      prevLink.href = basePath + '/bills/' + slugify(prevBill.bill_number) + '/';
+      prevLink.href = basePath + '/bill/' + slugify(prevBill.bill_number) + '/';
       prevLink.className = 'side-nav-arrow side-nav-prev';
       prevLink.setAttribute('aria-label', 'Previous bill: ' + prevBill.bill_number);
       prevLink.innerHTML = `
@@ -55,7 +55,7 @@
     // Next arrow
     if (nextBill) {
       const nextLink = document.createElement('a');
-      nextLink.href = basePath + '/bills/' + slugify(nextBill.bill_number) + '/';
+      nextLink.href = basePath + '/bill/' + slugify(nextBill.bill_number) + '/';
       nextLink.className = 'side-nav-arrow side-nav-next';
       nextLink.setAttribute('aria-label', 'Next bill: ' + nextBill.bill_number);
       nextLink.innerHTML = `
@@ -76,9 +76,9 @@
       if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
 
       if (e.key === 'ArrowLeft' && prevBill) {
-        window.location.href = basePath + '/bills/' + slugify(prevBill.bill_number) + '/';
+        window.location.href = basePath + '/bill/' + slugify(prevBill.bill_number) + '/';
       } else if (e.key === 'ArrowRight' && nextBill) {
-        window.location.href = basePath + '/bills/' + slugify(nextBill.bill_number) + '/';
+        window.location.href = basePath + '/bill/' + slugify(nextBill.bill_number) + '/';
       }
     });
   }
