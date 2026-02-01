@@ -273,13 +273,24 @@ def fetch_all_bills(api_key: str, limit: int | None = None, fetch_details: bool 
     master_bills = get_master_bill_list(session_id, api_key)
     print(f"Found {len(master_bills)} bills")
 
-    if limit:
-        master_bills = master_bills[:limit]
-        print(f"Limiting to {limit} bills")
+    # Sort by last_action_date (newest first) so most recent bills get descriptions first
+    master_bills.sort(key=lambda b: b.get("last_action_date") or "", reverse=True)
+    print("Sorted bills by last action date (newest first)")
 
     # Load existing bills to preserve data and check what needs details
     existing_bills = load_existing_bills()
     print(f"Found {len(existing_bills)} existing bills in cache")
+
+    # Count how many need details
+    needs_detail_count = sum(
+        1 for b in master_bills
+        if b.get("bill_id") not in existing_bills or not existing_bills.get(b.get("bill_id"), {}).get("description")
+    )
+    print(f"Bills needing description fetch: {needs_detail_count}")
+
+    if limit:
+        # Limit only applies to bills needing details, not total
+        print(f"Limiting detail fetches to {limit} bills")
 
     bills = []
     total = len(master_bills)
@@ -303,11 +314,26 @@ def fetch_all_bills(api_key: str, limit: int | None = None, fetch_details: bool 
             needs_details = True
 
         if needs_details:
-            print(f"  [{i}/{total}] Fetching {bill_number}...", end="", flush=True)
-            detail_bill = get_bill_details(bill_id, api_key)
-            bill_data = transform_bill_data(master_bill, detail_bill)
-            details_fetched += 1
-            print(" done")
+            # Check if we've hit the limit for detail fetches
+            if limit and details_fetched >= limit:
+                # Skip fetching, use existing data if available
+                bill_data = transform_bill_data(master_bill, None)
+                if existing:
+                    bill_data["description"] = existing.get("description", "")
+                    bill_data["sponsors"] = existing.get("sponsors", [])
+                    bill_data["history"] = existing.get("history", [])
+                    bill_data["introduced_date"] = existing.get("introduced_date", "")
+                    for key in ["threat_score", "threat_level", "threat_label", "concerns",
+                               "positives", "ai_summary", "plain_summary", "amended",
+                               "amendment_count", "related_bills", "fiscal_impact", "bill_analysis"]:
+                        if key in existing:
+                            bill_data[key] = existing[key]
+            else:
+                print(f"  [{details_fetched + 1}/{needs_detail_count if not limit else min(limit, needs_detail_count)}] Fetching {bill_number}...", end="", flush=True)
+                detail_bill = get_bill_details(bill_id, api_key)
+                bill_data = transform_bill_data(master_bill, detail_bill)
+                details_fetched += 1
+                print(" done")
         else:
             # Use existing data, just update from master list
             bill_data = transform_bill_data(master_bill, None)
